@@ -1,0 +1,405 @@
+---
+title: "Final Project"
+format: 
+  html:
+    toc: true
+    number-sections: true
+    self-contained: true
+editor: source
+---
+
+# Initial Proposal {-}
+
+Your first assignment is to propose a research project for which you can gather data, at home, in 1-2 days. 
+
+The project should be:
+
++ An experiment with
++ Quantitative response variable
++ Categorical explanatory variable (want to compare 2 or more groups)
+
+You should plan to collect about 50 observations (but this will depend). Other ideas (e.g., categorical response variable) are possible as well.
+
+**Deadlines**
+
++ You will submit a short proposal to me for initial feedback by xxxx, xxxx. 
++ You will submit a formal study protocol, as if to a Human Subjects Review board. This will be peer-reviewed by a fellow student who will conduct a pilot study, gathering about 5 observations. 
+
+This feedback will be shared with you by noon, Monday. After that, you will carry out the study and then submit a Data Collection/Methods section (Week 2).
+
+
++ Submit a description here by Wednesday (4/8, noon). If you submit sooner, we can discuss before your final submission.
++ Review [Cal Poly's Guidelines for Protocol Development](https://research.calpoly.edu/HS-guidelines#Guidelines_for_Protocol_Development) (just the first section?) and this [article](https://www.aje.com/arc/how-to-write-an-easily-reproducible-protocol/).
+  + Some parts (e.g., Human subjects) may be less relevant to you and that's fine! I would focus less on criteria for approval, and more on providing enough details that someone else could carry out the study you have designed (4(a), (c), (d)).
++ Submit a PDF file here by XXX (xxxx, xx) 
++ Peer review another protocol by XXX (xxx, xx)
+  + You should be able to access the protocol by xx XXXX.  When you open the assignment after XX on XXXX, you should see a link with a student name under “Assigned Peer Reviews” on the right-hand side.  Click “Show Rubric,” fill out the rubric, and save (PLEASE ALSO ADD COMMENTS).   Please email me right away if you have any problems with this process. 
+  
+# Final Report {-}
+
+## Introduction
+
+
+## Data and Methods
+
+Submit a first draft of your data description section, including variable descriptions, based on your data collection
+
+Remember to focus on
+
++ When and where did the study take place?
+  + Was there randomness or more of a convenience sample?
++ Who are the subjects under study? ("subjects" don't have to be people) 
+  + Any inclusion/exclusion criteria?
++ What procedures were used to select subjects and collect measurements?
++ Exactly how were the outcomes measured, describe any measurement devices, units of measure
++ Describe the treatments
+  + Include copies of any surveys/questions
+  + Include photographic evidence?
++ Describe the randomization
++ What are the outcomes and covariates?
++ What are the potential flaws/limitations?
++ Were any observations removed? (If so, why?)
+
+Also remember to be thorough yet concise!
+
+### Tables
+
+The next step of your technical report will be making a table.  Tables are generally less effective and information that graphs and prose, but they can still play a role. In particular, I want you to make a table of your descriptive statistics.  With a quantitative response, you will compare means, means, and five number summaries.  With a categorical response variable, you will compare proportions, being cautious to interpret proportions and percentages appropriately, especially differences.  In this module, I try to summarize some advice on creating tables taken from Storytelling with Data (p. 40-43) and (especially) from the Chicago Guide to Writing About Numbers (Ch. 6). Another good reference is Show Me the Numbers by Stephen Few.
+
+
+If you prefer a different presentation of this information, see the lecture slides and/or podcasts from the Chicago Guide to Writing About Numbers:
+
+Chapters 6 and 7	 	 	 
+Creating effective tables and charts	PC6_7.1.	SS6_7.1.	 
+Organizing data in tables and charts	PC6_7.2.	SS6_7.2.	 
+
+
+::: callout-note
+Keep in mind that not all of your datasets will fall into this nice simple package, but this gives you an idea of the minimal elements. In particular, if you collected data over time, you may choose to focus on summarizing that instead.  You should also be reading Section 7.3.4 in Communicating with Data.
+
+You should assume a reasonably educated audience, but may not be as statically advanced as you. Do not use technical jargon. Use formal language and active voice. Be succinct and engage the reader’s interest. Do not plan to use two-column format.
+
+I tend to prefer separating the results and discussion sections, but it is possible to integrate them together as well.  I also tend to separate the exploration data analysis from the inferential analysis, but feel free to integrate those as well.  The main thing is to focus on the flow and readability of your report.  Don’t make your reader do a lot of looking around for the information you are talking about and don’t be too repetitive.
+:::
+
+## Results
+
++ Remember to “introduce” your output, don’t start with the output first thing but give the reader a little bit of context
++ Graph and Summary statistics of your response variable
+    + Quantitative data: histogram or dotplot (mean and SD)
+    + Categorical data: bar graph (proportion of successes)
+  + Make sure your graphs have titles, axis labels, and captions, as well as any necessary annotations, legends, scaling.
+  + Remember to insert your figures using “in line with text”
++ Discuss what you see/summarize your observations
+  + This should include discussion of the overall pattern and any exceptions
++ Graph and summary statistics of your response variable across your groups
+    + Quantitative data: histogram or dotplot (means and SDs)
+    + Categorical data: bar graph (conditional proportions of successes)
+  + Aim for effective, high-quality visuals (e.g., value ordering, use of color). Make sure you include units of measurement, not too many significant digits.
++ You may want to present your results in a table here as well, make sure it is also well-designed. Avoid bullet lists unless a paragraph would be just too cumbersome and repetitive.
++ Discuss what you see/summarize your observations
+  + This should include discussion of the overall pattern and any exceptions (GEE?)
++ Test of significance comparing your groups and Confidence interval(s)
+  + Your analysis should match your graphs (e.g., compared two groups on a quantitative response, look at a two-sample t-test). The reader should not be shocked at what the analysis reveals based on what you pointed out in the graphs.
++ Summarize what you learn about statistical significance and estimation of the size of the “effect”
+  + This is mostly “just the facts,” in the next section you will do more interpretation.
+ 
+
+## Discussion section
+
++ Interpret your findings and summarize what you learned from the analysis about your overall research question.
+  + Did the data behave as you expected?
+  + Is the result statistically significant? How large is the effect? Would you consider it practically significant? How are you deciding? (Do you need to bring in any subject-matter knowledge here?)
+  + Include an analogy?
++ Strengths (don’t restate but interpret) of data collection and analysis methods
+  + Can you draw cause-and-effect conclusions?
+  + To what population are you willing to generalize?
+  + How does your study contribute to existing knowledge base, larger context?
++ Limitations (e.g., potential biases) and how impact interpretation of your findings
+  + Note any deficiencies or unexplained data.
+  + Any issues with the analysis methods used?
+  + Any other potential sources of error or biases?
++ Directions for future research
+ 
+# Final Submission {-}
+
+Your submission should include
+
++ A version of your report showing track changes in individual pieces (1 pt)
++ Brief discussion of changes made to original pieces of report along the way (4 pts)
++ Final report (95 pts, see draft rubric below)
+
+Formatting: Your final report should use
+
++ 12 point font
++ 1 in margins
++ Reasonable font choice
++ Single spaced if word file; double spaced if pdf
+
+Contents: Your final report should have these sections
+
++ An Abstract/Executive Summary (often the last part written, should be less than one page, 150-250 words)
+  + A stand-alone, non-technical summary of the project
+  + Should be compelling and accurate, clear and concise
+  + Should discuss
+    + Objectives/Purpose/Background/Why important
+    + Data and methods (Who/What/When/Where/How, n, methods)
+    + Results (key findings)
+    + Conclusions/Recommendations/Relate to objectives
+  + Should not contain any new information that is not discussed in the main report
+
++ Introduction
+  + Provide Motivation, Context, Background (big picture) for the project
+  + Provide an overview of the organization of the document (tell them what you are going to tell them)
++ Data and Methods (see earlier writing assignment)
+  + When, Where, How, Who, What
+    + Final analytic sample (what/how was actually analyzed)
+    + Any constructed variables (any manipulations to the data before analysis)
+  + Put supporting or background data not critical to the flow of the main report in appendices. Reference data from other sources so readers can locate it.
+  + Feel free to use a table or a diagram in this section to help explain your design!
+  
++ Results/Discussion (see earlier writing assignment)
+  + Provide an analysis drawn from the data presented. (remember to mention which package(s) using)
+    + Be sure all methods are clear but you don't need to include every data
+    + Results should be presented in high-quality graphs and tables
+  + Interpretation of findings
+    + Consider using GEE, ADEPT strategies for summarizing your results both technically and in a manner that a non-statistician could understand.
+  + Critique of statistical methods and conclusions: strengths and deficiencies
+    + Discuss the validity of the analyses, appropriateness to the research question
+    + Strengths (don’t restate but interpret) of data collection and analysis methods
+      + How contributes to exisiting literature, larger context
+  + Limitations (e.g., potential biases) and how impact interpretation of your findings
+
++ Conclusion
+  + Re-emphasize main points (tell them what you told them)
+  + Scope of conclusions WITH JUSTIFICATION (can we generalize? why or why not? to what population? can we conclude causation? why or why not?)
+  + "Practical significance" (is it meaningful, how are you deciding?)
+  + Return to big picture (answer the research question), can you make any recommendations?
+  + Directions for future research
+
++ Appendix
+  + Original research protocol
+  + Any additional documentation
+  + Also upload a copy of your raw data file (let me know if you need me to allow additional file types)
+
+*You should also be submitting your discussion of the changes you made and any annotated previous versions as separate files.*
+
+# Editing Checklist {-}
+
++ Title page lists the title, authors, date.
++ Present, active voice; professional tone; no personal opinions
++ Concise (vs. use of unnecessary words)
++ Gender-neutral wording
++ Acronyms and Abbreviations defined the first time used
++ Subject/verb agreement
++ Correct spelling (don’t rely only on spell checker)
++ Correct use of punctuation and grammar
++ Figures and Tables numbered and in correct location
++ Supporting documentation in appendices
++ Figures, tables, and appendices referred to accurately.
++ Bulleted and numbered lists have parallel construction and consistent punctuation.
++ Use brief, descriptive (left-justified, bold, title capitalization) headings to help readers navigate easily through the document. Heading levels follow sequentially. If you create one subhead, you must have at least two. For example, don’t create heading 1.1.1 without a heading 1.1.2. If information for only one subhead exists, it should all appear under the main heading, 1.1.
++ Follows basic rules for
+  + Commas
+  + Colons
+  + Semicolons
+  + Hyphens
+  + Acronyms
+  + Numbers (writing the word vs. the numeral)
+  + Equations (using symbols)
+  + Units of measure
+
+# Final Report Rubric {-}
+
+Copy or original drafts with track changes (1 pt)
+
+Discussion of edits made along the way (4 pts)
+
+Title page (2 pts)
+
+Title, Author, Course, Date 
+
+	
+
+
+
+
+
+
+
+Abstract/Executive summary (5 pts) – about 120 words (limit 250)
+
+Plain language, Overview, Engaging
+
+	
+
+
+
+
+
+
+
+Introduction (3 pts)
+
+e.g., clarify objectives, but not too much detail
+
+	
+
+
+
+
+
+
+
+Data and Methods (20 pts)
+
+Ws
+
+Study design details
+
+Study design issues (e.g., missing data)
+
+Analytic sample, representativeness
+
+Variables/Units/Getting to know your data
+
+Outliers
+
+Name of statistical methods
+
+Critique of statistical methods/validity
+
+	
+
+
+
+
+
+
+
+Results (20 pts)
+
+Include graphical summaries of your data and statistical analyses
+
+Quality/Effectiveness of visuals/tables (5 pts)
+
+e.g., units of measurement, not too many significant digits, value ordering, use of color
+
+Titles/Axis labels/Annotations/Legends/Captions/Scaling (2 pts)
+
+Figures in line with text (2 pts)
+
+Introductory sentences of tables, charts, comparisons (1 pt)
+
+	
+
+
+
+
+
+
+
+Discussion (20 pts)
+
+Summaries of major findings
+
+Effective comparisons (3 pts)
+
+Direction, magnitude, significance
+
+Generalizations, Examples, and Exceptions
+
+Interpretation of numeric evidence
+
+Connections to research questions
+
+Reflection on strengths, limitations
+
+	
+
+
+
+
+
+
+
+Summary (5 pts)
+
+Scope of conclusions
+
+Substantive significance
+
+Recommend appropriate action?/Directions for future research
+
+	
+
+
+
+
+
+
+
+Overall clarity (3 pts)
+
+	
+
+
+
+
+
+
+
+Appearance (3 pts)
+
+e.g., section headings, page breaks, details, figure/table numbers
+
+	
+
+
+
+
+
+
+
+Overall cohesion/flow of story (5 pts)
+
+e.g., Transition sentences
+
+	
+
+
+
+
+
+
+
+Grammar/Spelling/Appropriateness of vocabulary/Punctuation (5 pts)
+
+	
+
+
+
+
+
+
+
+Correct use of statistical language (4 pts)
+
+	
+
+
+
+
+
+
+
+Total
+
+	
+
+100 pts
+
+
+
+
+

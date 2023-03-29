@@ -3,55 +3,59 @@ title: "Stat 365: Statistical Communication"
 subtitle: "Spring 2023"
 # author: "Dr. Emily Robinson"
 # date: "January 9, 2023"
-
 format: 
   html:
     self-contained: true
     toc: true
-  pdf:
-    keep-tex: false
-    # include-in-header: "in-header.tex"
-    include-in-header:
-      text: |
-        \makeatletter
-        \def\@maketitle{%
-          \begin{center}%
-          \let \footnote \thanks
-            {\LARGE \@title \par}%
-            {\large \@author \par}%
-            {\large \@date}
-          \end{center}%
-          \par
-          \vskip 1em}
-        \makeatother
-        \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{section}
-        \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{subsection}
-        \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{subsubsection}
-        \raggedbottom
-        \usepackage{enumitem}
-        \setlist{nolistsep}
-    latex-engine: xelatex
-
+    theme:
+      light: flatly
+      dark: darkly
+  # pdf:
+  #       \makeatother
+  #       \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{section}
+  #       \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{subsection}
+  #       \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{subsubsection}
+  #       \raggedbottom
+  #       \usepackage{enumitem}
+  #       \setlist{nolistsep}
+  #   keep-tex: false
+  #   # include-in-header: "in-header.tex"
+  #   include-in-header:
+  #         \end{center}%
+  #         \par
+  #         \vskip 1em}
+  #     text: |
+  #       \makeatletter
+  #       \def\@maketitle{%
+  #         \begin{center}%
+  #         \let \footnote \thanks
+  #           {\LARGE \@title \par}%
+  #           {\large \@author \par}%
+  #           {\large \@date}
+  #   latex-engine: xelatex
 dev: png
 geometry: margin=1in
-
 fontfamily: mathpazo
 fontsize: 11pt
+editor: 
+  markdown: 
+    wrap: 80
 ---
 
 ## Instructor
 
 **Dr. Emily Robinson** *(she/her)*
 
--	Email: [erobin17@calpoly.edu](mailto:erobin17@calpoly.edu?subject=Stat%20331/531)
--	Office: Building 25 Office 103 (by Statistics Department Office) 
+-   Email:
+    [erobin17@calpoly.edu](mailto:erobin17@calpoly.edu?subject=Stat%20365)
+-   Office: Building 25 Office 103 (by Statistics Department Office)
 
 ## Course information
 
 **Class Meeting Times:** Mondays/Wednesdays
 
-- Section 01: 1:10pm - 2:00pm
-- Section 02: 2:10pm - 3:00pm
+-   Section 01: 1:10pm - 2:00pm
+-   Section 02: 2:10pm - 3:00pm
 
 **Class Location:** 33-457 (Math & Science)
 
@@ -145,106 +149,271 @@ class_cal
 
 # Course description
 
-Communicating clearly is crucial for success as a statistician and for all who engage in analyzing data. The Statistics Department decided to institute this two-unit course a few years ago, in order to provide more guidance, practice, and feedback about writing well with statistics and data.
+This two-unit course is designed to help students develop strong written
+communication skills in statistics and data analysis. Through guided practice
+and feedback, students will learn to effectively communicate statistical ideas
+and results to different audiences using appropriate graphs and tables. The
+course will cover strategies for discerning relevant and necessary information
+and for selecting appropriate methods to analyze data, building on students'
+previous statistics coursework.
 
-This course is required for Statistics majors but does not count toward the Statistics minor or for any other degree program.
+**Prerequisites:** Completion of GE Area A2, completion of GE Area A3, and a
+second course in Statistical Methods (STAT 252, STAT 302, or STAT 313).
 
-**Prerequisites:**
+**Requirements:** This course is required for Statistics majors but does not
+count toward the Statistics minor or any other degree program.
 
 ## Course goals
 
-+ Critique technical and media reports based on statistical studies and analyses.
-+ Select the appropriate descriptive and inferential statistical methods (seen in previous classes), and analyze data using those methods.
-+ Synthesize output from statistical software relevant to answering the research questions
-+ Write reports that clearly convey statistical ideas and content; effectively incorporate appropriate
-information in tables and graphs within technical reports; and integrate sufficient documentation to
-ensure reproducibility.
-+ Evaluate an audience's statistical background (introductory or advanced) and modify the style and
-content of a written report based on the purpose, audience, and context of a given communicative
-act (such as a consultation memo, executive summary, or technical report).
-+ Use the following statistical concepts with lexical precision in written reports: parameter vs.
-statistic, variability, p-value, margin-of-error, interaction, scope of conclusions.
-+ Learn appropriate methods for visualizing and communicating data, both numerical and categorical.
-+ Develop technical skills using spreadsheets, Tableau, and R, to visualize and communicate data.
-+ Apply course material to communications you find in the wild, and datasets that interest you.
-At the end of this class, students should be able to:
-+ Use computational tools to prepare data for storytelling. This includes:
-    + wrangling datasets using spreadsheets,
-    + making data visualizations using DataWrapper, and
-    + curating the final presentation of products.
-+ Critically evaluate data stories in a field of interest. This includes:
-    + describing and critiquing data visualizations and narratives including in a peer review setting,
-    + evaluating structure, design, and writing choices of data stories, and
-    + articulating their own data storytelling style.
-+ Communicate insights from data clearly and precisely. This includes:
-    + identifying a compelling story from a dataset,
-    + telling the story effectively using appropriate visual and descriptive approaches,
-    + knowing the audience and communicating at an accessible level that is still faithful to the data,
-and communicating via a variety of mediums including written, visual, and oral products.
+By the end of this course, you will:
+
+-   Enhance your written communication skills in statistics and data analysis,
+    specifically through the use of appropriate graphs and tables to convey
+    statistical ideas and results.
+-   Synthesize output from statistical software to address research questions
+    and analyze data with lexical precision and accuracy.
+-   Evaluate the statistical background of your intended audience, and adapt the
+    style and content of your written reports to suit their needs and context.
+-   Demonstrate your understanding of statistical concepts such as parameters
+    versus statistics, variability, p-values, margin-of-error, interaction, and
+    scope of conclusions.
+-   Develop technical proficiency in writing and producing technical reports
+    with adequate documentation to ensure reproducibility.
+-   Learn how to use spreadsheets, Tableau, and R for data visualization and
+    communication.
+-   Gain experience in integrating statistical analysis, data visualization, and
+    technical writing in a reproducible manner.
+
+<!-- -   Develop effective written communication skills in statistics and data -->
+
+<!--     analysis. -->
+
+<!-- -   Synthesize output from statistical software relevant to answering the -->
+
+<!--     research questions -->
+
+<!-- -   Learn to use appropriate graphs and tables to communicate statistical ideas -->
+
+<!--     and results. -->
+
+<!-- -   Evaluate an audience's statistical background (introductory or advanced) and -->
+
+<!--     modify the style and content of a written report based on the purpose, -->
+
+<!--     audience, and context of a given communicative act. -->
+
+<!-- -   Use the following statistical concepts with lexical precision in written -->
+
+<!--     reports: parameter vs. statistic, variability, p-value, margin-of-error, -->
+
+<!--     interaction, scope of conclusions. -->
+
+<!-- -   Gain practice in writing technical reports. -->
+
+<!-- -   Integrate sufficient documentation to ensure reproducibility. -->
+
+<!-- -   Develop technical skills using spreadsheets, Tableau, and R, to visualize -->
+
+<!--     and communicate data. -->
+
+<!-- + Critique technical and media reports based on statistical studies and analyses. -->
+
+<!-- + Select the appropriate descriptive and inferential statistical methods (seen in previous classes), and analyze data using those methods. -->
+
+<!-- + Synthesize output from statistical software relevant to answering the research questions -->
+
+<!-- + Write reports that clearly convey statistical ideas and content; effectively incorporate appropriate -->
+
+<!-- information in tables and graphs within technical reports; and integrate sufficient documentation to -->
+
+<!-- ensure reproducibility. -->
+
+<!-- + Evaluate an audience's statistical background (introductory or advanced) and modify the style and -->
+
+<!-- content of a written report based on the purpose, audience, and context of a given communicative -->
+
+<!-- act (such as a consultation memo, executive summary, or technical report). -->
+
+<!-- + Use the following statistical concepts with lexical precision in written reports: parameter vs. -->
+
+<!-- statistic, variability, p-value, margin-of-error, interaction, scope of conclusions. -->
+
+<!-- + Learn appropriate methods for visualizing and communicating data, both numerical and categorical. -->
+
+<!-- + Develop technical skills using spreadsheets, Tableau, and R, to visualize and communicate data. -->
+
+<!-- + Apply course material to communications you find in the wild, and datasets that interest you. -->
+
+<!-- At the end of this class, students should be able to: -->
+
+<!-- + Use computational tools to prepare data for storytelling. This includes: -->
+
+<!--     + wrangling datasets using spreadsheets, -->
+
+<!--     + making data visualizations using DataWrapper, and -->
+
+<!--     + curating the final presentation of products. -->
+
+<!-- + Critically evaluate data stories in a field of interest. This includes: -->
+
+<!--     + describing and critiquing data visualizations and narratives including in a peer review setting, -->
+
+<!--     + evaluating structure, design, and writing choices of data stories, and -->
+
+<!--     + articulating their own data storytelling style. -->
+
+<!-- + Communicate insights from data clearly and precisely. This includes: -->
+
+<!--     + identifying a compelling story from a dataset, -->
+
+<!--     + telling the story effectively using appropriate visual and descriptive approaches, -->
+
+<!--     + knowing the audience and communicating at an accessible level that is still faithful to the data, -->
+
+<!-- and communicating via a variety of mediums including written, visual, and oral products. -->
 
 # Textbooks
 
-Most textbooks and readings have been reserved through the Cal Poly Library system ([access here]()).
+I have reserved eBooks for most of the textbooks and readings through the Cal Poly Library
+[course reserves](https://reserves.calstate.edu/slo/).
 
 The main textbooks used in this course are:
 
-+ Communicating with Data: The Art of Writing for Data Science (Deborah Nolan and Sara Stoudt)
-+ Storytelling with Data (Cole Knaflic)
+-   Communicating with Data: The Art of Writing for Data Science (Deborah Nolan
+    and Sara Stoudt)
+-   Storytelling with Data (Cole Knaflic)
 
-In addition to the textbooks, there will be a number of readings provided from other texts, including:
+In addition to the textbooks, there will be a number of readings provided from
+other texts, including:
 
-+ Numbers in the Newsroom (Sarah Cohen)
-+ The Functional Art (Alberto Cairo)
-+ Visualize This (Nathan Yau)
-+ How to Lie with Statistics (Darrell Huff)
-+ Show me the Numbers (Sephen Few)
-+ The Visual Display of Quantitative Information (Edward Tufte)
-+ Better Data Visualizations (Jonathan Schwabish)
+-   Numbers in the Newsroom (Sarah Cohen)
+-   The Functional Art (Alberto Cairo)
+-   Visualize This (Nathan Yau)
+-   How to Lie with Statistics (Darrell Huff)
+-   Show me the Numbers (Sephen Few)
+-   The Visual Display of Quantitative Information (Edward Tufte)
+-   Better Data Visualizations (Jonathan Schwabish)
 
 and more.
 
 # Grading
 
-In this class we will be using a contract grading system. This is designed to give flexibility and freedom to explore while ensuring a level of accountability. Learning to write takes practice. I do not want worries
-about grades to distract us from being creative, taking risks, and ultimately finding our voices.
+In this class we will be using a contract grading system. This is designed to
+give flexibility and freedom to explore while ensuring a level of
+accountability. Learning to write takes practice. I do not want worries about
+grades to distract us from being creative, taking risks, and ultimately finding
+our voices.
 
-You are guaranteed a grade of a B for this class if you meet the following conditions:
+You are guaranteed a grade of a B for this class if you meet the following
+conditions:
 
-+ Complete readings, readiness quizzes, writing prompts, and class activities on time, following the instructions meeting "satisfactory", and missing no more than 3.
-+ Complete each mini-project on time, following the instructions and meeting the conditions of "satisfactory" on the rubric.
-+ Complete the final report on time, following the instructions and meet the conditions of "satisfactory" on the rubric.
+- Submit assignments (readings, readiness quizzes, writing prompts, class activities, peer reviews, and final report check-points) on time and meet the "satisfactory" criteria with a maximum of 3 missed assignments.
+- Complete all mini-projects on time and meet the "satisfactory" conditions on the rubrics.
+- Submit the final technical report on time and meet the "satisfactory" conditions on the rubric.
 
-Your grade will decrease by a third of a step (for example a B to a B-) for each B condition that you do not meet. Missing assignments will be scaled, so that if for example you miss 6 ,
-turn in one mini-project late, or turn in two projects late your grade will decrease by two thirds of a step (for example
-a B to a C+).
+Your grade will decrease by a third of a step (for example a B to a B-) for each
+B condition that you do not meet. Missing assignments will be scaled, so that if
+for example you miss six assignments, turn in two mini-projects late, or turn in
+your final technical report late your grade will decrease by two thirds of a
+step (for example a B to a C+). 
 
-You can increase your letter grade by a third of a step (for example a B to B+) for meeting each of the following conditions (further instructions will be provided):
+A missing final technical report submission will result in a maximum grade of a D+ at the instructor's discretion.
 
-+ Complete a weekly submission to the [NYT: What's going on in this graph](https://www.nytimes.com/column/whats-going-on-in-this-graph), missing no more than two weeks throughout the quarter.
-+ Select a data set from [TidyTuesday](https://github.com/rfordatascience/tidytuesday) or [Makeover Monday](https://www.makeovermonday.co.uk/data/) and use guiding principles to create an effective dashboard using Tableau or RShiny to highlight key points.
-+ [Make your own website](https://earobinson95.github.io/stat365-calpoly/98-A-options/make-your-own-website.html) using Quarto and GitHub to showcase your statistical projects.
-+ Complete a final project that goes above and beyond the requirements. Your job is to convince me in an additional one page document why you think your contribution goes the extra mile.
+You can increase your letter grade by *up to* a third of a step (for example a B
+to B+) for meeting each of the following conditions (further instructions will
+be provided):
 
-For example, to earn an A in this class you must meet the conditions for a B and complete three of the "boosting" conditions above.
+-   Complete a weekly submission to the [NYT: What's going on in this
+    graph](https://www.nytimes.com/column/whats-going-on-in-this-graph), missing
+    no more than two weeks throughout the quarter.
+-   Listen to the [99% Invisible podcast on Florence Nightingale: Data Viz Pioneer](https://99percentinvisible.org/episode/florence-nightingale-data-viz-pioneer/). Find the data set to recreate the rose diagram, compare with a stacked bar plot, discuss the story, and argue why Florence needed the rose diagram.
+-   Select a data set from
+    [TidyTuesday](https://github.com/rfordatascience/tidytuesday) or [Makeover
+    Monday](https://www.makeovermonday.co.uk/data/) and use guiding principles
+    to create an effective dashboard using Tableau or RShiny to highlight key
+    points.
+-   Participate in [The Stats+Stories 300th Episode Data Visualization
+    Contest](https://community.amstat.org/discussion/the-statsstories-300th-episode-data-visualization-contest#bmc1655f4c-049c-46e9-9553-d30b30d151e4).
+-   [Make your own
+    website](https://earobinson95.github.io/stat365-calpoly/98-A-options/make-your-own-website.html)
+    using Quarto and GitHub to showcase your statistical projects.
+-   Complete a technical report project that goes above and beyond the
+    requirements. Your job is to convince me in an additional one page document
+    why you think your contribution goes the extra mile.
 
-Any deviation from the grading policies outlined above will only be to your benefit.
+For example, to earn an A in this class you must meet the conditions for a B and
+complete three of the "boosting" conditions above to "satisfactory" quality.
+
+Any deviation from the grading policies outlined above will only be to your
+benefit.
 
 ## Grade Breakdown
 
-1. **Readings, readiness quizzes, and participation**
+1.  **Readings, readiness quizzes, and participation:**
 
-2. **Writing prompts, and activities**
+You will be expected to complete assigned readings before coming to class and
+participate in class discussions and activities. Additionally, you will be
+required to take readiness quizzes to assess your understanding of the material.
+Your peer review participation and engagement in class will be evaluated
+throughout the semester.
 
-3. **Mini projects:** There will be four mini-projects throughout the semester. The mini projects include Dear Data, One Number Story, Copy the Masters, and Build Your Portfolio. Mini-project portions will be graded on 4 point scales.
+2.  **Writing prompts and activities:**
 
-4. **Final project:**
+Throughout the course, you will be given writing prompts and activities to help
+you develop your technical writing skills. These will include assignments such
+as summarizing statistical findings, interpreting graphs and tables, and writing
+up executive memos. These assignments will be designed to help you practice
+communicating complex statistical concepts and analyses clearly and effectively.
+
+3.  **Mini-projects:**
+
+There will be three mini-projects throughout the semester, each designed to help
+you develop and apply your statistical communication skills. The mini-projects
+will include:
+
+-   *One Number Story:* In this assignment, you will choose a single number that
+    summarizes a key finding from the provided data set and craft a compelling
+    story around it, using appropriate statistical evidence to support your
+    claims.
+
+-   *Copy the Masters:* For this assignment, you will reproduce graphics from
+    FiveThirtyEight. You will use good data visualization principles and
+    practicies.
+
+-   *Build your resume:* In this assignment, you will create a resume using
+    Overleaf to highlight your education, statistical communication and
+    technical skills, statistics and data science projects, and other relevant
+    experiences.
+
+Detailed rubrics will be provided for each mini-project to help guide your work
+and ensure that you meet the required standards.
+
+4.  **Technical report project:**
+
+The technical report project is the culminating assignment of the course, where
+you will have the opportunity to apply all the skills and knowledge you have
+acquired throughout the semester. You will be required to choose a research
+question, collect and analyze data using appropriate statistical methods, and
+produce a technical report that effectively communicates your findings. You will
+be provided with guidelines and resources to support your work, and you will
+receive feedback and guidance throughout the project. The technical report
+project will be evaluated based on its clarity, thoroughness, and adherence to
+standard statistical practices.
 
 ## Late work
 
+I understand that unexpected events may arise during the quarter that may
+prevent you from submitting your assignments on time. To accommodate for this,
+you will be given four 24-hour late submission "tokens" to use throughout the
+quarter. To use a token, you must send me an email and fill out the deadline
+extension form [here](https://forms.gle/3uVhdWCN4DN373XE7).
+
+These tokens cannot  be used on your final technical report submission.
+
+Your remaining tokens will be tracked in a Canvas assignment as four points,
+with each token worth one point.
 
 # Class Schedule
-
-This schedule is tentative and subject to change.
 
 ```{r calendar}
 #| echo: false
@@ -256,69 +425,156 @@ This schedule is tentative and subject to change.
 class_cal
 ```
 
-```{r schedule}
-#| echo: false
-#| eval: true
-#| fig-pos: 'h'
-# class_schedule |> 
-# kableExtra::kable(caption = "Tentative schedule of class topics and important due dates", format = "simple")
-```
+This schedule is **very** tentative and subject to change.
+
++----------------+------------------------+----------------------------------+
+| Week           | Topics                 | Readings                         |
++================+========================+==================================+
+| 1: 4/3, 4/5    | Writing about Data     | CwD (ch. 1, ch. 10.3), How to    |
+|                |                        | lie with Stats (ch. 10)          |
+|                | Designing a Study      |                                  |
++----------------+------------------------+----------------------------------+
+| 2: 4/10, 4/12  | Data Journalism        | CwD (ch. 2, 7), Numbers in the   |
+|                |                        | Newsroom (ch. 1, 2)              |
+|                | Spreadsheets,          |                                  |
+|                | summaries, and pivot   |                                  |
+|                | tables                 |                                  |
++----------------+------------------------+----------------------------------+
+| 3: 4/17, 4/19  | Descriptive            | CwD (3.1 - 3.2)                  |
+|                | Statistics + Tables    |                                  |
+|                |                        |                                  |
+|                | Reproducibility        |                                  |
++----------------+------------------------+----------------------------------+
+| 4: 4/24, 4/26  | Intro to viz           | CwD (4, 8, 9), The Functional    |
+|                |                        | Art (intro), Visualize this      |
+|                | Color                  | (intro, ch. 1), Storytelling     |
+|                |                        | with Data (ch. 7 - 10)           |
+|                |                        |                                  |
+|                |                        | Design Elements (ch. 3),         |
+|                |                        | Envisioning Infromation (ch. 5)  |
++----------------+------------------------+----------------------------------+
+| 5: 5/1, 5/3    | Perception +           | Cleveland (ch. 4), Show me the   |
+|                | Principles             | numbers (ch. 5) Data Points (ch. |
+|                |                        | 5)                               |
+|                | Simplification         |                                  |
+|                |                        | CwD (ch. 5), Show me the numbers |
+|                |                        | (ch. 8), Visual Display (ch. 4,  |
+|                |                        | 6)                               |
++----------------+------------------------+----------------------------------+
+| 6: 5/8, 5/10   | Statistical Tendencies | Twenty-five Analogies for        |
+|                |                        | Explaining Statistical Concepts  |
+|                | Writing reports        | (Behar, Grima, and               |
+|                |                        | Margo-Almagro)                   |
++----------------+------------------------+----------------------------------+
+| 7: 5/15, 5/17  | ADEPT with Professor   |                                  |
+|                | Smith                  |                                  |
+|                |                        |                                  |
+|                | Infographics &         |                                  |
+|                | Dashboards             |                                  |
++----------------+------------------------+----------------------------------+
+| 8: 5/22, 5/24  | Visit from Career      |                                  |
+|                | Center                 |                                  |
+|                |                        |                                  |
+|                | Finding Internships +  |                                  |
+|                | Online Presence        |                                  |
++----------------+------------------------+----------------------------------+
+| 9: 5/29, 5/30  | **No Class -** watch   |                                  |
+|                | Canvas for             |                                  |
+|                | asynchronous material  |                                  |
+|                |                        |                                  |
+|                | Memorial Day,          |                                  |
+|                | Instructor traveling   |                                  |
+|                | for an academic        |                                  |
+|                | conference             |                                  |
++----------------+------------------------+----------------------------------+
+| 10: 6/5, 6/7   | Project Workdays       |                                  |
++----------------+------------------------+----------------------------------+
+| Finals         |                        |                                  |
++----------------+------------------------+----------------------------------+
 
 # Course Expectations
 
 You will get out of this course what you put in. The following excerpt was taken
-from Rob Jenkins’ article “Defining the Relationship” which was published in The
+from Rob Jenkins' article "Defining the Relationship" which was published in The
 Chronicle of Higher Education (August 8, 2016). This accurately summarizes what
 I expect of you in my classroom (and also what you should expect of me).
 
-*“I’d like to be your partner. More than anything, I’d like for us to form a mutually beneficial alliance in this endeavor we call education.*
+*"I'd like to be your partner. More than anything, I'd like for us to form a
+mutually beneficial alliance in this endeavor we call education.*
 
 *I pledge to do my part. I will:*
 
-+ *Stay abreast of the latest ideas in my field.* 
-+ *Teach you what I believe you need to know; with all the enthusiasm I possess.*
-+ *Invite your comments and questions and respond constructively.*
-+ *Make myself available to you outside of class (within reason).*
-+ *Evaluate your work carefully and return it promptly with feedback.* 
-+ *Be as fair, respectful, and understanding as I can humanly be.*
-+ *If you need help beyond the scope of this course, I will do my best to provide it or see that you get it.* 
+-   *Stay abreast of the latest ideas in my field.*
+-   *Teach you what I believe you need to know; with all the enthusiasm I
+    possess.*
+-   *Invite your comments and questions and respond constructively.*
+-   *Make myself available to you outside of class (within reason).*
+-   *Evaluate your work carefully and return it promptly with feedback.*
+-   *Be as fair, respectful, and understanding as I can humanly be.*
+-   *If you need help beyond the scope of this course, I will do my best to
+    provide it or see that you get it.*
 
 *In return, I expect you to:*
 
-+ *Show up for class each day or let me know (preferably in advance) if you have some good reason to be absent.* 
-+ *Do your reading and other assignments outside of class and be prepared for each class meeting.*
-+ *Focus during class on the work we’re doing and not on extraneous matters (like whoever or whatever is on your phone at the moment).* 
-+ *Participate in class discussions.*
-+ *Be respectful of your fellow students and their points of view.* 
-+ *In short, I expect you to devote as much effort to learning as I devote to teaching.*
+-   *Show up for class each day or let me know (preferably in advance) if you
+    have some good reason to be absent.*
+-   *Do your reading and other assignments outside of class and be prepared for
+    each class meeting.*
+-   *Focus during class on the work we're doing and not on extraneous matters
+    (like whoever or whatever is on your phone at the moment).*
+-   *Participate in class discussions.*
+-   *Be respectful of your fellow students and their points of view.*
+-   *In short, I expect you to devote as much effort to learning as I devote to
+    teaching.*
 
-*What you get out of this relationship is that you’ll be better equipped to succeed in this and other college courses, work-related assignments, and life in general. What I get is a great deal of professional and personal satisfaction. Because I do really like you [all] and want the best for you.”*
+*What you get out of this relationship is that you'll be better equipped to
+succeed in this and other college courses, work-related assignments, and life in
+general. What I get is a great deal of professional and personal satisfaction.
+Because I do really like you \[all\] and want the best for you."*
 
-# University Policies
+# Learning Environment and Support
 
-See [academicprograms.calpoly.edu/content/academicpolicies](https://academicprograms.calpoly.edu/content/academicpolicies/index).
+I am committed to creating a safe and inclusive learning environment where all
+students feel respected and supported. If there are any ways I can improve the
+classroom environment to make it more welcoming for you, please don't hesitate
+to let me know.
 
-## Learning Environment and Support
+If you have a disability and require accommodations to fully participate in the
+course, please contact me as soon as possible to discuss how I can best support
+you. I also encourage you to register with Cal Poly's Disability Resource Center
+(Building 124, Room 119 or at 805-756-1395) to explore additional accommodations
+that may be available to you.
 
-It is my goal for everyone to feel safe and comfortable in my classroom. If there is any way I can make the course more welcoming for you, please do not hesitate to ask.
+If you are experiencing food insecurity, housing instability, or other
+challenges that may impact your ability to succeed in this course, please refer
+to the resources listed on Canvas under "Student Support Services at Cal Poly."
+These resources provide a range of essential support services, including
+emergency financial assistance, counseling, and academic support.
 
-In particular, if you have a disability, I will gladly work with you to make this class accessible.
+I am committed to working with you to ensure that you have the resources and
+support you need to succeed in this course. Let's work together to create a
+positive and inclusive learning environment for all students.
 
-I encourage you to also contact the Disability Resource Center (Building 124, Room 119 or at 805-756-1395), who can help you register for extra accommodations such as extended exam time.
+# Academic Integrity
 
-If you are having difficulty affording groceries, lacking a safe & stable place to live, or needing additional essential supports, please see Canvas for a list of Student Support Services at Cal Poly.
+Academic integrity is a fundamental value of this course and of the university.
+Simply put, I will not tolerate cheating, plagiarism, or any other form of
+academic dishonesty.
 
-## Academic Integrity and Class Conduct
+Any incident of academic misconduct, including dishonesty, copying, or
+plagiarism, will be reported to the Office of Student Rights and
+Responsibilities.
 
-Simply put, I will not tolerate cheating or plagiarism.
+Cheating or plagiarism will result in an incomplete grade for the assignment and
+an overall grade deduction of one-third (e.g., B to a B-). In cases of flagrant
+cheating, a grade of F for the course may be assigned.
 
-Any incident of dishonesty, copying, or plagiarism will be
-reported to the Office of Student Rights and Responsibilities.
+It is important to note that paraphrasing or quoting another's work without
+proper citation is a form of academic misconduct. This includes using Chat GPT,
+which should only be used to generate ideas and not as a substitute for your own
+work.
 
-Cheating will earn you an incomplete on the assignment and an overall 1/3 grade drop penalty (e.g. B to a B-). In circumstances of flagrant cheating, you may be given a grade of F in the course.
-
-Paraphrasing or quoting another’s work without citing the source is a form of academic misconduct.
-
-For more information about what constitutes cheating and plagiarism, please see
+To ensure academic integrity, please be sure to cite all sources appropriately
+and only use Chat GPT in an ethical manner. For more information on academic
+misconduct and what constitutes cheating and plagiarism, please see
 [academicprograms.calpoly.edu/content/academicpolicies/Cheating](https://academicprograms.calpoly.edu/content/academicpolicies/Cheating).
-

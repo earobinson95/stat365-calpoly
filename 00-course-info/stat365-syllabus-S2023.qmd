@@ -1,6 +1,7 @@
 ---
 title: "Stat 365: Statistical Communication"
-# author: ""
+subtitle: "Spring 2023"
+# author: "Dr. Emily Robinson"
 # date: "January 9, 2023"
 
 format: 
@@ -38,49 +39,27 @@ fontfamily: mathpazo
 fontsize: 11pt
 ---
 
-## Contact
+## Instructor
 
-**Dr. Emily Robinson**
+**Dr. Emily Robinson** *(she/her)*
 
 -	Email: [erobin17@calpoly.edu](mailto:erobin17@calpoly.edu?subject=Stat%20331/531)
 -	Office: Building 25 Office 103 (by Statistics Department Office) 
 
-## Course Info
+## Course information
 
-**Class Meeting Times:** 
-
-Mondays/Wednesdays
+**Class Meeting Times:** Mondays/Wednesdays
 
 - Section 01: 1:10pm - 2:00pm
 - Section 02: 2:10pm - 3:00pm
 
-**Room:** 33-457 (Math & Science)
+**Class Location:** 33-457 (Math & Science)
 
-## Office Hours
-
-| Day       | Time                                                                           |
-|-----------|--------------------------------------------------------------------------------|
-| Tuesdays  | 10:10am - 11:00am, in-person (25-103)                                          |
-| Thursdays | 10:10am - 11:00am, in-person (25-103)                                          |
+**Office Hours:** Thursdays at 2:30pm - 4:30pm, in-person (25-103)
 
 ```{r}
 #| include: false
-
-# knitr::opts_chunk$set(cache=FALSE, dev='pdf')
-# knitr::opts_chunk$set(cache=F,
-#                       fig.path = 'figs/',
-#                       cache.path='cache/',
-#                       fig.align = 'center',
-#                       echo = F,
-#                       warning=F,
-#                       message=F)
-# knitr::opts_chunk$set(
-#                   fig.process = function(x) {
-#                       x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
-#                       if (file.rename(x, x2)) x2 else x
-#                       }
-#                   )
-
+#| 
 library(tidyverse)
 library(lubridate)
 
@@ -89,6 +68,7 @@ library(lubridate)
 # 1) what is the first Monday of the semester?
 # Any number of ways to identify dates in R, but we'll use {lubridate} and the ymd() function here.
 # Format: YYYYMMDD. In this example, 4 January 2022.
+
 # What are the full dates of the semester?
 semester_dates <- seq(ymd(20230402), ymd(20230617), by=1)
 # Weekday(s) of class
@@ -100,8 +80,7 @@ not_here_dates <- c(
   # seq(ymd(20221017), ymd(20221018), by = 1)
   )
 
-exam_dates <- c()
-
+# exam_dates <- c()
 # project_dates <- c(ymd(20221104), ymd(20221205), ymd(20221209))
 finals_week <- seq(ymd(20230611), ymd(20230617), by = 1)
 
@@ -163,53 +142,108 @@ class_cal <- Cal %>%
                     breaks=c("Finals", "Cal Poly Holiday", "Class Day","Exam"))
 class_cal
 
-# project_days <- filter(Cal, category == "Project") %>%
-#   mutate(topic = c("Project Proposal Due", "Project Presentation Due", "Project Report Due"),
-#          time = c("8pm", "8pm", "8pm")) %>%
-#   mutate(Date = format(date, "%b %e"),
-#          sem_week = week(date))
-
-class_days <- filter(Cal, category %in% c("Class Day")) %>%
-  mutate(sem_week = week(date)) %>%
-  group_by(sem_week) %>%
-  # group_by(sem_week) %>%
-  summarize(Date = paste(format(date, "%b %e"), sep = ",", collapse = ", ")) %>%
-  mutate(topic = c(
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "")) %>%
-  # bind_rows(project_days) %>%
-  # bind_rows(exam_days) %>%
-  arrange(sem_week) %>%
-  select(Date, Topic = topic)
 ```
 
-# Course Description
+# Course description
 
-Stat 335/531 provides you with an introduction to programming for data and statistical analysis. The course covers basic programming concepts necessary for statistics, good computing practice, and use of built-in functions to complete basic statistical analyses.
+Communicating clearly is crucial for success as a statistician and for all who engage in analyzing data. The Statistics Department decided to institute this two-unit course a few years ago, in order to provide more guidance, practice, and feedback about writing well with statistics and data.
 
-# Learning Objectives
+This course is required for Statistics majors but does not count toward the Statistics minor or for any other degree program.
 
-This course will teach you the foundations of statistical computing principles in the language of `R`.
+**Prerequisites:**
+
+## Course goals
+
++ Critique technical and media reports based on statistical studies and analyses.
++ Select the appropriate descriptive and inferential statistical methods (seen in previous classes), and analyze data using those methods.
++ Synthesize output from statistical software relevant to answering the research questions
++ Write reports that clearly convey statistical ideas and content; effectively incorporate appropriate
+information in tables and graphs within technical reports; and integrate sufficient documentation to
+ensure reproducibility.
++ Evaluate an audience's statistical background (introductory or advanced) and modify the style and
+content of a written report based on the purpose, audience, and context of a given communicative
+act (such as a consultation memo, executive summary, or technical report).
++ Use the following statistical concepts with lexical precision in written reports: parameter vs.
+statistic, variability, p-value, margin-of-error, interaction, scope of conclusions.
++ Learn appropriate methods for visualizing and communicating data, both numerical and categorical.
++ Develop technical skills using spreadsheets, Tableau, and R, to visualize and communicate data.
++ Apply course material to communications you find in the wild, and datasets that interest you.
+At the end of this class, students should be able to:
++ Use computational tools to prepare data for storytelling. This includes:
+    + wrangling datasets using spreadsheets,
+    + making data visualizations using DataWrapper, and
+    + curating the final presentation of products.
++ Critically evaluate data stories in a field of interest. This includes:
+    + describing and critiquing data visualizations and narratives including in a peer review setting,
+    + evaluating structure, design, and writing choices of data stories, and
+    + articulating their own data storytelling style.
++ Communicate insights from data clearly and precisely. This includes:
+    + identifying a compelling story from a dataset,
+    + telling the story effectively using appropriate visual and descriptive approaches,
+    + knowing the audience and communicating at an accessible level that is still faithful to the data,
+and communicating via a variety of mediums including written, visual, and oral products.
+
+# Textbooks
+
+Most textbooks and readings have been reserved through the Cal Poly Library system ([access here]()).
+
+The main textbooks used in this course are:
+
++ Communicating with Data: The Art of Writing for Data Science (Deborah Nolan and Sara Stoudt)
++ Storytelling with Data (Cole Knaflic)
+
+In addition to the textbooks, there will be a number of readings provided from other texts, including:
+
++ Numbers in the Newsroom (Sarah Cohen)
++ The Functional Art (Alberto Cairo)
++ Visualize This (Nathan Yau)
++ How to Lie with Statistics (Darrell Huff)
++ Show me the Numbers (Sephen Few)
++ The Visual Display of Quantitative Information (Edward Tufte)
++ Better Data Visualizations (Jonathan Schwabish)
+
+and more.
+
+# Grading
+
+In this class we will be using a contract grading system. This is designed to give flexibility and freedom to explore while ensuring a level of accountability. Learning to write takes practice. I do not want worries
+about grades to distract us from being creative, taking risks, and ultimately finding our voices.
+
+You are guaranteed a grade of a B for this class if you meet the following conditions:
+
++ Complete readings, readiness quizzes, writing prompts, and class activities on time, following the instructions meeting "satisfactory", and missing no more than 3.
++ Complete each mini-project on time, following the instructions and meeting the conditions of "satisfactory" on the rubric.
++ Complete the final report on time, following the instructions and meet the conditions of "satisfactory" on the rubric.
+
+Your grade will decrease by a third of a step (for example a B to a B-) for each B condition that you do not meet. Missing assignments will be scaled, so that if for example you miss 6 ,
+turn in one mini-project late, or turn in two projects late your grade will decrease by two thirds of a step (for example
+a B to a C+).
+
+You can increase your letter grade by a third of a step (for example a B to B+) for meeting each of the following conditions (further instructions will be provided):
+
++ Complete a weekly submission to the [NYT: What's going on in this graph](https://www.nytimes.com/column/whats-going-on-in-this-graph), missing no more than two weeks throughout the quarter.
++ Select a data set from [TidyTuesday](https://github.com/rfordatascience/tidytuesday) or [Makeover Monday](https://www.makeovermonday.co.uk/data/) and use guiding principles to create an effective dashboard using Tableau or RShiny to highlight key points.
++ [Make your own website](https://earobinson95.github.io/stat365-calpoly/98-A-options/make-your-own-website.html) using Quarto and GitHub to showcase your statistical projects.
++ Complete a final project that goes above and beyond the requirements. Your job is to convince me in an additional one page document why you think your contribution goes the extra mile.
+
+For example, to earn an A in this class you must meet the conditions for a B and complete three of the "boosting" conditions above.
+
+Any deviation from the grading policies outlined above will only be to your benefit.
+
+## Grade Breakdown
+
+1. **Readings, readiness quizzes, and participation**
+
+2. **Writing prompts, and activities**
+
+3. **Mini projects:** There will be four mini-projects throughout the semester. The mini projects include Dear Data, One Number Story, Copy the Masters, and Build Your Portfolio. Mini-project portions will be graded on 4 point scales.
+
+4. **Final project:**
+
+## Late work
 
 
-# Course Resources
-
-**Textbook**
-
-
-
-**Equipment**
-
-
-# Class Schedule & Topic Outline
+# Class Schedule
 
 This schedule is tentative and subject to change.
 
@@ -220,7 +254,6 @@ This schedule is tentative and subject to change.
 #| fig-width: 8
 #| fig-height: 3.5
 #| fig-pos: 'h'
-#| fig-cap: "Note: Tuesday, January 17th will follow a Monday class schedule."
 class_cal
 ```
 
@@ -228,56 +261,9 @@ class_cal
 #| echo: false
 #| eval: true
 #| fig-pos: 'h'
-class_days %>%
+class_schedule |> 
 kableExtra::kable(caption = "Tentative schedule of class topics and important due dates", format = "simple")
 ```
-
-# Course Policies
-
-## Assessment/Grading
-
-Your grade in STAT 331/531 will contain the following components:
-
-Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the quarter. See this `r fontawesome::fa(name = "twitter", fill = "steelblue")` [Twitter thread](https://twitter.com/drseanmullen/status/1604212304622518272?s=46&t=II3oNLTSSrljVPqptoe21g) for advice on *"Playing the lines. Don't be there."*
-
-
-### General Evaluation Criteria
-
-In every assignment, discussion, and written component of this class, you are
-expected to demonstrate that you are intellectually engaging with the material.
-I will evaluate you based on this engagement, which means that technically
-correct but low effort answers which do not demonstrate engagement or
-understanding will receive no credit.
-
-When you answer questions in this class, your goal is to show that you either
-understand the material or are actively engaging with it. If you did not achieve
-this goal, then your answer is incomplete, regardless of whether or not it is
-technically correct. This is not to encourage you to add unnecessary complexity
-to your answer - simple, elegant solutions are always preferable to unwieldly,
-complex solutions that accomplish the same task.
-
-While this is not an English class, grammar and spelling are important, as is
-your ability to communicate technical information in writing; both of these
-criteria will be used in addition to assignment-specific rubrics to evaluate
-your work.
-
-## Assignment Breakdown
-
-
-## Attendance & Participation
-
-I do not take formal attendance in this class. However, it is my expectation
-that you remain in class and on task until you have finished all your activities
-and assignments. Consistent, repeated failure to attend class or actively
-participate in portions of the course will affect the demonstration of your
-engagement with the course.
-
-If you are feeling ill, please **do not come to class**. Instead, email me,
-review the material and work on the participation activity and weekly lab
-assignment; then schedule an appointment with me to meet virtually.
-
-## Late Policy
-
 
 # Course Expectations
 
@@ -309,24 +295,17 @@ I expect of you in my classroom (and also what you should expect of me).
 
 *What you get out of this relationship is that you’ll be better equipped to succeed in this and other college courses, work-related assignments, and life in general. What I get is a great deal of professional and personal satisfaction. Because I do really like you [all] and want the best for you.”*
 
-### Be Creative!
-
 # University Policies
 
 See [academicprograms.calpoly.edu/content/academicpolicies](https://academicprograms.calpoly.edu/content/academicpolicies/index).
 
 ## Learning Environment and Support
 
-I believe everyone is capable of learning statistics and programming with proper support. It is my goal for everyone to feel safe and comfortable in my classroom. If
-there is any way I can make the course more welcoming for you, please do not
-hesitate to ask.
+It is my goal for everyone to feel safe and comfortable in my classroom. If there is any way I can make the course more welcoming for you, please do not hesitate to ask.
 
-In particular, if you have a disability, I will gladly work with you to make
-this class accessible.
+In particular, if you have a disability, I will gladly work with you to make this class accessible.
 
-I encourage you to also contact the Disability Resource Center (Building 124,
-Room 119 or at 805-756-1395), who can help you register for extra accommodations
-such as extended exam time.
+I encourage you to also contact the Disability Resource Center (Building 124, Room 119 or at 805-756-1395), who can help you register for extra accommodations such as extended exam time.
 
 If you are having difficulty affording groceries, lacking a safe & stable place to live, or needing additional essential supports, please see Canvas for a list of Student Support Services at Cal Poly.
 
@@ -334,27 +313,12 @@ If you are having difficulty affording groceries, lacking a safe & stable place 
 
 Simply put, I will not tolerate cheating or plagiarism.
 
-Any incident of dishonesty, copying, exam cheating, or plagiarism will be
+Any incident of dishonesty, copying, or plagiarism will be
 reported to the Office of Student Rights and Responsibilities.
 
-Cheating will earn you a grade of 0 on the assignment and an overall grade
-penalty of at least 10%. In circumstances of flagrant cheating, you may be given
-a grade of F in the course.
+Cheating will earn you an incomplete on the assignment and an overall 1/3 grade drop penalty (e.g. B to a B-). In circumstances of flagrant cheating, you may be given a grade of F in the course.
 
-Paraphrasing or quoting another’s work without citing the source is a form of
-academic misconduct. This includes the `R` code produced by someone else!
-Writing code is like writing a paper, it is obvious if you copied-and-pasted a
-sentence from someone else into your paper because the way each person writes is
-different.
-
-Even inadvertent or unintentional misuse or appropriation of another’s work
-(such as relying heavily on source material that is not expressly acknowledged)
-is considered plagiarism. If you are struggling with writing the `R` code for an
-assignment, please reach out to me. I would prefer that I get to help you rather
-than you spending hours Googling things and get nowhere!
-
-If you have any questions about using and citing sources, you are expected to
-ask for clarification.
+Paraphrasing or quoting another’s work without citing the source is a form of academic misconduct.
 
 For more information about what constitutes cheating and plagiarism, please see
 [academicprograms.calpoly.edu/content/academicpolicies/Cheating](https://academicprograms.calpoly.edu/content/academicpolicies/Cheating).

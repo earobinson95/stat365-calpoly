@@ -578,3 +578,7 @@ To ensure academic integrity, please be sure to cite all sources appropriately
 and only use Chat GPT in an ethical manner. For more information on academic
 misconduct and what constitutes cheating and plagiarism, please see
 [academicprograms.calpoly.edu/content/academicpolicies/Cheating](https://academicprograms.calpoly.edu/content/academicpolicies/Cheating).
+
+# Acknowledgments
+
+I would like to acknowledge the contributions of various individuals whose work has been incorporated into this course. Special thanks to Beth Chance, Allan Rossman, Amelia McNamara, and Sara Stoudt for their valuable materials and inspiration.

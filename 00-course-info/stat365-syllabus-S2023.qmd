@@ -59,7 +59,6 @@ fontsize: 11pt
 
 ```{r}
 #| include: false
-#| 
 library(tidyverse)
 library(lubridate)
 
@@ -80,7 +79,7 @@ not_here_dates <- c(
   # seq(ymd(20221017), ymd(20221018), by = 1)
   )
 
-# exam_dates <- c()
+exam_dates <- c()
 # project_dates <- c(ymd(20221104), ymd(20221205), ymd(20221209))
 finals_week <- seq(ymd(20230611), ymd(20230617), by = 1)
 
@@ -261,8 +260,8 @@ class_cal
 #| echo: false
 #| eval: true
 #| fig-pos: 'h'
-class_schedule |> 
-kableExtra::kable(caption = "Tentative schedule of class topics and important due dates", format = "simple")
+# class_schedule |> 
+# kableExtra::kable(caption = "Tentative schedule of class topics and important due dates", format = "simple")
 ```
 
 # Course Expectations

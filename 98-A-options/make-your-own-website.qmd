@@ -5,7 +5,6 @@ format:
     self-contained: true
 editor: source
 ---
-
 <!-- output-dir: docs -->
 
 ## Prompt:

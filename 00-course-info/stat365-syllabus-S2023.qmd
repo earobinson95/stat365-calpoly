@@ -307,7 +307,7 @@ our voices.
 You are guaranteed a grade of a B for this class if you meet the following
 conditions:
 
-- Submit assignments (readings, readiness quizzes, writing prompts, class activities, peer reviews, and final report check-points) on time and meet the "satisfactory" criteria with a maximum of 3 missed assignments.
+- Submit assignments (readings, writing prompts, class activities, peer reviews, and final report check-points) on time and meet the "satisfactory" criteria with a maximum of 3 missed assignments.
 - Complete all mini-projects on time and meet the "satisfactory" conditions on the rubrics.
 - Submit the final technical report on time and meet the "satisfactory" conditions on the rubric.
 
@@ -325,7 +325,7 @@ be provided):
 
 -   Complete a weekly submission to the [NYT: What's going on in this
     graph](https://www.nytimes.com/column/whats-going-on-in-this-graph), missing
-    no more than two weeks throughout the quarter.
+    no more than three weeks throughout the quarter.
 -   Listen to the [99% Invisible podcast on Florence Nightingale: Data Viz Pioneer](https://99percentinvisible.org/episode/florence-nightingale-data-viz-pioneer/). Find the data set to recreate the rose diagram, compare with a stacked bar plot, discuss the story, and argue why Florence needed the rose diagram.
 -   Select a data set from
     [TidyTuesday](https://github.com/rfordatascience/tidytuesday) or [Makeover
@@ -340,6 +340,7 @@ be provided):
 -   Complete a technical report project that goes above and beyond the
     requirements. Your job is to convince me in an additional one page document
     why you think your contribution goes the extra mile.
+- I encourage you to suggest your own "boosting" condition via the suggestion "box" form on Canvas.
 
 For example, to earn an A in this class you must meet the conditions for a B and
 complete three of the "boosting" conditions above to "satisfactory" quality.
@@ -349,13 +350,11 @@ benefit.
 
 ## Grade Breakdown
 
-1.  **Readings, readiness quizzes, and participation:**
+1.  **Readings and participation:**
 
 You will be expected to complete assigned readings before coming to class and
-participate in class discussions and activities. Additionally, you will be
-required to take readiness quizzes to assess your understanding of the material.
-Your peer review participation and engagement in class will be evaluated
-throughout the quarter.
+participate in class discussions and activities. Your peer review participation and engagement in class will be evaluated throughout the quarter.
+<!-- Additionally, you will be required to take readiness quizzes to assess your understanding of the material. -->
 
 2.  **Writing prompts and activities:**
 
@@ -407,7 +406,7 @@ prevent you from submitting your assignments on time. To accommodate for this,
 you will be given four 24-hour late submission "tokens" to use throughout the
 quarter. To use a token, you must (1) send me an email and (2) fill out the deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7).
 
-These tokens cannot  be used on your final technical report submission.
+These tokens **cannot**  be used on your final technical report submission.
 
 Your remaining tokens will be tracked in a Canvas assignment as four points,
 with each token worth one point.

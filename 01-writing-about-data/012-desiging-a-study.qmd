@@ -1,0 +1,28 @@
+---
+title: "Designing a Study"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Wednesday, April 5th
+
+Today we will...
+
++ Introduce final technical report project
++ Designing a study
++ Writing a protocol
++ Importance of reproducibility
+
+## To do
+
++ Initial Proposal
++ Peer Review
++ 
+

@@ -1,22 +1,30 @@
 ---
-title: "Final Project"
+title: "Technical Report Project"
 subtitle: "Stat 365: Statistical Communciation"
 format: 
   html:
     toc: true
     number-sections: true
+    number-offset: 1
     self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
 editor: source
 ---
 
 # Important Dates {-}
+
+*Due dates may be subject to change, but only to your benefit*
 
 +-----------------------------------------+----------------------------------+
 | Component                               | Due Date                         |
 +=========================================+==================================+
 | Initial Proposal                        |                                  |
 +-----------------------------------------+----------------------------------+
-| Peer Review of Initial Proposal         |                                  |
+| Formal Protocol                         |                                  |
++-----------------------------------------+----------------------------------+
+| Peer Review of Formal Protocol          |                                  |
 +-----------------------------------------+----------------------------------+
 | Data Collection                         |                                  |
 +-----------------------------------------+----------------------------------+
@@ -29,9 +37,31 @@ editor: source
 | Final Submission                        |                                  |
 +-----------------------------------------+----------------------------------+
 
-## Initial Proposal {.unnumbered}
+::: callout-note
+You must submit all files as a `.pdf` extension.
+:::
 
-Your first assignment is to propose a research project for which you can gather data, at home, in 1-2 days.
+# Reproducibe Workflow {-}
+
+As a part of this project, you will demonstrate reproducible workflows and research. Following the guidelines in [Third Time’s a Charm: A Tripartite Approach for Teaching Project Organization to Students](https://amstat.tandfonline.com/doi/epdf/10.1080/26939169.2022.2118644?needAccess=true&role=button), your project structure should include
+
++ `README`
+
+and the following folders
+
++ `data`
+
++ `documents`
+
++ `results`
+
++ `scripts`
+
+> In your final submission, you will turn in a .zip file of your project folder in order for me to evaluate your organization and workflow.
+
+# Study Proposal {.unnumbered}
+
+Your first assignment is to propose a research project for which you can easily gather data, in 1-2 days.
 
 The project should be:
 
@@ -41,25 +71,64 @@ The project should be:
 
 You should plan to collect about 50 observations (but this will depend). Other ideas (e.g., categorical response variable) are possible as well.
 
-**Deadlines**
+Review [Cal Poly's Guidelines for Protocol Development](https://research.calpoly.edu/HS-guidelines#Guidelines_for_Protocol_Development) (just the first section?) and this [article](https://www.aje.com/arc/how-to-write-an-easily-reproducible-protocol/).
 
--   You will submit a short proposal to me for initial feedback by xxxx, xxxx.
--   You will submit a formal study protocol, as if to a Human Subjects Review board. This will be peer-reviewed by a fellow student who will conduct a pilot study, gathering about 5 observations.
+-   Some parts (e.g., Human subjects) may be less relevant to you and that's fine! I would focus less on criteria for approval, and more on providing enough details that someone else could carry out the study you have designed (4(a), (c), (d)).
 
-This feedback will be shared with you by noon, Monday. After that, you will carry out the study and then submit a Data Collection/Methods section (Week 2).
+::: callout
+### Deliverables {-}
 
--   Submit a description here by Wednesday (4/8, noon). If you submit sooner, we can discuss before your final submission.
--   Review [Cal Poly's Guidelines for Protocol Development](https://research.calpoly.edu/HS-guidelines#Guidelines_for_Protocol_Development) (just the first section?) and this [article](https://www.aje.com/arc/how-to-write-an-easily-reproducible-protocol/).
-    -   Some parts (e.g., Human subjects) may be less relevant to you and that's fine! I would focus less on criteria for approval, and more on providing enough details that someone else could carry out the study you have designed (4(a), (c), (d)).
--   Submit a PDF file here by XXX (xxxx, xx)
--   Peer review another protocol by XXX (xxx, xx)
-    -   You should be able to access the protocol by xx XXXX. When you open the assignment after XX on XXXX, you should see a link with a student name under "Assigned Peer Reviews" on the right-hand side. Click "Show Rubric," fill out the rubric, and save (PLEASE ALSO ADD COMMENTS). Please email me right away if you have any problems with this process.
+-   You will submit a **short initial proposal** to me for initial feedback by xxxx, xxxx.
+-   You will submit a **formal study protocol**, as if to a Human Subjects Review board by xxx,xxx. This will be peer-reviewed by a fellow student who will conduct a pilot study, gathering about 5 observations.
+:::
 
-# Final Report {.unnumbered}
+### Peer review formal study protocol {-}
+
+You should be able to access the protocol by xx XXXX. When you open the assignment after XX on XXXX, you should see a link with a student name under "Assigned Peer Reviews" on the right-hand side. Click "Show Rubric," fill out the rubric, and save (PLEASE ALSO ADD COMMENTS). Please email me right away if you have any problems with this process.
+
+# Data Collection {-}
+
+Once you receive your peer reviewed feedback, you should conduct your study and collect data from the specified sample size in your proposal.
+
+Make sure to store this data in a `.csv` or `.xlsx` file following the tidy data format (or be prepared to transform the data). Following reproducibility guidelines, this file should be saved within a data folder as your original file.
+
+# Final Technical Report {.unnumbered}
+
+Throughout the quarter, you will be writing a final technical report for your research project. The style of this should follow a typical scientific journal article. You will be provided with guidelines and resources to support your work, and you will receive feedback and guidance throughout the writing process.
+
+I have outlined the sections to be included and their components below.
+
+## Abstract / Executive Summary
+
+::: callout-warning
+While the abstract is the first thing a reader sees, this will be the last piece we write.
+:::
+
+An Abstract/Executive Summary is often the last part written, and should be less than one page, 150-250 words.
+
+Writing Guidelines:
+
+-   A stand-alone, non-technical summary of the project
+-   Should be compelling and accurate, clear and concise
+-   Should discuss
+    -   Objectives/Purpose/Background/Why important
+    -   Data and methods (Who/What/When/Where/How, n, methods)
+    -   Results (key findings)
+    -   Conclusions/Recommendations/Relate to objectives
+-   Should not contain any new information that is not discussed in the main report
 
 ## Introduction
 
+-   Provide Motivation, Context, Background (big picture) for the project
+-   Provide an overview of the organization of the document (tell the reader what you are going to tell them)
+
 ## Data and Methods
+
+-   When, Where, How, Who, What
+        -   Final analytic sample (what/how was actually analyzed)
+        -   Any constructed variables (any manipulations to the data before analysis)
+    -   Put supporting or background data not critical to the flow of the main report in appendices. Reference data from other sources so readers can locate it.
+    -   Feel free to use a table or a diagram in this section to help explain your design!
 
 Submit a first draft of your data description section, including variable descriptions, based on your data collection
 
@@ -81,7 +150,7 @@ Remember to focus on
 
 Also remember to be thorough yet concise!
 
-### Tables
+### Table of Summary Statistics {-}
 
 The next step of your technical report will be making a table. Tables are generally less effective and information that graphs and prose, but they can still play a role. In particular, I want you to make a table of your descriptive statistics. With a quantitative response, you will compare means, means, and five number summaries. With a categorical response variable, you will compare proportions, being cautious to interpret proportions and percentages appropriately, especially differences. In this module, I try to summarize some advice on creating tables taken from Storytelling with Data (p. 40-43) and (especially) from the Chicago Guide to Writing About Numbers (Ch. 6). Another good reference is Show Me the Numbers by Stephen Few.
 
@@ -100,6 +169,18 @@ I tend to prefer separating the results and discussion sections, but it is possi
 :::
 
 ## Results
+
+
+-   Provide an analysis drawn from the data presented. (remember to mention which package(s) using)
+        -   Be sure all methods are clear but you don't need to include every data
+        -   Results should be presented in high-quality graphs and tables
+    -   Interpretation of findings
+        -   Consider using GEE, ADEPT strategies for summarizing your results both technically and in a manner that a non-statistician could understand.
+    -   Critique of statistical methods and conclusions: strengths and deficiencies
+        -   Discuss the validity of the analyses, appropriateness to the research question
+        -   Strengths (don't restate but interpret) of data collection and analysis methods
+            -   How contributes to exisiting literature, larger context
+    -   Limitations (e.g., potential biases) and how impact interpretation of your findings
 
 -   Remember to "introduce" your output, don't start with the output first thing but give the reader a little bit of context
 -   Graph and Summary statistics of your response variable
@@ -121,7 +202,7 @@ I tend to prefer separating the results and discussion sections, but it is possi
 -   Summarize what you learn about statistical significance and estimation of the size of the "effect"
     -   This is mostly "just the facts," in the next section you will do more interpretation.
 
-## Discussion section
+## Discussion
 
 -   Interpret your findings and summarize what you learned from the analysis about your overall research question.
     -   Did the data behave as you expected?
@@ -137,76 +218,54 @@ I tend to prefer separating the results and discussion sections, but it is possi
     -   Any other potential sources of error or biases?
 -   Directions for future research
 
+## Conclusion
+
+-   Re-emphasize main points (tell them what you told them)
+-   Scope of conclusions WITH JUSTIFICATION (can we generalize? why or why not? to what population? can we conclude causation? why or why not?)
+-   "Practical significance" (is it meaningful, how are you deciding?)
+-   Return to big picture (answer the research question), can you make any recommendations?
+-   Directions for future research
+
+## References
+
+## Appendix
+
+-   Original research protocol
+-   Any additional documentation
+-   Also upload a copy of your raw data file (let me know if you need me to allow additional file types)
+
 # Final Submission {.unnumbered}
 
 Your submission should include
 
--   A version of your report showing track changes in individual pieces (1 pt)
--   Brief discussion of changes made to original pieces of report along the way (4 pts)
--   Final report (95 pts, see draft rubric below)
+1.  A version of your report showing track changes in individual pieces
+2.   A brief discussion of changes made to original pieces of report along the way
+3.   Final report (see draft rubric below)
+4.   The .zip folder of your project folder demonstrating your reproducible workflow
 
-Formatting: Your final report should use
+**Formatting:** Your final report should use
 
 -   12 point font
--   1 in margins
+-   1 inch margins
 -   Reasonable font choice
--   Single spaced if word file; double spaced if pdf
+-   Double spaced pdf file
+-   If you have references, use APA citations
 
-Contents: Your final report should have these sections
+**Contents:** Your final report should have the sections and related contents as described above.
 
--   An Abstract/Executive Summary (often the last part written, should be less than one page, 150-250 words)
-    -   A stand-alone, non-technical summary of the project
-    -   Should be compelling and accurate, clear and concise
-    -   Should discuss
-        -   Objectives/Purpose/Background/Why important
-        -   Data and methods (Who/What/When/Where/How, n, methods)
-        -   Results (key findings)
-        -   Conclusions/Recommendations/Relate to objectives
-    -   Should not contain any new information that is not discussed in the main report
--   Introduction
-    -   Provide Motivation, Context, Background (big picture) for the project
-    -   Provide an overview of the organization of the document (tell them what you are going to tell them)
--   Data and Methods (see earlier writing assignment)
-    -   When, Where, How, Who, What
-        -   Final analytic sample (what/how was actually analyzed)
-        -   Any constructed variables (any manipulations to the data before analysis)
-    -   Put supporting or background data not critical to the flow of the main report in appendices. Reference data from other sources so readers can locate it.
-    -   Feel free to use a table or a diagram in this section to help explain your design!
--   Results/Discussion (see earlier writing assignment)
-    -   Provide an analysis drawn from the data presented. (remember to mention which package(s) using)
-        -   Be sure all methods are clear but you don't need to include every data
-        -   Results should be presented in high-quality graphs and tables
-    -   Interpretation of findings
-        -   Consider using GEE, ADEPT strategies for summarizing your results both technically and in a manner that a non-statistician could understand.
-    -   Critique of statistical methods and conclusions: strengths and deficiencies
-        -   Discuss the validity of the analyses, appropriateness to the research question
-        -   Strengths (don't restate but interpret) of data collection and analysis methods
-            -   How contributes to exisiting literature, larger context
-    -   Limitations (e.g., potential biases) and how impact interpretation of your findings
--   Conclusion
-    -   Re-emphasize main points (tell them what you told them)
-    -   Scope of conclusions WITH JUSTIFICATION (can we generalize? why or why not? to what population? can we conclude causation? why or why not?)
-    -   "Practical significance" (is it meaningful, how are you deciding?)
-    -   Return to big picture (answer the research question), can you make any recommendations?
-    -   Directions for future research
--   Appendix
-    -   Original research protocol
-    -   Any additional documentation
-    -   Also upload a copy of your raw data file (let me know if you need me to allow additional file types)
-
-*You should also be submitting your discussion of the changes you made and any annotated previous versions as separate files.*
+**Revisions:** You should also be submitting your discussion of the changes you made and any annotated previous versions as separate files.
 
 # Editing Checklist {.unnumbered}
 
 -   Title page lists the title, authors, date.
--   Present, active voice; professional tone; no personal opinions
+-   Present, active voice ("by Zombies" test); professional tone; no personal opinions
 -   Concise (vs. use of unnecessary words)
 -   Gender-neutral wording
 -   Acronyms and Abbreviations defined the first time used
 -   Subject/verb agreement
 -   Correct spelling (don't rely only on spell checker)
 -   Correct use of punctuation and grammar
--   Figures and Tables numbered and in correct location
+-   Figures and Tables numbered and in correct location (include captions, and figure alt. text).
 -   Supporting documentation in appendices
 -   Figures, tables, and appendices referred to accurately.
 -   Bulleted and numbered lists have parallel construction and consistent punctuation.

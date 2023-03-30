@@ -57,7 +57,7 @@ editor:
 -   Section 01: 1:10pm - 2:00pm
 -   Section 02: 2:10pm - 3:00pm
 
-**Class Location:** 33-457 (Math & Science)
+**Class Location:** 33-457 (Fisher)
 
 **Office Hours:** Thursdays at 2:30pm - 4:30pm, in-person (25-103)
 
@@ -154,7 +154,7 @@ communication skills in statistics and data analysis. Through guided practice
 and feedback, students will learn to effectively communicate statistical ideas
 and results to different audiences using appropriate graphs and tables. The
 course will cover strategies for discerning relevant and necessary information
-and for selecting appropriate methods to analyze data, building on students'
+and for selecting and describing appropriate methods to analyze data, building on students'
 previous statistics coursework.
 
 **Prerequisites:** Completion of GE Area A2, completion of GE Area A3, and a
@@ -177,7 +177,7 @@ By the end of this course, you will:
 -   Demonstrate your understanding of statistical concepts such as parameters
     versus statistics, variability, p-values, margin-of-error, interaction, and
     scope of conclusions.
--   Develop technical proficiency in writing and producing technical reports
+-   Develop proficiency in writing and producing technical reports
     with adequate documentation to ensure reproducibility.
 -   Learn how to use spreadsheets, Tableau, and R for data visualization and
     communication.
@@ -290,7 +290,7 @@ other texts, including:
 -   The Functional Art (Alberto Cairo)
 -   Visualize This (Nathan Yau)
 -   How to Lie with Statistics (Darrell Huff)
--   Show me the Numbers (Sephen Few)
+-   Show Me the Numbers (Stephen Few)
 -   The Visual Display of Quantitative Information (Edward Tufte)
 -   Better Data Visualizations (Jonathan Schwabish)
 
@@ -355,7 +355,7 @@ You will be expected to complete assigned readings before coming to class and
 participate in class discussions and activities. Additionally, you will be
 required to take readiness quizzes to assess your understanding of the material.
 Your peer review participation and engagement in class will be evaluated
-throughout the semester.
+throughout the quarter.
 
 2.  **Writing prompts and activities:**
 
@@ -367,7 +367,7 @@ communicating complex statistical concepts and analyses clearly and effectively.
 
 3.  **Mini-projects:**
 
-There will be three mini-projects throughout the semester, each designed to help
+There will be three mini-projects throughout the quarter, each designed to help
 you develop and apply your statistical communication skills. The mini-projects
 will include:
 
@@ -392,7 +392,7 @@ and ensure that you meet the required standards.
 
 The technical report project is the culminating assignment of the course, where
 you will have the opportunity to apply all the skills and knowledge you have
-acquired throughout the semester. You will be required to choose a research
+acquired throughout the quarter. This will be completed individually. You will be required to choose a research
 question, collect and analyze data using appropriate statistical methods, and
 produce a technical report that effectively communicates your findings. You will
 be provided with guidelines and resources to support your work, and you will
@@ -405,8 +405,7 @@ standard statistical practices.
 I understand that unexpected events may arise during the quarter that may
 prevent you from submitting your assignments on time. To accommodate for this,
 you will be given four 24-hour late submission "tokens" to use throughout the
-quarter. To use a token, you must send me an email and fill out the deadline
-extension form [here](https://forms.gle/3uVhdWCN4DN373XE7).
+quarter. To use a token, you must (1) send me an email and (2) fill out the deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7).
 
 These tokens cannot  be used on your final technical report submission.
 
@@ -431,7 +430,7 @@ This schedule is **very** tentative and subject to change.
 | Week           | Topics                 | Readings                         |
 +================+========================+==================================+
 | 1: 4/3, 4/5    | Writing about Data     | CwD (ch. 1, ch. 10.3), How to    |
-|                |                        | lie with Stats (ch. 10)          |
+|                |                        | Lie with Stats (ch. 10)          |
 |                | Designing a Study      |                                  |
 +----------------+------------------------+----------------------------------+
 | 2: 4/10, 4/12  | Data Journalism        | CwD (ch. 2, 7), Numbers in the   |

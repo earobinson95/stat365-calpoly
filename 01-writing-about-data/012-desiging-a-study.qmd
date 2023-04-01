@@ -20,6 +20,11 @@ Today we will...
 + Writing a protocol
 + Importance of reproducibility
 
+## [Final technical report project]()
+
++ Cumulative assignment for the quarter
++ Completed individually
+
 ## To do
 
 + Initial Proposal

@@ -1,0 +1,30 @@
+---
+title: "Florence Nightingale: Data Viz Pioneer"
+subtitle: "Grade Booster Activity"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+---
+
+## Prompt
+
+![](https://99percentinvisible.org/app/uploads/2021/02/Diagram_of_the_causes_of_mortality_in_the_army_Wellcome_L0041105-728x474.jpg)
+
+Florence Nightingale is a well known data visualization pioneer. She is famously known for her rose diagram (above).
+
+## Instructions
+
+In order to meet the conditions of the contract for this activity, you must:
+
++ Listen to the 99% Invisible podcast on Florence Nightingale: <https://99percentinvisible.org/episode/florence-nightingale-data-viz-pioneer/>
++ Find the data set online (include link to the data set).
++ Recreate the rose diagram using your software of choice to the best of your abilities.
++ Create a stacked bar plot and compare to the rose diagram.
++ Write: Discuss the story and argue why Florence needed the rose diagram.
+
+> You will submit a pdf to Canvas which includes a link to the data you used, the two charts you created, and your written discussion and argument.

@@ -23,6 +23,8 @@ For more information about simple R Markdown websites, please read the documenta
 - [Quarto](https://quarto.org/docs/websites/)^[I recommend using Quarto.]    
 For larger-scale and more sophisticated websites (such as blogs), you may want to use **Quarto** instead: https://quarto.org/docs/websites/.
 
+- Alternatively, you could look into the R package [portfoliodown](https://medium.com/nerd-for-tech/cabuilding-a-data-science-portfolio-website-in-15-minutes-84f93501bad8) ([see example](https://mattdancho.netlify.app/)) if you want something that appears to be more buisness/industry focused.^[Disclaimer I have not used this package as I created my personal website a few years ago using Blogdown -- creation of Quarto and integration with GitHub have changed a lot since then!]
+
 ## Instructions:
 
 1. Create a new GitHub repository named `<your-username>.github.io` (replacing "<your-username>" with your GitHub username). Initialize this repo with a readme.

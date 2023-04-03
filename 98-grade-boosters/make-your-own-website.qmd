@@ -1,28 +1,26 @@
 ---
 title: "Make your own website"
+subtitle: "Grade Booster Activity"
 format: 
   html:
     toc: true
-    number-sections: true
-    number-offset: 1
     self-contained: true
     theme:
       light: flatly
       dark: darkly
 editor: source
 ---
-<!-- output-dir: docs -->
 
 ## Prompt:
 
 GitHub is an incredibly useful tool for project management and collaboration. It also has several useful features for professional promotion: you can host your own site on github using [GitHub pages](https://pages.github.com/), describe yourself using a GitHub developer profile, and even use [resume.github.io](http://resume.github.io/) to generate a resume summary of your activity on GitHub (you must opt-in by [starring the project page](https://github.com/resume/resume.github.com)). 
 
-posit and the associated package infrastructure provide multiple ways to generate websites using Quarto (or Rmarkdown). You can complete this assignment using one of two options: 
+posit and the associated package infrastructure provide multiple ways to generate websites using Quarto (or Rmarkdown). You can satisify the conditions for this grade booster activity using one of two options: 
 
 - Simple RMarkdown websites    
-For more information about simple R Markdown websites, please read the documentation at https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html. Simple R Markdown sites are _not_ based on **blogdown**. They are probably good for websites with only a few Rmd documents.
+For more information about simple R Markdown websites, please read the documentation at <https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html>. Simple R Markdown sites are _not_ based on **blogdown**. They are probably good for websites with only a few Rmd documents.
 
-- [Quarto](https://quarto.org/docs/websites/)    
+- [Quarto](https://quarto.org/docs/websites/)^[I recommend using Quarto.]    
 For larger-scale and more sophisticated websites (such as blogs), you may want to use **Quarto** instead: https://quarto.org/docs/websites/.
 
 ## Instructions:
@@ -31,10 +29,9 @@ For larger-scale and more sophisticated websites (such as blogs), you may want t
 
 2. Set up your website using either the Simple Markdown Site or the Quarto instructions below. If you would like to use this repository to host a blog, you may find Quarto to be a more convenient option, however, it is (just a bit) more complicated than the simple Rmarkdown site. 
 
-3. Write about you experience -- and link to your new website! 
+3. Write about you experience -- and link to your new website!^[You will submit this to Canvas.]
 
-To get full marks for this blog post, you should modify your site beyond the default template files, adding at least some content that is unique to you - packages you find interesting, sites you enjoy, projects you have worked on, a page with your CV, etc.
-
+To satisfy, you should modify your site beyond the default template files, adding at least some content that is unique to you - packages you find interesting, sites you enjoy, projects you have worked on, a page with your resume, etc.
 
 ### Simple RMarkdown Site
 
@@ -82,10 +79,6 @@ To get full marks for this blog post, you should modify your site beyond the def
 4. Follow the Quick Start instructions on https://quarto.org/docs/websites/ or https://quarto.org/docs/websites/website-blog.html to create your website.
 
 5. For publishing your website, follow the steps described under [Github Pages](https://quarto.org/docs/publishing/github-pages.html). You can try to build the site automatically, but fair warning: I went back to build to docs and render the site myself. 
+  + VERY IMPORTANT: add `output-dir: docs` to your YAML file.
 
 6. VERY IMPORTANT. Open the "username.github.io" project. Add a text file named ".nojekyll" (the file should be empty). This tells GitHub not to build the pages with Jekyll (another rendering engine) and instead render pages built with Quarto.
-
-
-## Submission
-
-Describe your experience the `README.Rmd` of the blog-8 repo. Don't forget to link to your website! Push the blog post to your blog-8 repo. Make sure that all of the checks are passing.

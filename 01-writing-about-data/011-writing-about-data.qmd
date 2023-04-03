@@ -85,7 +85,7 @@ I’m doing the best I can when I talk about issues of race, class, gender, and 
 
 <br>
 
-### Make a list of all the places you left “data exhaust” today/this week {style="text-align: center;"}
+### [Make a list of all the places you left “data exhaust” today/this week](https://www.mentimeter.com/app/presentation/almgfqk1j8au8j1yr9bk1doa6be8eeh7/7scywvud8ffw/edit) {style="text-align: center;"}
 
 ## Main communication types in this class
 
@@ -150,13 +150,21 @@ Matt Daniels, The Pudding July 2022
 
 # [Syllabus](https://earobinson95.github.io/stat365-calpoly/00-course-info/stat365-syllabus-S2023.html)
 
-# [How would you describe your experience with writing?](https://www.mentimeter.com/app/presentation/almgfqk1j8au8j1yr9bk1doa6be8eeh7/n6ovkmsz5mr1/edit)
+## `r fontawesome::fa("brain")` Brainstorm!
+
+<br>
+
+### [How would you describe your experience with writing?](https://www.mentimeter.com/app/presentation/almgfqk1j8au8j1yr9bk1doa6be8eeh7/n6ovkmsz5mr1/edit){style="text-align: center;"}
 
 ## Tips for success
 
 <br>
 
 `r fontawesome::fa("book-open")` Voice Dream Reader App
+
+<br>
+
+`r fontawesome::fa("spell-check")` [Grammarly](https://www.grammarly.com/)
 
 <br>
 
@@ -178,9 +186,11 @@ Matt Daniels, The Pudding July 2022
   
 `r fontawesome::fa("book")` **Read**
 
+  + Data is, or Data are?
+  + FiveThirtyEight: Data is vs Data are
+  + How to Lie with Statistics ch. 1  
   + CwD ch 1. Reading science articles
   + CwD ch. 10.3 Editing with others
-  + How to Lie with Statistics ch. 1
   
 `r fontawesome::fa("eye")` **Review** final technical report project outline & instructions (start brainstorming!)
 

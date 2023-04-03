@@ -305,8 +305,7 @@ and more.
 In this class we will be using a contract grading system. This is designed to
 give flexibility and freedom to explore while ensuring a level of
 accountability. Learning to write takes practice. I do not want worries about
-grades to distract us from being creative, taking risks, and ultimately finding
-our voices.
+grades to distract us from being creative, taking risks, and ultimately finding our voices.
 
 You are guaranteed a grade of a B for this class if you meet the following
 conditions:
@@ -345,7 +344,7 @@ be provided):
     to create an effective dashboard using Tableau or RShiny to highlight key
     points.
 -   Participate in [The Stats+Stories 300th Episode Data Visualization
-    Contest](https://community.amstat.org/discussion/the-statsstories-300th-episode-data-visualization-contest#bmc1655f4c-049c-46e9-9553-d30b30d151e4).
+    Contest](https://statsandstories.net/contest).
 -   [Make your own
     website](https://earobinson95.github.io/stat365-calpoly/98-A-options/make-your-own-website.html)
     using Quarto and GitHub to showcase your statistical projects.

@@ -4,8 +4,6 @@ subtitle: "Grade Booster Activity"
 format: 
   html:
     toc: true
-    number-sections: true
-    number-offset: 1
     self-contained: true
     theme:
       light: flatly
@@ -13,11 +11,15 @@ format:
 editor: source
 ---
 
+## Prompt
+
 Together, the [American Statistical Association](https://www.amstat.org/whats-going-on-in-this-graph) and the [New York Times](https://www.nytimes.com/column/whats-going-on-in-this-graph), put out a weekly graph related to current times.
 
 Each Thursday afternoon, the New York Times Learning Network publishes a new What’s Going On in This Graph?
 
 The following Wednesday, Statistics teachers provide live moderation of student comments from 6 a.m. to 11 a.m. PT. ^[I encourage you to contribute to the discussion once in a while, but you are not required to join the live moderation.]
+
+## Instructions
 
 In order to meet the conditions of the contract for this activity, you must:
 

@@ -2,7 +2,13 @@
 title: "Make your own website"
 format: 
   html:
+    toc: true
+    number-sections: true
+    number-offset: 1
     self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
 editor: source
 ---
 <!-- output-dir: docs -->

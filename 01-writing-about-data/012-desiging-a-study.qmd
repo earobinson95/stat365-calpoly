@@ -243,6 +243,12 @@ Reproducibility in scientific research is important in order for other researche
 
 ::: columns
 ::: column
+
+
+`r fontawesome::fa("calendar")` **Mandela Age Survey**
+
+- Due Thursday, 4/6 at 12pm
+
 `r fontawesome::fa("brain")` **Initial Proposal**
 
 -   Due Monday, 4/10 at 12pm
@@ -261,7 +267,6 @@ Reproducibility in scientific research is important in order for other researche
 `r fontawesome::fa("book-open")` **Read**
 
 -   CwD (ch 2)
--   Numbers in the Newsroom (ch 1)
-    -   *ch 2 is also a good read if you have access*
+-   Numbers in the Newsroom (ch 1, *optional: ch 2*)
 :::
 :::

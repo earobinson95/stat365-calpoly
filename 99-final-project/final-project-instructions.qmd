@@ -77,10 +77,28 @@ For your technical report assignment, you will be required to propose a research
 
 You should aim to collect approximately 50 observations.
 
-To ensure you have a well-developed proposal, review [Cal Poly's Guidelines for Protocol Development](https://research.calpoly.edu/HS-guidelines#Guidelines_for_Protocol_Development) and this [article](https://www.aje.com/arc/how-to-write-an-easily-reproducible-protocol/) on how to write an easily reproducible protocol.
+To ensure you have a well-developed proposal, review [Cal Poly's Guidelines for Protocol Development](https://research.calpoly.edu/HS-guidelines#_Guidelines_for_Protocol) and this [article](https://www.aje.com/arc/how-to-write-an-easily-reproducible-protocol/) on how to write an easily reproducible protocol.
 
 ::: callout-note
 Some parts (e.g., Human subjects) may be less relevant to you and that's fine! I would focus less on criteria for approval, and more on providing enough details that someone else could carry out the study you have designed (4(a), (c), (d)).
+:::
+
+::: {.callout-tip collapse=true}
+## Considerations for the research protocol
++ Put the methodology in context
+  + Research question and objectives
++ Research Design
+  + The choice of the design should be explained in relation to the
+study objectives (treatments, response, observations, etc.)
++ Materials and tools
+  + If you will be using subjects/participants, the following questions should be answered:
+    – What are the criteria for inclusion or selection?
+    – What are the criteria for exclusion? 
++ A chronology of steps
+  + Think like a detailed recipe.
+  + Provide information and justification about sample
+size.
++ Notes, recipes, tips, and tricks
 :::
 
 **Deliverables**:
@@ -97,6 +115,34 @@ Any written document you submit to me should be well written (grammar, spelling,
 ### Peer review formal study protocol {.unnumbered}
 
 For the technical report project, the peer review process will begin on **Friday, 4/14 at 8am**. You will be able to access the assigned protocol by clicking on a link under *"Assigned Peer Reviews"* on the right-hand side of the assignment. You will then fill out a rubric (*"Show Rubric"*) and add comments to provide constructive feedback to your peer.
+
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
+| Criteria                                                                                              | Evidence | Weak Evidence | No Evidence |
++=======================================================================================================+==========+===============+=============+
+| **Details**                                                                                           |          |               |             |
+|                                                                                                       |          |               |             |
+| How well did the protocol answer questions you had about collecting the data?                         |          |               |             |
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
+| **Instructions**                                                                                      |          |               |             |
+|                                                                                                       |          |               |             |
+| Were the instructions concise and easy to follow?                                                     |          |               |             |
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
+| **Context**                                                                                           |          |               |             |
+|                                                                                                       |          |               |             |
+| Did the protocol start with a description of the "context"/why the data were being collected?         |          |               |             |
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
+| **Definitions**                                                                                       |          |               |             |
+|                                                                                                       |          |               |             |
+| Were all necessary definitions and descriptions (e.g., of equipment) clearly provided?                |          |               |             |
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
+| **Step-by-step**                                                                                      |          |               |             |
+|                                                                                                       |          |               |             |
+| Were step-by-step instructions provided?                                                              |          |               |             |
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
+| **Other advice**                                                                                      |          |               |             |
+|                                                                                                       |          |               |             |
+| Please describe any other questions or advice you have for the project before data collection begins! |          |               |             |
++-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
 
 Please email me right away if you have any problems with this process.
 

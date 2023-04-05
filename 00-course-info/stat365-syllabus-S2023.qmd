@@ -446,13 +446,13 @@ This schedule is **very** tentative and subject to change.
 |                  |                       | Lie with Stats (ch. 10)          |
 |                  | Designing a Study     |                                  |
 +------------------+-----------------------+----------------------------------+
-| 2: 4/10, 4/12    | Data Journalism       | CwD (ch. 2, 7), Numbers in the   |
+| 2: 4/10, 4/12    | Data Journalism       | CwD (ch. 2), Numbers in the      |
 |                  |                       | Newsroom (ch. 1, 2)              |
 |                  | Spreadsheets,         |                                  |
 |                  | summaries, and pivot  |                                  |
 |                  | tables                |                                  |
 +------------------+-----------------------+----------------------------------+
-| 3: 4/17, 4/19    | Descriptive           | CwD (3.1 - 3.2)                  |
+| 3: 4/17, 4/19    | Descriptive           | CwD (ch. 3.1 - 3.2, ch. 7)       |
 |                  | Statistics + Tables   |                                  |
 |                  |                       |                                  |
 |                  | Reproducibility       |                                  |

@@ -1,0 +1,106 @@
+---
+title: "One-number Story"
+subtitle: "Mini-project"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+---
+
+::: callout-note
+You should be using Word and Excel to complete this activity. However, please convert your final submission to a pdf document for ease of providing feedback.
+:::
+
+## Important Dates
+
+
+## Instructions
+
+For your journalistic writing assignment, you will be creating a “one-number story.” This is a short piece (150-300 words, which is about 1 page double-spaced) that focuses on one number. A maximum, a mean, a percent change, etc. You will probably have more than one numeral in the story, because you will want to contextualize your number, but the focus should be on one small conclusion.
+
+You may want to consider using some spreadsheet operations, like sorting and filtering and pivot tables.
+
+You should keep track of the operations you have done. If you are using spreadsheet operations, this may be a separate sheet of your document, in a text document, etc.
+
+Tracking your operations is important for your work so you can back up your statements with evidence. When you speak to your “editor” (in this class, me or a peer), you may need to justify your claims.
+
+::: callout-tip
+### Need inspiration?
+Read a few short pieces from [Numlock News](https://www.numlock.com/archive).
+:::
+
+Elements:
+
++ Headline
++ Byline
++ Lede
++ Nutgraf
++ Exposition
++ Word count
+
+Considerations:
+
++ Accuracy
++ Context of data
++ Spelling and grammar
++ Clarity of writing
++ Peer editing one number story
+
+## Data
+
+We will be using California education data from the California Department of Education. You may want to narrow your analysis to think about a particular town, a particular type of school, etc.
+
++ [Cumulative Enrollment Data](https://www.cde.ca.gov/ds/ad/fsenrcum.asp#CE)
++ [School-Level Enrollment](https://www.cde.ca.gov/ds/ad/fsenr.asp)
++ [English Language Learners](https://www.cde.ca.gov/ds/ad/fselsch.asp)
++ [College Going Rate](https://www.cde.ca.gov/ds/ad/fscgr12.asp)
+
+If you wish to select a different context, please explore and select a data set at <https://www.cde.ca.gov/ds/ad/downloadabledata.asp>. Then run your idea past me via email or office hours.
+
+## Peer editing
+
+You have each been assigned a One Number Story to peer-review. You will end up reading the piece you are editing multiple times, in order to check all of the important components. Here are some guiding questions to consider as you work, although you don’t need to respond to all of them, and there may be more things that strike you that deserve commentary.
+
+**Introduction:** Read just the headline, the lede and the nutgraf. Do they hook you? Do you want to keep reading? Why or why not?
+
++ Flow: is each sentence clearly connected to the one previous and the one following? Do you have a sense throughout the beginning of the article that things are in the “right” order?
++ Context: Do the introductory paragraphs provide a sense that there’s a reason for this piece? Do they give a sense of the larger problem that will be addressed?
++ Nutgraf: What is the nutgraf? Locate it in the rough draft: is it clearly stated? Help the author decide if it is two broad, too narrow, or just right. Work on rewording if necessary.
+
+**Sentences:** Read the rest of the piece, paying close attention to each sentence and to the flow of one sentence into the next. Are there mistakes in grammar, usage, spelling, or typing? Mark them on the draft. Do the sentences flow nicely, or do some of them feel as if they need reworking? Choose two sentences that you feel may need work, mark them on the rough draft, and make suggestions for possible revisions.
+
+**Paragraphs:** Look over the paragraphs. Does each one feel like a unit in and of itself, with an introductory sentence, body sentence(s), and a transition sentence moving you into the next paragraph? Are any of the paragraphs too long?
+
++ Evidence: Is there adequate evidence in the piece to support the author’s argument? Are there too many numerals, or too many quotes, overloading the author’s voice? Does the author leave out any quote or bit of evidence that seems particularly obvious or helpful to you? Are any quotations cited?
++ Analysis: Does the author explain how each number or bit of evidence supports their point?
++ Link: Is there a statement at the end of each sub-argument explaining its relationship to the larger point? Are you ever confused about why a bit of the piece exists or how it’s related to the author’s argument?
++ Conclusion: Is it satisfying? Does it tie up loose ends? Does it provide a larger context for thinking about the paper’s subject? Does it answer the ‘so what’ question?
++ Data analysis: Glance through the data operations. Do the numbers and conclusions drawn by the author appear appropriate? Can you spot any obvious mistakes? In particular, pay attention to the “compared to what” problem– is the author comparing apples to apples?
+
+Ideally, you could provide some inline comments (maybe by downloading the Word document and using Track Changes, or annotating within the grading system). However, that may not be possible, and you may need to provide all your comments in the Comments box on Canvas.
+
+I would like to see you give some substantive thought to these peer reviews, so I’d expect to see around 10 sentences in the comments. As always, use the sandwich model– start with something you liked, or was particularly strong about the piece. Then, comments on how the draft could be improved (remember, we’re going to do a final draft of this piece!). Conclude with another sentence or two about things that worked with the piece.
+
+## Rubric
+
+When I grade the final pieces, I will be looking for the following elements and considerations, so keep these in mind as you edit:
+
+Elements:
+
++ Headline
++ Byline
++ Lede
++ Nutgraf
++ Exposition
++ Word count
+
+Considerations:
+
++ Accuracy
++ Context of data
++ Spelling and grammar
++ Clarity of writing

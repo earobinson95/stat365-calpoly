@@ -2547,11 +2547,7 @@ vertical-align: -.125em;
    
   <ul>
   <li><a href="#prompt" id="toc-prompt" class="nav-link active" data-scroll-target="#prompt">Prompt:</a></li>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions:</a>
-  <ul class="collapse">
-  <li><a href="#simple-rmarkdown-site" id="toc-simple-rmarkdown-site" class="nav-link" data-scroll-target="#simple-rmarkdown-site">Simple RMarkdown Site</a></li>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
-  </ul></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions:</a></li>
   </ul>
 </nav>
 </div>
@@ -2584,7 +2580,7 @@ vertical-align: -.125em;
 For more information about simple R Markdown websites, please read the documentation at <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="uri">https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html</a>. Simple R Markdown sites are <em>not</em> based on <strong>blogdown</strong>. They are probably good for websites with only a few Rmd documents.</p></li>
 <li><p><a href="https://quarto.org/docs/websites/">Quarto</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
 For larger-scale and more sophisticated websites (such as blogs), you may want to use <strong>Quarto</strong> instead: https://quarto.org/docs/websites/.</p></li>
-<li><p>Alternatively, you could look into the R package <a href="https://medium.com/nerd-for-tech/cabuilding-a-data-science-portfolio-website-in-15-minutes-84f93501bad8">portfoliodown</a> (<a href="https://mattdancho.netlify.app/">see example</a>) if you want something that appears to be more buisness/industry focused.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p>Alternatively, you could look into the R package <a href="https://medium.com/nerd-for-tech/cabuilding-a-data-science-portfolio-website-in-15-minutes-84f93501bad8">portfoliodown</a> (<a href="https://mattdancho.netlify.app/">see example</a>) if you want something that appears to be more buisness/industry focused. However, I think the Quarto option has some good frameworks for this now!.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 </ul>
 </section>
 <section id="instructions" class="level2">
@@ -2595,8 +2591,18 @@ For larger-scale and more sophisticated websites (such as blogs), you may want t
 <li><p>Write about you experience – and link to your new website!<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
 </ol>
 <p>To satisfy, you should modify your site beyond the default template files, adding at least some content that is unique to you - packages you find interesting, sites you enjoy, projects you have worked on, a page with your resume, etc.</p>
-<section id="simple-rmarkdown-site" class="level3">
-<h3 class="anchored" data-anchor-id="simple-rmarkdown-site">Simple RMarkdown Site</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Simple RMarkdown Site
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ol type="1">
 <li><p>Use RStudio and set up a new project on your machine linked to the GitHub repository you just created.</p></li>
 <li><p>Create two files in your project folder:</p>
@@ -2625,9 +2631,21 @@ Hello, Website!</code></pre></li>
 <li>Add new Rmd files to add new pages to your site. Consider adding a page describing your favorite packages, or pages for different projects you’ve worked on.</li>
 </ul></li>
 </ol>
-</section>
-<section id="quarto" class="level3">
-<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Quarto
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ol type="1">
 <li><p>Install/Update the <code>quarto</code> package (<code>install.packages(&quot;quarto&quot;)</code>)</p></li>
 <li><p>Create a new folder where you will store your blog and the rendered site.</p></li>
@@ -2641,7 +2659,10 @@ Hello, Website!</code></pre></li>
 <ol start="6" type="1">
 <li>VERY IMPORTANT. Open the “username.github.io” project. Add a text file named “.nojekyll” (the file should be empty). This tells GitHub not to build the pages with Jekyll (another rendering engine) and instead render pages built with Quarto.</li>
 </ol>
-</section>
+<p>See an additional resource at this <a href="https://ucsb-meds.github.io/creating-quarto-websites/">blog post</a></p>
+</div>
+</div>
+</div>
 </section>
 
 

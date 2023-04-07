@@ -23,7 +23,7 @@ For more information about simple R Markdown websites, please read the documenta
 - [Quarto](https://quarto.org/docs/websites/)^[I recommend using Quarto.]    
 For larger-scale and more sophisticated websites (such as blogs), you may want to use **Quarto** instead: https://quarto.org/docs/websites/.
 
-- Alternatively, you could look into the R package [portfoliodown](https://medium.com/nerd-for-tech/cabuilding-a-data-science-portfolio-website-in-15-minutes-84f93501bad8) ([see example](https://mattdancho.netlify.app/)) if you want something that appears to be more buisness/industry focused.^[Disclaimer I have not used this package as I created my personal website a few years ago using Blogdown -- creation of Quarto and integration with GitHub have changed a lot since then!]
+- Alternatively, you could look into the R package [portfoliodown](https://medium.com/nerd-for-tech/cabuilding-a-data-science-portfolio-website-in-15-minutes-84f93501bad8) ([see example](https://mattdancho.netlify.app/)) if you want something that appears to be more buisness/industry focused. However, I think the Quarto option has some good frameworks for this now!.^[Disclaimer I have not used this package as I created my personal website a few years ago using Blogdown -- creation of Quarto and integration with GitHub have changed a lot since then!]
 
 ## Instructions:
 
@@ -35,6 +35,7 @@ For larger-scale and more sophisticated websites (such as blogs), you may want t
 
 To satisfy, you should modify your site beyond the default template files, adding at least some content that is unique to you - packages you find interesting, sites you enjoy, projects you have worked on, a page with your resume, etc.
 
+::: {.callout-note collapse=true}
 ### Simple RMarkdown Site
 
 1. Use RStudio and set up a new project on your machine linked to the GitHub repository you just created. 
@@ -68,8 +69,9 @@ To satisfy, you should modify your site beyond the default template files, addin
     - Modify `_site.yml` to update the header structure, add links to other files, etc. 
     - Modify `index.Rmd` to add content to the landing page of your site. You might think about including a link to your CV on this page. 
     - Add new Rmd files to add new pages to your site. Consider adding a page describing your favorite packages, or pages for different projects you've worked on. 
-    
-    
+:::    
+   
+::: {.callout-note collapse=true} 
 ### Quarto
 
 1. Install/Update the `quarto` package (`install.packages("quarto")`)
@@ -84,3 +86,6 @@ To satisfy, you should modify your site beyond the default template files, addin
   + VERY IMPORTANT: add `output-dir: docs` to your YAML file.
 
 6. VERY IMPORTANT. Open the "username.github.io" project. Add a text file named ".nojekyll" (the file should be empty). This tells GitHub not to build the pages with Jekyll (another rendering engine) and instead render pages built with Quarto.
+
+See an additional resource at this [blog post](https://ucsb-meds.github.io/creating-quarto-websites/)
+:::

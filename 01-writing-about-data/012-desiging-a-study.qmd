@@ -5,6 +5,7 @@ format:
   revealjs:
     theme: [default, ../slide_custom.scss]
     auto-stretch: false
+    # chalkboard: true
 editor: source
 self-contained: true
 execute:

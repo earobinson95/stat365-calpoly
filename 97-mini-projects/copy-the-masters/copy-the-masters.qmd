@@ -1,0 +1,86 @@
+---
+title: "Copy the Masters"
+subtitle: "Mini-project"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+---
+
+For this assignment, we’ll be reproducing graphics from FiveThirtyEight. I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.
+
+### Picking a graphic
+
+For the first step of this assignment, you will be identifying a graphic you want to reproduce. Start at the [Our Data](https://data.fivethirtyeight.com/) page and find a graphic that interests you and you think is possible to reproduce. This is mostly a “thinking step,” rather than a coding one, although you may want to start playing around in `ggplot2` to see if your guess is right. Plots that will be easier to reproduce are the more standard ones (histograms, line charts, scatterplots, etc). I looked through quickly and thought the following would be pretty doable:
+
++ More players transfer to the US than to any other country from American Chess Is Great Again
++ Hurricane Maria and Puerto Rico got comparatively little online coverage, from The Media Really Has Neglected Puerto Rico (others look doable, too)
++ Do you think that society puts pressure on men in a way that is unhealthy or bad for them? from What Do Men Think It Means To Be A Man? (others look doable, too)
++ Trump is less popular than leading Democratic candidates, from The Democratic Presidential Candidates Are Becoming Less Popular
+
+Potentially doable:
+
++ Sandy-related calls to 311, from The (Very) Long Tail Of Hurricane Recovery
++ Biden’s Ukraine-related media bump is fading, from The Media Frenzy Around Biden Is Fading
+
+On the scale of hard-to-not-doable:
+
++ Peter and Dean are Neck and Neck, from Rachel’s Season Is Fitting Neatly Into Bachelorette History
++ The Rise of the Trinity from American Chess Is Great Again
++ All of these may require a bit of data wrangling before you can get to the graphing data part. I had intended to push off data wrangling for a bit, but it looks like we’re going to need to talk about it!
+
+You can’t choose either of the first two graphics from Comic Books Are Still Made By Men, For Men And About Men, because I will be using it as an example.
+
+### First draft
+
+Your next step is to do the quick, sketchy version of your graphic in code. Here’s an example from a past class.
+
+```{r}
+library(tidyverse)
+# install.packages('fivethirtyeightdata', repos = 'https://fivethirtyeightdata.github.io/drat/', type = 'source')
+library(fivethirtyeight)
+library(ggthemes)
+data("comic_characters")
+```
+
+```{r}
+ggplot(data = comic_characters) +
+  geom_histogram(aes(x = year, 
+                     fill = publisher
+                     ), 
+                 binwidth = 1, 
+                 color = "white", 
+                 lwd = 0.1) +
+  facet_wrap(~publisher) +
+  theme_fivethirtyeight() +
+  scale_fill_manual(values = c("#008fd5", "#ff2700")) +
+  labs(title = "New Comic Book Characters Introduced Per Year")
+```
+
+For the first draft, I want you to upload a .html file knitted from a .Rmd file. It doesn’t have to have many lines of code in it (in fact, I think a good draft usually only takes 6 or so lines!), but it should include a version of your visualization that is at least part of the way to reproducing the original graphic. In particular, it should be the right “form” of graph (if the original is a barchart, it should be a barchart, not a scatterplot!). It’s okay if there are more categories than the original, or if the axes are off, etc.
+
+Here’s another example, of an original graphic from 538 and what I would consider a draft of the graphic.
+
+![](https://www.amelia.mn/STAT336/chess_transfers_draft.jpeg)
+
+![](https://www.amelia.mn/STAT336/Chess_Transfers.png)
+
+There’s a lot missing in the draft– it doesn’t have the right colors, the names still aren’t right, and the order is off! But it’s the correct “form” of graphic.
+
+### Final draft
+
+The last piece is to get your graphic to look as similar to the original as possible. We’ll do some peer editing and I will provide feedback about things that I notice that should be matched, and we’ll demo this on the example graphic as well.
+
+**Deliverables**
+
++ Friday, February 28: choice of graphic, and “psuedo-code” of how you think it will be doable
++ Friday, March 6: first draft of graphic, around 6 lines of graphics code
++ Friday, March 13: final draft of graphic, as many lines of code as it takes!
+
+## Acknowledgements
+
+I would like to acknowledge [Amelia McNamara](https://www.amelia.mn/STAT336/copy-the-masters.html) for the original activity.

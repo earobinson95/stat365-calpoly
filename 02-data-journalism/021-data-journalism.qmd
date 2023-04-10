@@ -93,7 +93,7 @@ knitr::include_graphics("images/inverted_pyramid.png")
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 80%%
+#| out-width: 100%%
 knitr::include_graphics("images/starter-homes.JPG")
 ```
 

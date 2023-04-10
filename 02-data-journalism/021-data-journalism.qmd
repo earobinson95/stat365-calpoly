@@ -101,10 +101,12 @@ knitr::include_graphics("images/starter-homes.JPG")
 
 ##
 
+<center>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/newsrw?src=hash&amp;ref_src=twsrc%5Etfw">#newsrw</a> whether data journalism is journalism reminds when we argued about whether digital was real photography</p>&mdash; rondiorio (@rondiorio) <a href="https://twitter.com/rondiorio/status/74050318903676928?ref_src=twsrc%5Etfw">May 27, 2011</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ##
 
+<center>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/Raoldroyd?ref_src=twsrc%5Etfw">@Raoldroyd</a> - “Data Journalism is journalism and every journalist should be a data journalist” <a href="https://twitter.com/hashtag/CityMSddj?src=hash&amp;ref_src=twsrc%5Etfw">#CityMSddj</a></p>&mdash; Interhacktives (@Interhacktives) <a href="https://twitter.com/Interhacktives/status/928696491618832384?ref_src=twsrc%5Etfw">November 9, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 
@@ -158,10 +160,10 @@ Pick an article to analyze the structure of
 ::: callout-note
 ### Some Article Ideas:
 
--   [Baseball Opening Pitch Clock](https://www.nytimes.com/2023/03/30/upshot/baseball-opening-pitch-clock.html)
--   [Gas Prices](https://www.nytimes.com/2022/10/25/upshot/gas-prices-biden-midterms.html)
--   [Alcohol Health Effects](https://www.nytimes.com/2023/04/04/health/alcohol-health-effects.html)
--   [Black Turnout in Midterm Elections](https://www.nytimes.com/2022/11/30/upshot/midterms-election-black-turnout.html)
+-   [Baseball Opening Pitch Clock](https://www.nytimes.com/2023/03/30/upshot/baseball-opening-pitch-clock.html?unlocked_article_code=p95R31qSGq8ZRRnzFA-OUd2nAHxge5K8FcQ2-DTLWEmbsdahpKwvWBLM3PsjcS_g3fyyY6Cs8jxERqHlbnmcIypXj-k3GqsAT0opBMK8onAmiJog4xIjy6P7GK0YZPmcsqjJI3Tjg5ZgklmVZyyFND90qj1e9moYBY_wrZZWwv6m-iCkl8qwLsJqj_SB39sWvz0qfzOYF3PHezqUyCKmUSp2sx_S4N5QYzqM7mxjMUhEm4Qi9A8rnjceePoeAyyb7h9TxujMUtDKo5c9aftUxpxyPb1H0rS2AaLBSsc2OWsf29JZwe95fiBT_0tm6IFV_26nn67blOkFy2Bi76BW84KJJ-w98Q&smid=url-share)
+-   [Gas Prices](https://www.nytimes.com/2022/10/25/upshot/gas-prices-biden-midterms.html?unlocked_article_code=jrnkJq3W5ywcpcb_he3iC-TZ50noqzmTIqU321zIcmXI7lMKw2i3M5o_vDrDQjb0L2zmHgf3J86zY1kfQTCxk3_Qabhm8Og39LlaMsYKrvOxp5yhm0Kn21Xm0O9j2wdr77KIN8ASeJ3Ow_7iqDIC79BGNaJK_1o3nJiLyjIY8LUTnX8dN9diE-QsDgmxPokeAzfIwMngaPEz67ZcHhe8eQFqE2nz1pqFBI1BFAA0V0OZQeIYUX__-I0nqAPscQBxmAJlJ0MXjEthxO-o9PgE9Ii4PRJhyXt3N_LfJxUf-Zb5zjhm2nWl2pK349hbUmIEB-qYhvy_cfnB_iGgO0VdaoV-uA&smid=url-share)
+-   [Alcohol Health Effects](https://www.nytimes.com/2023/04/04/health/alcohol-health-effects.html?unlocked_article_code=aIoRnR8Ym4aU9-8MCCSZNSmIilDNGWFz92qVnjGVZjVoV1LfUK62gBO01WcxlsO5TUYIQ0b_oJZoBY070Lm8cleYB_h4-OARf0pwBpkEaSYmvqBkkhxHPuQABKhoZUPzWucb_EwD7tL3m3RKo23NgcHslhoYdQeqzHZ4dZNAc9BLKJ3ItbGSBOssKW21LufXbhVnGS1XYMFvHZ4_9MD8n9tQUGo0wm4dH91cynMNl1M5dPVHho95n2--NzuIx7Z5I4mx0uvkHUTsCTI4KLpVDhrDRCXW_aTEFWR5rSiNTxZxGTnkK8K0HZDEuyiBE_2UBeIcdWF1rAucM8HESgGrsg&smid=url-share)
+-   [Black Turnout in Midterm Elections](https://www.nytimes.com/2022/11/30/upshot/midterms-election-black-turnout.html?unlocked_article_code=sTfVzCXFxGa73RZA4B-4k-RjqsDRoK7i6RVkar-Q9Lw7Tb3BUAVdEQGW-D7cuWihQwBFYqvMKbL2QK6tjBeuovwclgnOOeqni0npOmuhb11o77Lx7iIgW1ls0JvNr74hJohdEYPG56vSzj8SSM_8Wi3MSGVPrNzzrcIVqoAD0fBrJl9G7JstftMLv1y144JCg50aKbOWBG0dCewKbR7YIeDG0-KmjswgJl5JflPGUe7e0m0WycPBjJWwfu7oiZglb-KmRJlgtGB670MBzTklNrngAQPVFyOpVq9Qq5BPaGlpMwtAVot6cfWoIDYnYArWyGtKMS9BQxq2FRLMmqstKxY1wOVUOEwlHg&smid=url-share)
 
 Or, pick something else you're interested in!
 :::

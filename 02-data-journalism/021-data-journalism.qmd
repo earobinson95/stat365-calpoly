@@ -12,7 +12,7 @@ execute:
   echo: true
 ---
 
-## Wednesday, April 12th
+## Monday, April 10th
 
 Today we will...[^1]
 

@@ -14,16 +14,16 @@ editor: source
 ::: callout-note
 You should be using Word and Excel to complete this activity to gain experience working with Microsoft tools. However, please convert your final submission to a pdf document for ease of providing feedback.
 
-Visit [Cal Poly's Software Hub](https://software.calpoly.edu/) if you do not have Word/Excel. You can either install or run via Office.com. Visit \[here\] for more detailed instructions about installing software through Cal Poly's AppsAnywhere Client.
+Visit [Cal Poly's Software Hub](https://software.calpoly.edu/) if you do not have Word/Excel. You can either install or run via Office.com. Visit [here](https://tech.calpoly.edu/services/software-downloads) for more detailed instructions about installing software through Cal Poly's AppsAnywhere Client.
 :::
 
 ## Important Dates
 
 | Deliverable                 | Due Date |
 |-----------------------------|----------|
-| First Draft for Peer Review |          |
-| Peer Review                 |          |
-| Final Submission            |          |
+| First Draft for Peer Review | Thursday, 4/20 at 11:59pm   |
+| Peer Review                 | Sunday, 4/23 at 11:59pm       |
+| Final Submission            | Thursday, 4/27 at 11:59pm   |
 
 ## Instructions
 

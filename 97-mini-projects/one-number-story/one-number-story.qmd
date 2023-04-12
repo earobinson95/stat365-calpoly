@@ -19,17 +19,21 @@ Visit [Cal Poly's Software Hub](https://software.calpoly.edu/) if you do not hav
 
 ## Important Dates
 
-| Deliverable                 | Due Date |
-|-----------------------------|----------|
-| First Draft for Peer Review | Thursday, 4/20 at 11:59pm   |
-| Peer Review                 | Sunday, 4/23 at 11:59pm       |
-| Final Submission            | Thursday, 4/27 at 11:59pm   |
+| Deliverable                 | Due Date                  |
+|-----------------------------|---------------------------|
+| First Draft for Peer Review | Thursday, 4/20 at 11:59pm |
+| Peer Review                 | Sunday, 4/23 at 11:59pm   |
+| Final Submission            | Thursday, 4/27 at 11:59pm |
 
 ## Instructions
 
-For your journalistic writing assignment, you will be creating a "one-number story." This is a short piece (150-300 words, which is about 1 page double-spaced) that focuses on one number. A maximum, a mean, a percent change, etc. You will probably have more than one numeral in the story, because you will want to contextualize your number, but the focus should be on one small conclusion.
+For your journalistic writing assignment, you will be creating a "one-number story." This is a short piece (250-400 words - *including the headline and byline* - which is about 1 page double-spaced) that focuses on one number. A maximum, a mean, a percent change, etc. You will probably have more than one numeral in the story, because you will want to contextualize your number, but the focus should be on one small conclusion.
 
 Use some spreadsheet operations, like [sorting and filtering and pivot tables](https://www.youtube.com/watch?v=kYcpJYmOyCs&list=PLik6fAQnSI92b9mVU-8wMQfuzQa8I7PmS&index=5&ab_channel=AmeliaMcNamara) to narrow your focus to one main value.
+
+::: callout-warning
+You are **not** conducting a formal statistical analysis, but instead providing summary statistics to tell your story.
+:::
 
 You should keep track of the operations you have done. If you are using spreadsheet operations, this may be a separate sheet of your document, in a text document, etc.
 
@@ -38,18 +42,20 @@ Tracking your operations is important for your work so you can back up your stat
 ::: callout-tip
 ### Need inspiration?
 
-Read a few short pieces from [Numlock News](https://www.numlock.com/archive).
+While your article should contain the formal journal article elements, read a few short pieces from [Numlock News](https://www.numlock.com/archive) for inspiration.
 
 You may find it useful to watch this video on [interviewing your data](https://www.youtube.com/watch?v=k94zs4dT1QI&list=PLik6fAQnSI92b9mVU-8wMQfuzQa8I7PmS&index=6&t=3s&ab_channel=MJ%27sDataAcademy).
+
+Follow the guidelines described in *Numbers in the Newsroom (ch. 1 and 2).*
 :::
 
 Elements:
 
--   Headline
--   Byline
--   Lede
--   Nutgraf
--   Exposition
+-   Headline (title)
+-   Byline (author)
+-   Lede (Intro, should capture the audience -- the five W's)
+-   Nutgraf ("so what")
+-   Exposition (Outline main findings and conclusions; provide any details)
 -   Word count
 
 Considerations:
@@ -62,18 +68,27 @@ Considerations:
 
 ## Data
 
-We will be using California education data from the California Department of Education. You may want to narrow your analysis to think about a particular town, a particular type of school, etc.
+We will be using California education data from the California Department of Education. Select one of the following data contexts below; you may use more than one file to tell your story, but make sure to focus on one key finding and be concise. You may want to narrow your analysis to think about a particular county/town, a particular type of school, etc.
 
--   [Cumulative Enrollment Data](https://www.cde.ca.gov/ds/ad/fsenrcum.asp#CE)
--   [School-Level Enrollment](https://www.cde.ca.gov/ds/ad/fsenr.asp)
--   [English Language Learners](https://www.cde.ca.gov/ds/ad/fselsch.asp)
--   [College Going Rate](https://www.cde.ca.gov/ds/ad/fscgr12.asp)
+-   Cumulative Enrollment Data: [codebook](https://www.cde.ca.gov/ds/ad/fsenrcum.asp#CE); [download data](data/cenroll.xlsx)
 
-If you wish to select a different context, please explore and select a data set at <https://www.cde.ca.gov/ds/ad/downloadabledata.asp>. Then run your idea past me via email or office hours.
+-   English Language Learners: [codebook](https://www.cde.ca.gov/ds/ad/fselsch.asp); [download data](ell.xlsx)
+
+-   College Going Rate: [codebook](https://www.cde.ca.gov/ds/ad/fscgr12.asp); [download data](cgr.xlsx)
+
+-   English Language Arts/Literacy and Mathematics: [codebook](https://caaspp-elpac.ets.org/caaspp/ResearchFileListSB?ps=true&lstTestYear=2022&lstTestType=B&lstCounty=00&lstDistrict=00000); [download data]()
+
+-   Science
+
+Additionally, you may instead select to work with variables from the General Social Survey (a survey conducted in the United States that collects data on various aspects of social life, such as attitudes, behaviors, and demographics.):
+
+-   General Social Survey: [download data](gss_clean.xlsx) *(codebook in sheet 2)*
+
+If you are so inclined to select a different context than I have provided, please explore and select a data set at <https://www.cde.ca.gov/ds/ad/downloadabledata.asp> or variables from <https://gssdataexplorer.norc.org/variables/vfilter>. Then run your idea past me via email or office hours.
 
 ## Peer editing
 
-You have each been assigned a One Number Story to peer-review. You will end up reading the piece you are editing multiple times, in order to check all of the important components. Here are some guiding questions to consider as you work, although you don't need to respond to all of them, and there may be more things that strike you that deserve commentary.
+You have each been assigned a One-number Story to peer-review. You will end up reading the piece you are editing multiple times, in order to check all of the important components. Here are some guiding questions to consider as you work, although you don't need to respond to all of them, and there may be more things that strike you that deserve commentary.
 
 **Introduction:** Read just the headline, the lede and the nutgraf. Do they hook you? Do you want to keep reading? Why or why not?
 
@@ -95,25 +110,52 @@ Ideally, you could provide some inline comments (maybe by downloading the Word d
 
 I would like to see you give some substantive thought to these peer reviews, so I'd expect to see around 10 sentences in the comments. As always, use the sandwich model-- start with something you liked, or was particularly strong about the piece. Then, comments on how the draft could be improved (remember, we're going to do a final draft of this piece!). Conclude with another sentence or two about things that worked with the piece.
 
-## Rubric
+## Final Submission Rubric
 
-When I grade the final pieces, I will be looking for the following elements and considerations, so keep these in mind as you edit:
+To meet the "satisfactory" requirements for the contract, this project must:
 
-Elements:
+-   be turned in on time (or within the agreed upon time by 24 hour late tokens submitted **prior** to the due date),
 
--   Headline
--   Byline
--   Lede
--   Nutgraf
--   Exposition
--   Word count
+-   include all components described above
 
-Considerations:
+-   Meet quality guidelines laid out in the following rubric (all 2s and above for each element and demonstration of additional considerations)
 
--   Accuracy
--   Context of data
--   Spelling and grammar
--   Clarity of writing
+::: column-page
+
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+| Element     | 3 - strong evidence                                                                                                                           | 2 - moderate evidence                                                                   | 1 - weak evidence                                                                          | 0 - no evidence                                           |
++=============+===============================================================================================================================================+=========================================================================================+============================================================================================+===========================================================+
+| Headline    | The headline is highly relevant to the topic, creative, and clear, and immediately draws the reader's attention.                              | The headline is relevant to the topic and is creative and/or clear.                     | The headline is somewhat relevant to the topic but lacks creativity or clarity.            | No headline or headline is not relevant to the topic.     |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+| Byline      | The byline identifies the author and establishes strong credibility and professionalism.                                                      | The byline identifies the author and demonstrates some credibility and professionalism. | The byline identifies the author but lacks credibility or professionalism.                 | No byline or author is not identified.                    |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+| Lede/Intro  | The intro or lede answers all of the five W's and is highly relevant to the topic, creative, and clear, and immediately engages the reader.   | The intro or lede answers some of the five W's and is creative and/or clear.            | The intro or lede partially answers some of the five W's, but lacks creativity or clarity. | No intro or lede, or intro is not relevant to the topic.  |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+| Nutgraf     | The nutgraf is highly relevant to the topic, provides clear and sufficient detail, and effectively summarizes the article's main points.      | The nutgraf is relevant to the topic and provides clear and sufficient detail.          | The nutgraf is somewhat relevant to the topic but lacks clarity or detail.                 | No nutgraf or nutgraf is not relevant to the topic.       |
+|             |                                                                                                                                               |                                                                                         |                                                                                            |                                                           |
+| ("so what") |                                                                                                                                               |                                                                                         |                                                                                            |                                                           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+| Exposition  | The exposition is highly relevant to the topic, provides clear and sufficient detail, and effectively explains the data and its implications. | The exposition is relevant to the topic and provides clear and sufficient detail.       | The exposition is somewhat relevant to the topic but lacks clarity or detail.              | No exposition or exposition is not relevant to the topic. |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+:::
+
+In addition, I will consider:
+
+::: column-page
++----------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Consideration        | Moderate or Strong Evidence                                                                                  | Weak or No Evidence                                                                                                       |
++======================+==============================================================================================================+===========================================================================================================================+
+| Accuracy             | The article accurately presents the data and its context, and any claims made are supported by the data.     | The article contains inaccuracies or does not sufficiently support any claims made (e.g. took the mean of a probability). |
++----------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Context of Data      | The article provides context for the data, including the source, sample size, and any limitations or biases. | The article lacks context for the data or does not acknowledge any limitations or biases.                                 |
++----------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Spelling and grammar | The article is well-written and free of major spelling and grammar errors.                                   | The article contains multiple spelling or grammar errors that distract from the content.                                  |
++----------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Clarity of writing   | The article is clearly written and easy to understand, with a logical structure.                             | The article is confusing or difficult to follow, with unclear writing and a lack of structure.                            |
++----------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Word count (250-400) | The article meets the word count requirement and covers the topic effectively within that range.             | The article is too short or too long, or does not sufficiently cover the topic within the word count range.               |
++----------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+:::
 
 ## Acknowledgements
 

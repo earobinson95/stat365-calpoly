@@ -44,12 +44,16 @@ Excel has a programming language called VBA (Visual Basic Analysis) -- most peop
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 85%
-knitr::include_graphics("images/pivot-table-proportions.png")
+#| out-width: 65%
+knitr::include_graphics("images/pivot-table-counts.jpg")
 ```
 
-+ Write a sentence that interprets and compares the percentage of "success".
-+ Calculate the *difference* between these percentages and also their *ratio*.  Then write a sentence interpreting each of these values.
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 65%
+knitr::include_graphics("images/pivot-table-proportions.jpg")
+```
 
 ## Interpretting Proportions
 
@@ -81,8 +85,8 @@ Odds ratio is **invariant** to which outcome is labeled a "success".
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 75%
-knitr::include_graphics("images/pivot-table-proportions.png")
+#| out-width: 65%
+knitr::include_graphics("images/pivot-table-proportions.jpg")
 ```
 
 ## `r fontawesome::fa("brain")` Statistical Terminology - "Average" 

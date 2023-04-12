@@ -361,21 +361,21 @@ To meet the requirements for the contract, this project must:
 
 -   Meet quality guidelines laid out in the following rubric. In order to meet "satisfactory" for your contracted grade:
 
-    -   A must recieve all 3's (or above) on the main components, and demonstration of all additional writing/project components
+    -   A must receive all 3's (or above) on the main components, and demonstration of all additional writing/project components
 
-    -   A- must recieve all 3s (or above) on the main components with at most one 2, and demonstration of all addional writing/project components.
+    -   A- must receive all 3s (or above) on the main components with at most one 2, and demonstration of all additional writing/project components.
 
-    -   B+ must recieve all 3s (or above) on the main components with at most three 2s, and demonstration of all addional writing/project components.
+    -   B+ must receive all 3s (or above) on the main components with at most three 2s, and demonstration of all additional writing/project components.
 
-    -   B must recieve all 2s (or above), and demonstration of all addional writing/project components.
+    -   B must receive all 2s (or above), and demonstration of all additional writing/project components.
 
-    -   B- must recieve all 2s (or above) with a most one 1, and demonstration of all addional writing/project components.
+    -   B- must receive all 2s (or above) with a most one 1, and demonstration of all additional writing/project components.
 
-    -   C+ must recieve all 2s (or above) with a most three 1s, and missing demonstration for at most 4 addional writing/project components.
+    -   C+ must receive all 2s (or above) with a most three 1s, and missing demonstration for at most 4 additional writing/project components.
 
-    -   C must recieve all 1s (or above), and missing demonstration for at most 4 addional writing/project components.
+    -   C must receive all 1s (or above), and missing demonstration for at most 4 additional writing/project components.
 
-    -   C- must recieve all 1s (or above) with at most one 0, and missing demonstration for at most 4 addional writing/project components.
+    -   C- must receive all 1s (or above) with at most one 0, and missing demonstration for at most 4 additional writing/project components.
 
     -   D+ is the *maximum* grade you might obtain from no final submission. In this case grade evaluation will be determined by your previously submitted drafts and other course work.
 

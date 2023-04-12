@@ -418,7 +418,7 @@ I understand that unexpected events may arise during the quarter that may
 prevent you from submitting your assignments on time. To accommodate for this,
 you will be given four 24-hour late submission "tokens" to use throughout the
 quarter. To use a token, you must (1) send me an email and (2) fill out the
-deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7).
+deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7). The extension request must be submitted **before** the assignment due date.
 
 These tokens **cannot** be used on your final technical report submission.
 
@@ -452,7 +452,7 @@ This schedule is **very** tentative and subject to change.
 |                  | summaries, and pivot  |                                  |
 |                  | tables                |                                  |
 +------------------+-----------------------+----------------------------------+
-| 3: 4/17, 4/19    | Descriptive           | CwD (ch. 3.1 - 3.2, ch. 7)       |
+| 3: 4/17, 4/19    | Descriptive           | CwD (ch. 3.1 - 3.2)              |
 |                  | Statistics + Tables   |                                  |
 |                  |                       |                                  |
 |                  | Reproducibility       |                                  |

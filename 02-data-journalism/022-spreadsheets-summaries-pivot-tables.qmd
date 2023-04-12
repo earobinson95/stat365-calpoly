@@ -64,35 +64,31 @@ The **difference in success proportions** between two groups, multiplied by 100,
 
 ### Percentage Diff
 The **percentage difference** in success proportions between two groups, with group B as the baseline, is calculated as: 
-$$(pA – pB) / pB × 100%.$$
+$$\frac{(p_A – p_B)}{p_B} × 100%.$$
 
 ### Relative Risk
-The **relative risk** between two groups is the ratio of their success proportions.
-$$percentage difference = (relative risk – 1) × 100%.$$
+
+The *relative risk* between two groups is the ratio of their success proportions.
+
+$$\frac{p_A}{p_B}$$
 
 ### Odds Ratio
 
-+ The *odds of success* are calculated as: (# of successes) / (# of failures).
+The *odds of success* are calculated as: 
+$$\frac{\text{# of successes}}{\text{# of failures}}.$$
 
-+ The *odds against* an event are calculated as (# of failures) / (# of successes).
+The *odds against* an event are calculated as
+ $$\frac{\text{# of failures}}{\text{# of successes}}.$$
 
 Odds ratio is **invariant** to which outcome is labeled a "success".
 
-### *z*-score
-
 :::
-
-```{r}
-#| echo: false
-#| fig-align: center
-#| out-width: 65%
-knitr::include_graphics("images/pivot-table-proportions.jpg")
-```
 
 ## `r fontawesome::fa("brain")` Statistical Terminology - "Average" 
 ### Means, Medians, and Modes
 
-What does the term "average mean in everyday language?
++ What does the term "average mean in everyday language?
++ When might it be appropriate to use one of the measures for center over the others?
 
 # [Mini Project: One-number Story](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/one-number-story/one-number-story.html)
 
@@ -117,7 +113,9 @@ As soon as you get feedback from your peer, go ahead and start collecting data!
 `r fontawesome::fa("hashtag")` **One-number Story**
 
 -   Draft: due Thursday, 4/20 at 11:59pm
--   Peer Review due Sunday, 4/23 at 11:59pm
+-   Peer Review: due Sunday, 4/23 at 11:59pm
 -   Final submission: due Thursday, 4/27 at 11:59pm
+
+`r fontawesome::fa("book-open")` **Read CwD ch. 3.1 - 3.3**
 :::
 ::::

@@ -40,11 +40,11 @@ knitr::include_graphics("images/pivot-table-counts.jpg")
 
 \vspace{2.5cm}
 
-4. Explain what’s wrong with this sentence: *"The difference in success rates between these two groups was about 45.4%."*
+3. Explain what’s wrong with this sentence: *"The difference in success rates between these two groups was about 45.4%."*
 
 \vspace{2.5cm}
 
-5. Describe two things that are lacking in this sentence: *"The difference in the success rates between the two groups was about 45.4 percentage points."*
+4. Describe two things that are lacking in this sentence: *"The difference in the success rates between the two groups was about 45.4 percentage points."*
 
 \vspace{2.5cm}
 
@@ -56,11 +56,11 @@ The **percentage difference** in success proportions between two groups, with gr
 $$\frac{(p_A – p_B)}{p_B} × 100%.$$
 :::
 
-6. Calculate the *percentage difference* in the success rates between the two groups, using the `Placebo` group as the baseline.  Also show how to calculate this from the ratio in Question 3. Then write a sentence that interprets this value.
+5. Calculate the *percentage difference* in the success rates between the two groups, using the `Placebo` group as the baseline.  Also show how to calculate this from the ratio in Question 3. Then write a sentence that interprets this value.
 
 \vspace{2.5cm}
 
-7. Is it correct to say that the success rate with the placebo group was 86% less than the success rate with the high dose group?  Explain why or why not.  If not, calculate the correct value to replace 86% in this statement.
+6. Is it correct to say that the success rate with the placebo group was 86% less than the success rate with the high dose group?  Explain why or why not.  If not, calculate the correct value to replace 86% in this statement.
 
 \vspace{2.5cm}
 
@@ -75,20 +75,19 @@ Similarly, the *odds against* an event are calculated as $$\frac{\text{\# of fai
 If the odds of success for an event are 1:3, does this mean that about 1/3 of all events would result in success?  What if the odds of success were 1:2 or 1:1 or 2:1?  About what proportion of events would result in success if the odds of success are 1:3?
 :::
 
-8. Is it correct to say that the odds of success in the high dose group are about 0.179?  Explain.  
+7. Is it correct to say that the odds of success in the high dose group are about 0.179?  Explain.  
 
 \vspace{2.5cm}
 
-\newpage
-9. Calculate the odds of successfully not developing Malaria for each group. Then calculate the odds ratio, using the `Placebo` group as the baseline. Then write a sentence interpreting the odds ratio.
+8. Calculate the odds of successfully not developing Malaria for each group. Then calculate the odds ratio, using the `Placebo` group as the baseline. Then write a sentence interpreting the odds ratio.
 
 \vspace{2.5cm}
 
-10.  Explain what’s wrong with the following sentence and then revise the sentence in two different ways to correct the error: *"Successfully quitting smoking was about 2.05 times more likely with the nicotine lozenge than with the placebo lozenge."*
+9.  Explain what’s wrong with the following sentence and then revise the sentence in two different ways to correct the error: *"Successfully quitting smoking was about 2.05 times more likely with the nicotine lozenge than with the placebo lozenge."*
 
 \vspace{2.5cm}
 
-11. Calculate the odds of failing to quit smoking for each group.  Then calculate the odds ratio, using the nicotine group as the baseline.  How does this odds ratio compare to the previous one?
+10. Calculate the odds of failing to quit smoking for each group.  Then calculate the odds ratio, using the nicotine group as the baseline.  How does this odds ratio compare to the previous one?
 
 \vspace{2.5cm}
 
@@ -97,20 +96,13 @@ Odds ratio is invariant to which outcome is labeled a success.
 :::
 
 ::: callout-note
-The *relative risk * are calculated as
+The *relative risk* between two groups is the ratio of their success proportions.
 
-$$\frac{\text{\# of successes}}{\text{\# of failures}}.$$
+$$\frac{p_A}{p_B}$$
 
-Similarly, the *odds against* an event are calculated as $$\frac{\text{\# of failures}}{\text{\# of successes}}.$$
-
-
-If the odds of success for an event are 1:3, does this mean that about 1/3 of all events would result in success?  What if the odds of success were 1:2 or 1:1 or 2:1?  About what proportion of events would result in success if the odds of success are 1:3?
+<!-- percentagedifference=(relativerisk–1)×100 -->
 :::
-
-*relative risk*
-
-(a / (a+b)) / (c / (c+d))
 
 \vspace{2.5cm}
 
-3. Calculate the *ratio* of the success rates between the two groups, using the `Placebo` group as the baseline; then write a sentence interpreting this value.
+11. Calculate the *ratio* of the success rates between the two groups, using the `Placebo` group as the baseline; then write a sentence interpreting this value.

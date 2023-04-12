@@ -63,11 +63,36 @@ cgr <- cgr2020 |>
 write_xlsx(cgr, "97-mini-projects/one-number-story/data/cgr.xlsx")
 
 
-# <- read.delim("https://caaspp-elpac.ets.org/caaspp/researchfiles/sb_ca2022_1_ascii_v1.zip")
+# English Language Arts/Literacy and Mathematics
+
+english_math_test_orig <- read_delim("97-mini-projects/one-number-story/data/original-ca-education-dept/sb_ca2022_all_csv_v1.txt", delim = "^")
+english_math_test_county <- read_delim("97-mini-projects/one-number-story/data/original-ca-education-dept/sb_ca2022entities_csv.txt", delim = "^")
+
+english_math_test <- english_math_test_orig |> 
+  left_join(english_math_test_county) |> 
+  janitor::clean_names() |> 
+  select(county_name, district_name, school_name, zip_code, test_year, grade, 
+         students_enrolled, students_tested, mean_scale_score,
+         percentage_standard_exceeded, percentage_standard_met, percentage_standard_nearly_met, percentage_standard_not_met
+) |> 
+  # filter(!is.na(district_name)) |>
+  filter(county_name != "State of California") |> 
+  mutate(across(grade:percentage_standard_not_met, as.numeric)) |> 
+  group_by(county_name, test_year, grade) |>
+  mutate(total_students_enrolled = sum(students_enrolled, na.rm = T),
+         total_students_tested = sum(students_tested, na.rm = T)
+         ) |> 
+  ungroup() |> 
+  mutate(across(.cols = mean_scale_score:percentage_standard_not_met, .fns = ~ .x*(students_tested/total_students_tested))) |> 
+  group_by(county_name, test_year, grade, total_students_enrolled, total_students_tested) |>
+  summarize(across(mean_scale_score:percentage_standard_not_met, ~ sum(.x, na.rm = T))) |> 
+  ungroup() |> 
+  mutate(across(mean_scale_score:percentage_standard_not_met, ~ na_if(.x, 0)))
+
+write_xlsx(cgr, "97-mini-projects/one-number-story/data/catesting.xlsx")
 
 
-
-# gss data
+# GSS data
 gss <- readxl::read_excel("97-mini-projects/one-number-story/data/gss.xlsx") |> 
   mutate(year = as.numeric(year)) |> 
   mutate(hrs2 = ifelse(hrs2 == "89+ hrs", 89, hrs2)) |> 

@@ -72,13 +72,13 @@ We will be using California education data from the California Department of Edu
 
 -   Cumulative Enrollment Data: [codebook](https://www.cde.ca.gov/ds/ad/fsenrcum.asp#CE); [download data](data/cenroll.xlsx)
 
--   English Language Learners: [codebook](https://www.cde.ca.gov/ds/ad/fselsch.asp); [download data](ell.xlsx)
+-   English Language Learners: [codebook](https://www.cde.ca.gov/ds/ad/fselsch.asp); [download data](data/ell.xlsx)
 
--   College Going Rate: [codebook](https://www.cde.ca.gov/ds/ad/fscgr12.asp); [download data](cgr.xlsx)
+-   College Going Rate: [codebook](https://www.cde.ca.gov/ds/ad/fscgr12.asp); [download data](data/cgr.xlsx)
 
--   English Language Arts/Literacy and Mathematics: [codebook](https://caaspp-elpac.ets.org/caaspp/ResearchFileListSB?ps=true&lstTestYear=2022&lstTestType=B&lstCounty=00&lstDistrict=00000); [download data]()
+-   English Language Arts/Literacy and Mathematics Test Scores: [codebook](https://caaspp-elpac.ets.org/caaspp/ResearchFileListSB?ps=true&lstTestYear=2022&lstTestType=B&lstCounty=00&lstDistrict=00000); [download data](data/catesting.xlsx) *Note: I aggregated to the county and grade level with weights*.
 
--   Science
+<!-- -   Science [download data](data/science_test.xlsx) -->
 
 Additionally, you may instead select to work with variables from the General Social Survey (a survey conducted in the United States that collects data on various aspects of social life, such as attitudes, behaviors, and demographics.):
 

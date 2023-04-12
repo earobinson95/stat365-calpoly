@@ -106,7 +106,7 @@ size.
 -   Submit a brief **initial proposal** (research question, explanatory and response variables, and a very brief explanation of the data collection process -- sample size, materials, etc.) for feedback from myself by **Monday, 4/12 at 12pm**
 -   and a **formal study protocol** (as if to a Human Subjects Review board) by **Thursday, 4/15 at 11:59pm**.
 
-Your formal study protocol will be peer-reviewed by a fellow student who will conduct a pilot study, gathering about 5 observations.
+Your formal study protocol will be peer-reviewed by a fellow student who will (ideally) conduct a pilot study, gathering about 5 observations. If materials or time constraint, do not conduct the pilot study, but instead ask questions as if you were to conduct the pilot study.
 
 ::: callout-note
 Any written document you submit to me should be well written (grammar, spelling, complete sentences, etc.).

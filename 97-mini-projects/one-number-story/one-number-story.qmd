@@ -82,7 +82,7 @@ We will be using California education data from the California Department of Edu
 
 Additionally, you may instead select to work with variables from the General Social Survey (a survey conducted in the United States that collects data on various aspects of social life, such as attitudes, behaviors, and demographics.):
 
--   General Social Survey: [download data](gss_clean.xlsx) *(codebook in sheet 2)*
+-   General Social Survey: [download data](data/gss_clean.xlsx) *(codebook in sheet 2)*
 
 If you are so inclined to select a different context than I have provided, please explore and select a data set at <https://www.cde.ca.gov/ds/ad/downloadabledata.asp> or variables from <https://gssdataexplorer.norc.org/variables/vfilter>. Then run your idea past me via email or office hours.
 

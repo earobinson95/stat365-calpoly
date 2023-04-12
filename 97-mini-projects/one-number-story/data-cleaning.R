@@ -89,7 +89,7 @@ english_math_test <- english_math_test_orig |>
   ungroup() |> 
   mutate(across(mean_scale_score:percentage_standard_not_met, ~ na_if(.x, 0)))
 
-write_xlsx(cgr, "97-mini-projects/one-number-story/data/catesting.xlsx")
+write_xlsx(english_math_test, "97-mini-projects/one-number-story/data/catesting.xlsx")
 
 
 # GSS data

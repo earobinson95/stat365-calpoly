@@ -62,25 +62,29 @@ knitr::include_graphics("images/pivot-table-proportions.jpg")
 
 The **difference in success proportions** between two groups, multiplied by 100, should be expressed as a difference in percentage points.
 
+$$p_{success|A} – p_{success|B}$$
+
 ### Percentage Diff
 The **percentage difference** in success proportions between two groups, with group B as the baseline, is calculated as: 
-$$\frac{(p_A – p_B)}{p_B} × 100%.$$
+$$\frac{(p_{success|A} – p_{success|B})}{p_{success|B}} × 100%.$$
+
+or equivalently: $\text{percentage difference} = (\text{relative risk} - 1) \times 100$
 
 ### Relative Risk
 
-The *relative risk* between two groups is the ratio of their success proportions.
+The **relative risk** between two groups is the ratio of their success proportions.
 
-$$\frac{p_A}{p_B}$$
+$$\frac{p_{success|A}}{p_{success|B}}$$
 
 ### Odds Ratio
 
-The *odds of success* are calculated as: 
+The **odds of success** are calculated as: 
 $$\frac{\text{# of successes}}{\text{# of failures}}.$$
 
-The *odds against* an event are calculated as
+The **odds against** an event are calculated as
  $$\frac{\text{# of failures}}{\text{# of successes}}.$$
 
-Odds ratio is **invariant** to which outcome is labeled a "success".
+Odds ratio is *invariant* to which outcome is labeled a "success".
 
 :::
 

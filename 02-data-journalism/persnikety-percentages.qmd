@@ -40,6 +40,7 @@ knitr::include_graphics("images/pivot-table-counts.jpg")
 
 \vspace{2.5cm}
 
+
 3. Explain what’s wrong with this sentence: *"The difference in success rates between these two groups was about 45.4%."*
 
 \vspace{2.5cm}
@@ -48,61 +49,61 @@ knitr::include_graphics("images/pivot-table-counts.jpg")
 
 \vspace{2.5cm}
 
-<!-- \newpage -->
+::: callout-note
+The **relative risk** between two groups is the ratio of their success proportions.
+
+$$\frac{p_{success|A}}{p_{success|B}}$$
+
+:::
+
+5. Calculate the *ratio* of the success rates between the two groups, using the `Placebo` group as the baseline; then write a sentence interpreting this value.
+
+\vspace{2.5cm}
 
 ::: callout-note
 The **percentage difference** in success proportions between two groups, with group B as the baseline, is calculated as: 
 
-$$\frac{(p_A – p_B)}{p_B} × 100%.$$
+$$\frac{(p_{success|A} – p_{success|B})}{p_{success|B}} × 100%.$$
+
+or equivalently: $\text{percentage difference} = (\text{relative risk} - 1) \times 100$
+
 :::
 
-5. Calculate the *percentage difference* in the success rates between the two groups, using the `Placebo` group as the baseline.  Also show how to calculate this from the ratio in Question 3. Then write a sentence that interprets this value.
+6. Calculate the *percentage difference* in the success rates between the two groups, using the `Placebo` group as the baseline.  Also show how to calculate this from the ratio in Question 5. Then write a sentence that interprets this value.
 
 \vspace{2.5cm}
 
-6. Is it correct to say that the success rate with the placebo group was 86% less than the success rate with the high dose group?  Explain why or why not.  If not, calculate the correct value to replace 86% in this statement.
+7. Is it correct to say that the success rate with the placebo group was 58% less than the success rate with the high dose group?  Explain why or why not. If not, calculate the correct value to replace 58% in this statement.
 
 \vspace{2.5cm}
 
 ::: callout-note
-The *odds of success* are calculated as
+The **odds of success** are calculated as
 
 $$\frac{\text{\# of successes}}{\text{\# of failures}}.$$
 
-Similarly, the *odds against* an event are calculated as $$\frac{\text{\# of failures}}{\text{\# of successes}}.$$
+Similarly, the **odds against** an event are calculated as $$\frac{\text{\# of failures}}{\text{\# of successes}}.$$
 
 
 If the odds of success for an event are 1:3, does this mean that about 1/3 of all events would result in success?  What if the odds of success were 1:2 or 1:1 or 2:1?  About what proportion of events would result in success if the odds of success are 1:3?
 :::
 
-7. Is it correct to say that the odds of success in the high dose group are about 0.179?  Explain.  
+8. Is it correct to say that the odds of success in the high dose group are about 0.7397?  Explain.  
 
 \vspace{2.5cm}
 
-8. Calculate the odds of successfully not developing Malaria for each group. Then calculate the odds ratio, using the `Placebo` group as the baseline. Then write a sentence interpreting the odds ratio.
+9. Calculate the odds of successfully not developing malaria for each group. Then calculate the odds ratio, using the `Placebo` group as the baseline. Then write a sentence interpreting the odds ratio.
 
 \vspace{2.5cm}
 
-9.  Explain what’s wrong with the following sentence and then revise the sentence in two different ways to correct the error: *"Successfully quitting smoking was about 2.05 times more likely with the nicotine lozenge than with the placebo lozenge."*
+10.  Explain what’s wrong with the following sentence and then revise the sentence in two different ways to correct the error: *"Successfully not developing malaria was about 7 times more likely with the high dose than with the placebo."*
 
 \vspace{2.5cm}
 
-10. Calculate the odds of failing to quit smoking for each group.  Then calculate the odds ratio, using the nicotine group as the baseline.  How does this odds ratio compare to the previous one?
+11. Calculate the odds of developing malaria for each group. Then calculate the odds ratio, using the `High Dose` group as the baseline.  How does this odds ratio compare to the previous one?
 
 \vspace{2.5cm}
 
 ::: callout-note
 Odds ratio is invariant to which outcome is labeled a success.
 :::
-
-::: callout-note
-The *relative risk* between two groups is the ratio of their success proportions.
-
-$$\frac{p_A}{p_B}$$
-
-<!-- percentagedifference=(relativerisk–1)×100 -->
-:::
-
-\vspace{2.5cm}
-
-11. Calculate the *ratio* of the success rates between the two groups, using the `Placebo` group as the baseline; then write a sentence interpreting this value.

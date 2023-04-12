@@ -1202,18 +1202,20 @@ margin-right: 0; }
 <div class="tab-content">
 <div id="tabset-1-1">
 <p>The <strong>difference in success proportions</strong> between two groups, multiplied by 100, should be expressed as a difference in percentage points.</p>
+<p><span class="math display">\[p_{success|A} – p_{success|B}\]</span></p>
 </div>
 <div id="tabset-1-2">
-<p>The <strong>percentage difference</strong> in success proportions between two groups, with group B as the baseline, is calculated as: <span class="math display">\[\frac{(p_A – p_B)}{p_B} × 100%.\]</span></p>
+<p>The <strong>percentage difference</strong> in success proportions between two groups, with group B as the baseline, is calculated as: <span class="math display">\[\frac{(p_{success|A} – p_{success|B})}{p_{success|B}} × 100%.\]</span></p>
+<p>or equivalently: <span class="math inline">\(\text{percentage difference} = (\text{relative risk} - 1) \times 100\)</span></p>
 </div>
 <div id="tabset-1-3">
-<p>The <em>relative risk</em> between two groups is the ratio of their success proportions.</p>
-<p><span class="math display">\[\frac{p_A}{p_B}\]</span></p>
+<p>The <strong>relative risk</strong> between two groups is the ratio of their success proportions.</p>
+<p><span class="math display">\[\frac{p_{success|A}}{p_{success|B}}\]</span></p>
 </div>
 <div id="tabset-1-4">
-<p>The <em>odds of success</em> are calculated as: <span class="math display">\[\frac{\text{# of successes}}{\text{# of failures}}.\]</span></p>
-<p>The <em>odds against</em> an event are calculated as <span class="math display">\[\frac{\text{# of failures}}{\text{# of successes}}.\]</span></p>
-<p>Odds ratio is <strong>invariant</strong> to which outcome is labeled a “success”.</p>
+<p>The <strong>odds of success</strong> are calculated as: <span class="math display">\[\frac{\text{# of successes}}{\text{# of failures}}.\]</span></p>
+<p>The <strong>odds against</strong> an event are calculated as <span class="math display">\[\frac{\text{# of failures}}{\text{# of successes}}.\]</span></p>
+<p>Odds ratio is <em>invariant</em> to which outcome is labeled a “success”.</p>
 </div>
 </div>
 </div>

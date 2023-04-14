@@ -1,0 +1,73 @@
+---
+title: "Data Descriptions & Methods"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Monday, April 17th
+
+Today we will...
+
++ Describing your data
++ Explaining your Statistical Methods
++ Active voice!
+
+#
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("https://bookdown.org/pkaldunn/SRM-Textbook/11-DescribingVariables_files/figure-html/unnamed-chunk-2-1.png")
+```
+
+# Describing your Data
+## When, Where, How, Who, What (The Ws!)
+
++ How the sample was obtained.
++ How the data were collected (the data collection protocol).
++ How the data were analysed (including the software used, and the statistical methods used).
++ What specialized equipment was used (don't list pencils, rulers, paper, etc.!).
+
+## Remember our Mandela Data?
+
+## Your turn!
+
+A study ([Brunton et al. 2019](https://www.mdpi.com/2504-446X/3/2/41)) recorded the response of kangaroos to drones (one of 'Vigilance', 'No vigilance', 'Flee 
+<10 m', or 'Flee >10 m') and the altitude of the drone (30m, 60m, 100m or 120m). The mob size and sex of the kangaroo was also recorded. Describe the variables in the study.
+
+## How might we analyze the Mendela Data?
+
+## To do
+
+:::: columns
+::: column
+`r fontawesome::fa("user-group")` **Peer Review of Formal Protocol**
+
+-   Due Tuesday, 4/18 at 11:59pm
+
+`r fontawesome::fa("user-group")` **Peer Review of Formal Protocol**
+
+- Aim to have your data collected by, Monday 4/24
+- As soon as you have your data collected, start working on your analysis using statistical methods learned in previous courses.
+- REPRODUCIBILITY! Document EVERYTHING!
+
+**Ask** if you have any questions.
+:::
+::: column
+`r fontawesome::fa("hashtag")` **One-number Story**
+
+-   Draft: due Thursday, 4/20 at 11:59pm
+-   Peer Review: due Sunday, 4/23 at 11:59pm
+-   Final submission: due Thursday, 4/27 at 11:59pm
+
+:::
+::::

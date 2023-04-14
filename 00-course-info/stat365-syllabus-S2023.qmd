@@ -346,7 +346,7 @@ be provided):
 -   Participate in [The Stats+Stories 300th Episode Data Visualization
     Contest](https://statsandstories.net/contest).
 -   [Make your own
-    website](https://earobinson95.github.io/stat365-calpoly/98-A-options/make-your-own-website.html)
+    website](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/make-your-own-website.html)
     using Quarto and GitHub to showcase your statistical projects.
 -   Complete a technical report project that goes above and beyond the
     requirements. Your job is to convince me in an additional one page document
@@ -402,7 +402,7 @@ and ensure that you meet the required standards.
 
 4.  **Technical report project:**
 
-The technical report project is the culminating assignment of the course, where
+The [technical report project](https://earobinson95.github.io/stat365-calpoly/99-final-project/final-project-instructions.html) is the culminating assignment of the course, where
 you will have the opportunity to apply all the skills and knowledge you have
 acquired throughout the quarter. This will be completed individually. You will
 be required to choose a research question, collect and analyze data using

@@ -107,7 +107,7 @@ Odds ratio is *invariant* to which outcome is labeled a "success".
 `r fontawesome::fa("user-group")` **Peer Review of Formal Protocol**
 
 -   Opens on Canvas Friday, 4/14 at 8am
--   Due Tuesday, 4/16 at 11:59pm
+-   Due Tuesday, 4/18 at 11:59pm
 
 As soon as you get feedback from your peer, go ahead and start collecting data!
 

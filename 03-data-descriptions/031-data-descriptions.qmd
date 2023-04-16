@@ -1,5 +1,5 @@
 ---
-title: "Data Descriptions & Methods"
+title: "Data & Methods"
 subtitle: "Stat 365: Statistical Communication"
 format: 
   revealjs:
@@ -14,60 +14,186 @@ execute:
 
 ## Monday, April 17th
 
+```{r}
+#| include: false
+library(tidyverse)
+```
+
 Today we will...
 
-+ Describing your data
-+ Explaining your Statistical Methods
-+ Active voice!
+-   Describe your data and collection methods
+-   Explain your statistical analysis methods
+-   Use active voice!
 
-#
+## Describing your Data
+
+### When, Where, How, Who, What (The Ws!)
+
+<br>
+
+|           |                                                                                  |
+|-----------|----------------------------------------------------------------------------------|
+| **When**  | did the data collection take place?                                              |
+| **Where** | did the data collection take place?                                              |
+| **Who**   | were the subjects / observations under study?                                    |
+| **How**   | was the sample obtained? (inclusion/exclusion criteria)                          |
+| **How**   | were the data collected?                                                         |
+| **What**  | specialized equipment was used (don't list pencils, rulers, paper, excel, etc.!) |
+
+## Remember our Mandela Study?
+
+```{r}
+#| echo: false
+mandela_data <- read_csv(here::here("03-data-descriptions", "data", "mandela_results.csv"))
+mandela_data |> 
+  DT::datatable(filter = "none",
+                rownames = FALSE,
+                options = list(lengthMenu = list(c(5),
+                                                 c('5')
+                                                 )
+                )
+  )
+```
+
+## `r fontawesome::fa("brain")` Diagram out the Ws
+
+### Are there any questions you still have about the data and data collection process?
+
+Was Nelson Mandela, the first president of South Africa following apartheid, older or younger than age 120 when he died? ________
+
+Make a guess for Mandela’s age (in years) when he died. ________
+
+<br>
+
+Was Nelson Mandela, the first president of South Africa following apartheid, older or younger than age 12 when he died? ________
+
+Make a guess for Mandela’s age (in years) when he died. ________
+
+
+## Describing Variables
+
+-   Use context!
+-   Don't forget units of measurement
+    -   Rates have units!
+-   Usually provide summary statistics
+    -   Pay attention to significant digits
+
+    -   We will talk about formatting tables on Wednesday!
+
+    -   Don't forget sample sizes
+
+## `r fontawesome::fa("brain")` Let ChatGPT try!
+
+I asked ChatGPT to provide me three versions which describe the variables from a data set which recorded information about kangaroo behaviors.
+
+-   Read each description and make a list of its pros and cons.
+-   What information is missing?
+-   How might you improve upon these descriptions?
+
+## `r fontawesome::fa("brain")` Let ChatGPT try!
+
+::: panel-tabset
+### Prompt
+
+A study ([Brunton et al. 2019](https://www.mdpi.com/2504-446X/3/2/41)) recorded the response of kangaroos to drones (one of 'Vigilance', 'No vigilance', 'Flee \<10 m', or 'Flee \>10 m') and the altitude of the drone (30m, 60m, 100m or 120m). The mob size and sex of the kangaroo was also recorded. Describe the variables in the study.
+
+### Version 1
+
+In the study conducted by Brunton et al. in 2019, the researchers recorded several variables related to kangaroo behavior in response to drones. These variables included the response of kangaroos to drones, which was categorized into four types ('Vigilance', 'No vigilance', 'Flee \<10 m', or 'Flee \>10 m'), as well as the altitude of the drone (30m, 60m, 100m, or 120m). The researchers also recorded the size of the kangaroo mob and the sex of the kangaroos.
+
+### Version 2
+
+-   **Response of Kangaroos to Drones:** This variable refers to the response categories of the kangaroos to drones, which were classified into four categories; 'Vigilance', 'No vigilance', 'Flee \<10 m', and 'Flee \>10 m'. This variable was measured on a categorical scale.
+
+-   **Altitude of the Drone:** This variable refers to the height at which the drone was flown during the study, which was measured in meters. The altitude was measured on a continuous scale.
+
+-   **Mob Size:** This variable refers to the number of kangaroos in a group or mob, which was recorded during the study. Mob size was measured on a discrete scale.
+
+-   **Sex of Kangaroo:** This variable refers to the sex of the kangaroo, which was recorded as either male or female. This variable was measured on a nominal scale.
+
+### Version 3
+
+In a study conducted by Brunton et al. in 2019, four variables were used to investigate the response of kangaroos to drones. These variables include the response of kangaroos to drones, altitude of the drone, mob size, and sex of the kangaroo. The response of kangaroos to drones was recorded as one of four categories: 'Vigilance', 'No vigilance', 'Flee \<10 m', and 'Flee \>10 m'. Altitude of the drone was recorded in meters on a continuous scale, while mob size was recorded as the number of kangaroos in a group or mob, and was measured on a discrete scale. Lastly, sex of kangaroo was recorded as either male or female and was measured on a nominal scale.
+:::
+
+## Explaining your statistical analysis methods
+
+**How** the data were analysed (including the software used, and the statistical methods used).
+
+-   Statistical analysis used and any specifications.
+-   Include the software and version used to analyze the data. Make sure to include any packages and their versions!
+-   Define your significance level.
+-   Address any posthoc tests or adjustments for multiple comparisons.
+
+## `r fontawesome::fa("brain")` What statistical analysis method would you use to draw conclusions from the Mandela Data? {style="text-align: center;"}
 
 ```{r}
 #| echo: false
 #| fig-align: center
 #| out-width: 60%
-knitr::include_graphics("https://bookdown.org/pkaldunn/SRM-Textbook/11-DescribingVariables_files/figure-html/unnamed-chunk-2-1.png")
+knitr::include_graphics("images/statistical-analysis-words.png")
 ```
 
-# Describing your Data
-## When, Where, How, Who, What (The Ws!)
+## `r fontawesome::fa("spell-check")` (by zombies) test for `r fontawesome::fa("ban")` passive voice!
 
-+ How the sample was obtained.
-+ How the data were collected (the data collection protocol).
-+ How the data were analysed (including the software used, and the statistical methods used).
-+ What specialized equipment was used (don't list pencils, rulers, paper, etc.!).
+::: callout-caution
+Your technical report should be written in first person active voice.
+:::
 
-## Remember our Mandela Data?
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("https://communicatehealth.com/wp-content/uploads/whhl/doodle_102915.png")
+```
 
-## Your turn!
+## `r fontawesome::fa("brain")` Try it! (by zombies)
 
-A study ([Brunton et al. 2019](https://www.mdpi.com/2504-446X/3/2/41)) recorded the response of kangaroos to drones (one of 'Vigilance', 'No vigilance', 'Flee 
-<10 m', or 'Flee >10 m') and the altitude of the drone (30m, 60m, 100m or 120m). The mob size and sex of the kangaroo was also recorded. Describe the variables in the study.
+**Passive:** The form was processed and returned (by zombies).
 
-## How might we analyze the Mendela Data?
+**Active:** We completed your request and mailed the form to you.
+
+<br>
+
+-   Twenty-seven shots were taken from the three point line.
+
+<!-- **Passive:** Twenty-seven shots were taken from the three point line (by zombies). -->
+
+<!-- **Active:** Players took 27 shots from the three point line. -->
+
+<br>
+
+-   Researchers had their questions answered in a special session with Bill Nye the Science Guy.
+
+<!-- **Passive:** Researchers had their questions answered (by zombies) in a special session with Bill Nye the Science Guy. -->
+
+<!-- **Active** Bill Nye the science guy answered the researchers' questions in a special session. -->
+
+<br>
+
+-   I recruited 43 full-time Cal Poly students to participate in my study.
 
 ## To do
 
-:::: columns
+::: columns
 ::: column
 `r fontawesome::fa("user-group")` **Peer Review of Formal Protocol**
 
 -   Due Tuesday, 4/18 at 11:59pm
 
-`r fontawesome::fa("user-group")` **Peer Review of Formal Protocol**
+`r fontawesome::fa("flask")` **Collect Data**
 
-- Aim to have your data collected by, Monday 4/24
-- As soon as you have your data collected, start working on your analysis using statistical methods learned in previous courses.
-- REPRODUCIBILITY! Document EVERYTHING!
-
-**Ask** if you have any questions.
+-   Aim to have your data collected by, Monday 4/24
+-   As soon as you have your data collected, start working on your analysis using statistical methods learned in previous courses.
+-   REPRODUCIBILITY! Document EVERYTHING!
+-   **Read CwD 3.4:** Tracking the Analysis
 :::
+
 ::: column
 `r fontawesome::fa("hashtag")` **One-number Story**
 
 -   Draft: due Thursday, 4/20 at 11:59pm
 -   Peer Review: due Sunday, 4/23 at 11:59pm
 -   Final submission: due Thursday, 4/27 at 11:59pm
-
 :::
-::::
+:::

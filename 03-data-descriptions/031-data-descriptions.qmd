@@ -21,9 +21,48 @@ library(tidyverse)
 
 Today we will...
 
+-   Use active voice!
 -   Describe your data and collection methods
 -   Explain your statistical analysis methods
--   Use active voice!
+
+## `r fontawesome::fa("spell-check")` (by zombies) test for `r fontawesome::fa("ban")` passive voice!
+
+::: callout-caution
+Your technical report should be written in first person active voice.
+:::
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("https://communicatehealth.com/wp-content/uploads/whhl/doodle_102915.png")
+```
+
+## `r fontawesome::fa("brain")` Try it! (by zombies)
+
+**Passive:** The form was processed and returned (by zombies).
+
+**Active:** We completed your request and mailed the form to you.
+
+<br>
+
+-   Twenty-seven shots were taken from the three point line.
+
+<!-- **Passive:** Twenty-seven shots were taken from the three point line (by zombies). -->
+
+<!-- **Active:** Players took 27 shots from the three point line. -->
+
+<br>
+
+-   Researchers had their questions answered in a special session with Bill Nye the Science Guy.
+
+<!-- **Passive:** Researchers had their questions answered (by zombies) in a special session with Bill Nye the Science Guy. -->
+
+<!-- **Active** Bill Nye the science guy answered the researchers' questions in a special session. -->
+
+<br>
+
+-   I recruited 43 full-time Cal Poly students to participate in my study.
 
 ## Describing your Data
 
@@ -55,7 +94,7 @@ mandela_data |>
   )
 ```
 
-## `r fontawesome::fa("brain")` Diagram out the Ws
+## `r fontawesome::fa("brain")` Critique my writing!
 
 ### Are there any questions you still have about the data and data collection process?
 
@@ -68,6 +107,25 @@ Make a guess for Mandela’s age (in years) when he died. ________
 Was Nelson Mandela, the first president of South Africa following apartheid, older or younger than age 12 when he died? ________
 
 Make a guess for Mandela’s age (in years) when he died. ________
+
+## `r fontawesome::fa("computer")` Let's use some tools to help us improve the draft!^[Image sources: https://s3.amazonaws.com/libapps/accounts/47607/images/grammarly.png;  https://topaiblog.com/wp-content/uploads/2023/02/Chat-GPT-Discover-AI-use-cases-AI-Demo.jpg]
+
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/47607/images/grammarly.png")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("https://topaiblog.com/wp-content/uploads/2023/02/Chat-GPT-Discover-AI-use-cases-AI-Demo.jpg")
+```
+:::
+::::
 
 
 ## Describing Variables
@@ -133,45 +191,6 @@ In a study conducted by Brunton et al. in 2019, four variables were used to inve
 #| out-width: 60%
 knitr::include_graphics("images/statistical-analysis-words.png")
 ```
-
-## `r fontawesome::fa("spell-check")` (by zombies) test for `r fontawesome::fa("ban")` passive voice!
-
-::: callout-caution
-Your technical report should be written in first person active voice.
-:::
-
-```{r}
-#| echo: false
-#| fig-align: center
-#| out-width: 60%
-knitr::include_graphics("https://communicatehealth.com/wp-content/uploads/whhl/doodle_102915.png")
-```
-
-## `r fontawesome::fa("brain")` Try it! (by zombies)
-
-**Passive:** The form was processed and returned (by zombies).
-
-**Active:** We completed your request and mailed the form to you.
-
-<br>
-
--   Twenty-seven shots were taken from the three point line.
-
-<!-- **Passive:** Twenty-seven shots were taken from the three point line (by zombies). -->
-
-<!-- **Active:** Players took 27 shots from the three point line. -->
-
-<br>
-
--   Researchers had their questions answered in a special session with Bill Nye the Science Guy.
-
-<!-- **Passive:** Researchers had their questions answered (by zombies) in a special session with Bill Nye the Science Guy. -->
-
-<!-- **Active** Bill Nye the science guy answered the researchers' questions in a special session. -->
-
-<br>
-
--   I recruited 43 full-time Cal Poly students to participate in my study.
 
 ## To do
 

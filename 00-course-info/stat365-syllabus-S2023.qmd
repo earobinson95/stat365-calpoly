@@ -305,7 +305,8 @@ and more.
 In this class we will be using a contract grading system. This is designed to
 give flexibility and freedom to explore while ensuring a level of
 accountability. Learning to write takes practice. I do not want worries about
-grades to distract us from being creative, taking risks, and ultimately finding our voices.
+grades to distract us from being creative, taking risks, and ultimately finding
+our voices.
 
 You are guaranteed a grade of a B for this class if you meet the following
 conditions:
@@ -402,15 +403,17 @@ and ensure that you meet the required standards.
 
 4.  **Technical report project:**
 
-The [technical report project](https://earobinson95.github.io/stat365-calpoly/99-final-project/final-project-instructions.html) is the culminating assignment of the course, where
-you will have the opportunity to apply all the skills and knowledge you have
-acquired throughout the quarter. This will be completed individually. You will
-be required to choose a research question, collect and analyze data using
-appropriate statistical methods, and produce a technical report that effectively
-communicates your findings. You will be provided with guidelines and resources
-to support your work, and you will receive feedback and guidance throughout the
-project. The technical report project will be evaluated based on its clarity,
-thoroughness, and adherence to standard statistical practices.
+The [technical report
+project](https://earobinson95.github.io/stat365-calpoly/99-final-project/final-project-instructions.html)
+is the culminating assignment of the course, where you will have the opportunity
+to apply all the skills and knowledge you have acquired throughout the quarter.
+This will be completed individually. You will be required to choose a research
+question, collect and analyze data using appropriate statistical methods, and
+produce a technical report that effectively communicates your findings. You will
+be provided with guidelines and resources to support your work, and you will
+receive feedback and guidance throughout the project. The technical report
+project will be evaluated based on its clarity, thoroughness, and adherence to
+standard statistical practices.
 
 ## Late work
 
@@ -418,7 +421,8 @@ I understand that unexpected events may arise during the quarter that may
 prevent you from submitting your assignments on time. To accommodate for this,
 you will be given four 24-hour late submission "tokens" to use throughout the
 quarter. To use a token, you must (1) send me an email and (2) fill out the
-deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7). The extension request must be submitted **before** the assignment due date.
+deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7). The
+extension request must be submitted **before** the assignment due date.
 
 These tokens **cannot** be used on your final technical report submission.
 
@@ -452,26 +456,23 @@ This schedule is **very** tentative and subject to change.
 |                  | summaries, and pivot  |                                  |
 |                  | tables                |                                  |
 +------------------+-----------------------+----------------------------------+
-| 3: 4/17, 4/19    | Descriptive           | CwD (ch. 3.1 - 3.2)              |
-|                  | Statistics + Tables   |                                  |
+| 3: 4/17, 4/19    | Descriptive           | CwD (ch. 3.1 - 3.3)              |
+|                  | Statistics            |                                  |
 |                  |                       |                                  |
-|                  | Reproducibility       |                                  |
+|                  | Tables                |                                  |
 +------------------+-----------------------+----------------------------------+
-| 4: 4/24, 4/26    | Intro to viz          | CwD (4, 8, 9), The Functional    |
-|                  |                       | Art (intro), Visualize this      |
-|                  | Color                 | (intro, ch. 1), Storytelling     |
-|                  |                       | with Data (ch. 7 - 10)           |
+| 4: 4/24, 4/26    | Intro to viz          | Storytelling with Data Podcast   |
+|                  |                       | Episodes #27: what is data       |
+|                  | Color                 | visualization and #67: beginner  |
+|                  |                       | mistakes in data viz             |
 |                  |                       |                                  |
-|                  |                       | Design Elements (ch. 3),         |
-|                  |                       | Envisioning Infromation (ch. 5)  |
+|                  |                       | Communicating Data with Tableau  |
+|                  |                       | ch. 2                            |
 +------------------+-----------------------+----------------------------------+
-| 5: 5/1, 5/3      | Perception +          | Cleveland (ch. 4), Show me the   |
-|                  | Principles            | numbers (ch. 5) Data Points (ch. |
-|                  |                       | 5)                               |
-|                  | Simplification        |                                  |
-|                  |                       | CwD (ch. 5), Show me the numbers |
-|                  |                       | (ch. 8), Visual Display (ch. 4,  |
-|                  |                       | 6)                               |
+| 5: 5/1, 5/3      | Perception +          | Show me the numbers (ch. 5)      |
+|                  | Principles            |                                  |
+|                  |                       | Show me the numbers (ch. 8),     |
+|                  | Simplification        | Visual Display (ch. 4, 6)        |
 +------------------+-----------------------+----------------------------------+
 | 6: 5/8, 5/10     | Statistical           | Twenty-five Analogies for        |
 |                  | Tendencies            | Explaining Statistical Concepts  |

@@ -37,13 +37,13 @@ Use a table when...[^1]
 -   Values involve more than one unit of measure
 -   Values must be presented at various levels of aggregation
 
-## Table Anatomy^[[Bavdekar, 2015](https://www.researchgate.net/profile/Sandeep-Bavdekar/publication/282506195_Using_Tables_and_Graphs_for_Reporting_Data/links/5611803308aec422d11701b8/Using-Tables-and-Graphs-for-Reporting-Data.pdf)]
+## Table Anatomy^[Better Data Visualizations, Jonathan Schwabish]
 
 ```{r}
 #| echo: false
 #| fig-align: center
 #| out-width: 60%
-knitr::include_graphics("images/table-anatomy.png")
+knitr::include_graphics("images/table-anatomy.JPG")
 ```
 
 <!-- Tables will typically come up in -->

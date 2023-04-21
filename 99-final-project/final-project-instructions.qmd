@@ -34,13 +34,13 @@ There are packages in R that provide templates for scientific articles that you 
 +----------------------------------------------+-------------------------------+
 | Peer Review of Formal Protocol               | Tuesday, April 18 at 11:59pm  |
 +----------------------------------------------+-------------------------------+
-| Data Collection                              | Monday, April 24 at 12pm      |
+| Data Collection                              | Thursday, April 27 at 12pm    |
 +----------------------------------------------+-------------------------------+
-| Draft: Data and Methods + Table              | Monday, May 1 at 12pm         |
+| Draft: Data and Methods + Table              | Thursday, May 4 at 12pm       |
 +----------------------------------------------+-------------------------------+
-| Draft: Results and Discussion + Graphic      | Monday, May 15 at 12pm        |
+| Draft: Results and Discussion + Graphic      | Thursday, May 18 at 12pm      |
 +----------------------------------------------+-------------------------------+
-| Draft Submission + Introduction & Conclusion | Monday, May 29 at 12pm        |
+| Draft Submission + Introduction & Conclusion | Thursday, June 1 at 12pm      |
 +----------------------------------------------+-------------------------------+
 | Final Submission                             | Wednesday, June 14 at 5pm     |
 +----------------------------------------------+-------------------------------+
@@ -68,6 +68,15 @@ and the following sub-folders
 In your final submission, you will turn in a .zip file of your project folder in order for me to evaluate your organization and workflow.
 
 # Study Proposal {.unnumbered}
+
+<!-- Notes for next time (be more clear) -->
+
+<!-- - Motivation/Background -->
+<!-- - Clearly state: observation, explanatory variable, response variable (and units/levels) -->
+<!-- - Sample size (inclusion/exclusion criteria, how will you obtain your sample) -->
+<!-- - Materials -->
+<!-- - Detailed methods (how will you randomize?) -->
+<!-- - Propose statistical analysis -->
 
 For your technical report assignment, you will be required to propose a research project that can be easily executed within 1-2 days. Your project should be:
 

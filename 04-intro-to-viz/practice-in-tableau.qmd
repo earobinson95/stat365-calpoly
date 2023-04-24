@@ -36,9 +36,9 @@ editor: source
 
 # Submit URL(s) to Canvas
 
-For credit, submit the links to your Tableau visualizations.
+<!-- For credit, submit the links to your Tableau visualizations. -->
 
-Make sure **both** of your visualizations can be seen from the links you submitted.
+Make sure **both** of your Tableau visualizations can be seen from the links you submitted.
 
 **Tableau Desktop**
 
@@ -51,8 +51,9 @@ Make sure **both** of your visualizations can be seen from the links you submitt
 
 **Tableau Online**
 
-1. `Publish as...`
-2. Make sure to add your name
-3. Go to workbook > Copy Paste URL to Canvas Assignment
+1. `Publish as...` > `Projects` > `Palmer Penguins`
+2. Check `Show sheets as tabs` and make sure to add your name
+3. Publish
+4. Go to workbook > Copy Paste URL to Canvas Assignment
 
 

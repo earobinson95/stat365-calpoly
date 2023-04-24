@@ -149,7 +149,7 @@ knitr::include_graphics("images/francis-galton.JPG")
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 90%
+#| out-width: 70%
 knitr::include_graphics("images/statistical-atlases.JPG")
 ```
 
@@ -419,7 +419,7 @@ knitr::include_graphics("images/tableau-continuous-discrete.JPG")
 
 ## [Visualize the Guesses for Mandela's Age by Anchoring Prompt](https://public.tableau.com/views/mandela_viz/Histogram?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-[Download Mandela Data](../03-data-descriptions/data/mandela_resulds.csv)
+[Download Mandela Data](mandela_resulds.csv)
 
 ```{r}
 #| echo: false

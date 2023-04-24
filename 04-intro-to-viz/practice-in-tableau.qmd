@@ -1,0 +1,58 @@
+---
+title: "Practice in Tableau"
+subtitle: "Stat 365: Statistical Communication"
+author: "Due Monday, 5/1/2023"
+format: 
+  pdf:
+    self-contained: true
+editor: source
+---
+
+# Connect to the data set
+
+[Download our trusty data set, the Palmer Penguins](data/penguins.csv)!
+
+**Tableau Desktop**
+
+1. `Connect` > `more...` > select and open `penguins.csv`
+2. Click `Sheet 1`
+
+**Tableau Online**
+
+1. `New` > `Workbook`
+2. `Connect to Data` > `Files` > `Upload from computer`
+
+<!-- ![](practice-with-tableau/penguins-data-connection.JPG) -->
+
+# Click Sheet 1: Recreate the bar-plot below
+
+![](practice-with-tableau/species-barplot.JPG)
+
+# Click Sheet 2: Recreate the scatter-plot below
+
+*Tip:* You will need to convert `id` to a measure and use this as a `Detail` to get a point for each penguin.
+
+![](practice-with-tableau/bill-size.JPG)
+
+# Submit URL(s) to Canvas
+
+For credit, submit the links to your Tableau visualizations.
+
+Make sure **both** of your visualizations can be seen from the links you submitted.
+
+**Tableau Desktop**
+
+1. You first need to extract the data `Data` > `penguins` > `extract`
+2. Publish `Sheet 1` to Tableau Public `Server` > `Tableau Public` > `Save to Tableau Public As...` (you may need to login / create an account)
+3. Copy Paste URL to Canvas Assignment
+4. Repeat for `Sheet 2`
+
+<!-- ![](images/public-publish.JPG) -->
+
+**Tableau Online**
+
+1. `Publish as...`
+2. Make sure to add your name
+3. Go to workbook > Copy Paste URL to Canvas Assignment
+
+

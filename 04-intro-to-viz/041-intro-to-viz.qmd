@@ -1,0 +1,460 @@
+---
+title: "Intro to Viz"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Monday, April 24th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+- Intro to Viz
+- History of Data Visualization
+- Intro to Tableau
+- Practice with Tableau
+
+# A taste of visualization
+
+## Dear Data^[Giorgia Lupi and Stefanie Posavec, Dear Data <www.dear-data.com>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/dear-data.JPG")
+```
+
+## [U.S. Gun Killings in 2018](https://guns.periscopic.com/)
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/us-gun-killings.JPG")
+```
+
+
+## A big question for this course is how to best map variables to visual attributes^[Jacques Bertin, Semiology of Graphics. 1967]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 55%
+knitr::include_graphics("images/visual-attributes.JPG")
+```
+
+# A (brief-ish) History of Data Visualization
+
+## 15,000 B.C.
+### Laxcaux, France
+cave paintings^[via Jordan Crouser]
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 25%
+knitr::include_graphics("images/cave-paintings.JPG")
+```
+
+## 900s^[via Jordan Crouser and <http://www.datavis.ca/papers/hbook.pdf>]
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/solar-system.JPG")
+```
+
+## 1759 - 1823
+### William Playfair^[http://www.nytimes.com/2012/04/22/magazine/who-made-that-pie-chart.html]
+Credited with the invention of many common data visualizations: the pie chart, the bar chart, the line and area chart.
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 70%
+knitr::include_graphics("images/william-playfair.JPG")
+```
+
+## 1813 - 1858
+### John Snow^[(poor Charles Cheffins, who drew this graphic and gets no credit)]
+:::: columns
+::: column
+(no, not the one you're thinking about)
+
+Used mapping to solve a cholera epidemic in London
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/john-snow.JPG")
+```
+:::
+::::
+
+## 1781 - 1870
+### Charles Joseph Minard^[Napoleon’s march on Russia]
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/napoleons-march.JPG")
+```
+
+## 1820 - 1910
+### Florence Nightingale^[<http://thisisstatistics.org/florence-nightingale-the-lady-with-the-data/>]
+In addition to her work as a nurse, Nightingale was a statistician
+and invented the “coxcomb,” a variation on the pie chart
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 55%
+knitr::include_graphics("images/florence-nightingale.JPG")
+```
+
+## 1822 - 1911
+### Francis Galton^[via <http://www.datavis.ca/papers/hbook.pdf>]
+
+:::: columns
+::: column
+Super-famous statistician `r fontawesome::fa("smile")`
+
+and eugenicist `r fontawesome::fa("thumbs-down")`
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/francis-galton.JPG")
+```
+:::
+::::
+
+## 1800s
+### Statistical Atlases^[via Michael Friendly’s [A Brief History of Data Visualization](http://www.datavis.ca/papers/hbook.pdf); [Framed! Reproducing and Revisiting 150 year old charts](https://www.researchgate.net/profile/Susan-Vanderplas/publication/330408369_Framed_Reproducing_and_Revisiting_150-Year-Old_Charts/links/5f0b50bc92851c52d62d7c71/Framed-Reproducing-and-Revisiting-150-Year-Old-Charts.pdf?_sg%5B0%5D=started_experiment_milestone&origin=journalDetail) by VanderPlas, Goluch, and Hofmann]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 90%
+knitr::include_graphics("images/statistical-atlases.JPG")
+```
+
+## 1868-1963
+### W.E.B. Du Boi^[via [Nightingale](https://medium.com/nightingale/w-e-b-dubois-and-four-essential-steps-to-effective-persuasion-6108a70a5708) and [hyperallergic](https://hyperallergic.com/306559/w-e-b-du-boiss-modernist-data-visualizations-of-black-life/)]
+(yes, the same Du Bois you're thinking of)
+
+Data Portraits of the Paris Exhibition
+
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/web-duboi-1.jpg")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/web-duboi-2.jpg")
+```
+:::
+::::
+
+## 1897 - 1986
+### Mary Eleanor Spear^[Ben Jones. Credit Where Credit is Due: Mary Eleanor Spear. [Nightingale](https://medium.com/nightingale/credit-where-credit-is-due-mary-eleanor-spear-6a7a1951b8e6)]
+Statistician who developed the box plot and bar chart!
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 70%
+knitr::include_graphics("images/mary-eleanor-spear.jpg")
+```
+
+## 1915 - 2000
+### John Tukey
+
+:::: columns
+::: column
++ Statistician who rocked the boat
+
++ Proposed a method called Exploratory Data Analysis (EDA), which involves making many simple graphs and summary statistics to understand data.
+
++ “The greatest value of a picture is when it forces us to notice what we never expected to see.”
+
++ Got credit for the boxplot, but didn’t create it
+
++ prim9: <https://www.youtube.com/watch?v=B7XoW2qiFUA>
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/john-tukey.jpg")
+```
+:::
+::::
+
+## 1918 - 2010
+### Jacques Bertin
+
+Cartographer and theorist
+
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 70%
+knitr::include_graphics("images/jacques-bertin-1.jpg")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/jacques-bertin-2.jpg")
+```
+:::
+::::
+
+## 1943 - 
+### William Cleveland^[http://info.slis.indiana.edu/~katy/S637-S11/cleveland84.pdf]
+
+:::: columns
+::: column
++ Professor of statistics at Purdue
++ Did famous research about effectiveness of visualizations
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/william-cleveland-1.jpg")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/william-cleveland-2.jpg")
+```
+:::
+::::
+
+##
+### Interactivity, brushing and linking
+
+<iframe src="https://player.vimeo.com/video/307788027?h=603ca2a2e1" width="100%" height="75%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/307788027">plotlyGGally</a> from <a href="https://vimeo.com/cpsievert">Carson Sievert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+##
+### Luke Tierney^[<https://ww2.amstat.org/publications/jse/v3n1/anderson.html>]
+
+xlsp-stat
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 40%
+knitr::include_graphics("images/luke-tierney.jpg")
+```
+
+## 1945 -
+### Leland Wilkinson
+
+:::: columns
+::: column
+Statistician and software designer
+
+Worked on SYSTAT, SPSS, Tableau, now H2O.ai
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/leland-wilkinson-1.jpg")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/leland-wilkinson-2.jpg")
+```
+:::
+::::
+
+## 1979 -
+### Hadley Wickham
+
+Famous R programmer
+
+Implemented the grammar of graphics in R, ggplot2
+
+Works at RStudio
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/hadley-wickham.jpg")
+```
+
+## 
+### Mike Bostock
+
+Created d3.js, a javascript implementation of the grammar of graphics
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/mike-bostock.jpg")
+```
+
+## Things are accelerating!
+
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/vegalite-viz.JPG")
+```
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/vr-viz.JPG")
+```
+:::
+::: column
+<!-- [SAS Graphics Accelerator: Audio Mappings for Sonification](https://www.youtube.com/watch?v=G3EUgxGBk3w&ab_channel=AdamBeaunoyer) -->
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/sas-accelerator.JPG")
+```
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/multivariate-beer.JPG")
+```
+:::
+::::
+
+## Use a graph when...^[Stephen Few, Show Me the Numbers]
+
++ The message is contained the shape of the variables (e.g. patterns, trends, and exceptions)
++ The display will be used to reveal relationships among whole sets of values.
+
+## Anatomy of a Graph^[Better Data Visualizations, Jonathan Schwabish]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/graph-anatomy.JPG")
+```
+
+# Let's learn Tableau!
+
+## Data Connections
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/tableau-layout.JPG")
+```
+
+## Tableau Sheet
+
+**Dimensions** *(think factors)*, **Measures** *(think quantitative)*, and **Marks** *(think aesthetics)* are combined to create different charts to visualize data.
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/tableau-layout2.JPG")
+```
+
+## Continuous vs Discrete
+
+<br>
+<br>
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/tableau-continuous-discrete.JPG")
+```
+
+## [Visualize the Guesses for Mandela's Age by Anchoring Prompt](https://public.tableau.com/views/mandela_viz/Histogram?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
+[Download Mandela Data](../03-data-descriptions/data/mandela_resulds.csv)
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/mandela-viz.JPG")
+```
+
+
+# Practice in Tableau
+
+## To do
+
+::: columns
+::: column
+
+`r fontawesome::fa("flask")` **Collect Data** 
+
++ due Thursday, 4/27
+
+`r fontawesome::fa("pencil")` **Data and Methods + Table** 
+
++ due Thursday, 5/4
++ You will need to include your statistical methods.
++ REPRODUCIBILITY! Document EVERYTHING!
++ **Read CwD 3.4:** Tracking the Analysis
+:::
+
+::: column
+`r fontawesome::fa("hashtag")` **One-number Story**
+
++ Final submission: due Thursday, 4/27 at 11:59pm
+
+`r fontawesome::fa("chart-simple")` **Practice in Tableau**
+
++ Submit URLs: due Monday, 5/1 at 11:59pm
+:::
+:::

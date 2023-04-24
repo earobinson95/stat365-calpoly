@@ -30,7 +30,7 @@ editor: source
 
 # Click Sheet 2: Recreate the scatter-plot below
 
-*Tip:* You will need to convert `id` to a measure and use this as a `Detail` to get a point for each penguin.
+*Tip:* You will need to convert `id` to a dimension and use this as a `Detail` to get a point for each penguin.
 
 ![](practice-with-tableau/bill-size.JPG)
 

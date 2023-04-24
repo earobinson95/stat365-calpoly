@@ -419,7 +419,7 @@ knitr::include_graphics("images/tableau-continuous-discrete.JPG")
 
 ## [Visualize the Guesses for Mandela's Age by Anchoring Prompt](https://public.tableau.com/views/mandela_viz/Histogram?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-[Download Mandela Data](mandela_resulds.csv)
+[Download Mandela Data](mandela_results.csv)
 
 ```{r}
 #| echo: false

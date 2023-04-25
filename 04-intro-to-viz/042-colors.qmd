@@ -1,0 +1,51 @@
+---
+title: "Colors"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Wednesday, April 26th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+
+## To do
+
+::: columns
+::: column
+
+`r fontawesome::fa("flask")` **Collect Data** 
+
++ due Thursday, 4/27
+
+`r fontawesome::fa("pencil")` **Data and Methods + Table** 
+
++ due Thursday, 5/4
++ You will need to include your statistical methods.
++ REPRODUCIBILITY! Document EVERYTHING!
++ **Read CwD 3.4:** Tracking the Analysis
+:::
+
+::: column
+`r fontawesome::fa("hashtag")` **One-number Story**
+
++ Final submission: due Thursday, 4/27 at 11:59pm
+
+`r fontawesome::fa("chart-simple")` **Practice in Tableau**
+
++ Submit URLs: due Monday, 5/1 at 11:59pm
+:::
+:::

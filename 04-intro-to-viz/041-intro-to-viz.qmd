@@ -429,7 +429,7 @@ knitr::include_graphics("images/mandela-viz.JPG")
 ```
 
 
-# Practice in Tableau
+# [Practice in Tableau](https://earobinson95.github.io/stat365-calpoly/04-intro-to-viz/practice-in-tableau.pdf)
 
 ## To do
 

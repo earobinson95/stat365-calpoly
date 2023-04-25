@@ -35,7 +35,7 @@
 *Week 4*
 
 + [Intro to Viz](https://earobinson95.github.io/stat365-calpoly/04-intro-to-viz/041-intro-to-viz.html#/title-slide)
-+ Color
++ [Color](https://earobinson95.github.io/stat365-calpoly/04-intro-to-viz/042-colors.html#/title-slide)
 
 *Week 5*
 

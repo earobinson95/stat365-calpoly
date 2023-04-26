@@ -257,7 +257,7 @@ knitr::include_graphics("images/example-palettes-pie.JPG")
 
 # Colorblindness
 
-## Colorblindness
+## Colorblindness^[<https://enchroma.com/pages/test?gclid=CjwKCAjwl6OiBhA2EiwAuUwWZVGjQSMON4C4fW_4jtK1sOuh6KPPNydAvHzoVJ8EUrUstaCR7Rr9NxoCe80QAvD_BwE>]
 
 :::: columns
 ::: column

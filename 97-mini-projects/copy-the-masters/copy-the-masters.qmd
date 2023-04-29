@@ -15,6 +15,10 @@ execute:
   warning: false
 ---
 
+::: callout-note
+I recommend completing this mini-project in Quarto or Rmarkdown. Please include your code!
+:::
+
 ### Deliverables
 
 +--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
@@ -145,6 +149,11 @@ To meet the "satisfactory" requirements for the contract, this project must:
 -   include all components described above
 
 -   Meet quality guidelines laid out in the following rubric (all 2s and above for each element and demonstration of additional considerations)
+
+
+::: callout-warning
+Please include ALL code used to complete the recreation of the graphic.
+:::
 
 ::: column-page
 

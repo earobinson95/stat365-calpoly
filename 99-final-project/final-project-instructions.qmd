@@ -14,9 +14,9 @@ editor: source
 ---
 
 ::: callout-note
-You can choose to use whichever document editors (Word, google docs, RMarkdown, Quarto) and statistical software programs (R, SAS, Python, JMP, Minitab) you are most comfortable using as long as they can appropriately carry out your analysis. However, you must submit all check-point draft documents and your final report as .pdf file extensions so I can provide written feedback within Canvas via my iPad.
+You can choose to use whichever document editors (Word, Google Docs, RMarkdown, Quarto) and statistical software programs (R, SAS, Python, JMP, Minitab) you are most comfortable using as long as they can appropriately carry out your analysis. However, you must submit all check-point draft documents and your final report as .pdf file extensions so I can provide written feedback within Canvas via my iPad.
 
-If you have the background and skills, I do encourage you to use a scripting language (R, SAS, Python), etc. and good graphical tools (ggplot2, Tableau, Datawrapper).
+If you have the background and skills, I do encourage you to use a scripting language (R, SAS, Python), and good graphing tools (ggplot2, Tableau, Datawrapper).
 
 There are packages in R that provide templates for scientific articles that you might want to look into: `rticles`, `papaja`, `distill`. However, I think these might be Rmarkdown based and not Quarto based.
 :::

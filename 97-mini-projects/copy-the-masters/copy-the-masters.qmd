@@ -24,7 +24,7 @@ execute:
 +--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
 | [First Draft](#first-draft)          | first draft of graphic, around 6 lines of graphics code                 | Thursday, May 18 at 11:59pm |
 +--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
-| [Final Draft](f#final-draft)         | final draft of graphic, as many lines of code as it takes!              | Thursday, May 25 at 11:59pm |
+| [Final Draft](#final-draft)         | final draft of graphic, as many lines of code as it takes!              | Thursday, May 25 at 11:59pm |
 +--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
 
 For this assignment, we'll be reproducing graphics from [FiveThirtyEight](https://fivethirtyeight.com/) I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.

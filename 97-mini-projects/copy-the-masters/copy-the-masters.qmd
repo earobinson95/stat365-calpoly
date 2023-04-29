@@ -9,77 +9,167 @@ format:
       light: flatly
       dark: darkly
 editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
 ---
 
-For this assignment, we’ll be reproducing graphics from FiveThirtyEight. I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.
+### Deliverables
 
-### Picking a graphic
++--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
+| Component                            | Brief Description                                                       | Due Date                    |
++======================================+=========================================================================+=============================+
+| [Picking a Graphic](#pick-a-graphic) | choice of graphic, and "pseudo-code" of how you think it will be doable | Thursday, May 11 at 11:59pm |
++--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
+| [First Draft](#first-draft)          | first draft of graphic, around 6 lines of graphics code                 | Thursday, May 18 at 11:59pm |
++--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
+| [Final Draft](f#final-draft)         | final draft of graphic, as many lines of code as it takes!              | Thursday, May 25 at 11:59pm |
++--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
 
-For the first step of this assignment, you will be identifying a graphic you want to reproduce. Start at the [Our Data](https://data.fivethirtyeight.com/) page and find a graphic that interests you and you think is possible to reproduce. This is mostly a “thinking step,” rather than a coding one, although you may want to start playing around in `ggplot2` to see if your guess is right. Plots that will be easier to reproduce are the more standard ones (histograms, line charts, scatterplots, etc). I looked through quickly and thought the following would be pretty doable:
+For this assignment, we'll be reproducing graphics from [FiveThirtyEight](https://fivethirtyeight.com/) I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.
 
-+ More players transfer to the US than to any other country from American Chess Is Great Again
-+ Hurricane Maria and Puerto Rico got comparatively little online coverage, from The Media Really Has Neglected Puerto Rico (others look doable, too)
-+ Do you think that society puts pressure on men in a way that is unhealthy or bad for them? from What Do Men Think It Means To Be A Man? (others look doable, too)
-+ Trump is less popular than leading Democratic candidates, from The Democratic Presidential Candidates Are Becoming Less Popular
+### Picking a Graphic {#pick-a-graphic}
+
+For the first step of this assignment, you will be identifying a graphic you want to reproduce. Start at the [Our Data](https://data.fivethirtyeight.com/) page and find a graphic that interests you and you think is possible to reproduce. This is mostly a "thinking step," rather than a coding one, although you may want to start playing around in `ggplot2` to see if your guess is right. Plots that will be easier to reproduce are the more standard ones (histograms, line charts, scatterplots, etc).
+
+::: callout-warning
+Some graphics in FiveThirtyEight are created with d3.js to incorporate interactivity. If the plot you select contains an interactivity component, please select a standstill snapshot of the graphic to recreate.
+:::
+
+I looked through quickly and thought the following would be pretty doable:
+
+-   The House and Senate are older than ever before, from [Congress Today Is Older Than It's Ever Been](https://fivethirtyeight.com/features/aging-congress-boomers/) (others look doable, too)
+-   Cleveland's settlement amounts rose after Rice's death, from [Cities Spend Millions On Police Misconduct Every Year. Here's Why It's So Difficult to Hold Departments Accountable](https://fivethirtyeight.com/features/police-misconduct-costs-cities-millions-every-year-but-thats-where-the-accountability-ends/)
+-   More players transfer to the US than to any other country from [American Chess Is Great Again](https://fivethirtyeight.com/features/american-chess-is-great-again/)
+-   Hurricane Maria and Puerto Rico got comparatively little online coverage, from [The Media Really Has Neglected Puerto Rico](https://fivethirtyeight.com/features/the-media-really-has-neglected-puerto-rico/) (others look doable, too)
+-   Do you think that society puts pressure on men in a way that is unhealthy or bad for them?, from [What Do Men Think It Means To Be A Man?](https://fivethirtyeight.com/features/what-do-men-think-it-means-to-be-a-man/) (others look doable, too)
+-   Trump is less popular than leading Democratic candidates, from [The Democratic Presidential Candidates Are Becoming Less Popular](https://fivethirtyeight.com/features/the-democratic-presidential-candidates-are-becoming-less-popular/)
 
 Potentially doable:
 
-+ Sandy-related calls to 311, from The (Very) Long Tail Of Hurricane Recovery
-+ Biden’s Ukraine-related media bump is fading, from The Media Frenzy Around Biden Is Fading
+-   [The LeBron James Decision-Making Machine](https://fivethirtyeight.com/features/the-lebron-james-decision-making-machine/)
+-   Did Americans support impeaching Trump?, from [Did Americans support removing Trump from office?](https://projects.fivethirtyeight.com/impeachment-polls/) (others look potentially doable, too)
+-   Sandy-related calls to 311, from [The (Very) Long Tail Of Hurricane Recovery](https://projects.fivethirtyeight.com/sandy-311/)
+-   Biden's Ukraine-related media bump is fading, from [The Media Frenzy Around Biden Is Fading](https://fivethirtyeight.com/features/the-media-frenzy-around-biden-is-fading/)
+-   [50 Years of World Cup Doppelgangers](https://projects.fivethirtyeight.com/world-cup-comparisons/)
 
 On the scale of hard-to-not-doable:
 
-+ Peter and Dean are Neck and Neck, from Rachel’s Season Is Fitting Neatly Into Bachelorette History
-+ The Rise of the Trinity from American Chess Is Great Again
-+ All of these may require a bit of data wrangling before you can get to the graphing data part. I had intended to push off data wrangling for a bit, but it looks like we’re going to need to talk about it!
+-   Peter and Dean are Neck and Neck, from [Rachel's Season Is Fitting Neatly Into 'Bachelorette' History](https://fivethirtyeight.com/features/rachels-season-is-fitting-neatly-into-bachelorette-history/)
+-   The Rise of the Trinity, from [American Chess Is Great Again](https://fivethirtyeight.com/features/american-chess-is-great-again/)
+-   Change of Pace, from [Why Some Tennis Matches Take Forever](https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/)
+-   Foods that may or may not give you cancer, by [You Can't Trust What you Read About Nutrition](https://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/)
 
-You can’t choose either of the first two graphics from Comic Books Are Still Made By Men, For Men And About Men, because I will be using it as an example.
+::: callout-note
+All of these may require a bit of data wrangling before you can get to the graphing data part.
+:::
 
-### First draft
+You can't choose either of the first graphic from [Comic Books Are Still Made By Men, For Men And About Men](https://fivethirtyeight.com/features/women-in-comic-books/) because I will be using it as an example.
 
-Your next step is to do the quick, sketchy version of your graphic in code. Here’s an example from a past class.
+::: callout-warning
+Please include a URL link to your selected graphic within your draft submission.
+:::
+
+### First Draft {#first-draft}
+
+Your next step is to do the quick, sketchy version of your graphic in code. Here is an example.
 
 ```{r}
+#| echo: true
 library(tidyverse)
-# install.packages('fivethirtyeightdata', repos = 'https://fivethirtyeightdata.github.io/drat/', type = 'source')
-library(fivethirtyeight)
 library(ggthemes)
-data("comic_characters")
+# install.packages('fivethirtyeightdata', repos = 'https://fivethirtyeightdata.github.io/drat/', type = 'source')
+library(fivethirtyeightdata)
+library(fivethirtyeight)
+data(comic_characters)
 ```
 
 ```{r}
-ggplot(data = comic_characters) +
-  geom_histogram(aes(x = year, 
-                     fill = publisher
-                     ), 
-                 binwidth = 1, 
-                 color = "white", 
-                 lwd = 0.1) +
-  facet_wrap(~publisher) +
+#| echo: true
+comic_characters |> 
+  ggplot(aes(x    = year,
+             fill = publisher
+             )
+         ) +
+  geom_histogram(binwidth  = 1, 
+                 color     = "white", 
+                 linewidth = 0.1
+                 ) +
+  facet_wrap(~ publisher) +
   theme_fivethirtyeight() +
   scale_fill_manual(values = c("#008fd5", "#ff2700")) +
   labs(title = "New Comic Book Characters Introduced Per Year")
 ```
 
-For the first draft, I want you to upload a .html file knitted from a .Rmd file. It doesn’t have to have many lines of code in it (in fact, I think a good draft usually only takes 6 or so lines!), but it should include a version of your visualization that is at least part of the way to reproducing the original graphic. In particular, it should be the right “form” of graph (if the original is a barchart, it should be a barchart, not a scatterplot!). It’s okay if there are more categories than the original, or if the axes are off, etc.
+For the first draft, I want you to upload a `.html` file knitted from a `.qmd` (or `.Rmd`) file. It doesn't have to have many lines of code in it (in fact, I think a good draft usually only takes 6 or so lines!), but it should include a version of your visualization that is at least part of the way to reproducing the original graphic. In particular, it should be the right "form" of graph (if the original is a barchart, it should be a barchart, not a scatterplot!). It's okay if there are more categories than the original, or if the axes are off, etc.
 
-Here’s another example, of an original graphic from 538 and what I would consider a draft of the graphic.
+Here's another example, of an original graphic from FiveThirtyEight and what I would consider a draft of the graphic.
 
-![](https://www.amelia.mn/STAT336/chess_transfers_draft.jpeg)
+```{r}
+data(chess_transfers)
 
-![](https://www.amelia.mn/STAT336/Chess_Transfers.png)
+chess_transfers |> 
+  count(federation) |> 
+  slice_max(n = 10, order_by = n) |> 
+  ggplot(aes(x = n,
+             y = federation)
+         ) +
+  geom_bar(stat = "identity") +
+  labs(x = "total")
+```
 
-There’s a lot missing in the draft– it doesn’t have the right colors, the names still aren’t right, and the order is off! But it’s the correct “form” of graphic.
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("538-chess-transfers.JPG")
+```
 
-### Final draft
+There's a lot missing in the draft - it doesn't have the right colors, the names still aren't right, and the order is off! But it's the correct "form" of graphic.
 
-The last piece is to get your graphic to look as similar to the original as possible. We’ll do some peer editing and I will provide feedback about things that I notice that should be matched, and we’ll demo this on the example graphic as well.
+### Final Draft {#final-draft}
 
-**Deliverables**
+The last piece is to get your graphic to look as similar to the original as possible.
 
-+ Friday, February 28: choice of graphic, and “psuedo-code” of how you think it will be doable
-+ Friday, March 6: first draft of graphic, around 6 lines of graphics code
-+ Friday, March 13: final draft of graphic, as many lines of code as it takes!
+In addition to your final draft, you should include two *short* paragraphs:
+
+1.  A brief description of what the graphic shows.
+2.  A critique and reflection of the design principles and choices made when FiveThirtyEight created the graphic, referring to perceptual and design principles discussed in class.
+
+## Final Submission Rubric
+
+To meet the "satisfactory" requirements for the contract, this project must:
+
+-   be turned in on time (or within the agreed upon time by 24 hour late tokens submitted **prior** to the due date),
+
+-   include all components described above
+
+-   Meet quality guidelines laid out in the following rubric (all 2s and above for each element and demonstration of additional considerations)
+
+::: column-page
+
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Component                                                                                                                                 | 3 - Strong Evidence                                                                                                                                                                                                                                                                                                     | 2 - Moderate Evidence                                                                                                                                                                                                                                                                              | 1 - Weak Evidence                                                                                                                                                                                                                                                    | 0 - No Evidence                                                                                                                                                                                                  |
++===========================================================================================================================================+=========================================================================================================================================================================================================================================================================================================================+====================================================================================================================================================================================================================================================================================================+======================================================================================================================================================================================================================================================================+==================================================================================================================================================================================================================+
+| **Original Graph**                                                                                                                        | An image of the original graph relevant to the project is included and properly referenced with a URL, plot title, and article title.                                                                                                                                                                                   | An image of the original graph is included, but it may not be properly referenced. Alternatively, the image may be included but is of such poor quality that it is difficult to see.                                                                                                               | An image of a graph is included, but it is not properly referenced or not relevant to the project. For example, the included graph may be from the same article but may not be the exact graph you are attempting to reproduce.                                      | The original graph is not provided or is not relevant to the project. For example, the original graph may be from a different or related article but may not be the exact graph you are attempting to reproduce. |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Data Management**                                                                                                                       | The data is properly sourced (R package, downloaded, etc.) and formatted, and any necessary transformations or calculations have been clearly explained and justified. You have accurately reproduced the data necessary to recreate the original graph and provided a thorough explanation of any modifications made.  | The data is sourced and formatted correctly, but some explanations or justifications for transformations or calculations may be lacking. You have reproduced the data necessary to recreate the original graph with some minor errors, and provided a brief explanation of any modifications made. | The data may be incomplete, poorly formatted, or lacking proper explanations for any transformations or calculations. You have not successfully reproduced the data necessary to recreate the graph and provided little to no explanation of any modifications made. | No data management is performed or explained.                                                                                                                                                                    |
+|                                                                                                                                           |                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                  |
+| *(If no data summaries or transformations are necessary, please explain why the data is already in proper format to recreate the graph.)* |                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                  |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Nuts and Bolts of the Graph**                                                                                                           | You have accurately reproduced all elements of the graph (axes, labels, title, legend, etc.) and any scales or units are appropriately chosen.                                                                                                                                                                          | You have accurately reproduced most elements of the graph, but some choices of scales or units may be questionable or missing.                                                                                                                                                                     | You inaccurately reproduced some elements of the graph, and choices of scales or units may be inappropriate or confusing. For example, you did not accurately reproduce the form and structure of the original graph.                                                | No graph is produced or the graph is entirely uninterpretable.                                                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Basic Graph Customization**                                                                                                             | You have reproduced any basic customization present in the original graph that enhances the communication of the data, such as changing colors, placement of the axes labels, etc.                                                                                                                                      | You have accurately reproduced some basic customization, but you may be missing key components from the original graph that enhance the communication of the data.                                                                                                                                 | You have attempted some basic customization, but it is poorly executed or misrepresents the customization from the original graph.                                                                                                                                   | No customization beyond the form and structure of the graph is attempted or explained.                                                                                                                           |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Detailed Graph Customization**                                                                                                          | The graph is customized in a way that demonstrates a deep understanding of the original graphic and the message being conveyed, such as using advanced techniques like annotations with arrows.                                                                                                                         | Some advanced customization is attempted, but it may not entirely reflect the advanced customization in the original graphic, such as annotations but no arrows.                                                                                                                                   | Customization beyond the basic level is attempted, but is not executed effectively.                                                                                                                                                                                  | No advanced customization is attempted or explained.                                                                                                                                                             |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Graph Description**                                                                                                                     | The description provides a clear and concise summary of the main points of the graph being reproduced and any key insights or takeaways.                                                                                                                                                                                | The description gives a reasonable summary of the graph and some insights, but may be incomplete or difficult to follow.                                                                                                                                                                           | The description is unclear or incomplete, and does not effectively communicate the main points or insights of the graph.                                                                                                                                             | No graph description is provided.                                                                                                                                                                                |
+|                                                                                                                                           |                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                  |
+| *(What is the graph about? Use context!)*                                                                                                 |                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                  |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Design Critique**                                                                                                                       | The critique demonstrates a thoughtful and nuanced understanding of the strengths and weaknesses of the original graph and your reproduction, with specific suggestions for improvement by referring to perceptual and design principles learned in class.                                                              | The critique identifies some strengths and weaknesses of the graph but may lack specificity or depth or does not refer to perceptual and design principles learned in class.                                                                                                                       | The critique is incomplete or does not effectively portray the strengths and weaknesses of the graph. There are no references to perceptual and design principles learned in class.                                                                                  | No graph design critique is provided.                                                                                                                                                                            |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+:::
 
 ## Acknowledgements
 

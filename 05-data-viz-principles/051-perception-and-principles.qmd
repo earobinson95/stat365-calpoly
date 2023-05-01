@@ -111,7 +111,7 @@ knitr::include_graphics("images/law-of-continuity.jpg")
 | Enclosure  | Facets      |
 | Connection | Lines       |
 | Proximity  | White space |
-| Similaryt  | Color/shape |
+| Similarity  | Color/shape |
 
 # Perception
 
@@ -154,7 +154,7 @@ knitr::include_graphics("images/color-preattentive.gif")
 
 ## "An understanding of what is processed pre-attentively is probably the most important contribution that visual science can make to the data visualization" (Ware, 2004, p. 19)
 
-## Pe-attentive features[^5]
+## Pre-attentive features[^5]
 
 [^5]: <https://www.csc2.ncsu.edu/faculty/healey/PP/>
 
@@ -316,7 +316,7 @@ knitr::include_graphics("images/perceived-magnitude.JPG")
 
 3.  Design to facilitate and emphasize the **most important comparisons**
 
-## Case Study on Gestalt Principles[^via Silas Bergan]
+## Case Study on Gestalt Principles^[via Silas Bergan]
 
 ##
 

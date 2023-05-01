@@ -219,15 +219,19 @@ and more!
 
 ## Attentive Counting^[via Jordan Crouser]
 
+<br>
 ```{r}
 #| fig-align: center
+#| out-width: 100%
 knitr::include_graphics("images/attentive-counting.jpg")
 ```
 
 ## Pre-attentive Counting^[via Jordan Crouser]
 
+<br>
 ```{r}
 #| fig-align: center
+#| out-width: 100%
 knitr::include_graphics("images/preattentive-counting.jpg")
 ```
 
@@ -312,9 +316,7 @@ knitr::include_graphics("images/perceived-magnitude.JPG")
 
 3.  Design to facilitate and emphasize the **most important comparisons**
 
-# Case Study[^6]
-
-[^6]: via Silas Bergan
+## Case Study on Gestalt Princples[^via Silas Bergan]
 
 ##
 

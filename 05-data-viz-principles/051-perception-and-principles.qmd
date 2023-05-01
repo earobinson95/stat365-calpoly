@@ -12,9 +12,7 @@ execute:
   echo: false
 ---
 
-## Monday, May 1st[^1]
-
-[^1]: Material for today's lecture is from [Amelia McNamara](https://www.amelia.mn/STAT336/index.html)
+## Monday, May 1st
 
 ```{r}
 #| include: false

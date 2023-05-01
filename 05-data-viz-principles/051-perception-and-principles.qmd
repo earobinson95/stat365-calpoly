@@ -1,5 +1,5 @@
 ---
-title: "Data Viz Princples and Practices"
+title: "Data Viz Principles and Practices"
 subtitle: "Stat 365: Statistical Communication"
 format: 
   revealjs:
@@ -316,7 +316,7 @@ knitr::include_graphics("images/perceived-magnitude.JPG")
 
 3.  Design to facilitate and emphasize the **most important comparisons**
 
-## Case Study on Gestalt Princples[^via Silas Bergan]
+## Case Study on Gestalt Principles[^via Silas Bergan]
 
 ##
 

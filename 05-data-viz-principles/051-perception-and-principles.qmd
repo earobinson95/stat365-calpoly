@@ -217,6 +217,20 @@ and more!
 -   Region tracking
 -   Counting and estimation
 
+## Attentive Counting^[via Jordan Crouser]
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("images/attentive-counting.jpg")
+```
+
+## Pre-attentive Counting^[via Jordan Crouser]
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("images/preattentive-counting.jpg")
+```
+
 # Graphical Perception
 
 ## Cleveland and McGill, 1984
@@ -256,6 +270,38 @@ knitr::include_graphics("images/cleveland-mcgill-2.JPG")
 #| fig-align: center
 #| out-width: 100%
 knitr::include_graphics("images/cleveland-mcgill-3.JPG")
+```
+
+## Magnitude estimation^[via Amelia McNamara]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/magnitude-estimation-1.JPG")
+```
+
+## Magnitude estimation^[via Amelia McNamara]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/magnitude-estimation-2.JPG")
+```
+
+## Magnitude estimation^[via Amelia McNamara]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/magnitude-estimation-3.JPG")
+```
+
+## "Apparent" magnitude^[via Jordan Crouser at <http://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/>]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/perceived-magnitude.JPG")
 ```
 
 ## Implications for Practice
@@ -514,8 +560,8 @@ knitr::include_graphics("images/marriage-rate-by-education.jpg")
 :::
 
 ::: column
-<!-- `r fontawesome::fa("hashtag")` **One-number Story** -->
+`r fontawesome::fa("chart-simple")` **Practice in Tableau**
 
-<!-- + Final submission: due Thursday, 4/27 at 11:59pm -->
++ Submit URLs: due Monday, 5/1 at 11:59pm
 :::
 :::

@@ -11,6 +11,10 @@ format:
 editor: source
 ---
 
+::: callout-warning
+As of May 5th, we will be using our discord server to conduct a "Pseudo, NYT What's Going on in This Graph" due to the end of the NYT activity for this academic year.
+:::
+
 ## Prompt
 
 Together, the [American Statistical Association](https://www.amstat.org/whats-going-on-in-this-graph) and the [New York Times](https://www.nytimes.com/column/whats-going-on-in-this-graph), put out a weekly graph related to current times.
@@ -35,7 +39,7 @@ In order to meet the conditions of the contract for this activity, you must:
 Your reflection should be well formulated and written. Let your creativity show!
 :::
 
-+ Miss no more than 3 weeks throughout the quarter.
++ Miss no more than 2 weeks throughout the quarter.
 
 + Join the conversation and submit your reflection to the NYT by clicking on the comment button and posting in the box. ^[Email me for an alternative option if you have FERPA and do not wish to put information online.]
   + Below the response box, there is an option to click on “Email me when my comment is published.” This sends the link to your response which you will submit weekly to Canvas by Tuesdays at 11:59pm ^[I will do my best to provide timely feedback to your submissions.].

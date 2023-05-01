@@ -71,8 +71,15 @@ All of these may require a bit of data wrangling before you can get to the graph
 
 You can't choose either of the first graphic from [Comic Books Are Still Made By Men, For Men And About Men](https://fivethirtyeight.com/features/women-in-comic-books/) because I will be using it as an example.
 
-::: callout-warning
-Please include a URL link to your selected graphic within your draft submission.
+::: callout
+### Canvas Submission
++ Include a screenshot image of the original selected graphic.
++ Include a URL link to your selected graphic.
++ Include a quick snapshot and reference for the data set (e.g. `head(data)`).
+  + This will require you to figure out how you will access the data (`fivethirtyeight`, `fivethirtyeightdata` or download from [FiveThirtyEight Data](https://data.fivethirtyeight.com/)).
+  + You do not need to have done your data management yet, but if any is necessary, it should be included in your "game plan" below.
++ Include some sort of "pseudo-code" (game plan) for recreating the graphic.
+  + You can do this in multiple different ways: a list of steps, a sketch using [excalidraw.com](https://excalidraw.com/), or outlined code. Just convince me you have a plan of attack for recreating the graph.
 :::
 
 ### First Draft {#first-draft}
@@ -130,6 +137,14 @@ knitr::include_graphics("538-chess-transfers.JPG")
 ```
 
 There's a lot missing in the draft - it doesn't have the right colors, the names still aren't right, and the order is off! But it's the correct "form" of graphic.
+
+::: callout
+### Canvas Submission
++ Include a screenshot image of the original selected graphic.
++ Include a URL link to your selected graphic.
++ Include your code for creating your first draft (data management & ggplot2).
++ Include the image of the first draft of your recreated graphic.
+:::
 
 ### Final Draft {#final-draft}
 

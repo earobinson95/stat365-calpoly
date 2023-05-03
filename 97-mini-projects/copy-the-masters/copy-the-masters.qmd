@@ -19,7 +19,7 @@ execute:
 I recommend completing this mini-project in Quarto or Rmarkdown. Please include your code!
 :::
 
-### Deliverables
+## Deliverables
 
 +--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
 | Component                            | Brief Description                                                       | Due Date                    |
@@ -33,7 +33,7 @@ I recommend completing this mini-project in Quarto or Rmarkdown. Please include 
 
 For this assignment, we'll be reproducing graphics from [FiveThirtyEight](https://fivethirtyeight.com/) I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.
 
-### Picking a Graphic {#pick-a-graphic}
+## Picking a Graphic {#pick-a-graphic}
 
 For the first step of this assignment, you will be identifying a graphic you want to reproduce. Start at the [Our Data](https://data.fivethirtyeight.com/) page and find a graphic that interests you and you think is possible to reproduce. This is mostly a "thinking step," rather than a coding one, although you may want to start playing around in `ggplot2` to see if your guess is right. Plots that will be easier to reproduce are the more standard ones (histograms, line charts, scatterplots, etc).
 
@@ -72,7 +72,7 @@ All of these may require a bit of data wrangling before you can get to the graph
 You can't choose either of the first graphic from [Comic Books Are Still Made By Men, For Men And About Men](https://fivethirtyeight.com/features/women-in-comic-books/) because I will be using it as an example.
 
 ::: callout
-### Canvas Submission
+## Canvas Submission
 + Include a screenshot image of the original selected graphic.
 + Include a URL link to your selected graphic.
 + Include a quick snapshot and reference for the data set (e.g. `head(data)`).
@@ -82,7 +82,7 @@ You can't choose either of the first graphic from [Comic Books Are Still Made By
   + You can do this in multiple different ways: a list of steps, a sketch using [excalidraw.com](https://excalidraw.com/), or outlined code. Just convince me you have a plan of attack for recreating the graph.
 :::
 
-### First Draft {#first-draft}
+## First Draft {#first-draft}
 
 Your next step is to do the quick, sketchy version of your graphic in code. Here is an example.
 
@@ -139,21 +139,23 @@ knitr::include_graphics("538-chess-transfers.JPG")
 There's a lot missing in the draft - it doesn't have the right colors, the names still aren't right, and the order is off! But it's the correct "form" of graphic.
 
 ::: callout
-### Canvas Submission
+## Canvas Submission
 + Include a screenshot image of the original selected graphic.
 + Include a URL link to your selected graphic.
 + Include your code for creating your first draft (data management & ggplot2).
 + Include the image of the first draft of your recreated graphic.
 :::
 
-### Final Draft {#final-draft}
+## Final Draft {#final-draft}
 
 The last piece is to get your graphic to look as similar to the original as possible.
 
-In addition to your final draft, you should include two *short* paragraphs:
+In addition to your final draft, you should include two short paragraphs:
 
 1.  A brief description of what the graphic shows.
 2.  A critique and reflection of the design principles and choices made when FiveThirtyEight created the graphic, referring to perceptual and design principles discussed in class.
+
+(Optional) Include alt text for your graphic. This can be included into .Rmd `fig.alt = ` or .qmd `#| fig-alt:` code chunks (see slides from Week 5 for guidelines).
 
 ## Final Submission Rubric
 

@@ -476,9 +476,9 @@ This schedule is **very** tentative and subject to change.
 |                  |                      | (Optional) Show me the numbers   |
 |                  |                      | (ch. 5)                          |
 +------------------+----------------------+----------------------------------+
-| 6: 5/8, 5/10     | Statistical          |                                  |
+| 6: 5/8, 5/10     | Statistical          | CwD ch. 7.1 - 7.5                |
 |                  | Tendencies           |                                  |
-|                  |                      |                                  |
+|                  |                      | (Optional) CwD ch. 8.1 - 8.7     |
 |                  | Writing reports      |                                  |
 +------------------+----------------------+----------------------------------+
 | 7: 5/15, 5/17    | ADEPT with Professor | Twenty-five Analogies for        |

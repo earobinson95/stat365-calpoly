@@ -95,7 +95,7 @@ knitr::include_graphics("images/importance-ordering-1.jpg")
 
 ```{r}
 #| fig-align: center
-#| out-width: 100%
+#| out-width: 60%
 knitr::include_graphics("images/importance-ordering-2.jpg")
 ```
 
@@ -127,6 +127,43 @@ non-redundant display of data-information
 #| out-width: 40%
 knitr::include_graphics("images/remove-to-improve.jpg")
 ```
+
+## Polish your graphic!
+
+::: panel-tabset
+### Title
+
++ Keep it concise, clear, and descriptive.
++ Use active voice and avoid jargon.
++ Highlight the main message or point of the graphic.
++ Consider using a subtitle to provide additional context or information.
++ You may consider including your legend in the title.
+
+### Footnote
+
++ Include all necessary information, such as data source.
++ Place the footnote at the bottom of the graphic or immediately after the graphic.
++ Avoid using footnotes to provide additional analysis or interpretation.
+
+### Caption
+
++ Describe what has been plotted.
++ Orient the reader.
++ Point out important features of the plot and implications.
++ It is okay for captions to repeat information found in the text.
+
+### Alt Text
+
++ Provide a brief but informative description of the graphic's content for users who cannot see it.
++ Use plain language and avoid abbreviations or symbols that may be unfamiliar to some users.
++ Describe the key variables, trends, and patterns shown in the graphic.
++ Test the alternative text with screen reader software to ensure it accurately conveys the content of the graphic.
+
+.Rmd `fig.alt = `
+
+.qmd `#| fig-alt:`
+
+::: 
 
 ## `r fontawesome::fa("brain")` Bad Graphics Day!
 
@@ -170,6 +207,10 @@ Apply what we know about graphical perception to the visualizations.
 `r fontawesome::fa("face-frown")` **Bad Graphics Day**
 
 + due TONIGHT, 5/3 at 11:59pm
+
+`r fontawesome::fa("book")` **CwD ch. 7.1 - 7.5, (optional) 8.1 - 8.7**
+
++ for class next week
 
 `r fontawesome::fa("chart-bar")` **Copy the Masters: Pick your Graphic**
 

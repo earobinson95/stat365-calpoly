@@ -1,0 +1,40 @@
+---
+title: "Statistical Tendencies"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+## Wednesday, May 10th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
++ 
+
+## Mathematical Expressions
+
+## Formatting Tables and Figures
+
+## To do
+
+`r fontawesome::fa("chart-bar")` **Copy the Masters: Pick your Graphic**
+
++ due Thursday, 5/11 at 11:59pm
++ First Draft coming up, due 5/18 at 11:59pm
+
+`r fontawesome::fa("paperclip")` **Draft: Results and Conclusion**
+
++ due Thursday, 5/18 at 11:59pm
+

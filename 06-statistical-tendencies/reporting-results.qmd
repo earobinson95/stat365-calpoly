@@ -1,0 +1,234 @@
+---
+title: "Reporting Results"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  pdf:
+    self-contained: true
+editor: source
+execute: 
+  warning: false
+  message: false
+  echo: false
+---
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+# Statistical Tendencies
+
+Dr. Keith Stanovich, a well-known psychologist and author of How to Think Straight about Psychology, describes probabilistic reasoning as the “Achilles heel of human cognition.” His prime example is the statement: Men are taller than women. He goes on to describe this as a statistical tendency, not a statement that holds for all cases.  
+
+1. For each of the following questions, indicate whether or not it is a legitimate question about a statistical tendency.  For the ones that are legitimate, answer the question about the tendency.
+
++ Do you tend to go to bed before midnight?
+
+<br>
+
++ Do you tend to use fewer than 25 characters when you send a text message?
+
+<br>
+
++ Do you tend to have green eyes?
+
+<br>
+
++ Do you tend to have been born in California?
+
+<br>
+
++ Do Cal Poly students tend to have been born in California?
+
+<br>
+
++ Do Cal Poly students tend to be undergraduates?
+
+<br>
+
++ Do Cal Poly students tend to have applied to Cal Poly?
+
+<br>
+
++ Have U.S. presidents tended to be at least 35 years old?
+
+<br>
+
++ Have U.S. presidents tended to be at least 50 years old?
+
+<br>
+
++ Do you tend to be at least 20 years old?
+
+<br>
+
++ Do you tend to attend class?
+
+
+2. Recall our Mandela study from the first week of class.  Consider the following graph produced from the results:
+
+```{r}
+mandela <- read_csv(here::here("03-data-descriptions", "data", "mandela_results.csv"))
+mandela |> 
+  ggplot(aes(x = guess_yrs,
+             y = anchor_q)
+  ) +
+  ggridges::geom_density_ridges2(color = "lightgray") +
+  theme_bw() +
+  labs(x = "",
+       y = "",
+       subtitle = "Guessed Age of Mandela's Death by Anchoring Question") +
+  scale_x_continuous(limits = c(0,125), breaks = seq(0,125,25))
+```
+
++ Does the data suggest that you tend to guess a higher age of death when anchored to a larger number (120 years)?  Explain how you can tell.  
+
+\vspace{1.25cm}
+
++ What inference method you would use to test this hypothesis?
+
+\vspace{1.25cm}
+
+# Pesky p-values
+
+One of the most important concepts and methods in statistics is also one of the hardest to understand and communicate clearly. We will examine what a p-value is and, at the same time, what a p-value is not.
+
+<br>
+
+3. Suppose we want to conduct a formal statistical analysis on our Mandela data. Use the output below to help you answer the following questions.
+
+```{r}
+mandela |> 
+  mutate(anchor_q = case_when(anchor_q == "12 years"  ~ "12 Years",
+                              anchor_q == "120 years" ~ "120 Years")
+         ) |> 
+  group_by(anchor_q) |> 
+  summarize(Mean = mean(guess_yrs),
+            SD   = sd(guess_yrs),
+            N    = n()
+  ) |> 
+  kbl(caption = "Table X. Means and Standard Deviations of the Guesses for Mandela's Age of Death for each Numerical Anchoring of Participants to a Younger or Older Age",
+               col.names = c("Numerical Anchor", "Mean (Years)", "Standard Deviation", "N"),
+               digits = 1
+               ) |> 
+  # kable_minimal(full_width = F) |> 
+  footnote(general = "Data was collected from the Spring 2023 Stat 365 class at Cal Poly.")
+```
+
+<br>
+
++ Describe the null hypothesis to be tested.
+
+\vspace{1.25cm}
+
++ Did students who were anchored to an older age (120 years) guess a higher average age of death, as compared to students who were anchored to a younger age (12 years)? Justify your answer.
+
+\vspace{1.25cm}
+
++ Suppose for the moment that anchoring students to a specific age has no effect on the age of death guessed. Would it be *possible* to have obtained a result as extreme as we found?
+
+\vspace{1.25cm}
+
++ Describe how we could use a common device to simulate a repetition of this study, under the assumption that anchoring students to a specific age has no effect on the age of death guessed.
+
+\vspace{1.25cm}
+
+Below is a graph of simulated values (120 years - 12 years) from the Rossman Chance two-sample mean applet.
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+#| fig-pos: "H"
+knitr::include_graphics("simulated-mandela.JPG")
+```
+
+
++ Describe how to use the simulation analysis to approximate the p-value for this study.  Then use the graph of simulation results to approximate the p-value.
+
+\vspace{1.25cm}
+
+Below are results from a two-sample t-test assuming equal variances. 
+
+```{r}
+t.test(guess_yrs ~ anchor_q,
+       alternative = "greater",
+       var.equal = TRUE,
+       data = mandela |> 
+         mutate(anchor_q = fct_relevel(anchor_q, c("120 years", "12 years")))
+       )
+```
+
++ How does the p-value from this test compare to the p-value you obtained from the simulation above?
+
+\vspace{1.25cm}
+
++ Summarize your conclusion. Support your statement with the test statistics (and any specifications, e.g., degrees of freedom) and associated p-value.
+
+\vspace{1.25cm}
+
+::: callout-note
+## Guidelines for p-value reporting
+
+When reporting on statistical analyses, it’s usually not appropriate to include all of this information about what a p-value means.  But it is imperative not to overstate or otherwise mis-interpret what a p-value means or what conclusions the p-value allows.
+
+Some take-aways:
+
++ A p-value is the probability, if the null hypothesis were true, of obtaining a test statistic at least as extreme as the one observed.
+  + Null hypothesis is typically a statement of “no difference” or “no effect”
+  + Null hypothesis statement is sometimes replaced with “by chance alone”
+    + “Chance” can refer to random sampling or random assignment in data collection process, or hypothetical randomness with observational studies
+    + “Alone” refers to the null hypothesis of “no difference” or “no effect”
++ A p-value is one measure of the strength of evidence that the data provide against the null hypothesis.
+  + There’s nothing special about commonly used cut-offs such as .05 or .10 or .01.
+  + A large (or otherwise non-small) p-value that is not small does not provide evidence in favor of the null hypothesis.
+  + A p-value says nothing about the magnitude or importance of an effect.
++ A p-value is NOT:
+  + Probability that the null hypothesis is true, given the data
+    + This is known as the prosecutor fallacy.
+  + Probability that the data occurred by chance alone
+	
+When reporting on statistical analyses, it’s usually not appropriate to include full information about what a p-value means.  But it is imperative not to overstate, or otherwise mis-represent, what a p-value means or what conclusions the p-value allows.
+:::
+
+## Statistical Significance vs Practical Importance
+
+4. What can we say about the difference in ages of death guessed between those anchored to an older age compared to a younger age in our Mandela study?
+
++ Interpret the 95% confidence interval given above for the population average of all Statistics Majors at Cal Poly.
+
+\vspace{1.25cm}
+
++ Are the test decision from the previous section and the confidence interval consistent with each other? Explain.
+
+\vspace{1.25cm}
+
++ Under what circumstance is it especially important to keep in mind the distinction between statistical significance and practical importance?
+
+\vspace{1.25cm}
+
+::: callout-note
+## Effect size for two-sample comparison of group means
+
+For a two-sample comparison of group means, (Cohen’s) effect size is defined as: 
+$$d = \frac{\text{sample mean 1 – sample mean 2}}{\text{pooled standard deviation}}$$
+
+where the pooled standard deviation 
+
+$$s_p=\sqrt{\frac{(n_1-1) s_1^2+(n_2-1) s_2^2}{n_1+n_2-2}}$$
+
+and measures the number of standard deviations (not standard errors) the two sample means are apart.
+
+Rough guidelines:
++ $d = 0.2$: small difference
++ $d = 0.5$: medium difference
++ $d = 0.8$: large difference
++ $d = 1.2$: very large difference
++ $d = 2.0$: huge difference
+:::
+
++ Calculate the effect size for comparing age of death guessed between the older and younger anchoring treatments. Then use the rough guidelines to select an adjective for describing this effect size.
+
+\vspace{1.25cm}
+
++ Rewrite the expression for the (pooled) t-test statistic as a product of two terms, one of which is the effect size $d$.  According to this expression, what are two different ways to obtain a large t-test statistic, and therefore a small p-value?

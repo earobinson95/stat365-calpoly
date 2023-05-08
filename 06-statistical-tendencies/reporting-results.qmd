@@ -82,7 +82,7 @@ mandela |>
   scale_x_continuous(limits = c(0,125), breaks = seq(0,125,25))
 ```
 
-+ Does the data suggest that you tend to guess a higher age of death when anchored to a larger number (120 years)?  Explain how you can tell.  
++ Does the data suggest that you tend to guess a higher age of death when anchored to an older age (120 years)?  Explain how you can tell.  
 
 \vspace{1.25cm}
 
@@ -122,7 +122,7 @@ mandela |>
 
 \vspace{1.25cm}
 
-+ Did students who were anchored to an older age (120 years) guess a higher average age of death, as compared to students who were anchored to a younger age (12 years)? Justify your answer.
++ Did the sample of students who were anchored to an older age (120 years) guess a higher average age of death, as compared to students who were anchored to a younger age (12 years)? Justify your answer.
 
 \vspace{1.25cm}
 
@@ -217,9 +217,8 @@ where the pooled standard deviation
 
 $$s_p=\sqrt{\frac{(n_1-1) s_1^2+(n_2-1) s_2^2}{n_1+n_2-2}}$$
 
-and measures the number of standard deviations (not standard errors) the two sample means are apart.
+and measures the number of standard deviations (not standard errors) the two sample means are apart. Rough guidelines:
 
-Rough guidelines:
 + $d = 0.2$: small difference
 + $d = 0.5$: medium difference
 + $d = 0.8$: large difference
@@ -231,4 +230,4 @@ Rough guidelines:
 
 \vspace{1.25cm}
 
-+ Rewrite the expression for the (pooled) t-test statistic as a product of two terms, one of which is the effect size $d$.  According to this expression, what are two different ways to obtain a large t-test statistic, and therefore a small p-value?
++ Rewrite the expression for the (pooled) t-test statistic ($t=\frac{(\bar x_1 - \bar x_2)-\text{null value}}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}$) as a product of two terms, one of which is the effect size $d$. According to this expression, what are two different ways to obtain a large t-test statistic, and therefore a small p-value?

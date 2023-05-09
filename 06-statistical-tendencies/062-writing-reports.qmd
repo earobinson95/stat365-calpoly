@@ -208,3 +208,7 @@ Select one of the tools discussed and begin storyboarding your final technical r
 
 + due Thursday, 5/18 at 11:59pm
 
+`r fontawesome::fa("book-open")` **Read Twenty-five Analogies Analogies for Explaining Statistical Concepts** for class next week
+
+`r fontawesome::fa("computer")` **Complete Dr. Chance's Survey on Belonging in the Major**
+

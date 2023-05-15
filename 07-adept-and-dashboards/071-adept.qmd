@@ -24,7 +24,7 @@ Today we will...
 -   ADEPT
 -   Quarto + pdf
 -   `ggplot` customization
--   Copy the Master's work time
+-   Copy the Masters work time
 
 ## The ASC**C**R Framework for Collaboration
 
@@ -542,7 +542,7 @@ ggplot() +
 
 -   or create breaks in titles with `<br>`
 
-# `r fontawesome::fa("chart-line")` Copy the Master's!
+# `r fontawesome::fa("chart-line")` Copy the Masters!
 
 ## To do
 
@@ -552,4 +552,4 @@ ggplot() +
 
 `r fontawesome::fa("paperclip")` **Draft: Results and Discussion**
 
--   due Thursday, 5/18 at 11:59pm
+-   due Monday, 5/22 at 11:59pm

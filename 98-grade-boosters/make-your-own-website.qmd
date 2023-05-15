@@ -15,7 +15,7 @@ editor: source
 
 GitHub is an incredibly useful tool for project management and collaboration. It also has several useful features for professional promotion: you can host your own site on github using [GitHub pages](https://pages.github.com/), describe yourself using a GitHub developer profile, and even use [resume.github.io](http://resume.github.io/) to generate a resume summary of your activity on GitHub (you must opt-in by [starring the project page](https://github.com/resume/resume.github.com)). 
 
-posit and the associated package infrastructure provide multiple ways to generate websites using Quarto (or Rmarkdown). You can satisify the conditions for this grade booster activity using one of two options: 
+posit and the associated package infrastructure provide multiple ways to generate websites using Quarto (or Rmarkdown). You can satisfy the conditions for this grade booster activity using one of two options: 
 
 - Simple RMarkdown websites    
 For more information about simple R Markdown websites, please read the documentation at <https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html>. Simple R Markdown sites are _not_ based on **blogdown**. They are probably good for websites with only a few Rmd documents.
@@ -80,7 +80,7 @@ To satisfy, you should modify your site beyond the default template files, addin
 
 3. Use RStudio to create a new project inside the folder you created in step 2. Select either the Option "Quarto Website" or "Quarto Blog" as the project type.
 
-4. Follow the Quick Start instructions on https://quarto.org/docs/websites/ or https://quarto.org/docs/websites/website-blog.html to create your website.
+4. Follow the Quick Start instructions on <https://quarto.org/docs/websites/> or <https://quarto.org/docs/websites/website-blog.html> to create your website.
 
 5. For publishing your website, follow the steps described under [Github Pages](https://quarto.org/docs/publishing/github-pages.html). You can try to build the site automatically, but fair warning: I went back to build to docs and render the site myself. 
   + VERY IMPORTANT: add `output-dir: docs` to your YAML file.

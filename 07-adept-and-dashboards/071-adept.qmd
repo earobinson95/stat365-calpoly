@@ -1,0 +1,523 @@
+---
+title: "ADEPT"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Monday, May 15th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+-   ADEPT
+-   Quarto + pdf
+-   `ggplot` customization
+-   Copy the Master's work time
+
+## The ASC**C**R Framework for Collaboration
+
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("images/asccr2.jpg")
+```
+
+## ASC**C**R: Communication
+
+<br>
+<br>
+
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("images/statcomm-triangle.png")
+```
+
+## ADEPT: Explaining Statistical Ideas
+
+-   **A**nology
+-   **D**iagram
+-   **E**xample
+-   **P**lain Language
+-   **T**echnical Definition
+
+## **A**nalogy
+
+-   "A comparison between two things, typically on the basis of their structure and for the purpose of explanation or clarification."
+
+-   Connect the statistical idea to an idea that the audience likely already understands
+
+-   Relating the *fundamental components* of the idea.
+
+## **D**iagram
+
+-   Pictures can more *easily demonstrate* the idea.
+
+-   Make sure the diagram is *thoughtfully created*.
+
+## **E**xample
+
+-   Select a *simple* example, in a context that is relevant to the audiences expertise or field.
+
+-   Then *build upon it*
+
+## **P**lain language
+
+-   *Avoid statistical jargon* and words with *double meanings* (e.g., confidence, error, etc.)
+
+-   Use language *relevant* to the audience's field
+
+-   Be *concise*.
+
+-   Explain at the level that meets the audience's needs.
+
+## **T**echnical Definition
+
+-   Only if such a definition will serve the audience's needs
+
+-   Understand how the audience will be using the technical definition
+
+-   Use statistical notation carefully
+
+# Analogies to consider
+
+## `r fontawesome::fa("brain")` Brainstorm!
+
+### Which statistical idea do you think this image might relate to?
+
+::: panel-tabset
+#### Image
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/jury.jpg")
+```
+
+#### Connection
+
+| Statistical Idea | Analogy                                          |
+|------------------|--------------------------------------------------|
+| Type I error     | In a jury trial, convicting an innocent person   |
+| Type II error    | In a jury trial, letting a guilty person go free |
+:::
+
+
+## `r fontawesome::fa("brain")` Brainstorm!
+
+### Which statistical idea do you think this image might relate to?
+
+::: panel-tabset
+#### Image
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/blood-sample.webp")
+```
+
+#### Connection
+
+| Statistical Idea | Analogy                                          |
+|------------------|--------------------------------------------------|
+| Sample vs Census | Taking a blood sample at your health check-up   |
+:::
+
+# Let's talk about Quarto & `ggplot`
+
+## Quarto + `pdf`
+
+```{r}
+#| echo: true
+#| eval: false
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+## Example
+
+Include a graphic in your Quarto document
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("casselman-feature-marriage-3.webp")
+```
+
+## Data Management
+
+```{r}
+#| echo: true
+library(tidyverse)
+library(lubridate)
+library(ggthemes)
+women_orig <- read_csv("women.csv")
+
+women_clean <- women_orig |> 
+  select(year, date, kids_HS_2534, kids_BAp_2534, nokids_HS_2534, nokids_BAp_2534) |> 
+  pivot_longer(cols = c("kids_HS_2534", 
+                        "kids_BAp_2534", 
+                        "nokids_HS_2534", 
+                        "nokids_BAp_2534"),
+               names_to = "group",
+               values_to = "marriage_rate"
+               ) |> 
+  separate_wider_delim(cols = "group", 
+                       names = c("kids", "education", NA), 
+                       delim = "_"
+                       ) |> 
+  mutate(marriage_rate = 1 - marriage_rate)
+head(women_clean)
+```
+
+## First Draft
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, 
+             y = marriage_rate)
+         ) +
+  geom_line(aes(color = education),
+            ) +
+  facet_wrap(~ kids) +
+  scale_y_continuous(limits = c(0,1))
+```
+
+## Colors[^1]
+
+[^1]: <https://imagecolorpicker.com/en>
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, 
+             y = marriage_rate)
+         ) +
+  geom_line(aes(color = education),
+            linewidth = 1
+            ) +
+  facet_wrap(~ kids) +
+  scale_y_continuous(limits = c(0,1)) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c"))
+```
+
+## Axis Labels
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, 
+             y = marriage_rate)
+         ) +
+  geom_line(aes(color = education),
+            linewidth = 1
+            ) +
+  facet_wrap(~ kids) +
+  scale_y_continuous(limits = c(0,1),
+                     labels = scales::percent,
+                     breaks = seq(0,1,0.25)
+                     ) +
+  scale_x_date(limits = c(mdy("01-01-1960"), 
+                          mdy("01-01-2012")
+                          ),
+               breaks = c(mdy("01-01-1960"), 
+                          mdy("01-01-1970"), 
+                          mdy("01-01-1980"),
+                          mdy("01-01-1990"),
+                          mdy("01-01-2000"),
+                          mdy("01-01-2010")
+                          ),
+               date_labels = c("%Y", "%y", "%y", "%y", "%Y", "%y")) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c")) +
+  theme(axis.title = element_blank())
+```
+
+## `annotate` + `geom_text()` + `library(ggrepel)`
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, y = marriage_rate)) +
+  geom_line(aes(color = education),
+            linewidth = 1) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "High school or less"),
+           x = mdy("01-01-1982"),
+           y = 0.6
+           ) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "College graduates"),
+           x = mdy("01-01-1995"), 
+           y = 1.05,
+           ) +
+  facet_wrap(~ kids) +
+  scale_y_continuous(limits = c(0,1.1),
+                     labels = scales::percent,
+                     breaks = seq(0,1,0.25)
+                     ) +
+  scale_x_date(limits = c(mdy("01-01-1960"), 
+                          mdy("01-01-2012")
+                          ),
+               breaks = c(mdy("01-01-1960"), 
+                          mdy("01-01-1970"), 
+                          mdy("01-01-1980"),
+                          mdy("01-01-1990"),
+                          mdy("01-01-2000"),
+                          mdy("01-01-2010")
+                          ),
+               date_labels = c("%Y", "%y", "%y", "%y", "%Y", "%y")) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c")) +
+  theme(axis.title = element_blank(),
+        legend.position = "none")
+```
+
+## facet labels
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, y = marriage_rate)) +
+  geom_line(aes(color = education),
+            linewidth = 1) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "High school or less"),
+           x = mdy("01-01-1982"),
+           y = 0.6
+           ) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "College graduates"),
+           x = mdy("01-01-1995"), 
+           y = 1.05,
+           ) +
+  facet_wrap(~ kids,
+             labeller = labeller(kids = c(`kids` = "WITH CHILDREN", 
+                                          `nokids` = "WITHOUT CHILDREN")
+                                 )
+             ) +
+  scale_y_continuous(limits = c(0,1.1),
+                     labels = scales::percent,
+                     breaks = seq(0,1,0.25)
+                     ) +
+  scale_x_date(limits = c(mdy("01-01-1960"), 
+                          mdy("01-01-2012")
+                          ),
+               breaks = c(mdy("01-01-1960"), 
+                          mdy("01-01-1970"), 
+                          mdy("01-01-1980"),
+                          mdy("01-01-1990"),
+                          mdy("01-01-2000"),
+                          mdy("01-01-2010")
+                          ),
+               date_labels = c("%Y", "%y", "%y", "%y", "%Y", "%y")) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c")) +
+  theme(axis.title = element_blank(),
+        legend.position = "none")
+```
+
+## `theme()`
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, y = marriage_rate)) +
+  geom_line(aes(color = education),
+            linewidth = 1) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "High school or less"),
+           x = mdy("01-01-1982"),
+           y = 0.6
+           ) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "College graduates"),
+           x = mdy("01-01-1995"), 
+           y = 1.05,
+           ) +
+  facet_wrap(~ kids,
+             labeller = labeller(kids = c(`kids` = "WITH CHILDREN", 
+                                          `nokids` = "WITHOUT CHILDREN")
+                                 )
+             ) +
+  scale_y_continuous(limits = c(0,1.1),
+                     labels = scales::percent,
+                     breaks = seq(0,1,0.25)
+                     ) +
+  scale_x_date(limits = c(mdy("01-01-1960"), 
+                          mdy("01-01-2012")
+                          ),
+               breaks = c(mdy("01-01-1960"), 
+                          mdy("01-01-1970"), 
+                          mdy("01-01-1980"),
+                          mdy("01-01-1990"),
+                          mdy("01-01-2000"),
+                          mdy("01-01-2010")
+                          ),
+               date_labels = c("%Y", "%y", "%y", "%y", "%Y", "%y")) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c")) +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_blank(),
+        legend.position = "none")
+```
+
+## Titles
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, y = marriage_rate)) +
+  geom_line(aes(color = education),
+            linewidth = 1) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "High school or less"),
+           x = mdy("01-01-1982"),
+           y = 0.6
+           ) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "College graduates"),
+           x = mdy("01-01-1995"), 
+           y = 1.05,
+           ) +
+  facet_wrap(~ kids,
+             labeller = labeller(kids = c(`kids` = "WITH CHILDREN", 
+                                          `nokids` = "WITHOUT CHILDREN")
+                                 )
+             ) +
+  scale_y_continuous(limits = c(0,1.1),
+                     labels = scales::percent,
+                     breaks = seq(0,1,0.25)
+                     ) +
+  scale_x_date(limits = c(mdy("01-01-1960"), 
+                          mdy("01-01-2012")
+                          ),
+               breaks = c(mdy("01-01-1960"), 
+                          mdy("01-01-1970"), 
+                          mdy("01-01-1980"),
+                          mdy("01-01-1990"),
+                          mdy("01-01-2000"),
+                          mdy("01-01-2010")
+                          ),
+               date_labels = c("%Y", "%y", "%y", "%y", "%Y", "%y")) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c")) +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_blank(),
+        legend.position = "none") +
+  labs(title = "Marriage Rates For Women By Education",
+       subtitle = "Ages 25 to 35")
+```
+
+## Final Touches
+
+```{r}
+#| code-fold: true
+women_clean |> 
+  ggplot(aes(x = date, y = marriage_rate)) +
+  geom_line(aes(color = education),
+            linewidth = 1) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "High school or less"),
+           x = mdy("01-01-1982"),
+           y = 0.6,
+           color = "gray30"
+           ) +
+  geom_segment(data = tibble(kids = "kids"),
+               aes(x = mdy("01-01-1982"),
+                   xend = mdy("01-01-1982"),
+                   y = 0.65,
+                   yend = 0.94
+                   )
+               ) +
+  geom_text(data = tibble(kids = "kids"),
+           aes(label = "College graduates"),
+           x = mdy("01-01-1995"), 
+           y = 1.05,
+           color = "gray30"
+           ) +
+  geom_segment(data = tibble(kids = "kids"),
+               aes(x = mdy("01-01-2003"),
+                   xend = mdy("01-01-2003"),
+                   y = 1,
+                   yend = 0.94
+                   )
+               ) +
+  facet_wrap(~ kids,
+             labeller = labeller(kids = c(`kids` = "WITH CHILDREN", 
+                                          `nokids` = "WITHOUT CHILDREN")
+                                 )
+             ) +
+  scale_y_continuous(limits = c(0,1.1),
+                     labels = c(0, 25, 50, 75, "100%"),
+                     breaks = seq(0,1,0.25)
+                     ) +
+  scale_x_date(limits = c(mdy("01-01-1960"), 
+                          mdy("01-01-2012")
+                          ),
+               breaks = c(mdy("01-01-1960"), 
+                          mdy("01-01-1970"), 
+                          mdy("01-01-1980"),
+                          mdy("01-01-1990"),
+                          mdy("01-01-2000"),
+                          mdy("01-01-2010")
+                          ),
+               date_labels = c("%Y", "'%y", "'%y", "'%y", "%Y", "'%y")) +
+  scale_color_manual(values = c("#8c6bb1", "#810f7c")) +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_blank(),
+        legend.position = "none",
+        strip.text = element_text(face = "bold")) +
+  labs(title = "Marriage Rates For Women By Education",
+       subtitle = "Ages 25 to 35",
+       caption = "BASED ON CENSUS BUREAU DATA") +
+  geom_hline(yintercept = 0)
+```
+
+## Other useful tips!
+
+-   Stick plots together with `library(patchwork)`
+
+```{r}
+#| eval: false
+library(patchwork)
+
+p1 + p2
+
+p1/p2
+```
+
+-   Use HTML tags to add color to titles and/or labels
+
+```{r}
+#| eval: false
+library(ggtext)
+
+ggplot() +
+  ... +
+  labs(title = "Your title with <span style = 'color:#004400'>Colored Text</span>") +
+  theme(plot.title   = element_markdown())
+```
+
+-   or create breaks in titles with `<br>`
+
+# `r fontawesome::fa("chart-line")` Copy the Master's!
+
+## To do
+
+`r fontawesome::fa("chart-bar")` **Copy the Masters: First Draft**
+
+-   due Thursday, 5/18 at 11:59pm
+
+`r fontawesome::fa("paperclip")` **Draft: Results and Discussion**
+
+-   due Thursday, 5/18 at 11:59pm

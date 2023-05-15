@@ -148,7 +148,7 @@ install.packages("tinytex")
 tinytex::install_tinytex()
 ```
 
-## Example
+## Example^[<https://fivethirtyeight.com/features/marriage-isnt-dead-yet/>]
 
 Include a graphic in your Quarto document
 
@@ -328,7 +328,7 @@ women_clean |>
         legend.position = "none")
 ```
 
-## `theme()`
+## Themes
 
 ```{r}
 #| code-fold: true

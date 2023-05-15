@@ -61,6 +61,38 @@ knitr::include_graphics("images/statcomm-triangle.png")
 
 -   Relating the *fundamental components* of the idea.
 
+## **A**nalogy
+
+:::: {.columns}
+::: {.column width=65%}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/general-grant-analogy.jpg")
+```
+:::
+
+::: {.column width=35%}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/general-grant.jpg")
+```
+
+:::
+::::
+
+## **A**nalogy
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 30%
+knitr::include_graphics("images/empire-state-analogy.png")
+```
+
 ## **D**iagram
 
 -   Pictures can more *easily demonstrate* the idea.
@@ -126,7 +158,7 @@ knitr::include_graphics("images/jury.jpg")
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 50%
+#| out-width: 40%
 knitr::include_graphics("images/blood-sample.webp")
 ```
 

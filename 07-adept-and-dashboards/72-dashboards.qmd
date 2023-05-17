@@ -51,6 +51,14 @@ knitr::include_graphics("images/johns-hopkins-covid-dashboard.JPG")
 #| out-width: 100%
 knitr::include_graphics("images/csu-enrollment-dashboard.JPG")
 ```
+## Sports Dashboards^[<https://www.tableau.com/sports-data>; <https://public.tableau.com/app/profile/scribblr.42/viz/NBAFinals-SoundwaveShotSignaturesofthe4remainingpointguards/PointGuardShots>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/nba-finals-dashboard.JPG")
+```
 
 ## What is a Dashboard?
 
@@ -198,6 +206,7 @@ See slides at <https://unl-statistics.github.io/R-workshops/05-r-shiny/knitr/2-S
 + [Mastering Shiny](https://mastering-shiny.org/) by [Hadley Wickham](https://hadley.nz/)
 
 **Recommended Reading**
+
 + [RStudio Tutorial for Shiny](https://shiny.rstudio.com/tutorial/)
 + [Shiny Setup, Showcase, and Server setup](https://shiny.rstudio.com/) Useful if you want to use shiny on your own webserver
 + [Shiny Github Page](https://github.com/rstudio/shiny) See the latest updates

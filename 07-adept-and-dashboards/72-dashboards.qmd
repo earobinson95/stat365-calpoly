@@ -1,5 +1,5 @@
 ---
-title: "Dashboards"
+title: "Dashboards & Infographics"
 subtitle: "Stat 365: Statistical Communication"
 format: 
   revealjs:
@@ -21,15 +21,303 @@ library(tidyverse)
 
 Today we will...
 
-+ 
++ Intro to dashboards
++ Dashboards design
++ Tools for dashboards (RShiny, Tableau, etc.)
+
+## Car Dashboard^[<https://www.metromotor.com/blog/whats-car-dashboard-light-mean-quick-reference-guide>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/car-dashboard.png")
+```
+
+## Johns Hopkins Covid Dashboard^[<https://coronavirus.jhu.edu/map.html>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/johns-hopkins-covid-dashboard.JPG")
+```
+
+## CSU Enrollment^[<https://www.calstate.edu/data-center/institutional-research-analyses/Pages/enrollment.aspx>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/csu-enrollment-dashboard.JPG")
+```
+
+## What is a Dashboard?
+
++ Visual display of information (combination of text and graphics)
++ Display information to achieve a specific objective
++ Might include interactivity (e.g. dynamic)
+
+. . .
+
+**Variations in dashboard uses**
+
++ Role of the dashboard: strategic, analytical, operational
++ Type of data included in the dashboard
++ Update frequency
++ Interactivity
+
+# Types of interaction^[via Amelia McNamara]
+
+<!-- + **Select:** mark something as interesting -->
+<!-- + **Explore:** show me something else -->
+<!-- + **Reconfigure:** show me a different arrangement -->
+<!-- + **Encode:** show me a different representation -->
+<!-- + **Abstract/Elaborate:** show me more or less detail -->
+<!-- + **Filter:** show me something conditionally -->
+<!-- + **Connect:** show me related items -->
+
+## Select^[Stephen Few (2010), <https://www.perceptualedge.com/articles/visual_business_intelligence/coordinated_highlighting_in_context.pdf>]
+### mark something as interesting
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/select.jpg")
+```
+
+## Explore^[<https://pudding.cool/2017/03/film-dialogue/>]
+### show me something else
+
+:::: {.columns}
+::: {.column width=0.33}
++ Scroll bars (scrollytelling)
++ Panning
++ Steppers
++ Direct walk (e.g. hyperlink travel)
+:::
+::: {.column width=0.67}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/explore.jpg")
+```
+:::
+::::
+
+## Reconfigure^[via Jordan Crouser]
+### show me a different arrangement
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/reconfigure1.jpg")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/reconfigure2.jpg")
+```
+:::
+::::
+
+## Encode^[<https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/>]
+### show me a different representation
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/encode.jpg")
+```
+
+
+## Abstract/Elaborate^[<https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html>]
+### show me more or less detail
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 70%
+knitr::include_graphics("images/abstract-elaborate.jpg")
+```
+
+
+## Filter^[https://namerology.com/baby-name-grapher/]
+### show me something conditionally
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/filter.jpg")
+```
+
+
+## Connect^[Stephen Few (2010) <https://www.perceptualedge.com/articles/visual_business_intelligence/coordinated_highlighting_in_context.pdf>]
+### show me related items
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 70%
+knitr::include_graphics("images/connect.jpg")
+```
+
+## Dashboard Design (Best Practices)
+
++ Know your purpose and audience - Ask yourself, what are you trying to say with this Dashboard? Who are you saying this information to?
++ Take advantage of most viewed spots - You should start with your most important content in the top left. This is where most people start viewing a visualization.
++ Limit the number of views - In general, you should limit the number of views to two or three.
++ Show filters - Use of filters help specify which data is shown in the view.
++ Use highlighting - When turned on, a selection in one view can show relevant fields in other views. 
+
+
+# [RShiny](https://shiny.posit.co/r/gallery/)
+
+```{r}
+#| eval: false
+#| echo: true
+install.packages("shiny")
+```
+
+## Getting Started in Shiny
+
+See slides at <https://unl-statistics.github.io/R-workshops/05-r-shiny/knitr/2-ShinyStructure.html#1>
+
+**Resources**
+
++ [Shiny cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
++ [Mastering Shiny](https://mastering-shiny.org/) by [Hadley Wickham](https://hadley.nz/)
+
+**Recommended Reading**
++ [RStudio Tutorial for Shiny](https://shiny.rstudio.com/tutorial/)
++ [Shiny Setup, Showcase, and Server setup](https://shiny.rstudio.com/) Useful if you want to use shiny on your own webserver
++ [Shiny Github Page](https://github.com/rstudio/shiny) See the latest updates
++ [Shiny Mailing List](https://groups.google.com/g/shiny-discuss) Check the tutorial first, then search the mailing list.
+
+# [Tableau Dashboards](https://www.tableau.com/data-insights/dashboard-showcase)
+
+Dashboards are a collection of worksheets and information shown in a single view. Worksheets and dashboards are connected.
+
+## Tableau: Dashboard Layout
+
+:::: columns
+::: column
++ On the Dashboard, several options are available on the left side menu.
++ The Dashboard pane allows you to toggle the different views available. Possible options include Default, Desktop, Tablet, and Phone.
++ The Size section allows you to change the default size of the dashboard.
++ The Sheets sections provides a list of available views that can be added to the dashboard. 
+:::
+::: column
+```{r}
+#| fig-align: center
+#| echo: false
+#| out-width: 100%
+knitr::include_graphics("images/tableau-dashboard-layout.png")
+```
+:::
+::::
+
+## Tableau: Dashboard Layout
+
+Dashboards are a collection of worksheets and information shown in a single view. Worksheets and dashboards are connected.
+
+:::: {.columns}
+::: {.column width=60%}
+Objects allow you to add visual appeal and interactivity to your dashboard.
+
+::: {style="font-size: 24px;"}
++ *Horizontal and Vertical* - Containers that let you group related objects.
++ *Text* - Creates headers and explanations.
++ *Image* - Add visual graphics to the dashboard.
++ *Web Page* -
++ *Blank* - Help you adjust spacing between dashboard items.
++ *Navigation* - Lets your audience navigate from one object to another.
++ *Download* - Lets your audience download a PDF, PowerPoint, or PNG of entire dashboard. 
+:::
+
+:::
+::: {.column width=40%}
+```{r}
+#| fig-align: center
+#| echo: false
+#| out-width: 100%
+knitr::include_graphics("images/tableau-dashboard-objects.png")
+```
+:::
+::::
+
+## Tableau: Dashboard Tips
+
+Using the sheet drop down menu, you can add a Show/Hide button. This provides the option to toggle the sheet off and on.
+
+If you edit a view on a worksheet, it will update on any dashboard using that view. This is the same for any view updated on a dashboard.
+
+Sheets can be added to a dashboard by dragging them from the Dashboard pane over to the dashboard Canvas. 
+
+You can swap a sheet using this area. You first must click on the sheet on the dashboard.
+
+## Tableau: Dasbhoard Actions
+
+[Interactivity](https://help.tableau.com/current/pro/desktop/en-us/dashboards_create.htm#add-interactivity) can be added to a dashboard to enhance your audience experience. 
+
+Using the dropdown menu on a sheet on the dashboard, you can add filters and highlighters. Along with interactivity, actions can be added to your dashboard.
+
+Under the Dashboards menu, click Actions to set up a new Dashboard action.
+
++ Highlight Action - Use this action to call attention to marks of interest by coloring relevant marks and shading others.
++ Filter Actions - Use this action to send information between worksheets.
++ URL Actions - Uses a hyperlink that points to a webpage, file, or other web-base outside Tableau. Checking the box “single-select only” prevents navigation to a sheet after clicking it once. 
+
+## Tableau: Publishing a Dashboard
+
+Tableau provides the option to share your data sources (live or extract), dashboards, stories, and sheets with people using Tableau Server or Tableau Cloud. 
+
+When publishing to a server you have the options to
+
++ Add tags
++ Select which worksheets are published
++ Set permissions 
++ Embed data sources 
+
+Once published, the workbook can be viewed using a web browser or the Tableau mobile app. Along with publishing a dashboard, workbooks can be exported as a PDF file option on the navigation bar. 
+
+## Career services visit on Monday
+
+Focus on resumes and cover letters.
+
++ Read [Does your resume pass the six second test?](https://www.wsj.com/articles/does-your-resume-pass-the-six-second-test-b63f4c02)
++ Submit two questions for Career Services
+
+We will discuss the final mini-project (Build Your Resume) next week. This will be completed using Overleaf.
+
+. . .
+
+**Expectations for Monday**
+
++ Attend class.
++ Be engaged (ask questions, nod your head, don't be working on other things, etc.)
 
 ## To do
 
-`r fontawesome::fa("chart-bar")` **Copy the Masters: Pick your Graphic**
+`r fontawesome::fa("chart-bar")` **Copy the Masters: First Draft**
 
-+ First Draft due Thursday, 5/18 at 11:59pm
++ due Thursday, 5/18 at 11:59pm
++ Final Draft due Thursday, 5/25 at 11:59pm
+
+`r fontawesome::fa("question")` **Submit Two Question for Career Services**
+
++ due Sunday, 5/21 at 11:59pm
 
 `r fontawesome::fa("paperclip")` **Draft: Results and Discussion**
 
-+ due Thursday, 5/18 at 11:59pm
++ due Monday, 5/22 at 11:59pm
 

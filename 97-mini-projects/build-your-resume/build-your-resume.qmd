@@ -1,0 +1,89 @@
+---
+title: "Build Your Resume"
+subtitle: "Mini-project"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+## Deliverables
+
+| Component                        | Brief Description | Due Date |
+|----------------------------------|-------------------|----------|
+| Draft for peer review (optional) |                   |          |
+| Final Submission                 |                   |          |
+
+For this assignment, we'll be working on creating or modifying our resumes to a professional state.
+
+## Overleaf Template & Appearance
+
+As part of this mini-project, you will be working with Overleaf, a $\LaTeX$ editor. Visit <https://www.overleaf.com/register> to register for a FREE account -- make sure you remember the email and password you use! You will likley come back to this next fall when applying for internships.
+
+Overleaf provides resume templates; visit <https://www.overleaf.com/gallery/tagged/cv> to select a template. Keep in mind, the template should be simple and organized (there are some bad resume templates on there!). Here are a few of my favorites (you can also make modifications):
+
++ <https://www.overleaf.com/latex/templates/mnit-jaipur-resume-template/tvpksfpqhtvj>
++ <https://www.overleaf.com/latex/templates/russelresume/zqnypvvjsfvq>
++ <https://www.overleaf.com/latex/templates/rezume/kfrvqywfkwjs>
++ <https://www.overleaf.com/latex/templates/resume-one-page/hsrxmjssndwc>
+
+While some look snazzy like [this](https://www.overleaf.com/latex/templates/altacv-nicolasomar-fork/htfpmrwhbwpw) and [this](https://www.overleaf.com/latex/templates/extensive-adjustable-curriculum-vitae-cv/kncgcpxcqykb), they are actually difficult to follow.
+
+Overleaf uses $\LaTeX$ formatting, which means there are special symbols used to style your document such as indentations, lists, section headers, horizontal lines, etc. Below are some resources to give you guidance:
+
++ [Paragraphs and new lines](https://www.overleaf.com/learn/latex/Paragraphs_and_new_lines)
++ [Bold, italics and underlining](https://www.overleaf.com/learn/latex/Bold%2C_italics_and_underlining)
++ [Lists](https://www.overleaf.com/learn/latex/Lists)
+
+In particular, $\LaTeX$ is especially good at formatting [math expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions); however, your resume likely does not include any so that is not a concern. Another great resource for math expressions in $\LaTeX$ is [Detexify](https://detexify.kirelabs.org/classify.html).
+
+## Sections to include {#sections}
+
+I have outlined the sections I would like to see in your resume along with guidelines about how to describe your experiences. See [Cal Poly Career Services Resume Review Checklist](https://content-calpoly-edu.s3.amazonaws.com/careerservices/1/webform/Resume%20Review%20Checklist%20FINAL%20FALL%202019.pdf) for additional guidance.
+
+### Header
+
+### Education (and Relevant Coursework)
+
+You may select to include your Relevant Coursework in its own section.
+
+### Work Experience
+
+### Projects
+
+### Skills
+
+### Honors and Awards (Optional)
+
+### Involvement and Leadership
+
+## Final Submission Rubric
+
+To meet the "satisfactory" requirements for the contract, this project must:
+
+-   be turned in on time (or within the agreed upon time by 24 hour late tokens submitted **prior** to the due date),
+
+-   include all components described above
+
+-   Meet quality guidelines laid out in the following rubric (all 2s and above for each element and demonstration of additional considerations)
+
+::: column-page
+| Component                      | 3 - Strong Evidence | 2 - Moderate Evidence | 1 - Weak Evidence | 0 - No Evidence |
+|--------------|---------------|--------------|--------------|--------------|
+| **Header**                     |                     |                       |                   |                 |
+| **Education**                  |                     |                       |                   |                 |
+| **Work Experience**            |                     |                       |                   |                 |
+| **Projects**                   |                     |                       |                   |                 |
+| **Skills**                     |                     |                       |                   |                 |
+| **Involvement and Leadership** |                     |                       |                   |                 |
+| **Appearance**                 |                     |                       |                   |                 |
+| **Professionalism**            |                     |                       |                   |                 |
+:::

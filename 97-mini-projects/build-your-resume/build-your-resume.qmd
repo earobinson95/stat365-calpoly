@@ -49,6 +49,17 @@ In particular, $\LaTeX$ is especially good at formatting [math expressions](http
 
 I have outlined the sections I would like to see in your resume along with guidelines about how to describe your experiences. See [Cal Poly Career Services Resume Review Checklist](https://content-calpoly-edu.s3.amazonaws.com/careerservices/1/webform/Resume%20Review%20Checklist%20FINAL%20FALL%202019.pdf) for additional guidance.
 
+::: callout-note
+### Examples
+
+See two examples or resumes I have helped edit:
+
++ [Mark Robinson](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/build-your-resume/Example-Resume-1.pdf)
++ [Kory Heier](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/build-your-resume/Example-Resume-2.pdf)
+
+You do not have to take these verbatim as some aspects might not quite align with career services recommendations, but I think they are both decent examples.
+:::
+
 ### Header
 
 ### Education (and Relevant Coursework)

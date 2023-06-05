@@ -10,29 +10,6 @@ format:
     theme:
       light: flatly
       dark: darkly
-  # pdf:
-  #       \makeatother
-  #       \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{section}
-  #       \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{subsection}
-  #       \RedeclareSectionCommand[beforeskip=1ex plus -.2ex minus -.2ex,afterskip=.25ex plus -.1ex minus -.1ex]{subsubsection}
-  #       \raggedbottom
-  #       \usepackage{enumitem}
-  #       \setlist{nolistsep}
-  #   keep-tex: false
-  #   # include-in-header: "in-header.tex"
-  #   include-in-header:
-  #         \end{center}%
-  #         \par
-  #         \vskip 1em}
-  #     text: |
-  #       \makeatletter
-  #       \def\@maketitle{%
-  #         \begin{center}%
-  #         \let \footnote \thanks
-  #           {\LARGE \@title \par}%
-  #           {\large \@author \par}%
-  #           {\large \@date}
-  #   latex-engine: xelatex
 dev: png
 geometry: margin=1in
 fontfamily: mathpazo

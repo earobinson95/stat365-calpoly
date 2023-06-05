@@ -72,10 +72,15 @@ In your final submission, you will turn in a .zip file of your project folder in
 <!-- Notes for next time (be more clear) -->
 
 <!-- - Motivation/Background -->
+
 <!-- - Clearly state: observation, explanatory variable, response variable (and units/levels) -->
+
 <!-- - Sample size (inclusion/exclusion criteria, how will you obtain your sample) -->
+
 <!-- - Materials -->
+
 <!-- - Detailed methods (how will you randomize?) -->
+
 <!-- - Propose statistical analysis -->
 
 For your technical report assignment, you will be required to propose a research project that can be easily executed within 1-2 days. Your project should be:
@@ -92,22 +97,19 @@ To ensure you have a well-developed proposal, review [Cal Poly's Guidelines for 
 Some parts (e.g., Human subjects) may be less relevant to you and that's fine! I would focus less on criteria for approval, and more on providing enough details that someone else could carry out the study you have designed (4(a), (c), (d)).
 :::
 
-::: {.callout-tip collapse=true}
+::: {.callout-tip collapse="true"}
 ## Considerations for the research protocol
-+ Put the methodology in context
-  + Research question and objectives
-+ Research Design
-  + The choice of the design should be explained in relation to the
-study objectives (treatments, response, observations, etc.)
-+ Materials and tools
-  + If you will be using subjects/participants, the following questions should be answered:
-    – What are the criteria for inclusion or selection?
-    – What are the criteria for exclusion? 
-+ A chronology of steps
-  + Think like a detailed recipe.
-  + Provide information and justification about sample
-size.
-+ Notes, recipes, tips, and tricks
+
+-   Put the methodology in context
+    -   Research question and objectives
+-   Research Design
+    -   The choice of the design should be explained in relation to the study objectives (treatments, response, observations, etc.)
+-   Materials and tools
+    -   If you will be using subjects/participants, the following questions should be answered: -- What are the criteria for inclusion or selection? -- What are the criteria for exclusion?
+-   A chronology of steps
+    -   Think like a detailed recipe.
+    -   Provide information and justification about sample size.
+-   Notes, recipes, tips, and tricks
 :::
 
 **Deliverables**:
@@ -318,10 +320,10 @@ Your appendix should include:
 
 Your submission should include
 
-1.  A version of your report showing track changes in individual pieces
-2.  A brief discussion of changes made to original pieces of report along the way
-3.  Final report (see draft rubric below)
-4.  The .zip folder of your project folder demonstrating your reproducible workflow
+1.  Final report (see draft rubric below) as .pdf file
+2.  The .zip folder of your project folder demonstrating your reproducible workflow
+    -   Documents sub folder contains a version of your report showing track changes in individual pieces -- clearly labeled
+    -   Documents sub folder contains a brief discussion of changes made to original pieces of report along the way -- clearly labeled
 
 **Formatting:** Your final report should use
 
@@ -333,12 +335,12 @@ Your submission should include
 
 **Contents:** Your final report should have the sections and related contents as described above.
 
-**Revisions:** You should also be submitting your discussion of the changes you made and any annotated previous versions as separate files.
+**Revisions:** You should also be submitting your discussion of the changes you made and any annotated previous versions within the document subfolder of the .zip file
 
 # Editing Checklist {.unnumbered}
 
--   Title page lists the title, authors, date.
--   Present, active voice ("by Zombies" test); professional tone; no personal opinions
+-   Title page lists the title, authors, affiliation, date.
+-   Active voice ("by Zombies" test); professional tone; no personal opinions
 -   Concise (vs. use of unnecessary words)
 -   Gender-neutral wording
 -   Acronyms and Abbreviations defined the first time used
@@ -397,75 +399,79 @@ Any deviation to these guidelines will be to your benefit.
 *The table below outlines the main components of your technical report:*
 
 ::: column-page
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| Main Component                                                                            | 4 - above and beyond evidence | 3 - strong evidence             | 2 - moderate evidence | 1 - weak evidence | 0 - no evidence |
-|                                                                                           |                               |                                 |                       |                   |                 |
-|                                                                                           |                               | (a 3 is considered full credit) |                       |                   |                 |
-+===========================================================================================+===============================+=================================+=======================+===================+=================+
-| **Abstract/Executive summary *(\~120 words, limit 250 words)***                           |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Plain language, Overview, Engaging                                                        |                               |                                 |                       |                   |                 |
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Introduction**                                                                          |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Clarify objectives, but not too much detail                                               |                               |                                 |                       |                   |                 |
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Data and Methods**                                                                      |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Ws                                                                                        |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Study design details                                                                      |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Study design issues (e.g., missing data)                                                  |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Analytic sample, representativeness                                                       |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Variables/Units/Getting to know your data                                                 |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Outliers                                                                                  |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Name of statistical methods                                                               |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Critique of statistical methods/validity                                                  |                               |                                 |                       |                   |                 |
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Results**                                                                               |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Include graphical summaries of your data and statistical analyses                         |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Quality/Effectiveness of visuals/tables                                                   |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| e.g., units of measurement, not too many significant digits, value ordering, use of color |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Titles/Axis labels/Annotations/Legends/Captions/Alt Text/Scaling                          |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Figures in line with text                                                                 |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Introductory sentences of tables, charts, comparisons                                     |                               |                                 |                       |                   |                 |
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Discussion**                                                                            |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Summaries of major findings                                                               |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Effective comparisons                                                                     |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Direction, magnitude, significance                                                        |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Generalizations, Examples, and Exceptions                                                 |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Interpretation of numeric evidence                                                        |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Connections to research questions                                                         |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Reflection on strengths, limitations                                                      |                               |                                 |                       |                   |                 |
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Conclusion**                                                                            |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Scope of conclusions                                                                      |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Substantive significance                                                                  |                               |                                 |                       |                   |                 |
-|                                                                                           |                               |                                 |                       |                   |                 |
-| Recommend appropriate action?/Directions for future research                              |                               |                                 |                       |                   |                 |
-+-------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
+| Main Component                                                                                   | 4 - above and beyond evidence | 3 - strong evidence             | 2 - moderate evidence | 1 - weak evidence | 0 - no evidence |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               | (a 3 is considered full credit) |                       |                   |                 |
++==================================================================================================+===============================+=================================+=======================+===================+=================+
+| **Abstract/Executive summary *(\~120 words, limit 250 words)***                                  |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Plain language, Overview, Engaging                                                               |                               |                                 |                       |                   |                 |
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
+| **Introduction**                                                                                 |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Clarify objectives / research question, but not too much detail                                  |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Tell me the structure of the paper                                                               |                               |                                 |                       |                   |                 |
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
+| **Data and Methods**                                                                             |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Ws                                                                                               |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Study design details                                                                             |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Study design issues (e.g., missing data)                                                         |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Analytic sample, representativeness (inclusion/exclusion criteria)                               |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Variables/Units/Getting to know your data                                                        |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Outliers                                                                                         |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Name of statistical methods (and reference)                                                      |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Critique of statistical methods/validity                                                         |                               |                                 |                       |                   |                 |
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
+| **Results**                                                                                      |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Include graphical summaries of your data and statistical analyses                                |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Quality/Effectiveness of visuals/tables                                                          |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| e.g., units of measurement, not too many significant digits, value ordering, use of color        |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Titles/Axis labels/Annotations/Legends/Captions/Alt Text/Scaling                                 |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Figures and Tables in line with text                                                             |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Introductory sentences of tables, charts, comparisons (refer to them as Figure 1, Table 1, etc.) |                               |                                 |                       |                   |                 |
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
+| **Discussion**                                                                                   |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Summaries of major findings                                                                      |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Effective comparisons                                                                            |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Direction, magnitude, significance                                                               |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Generalizations, Examples, and Exceptions                                                        |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Interpretation of numeric evidence                                                               |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Connections to research questions                                                                |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Reflection on strengths, limitations                                                             |                               |                                 |                       |                   |                 |
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
+| **Conclusion**                                                                                   |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| *Briefly* restate the RQ and what you did/found.                                                 |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Scope of conclusions                                                                             |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Substantive significance                                                                         |                               |                                 |                       |                   |                 |
+|                                                                                                  |                               |                                 |                       |                   |                 |
+| Recommend appropriate action?/Directions for future research                                     |                               |                                 |                       |                   |                 |
++--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
 :::
 
 <br>
@@ -473,37 +479,39 @@ Any deviation to these guidelines will be to your benefit.
 *In addition to the main components of the technical report, you must demonstrate competency (moderate or strong evidence) of the following written and project parts:*
 
 ::: column-page
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| Writting/Project Component                                            | Moderate or Strong Evidence | Weak or no Evidence |
-+=======================================================================+=============================+=====================+
-| **Reproducibility**                                                   |                             |                     |
-|                                                                       |                             |                     |
-| .zip folder containing: README, data, documents, results, and scripts |                             |                     |
-|                                                                       |                             |                     |
-| Good programming practices and code/analysis documentation            |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Revisions**                                                         |                             |                     |
-|                                                                       |                             |                     |
-| Copy or original drafts with track changes                            |                             |                     |
-|                                                                       |                             |                     |
-| Discussion of edits made along the way                                |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Title page**                                                        |                             |                     |
-|                                                                       |                             |                     |
-| Title, Author, Course, Date                                           |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Overall Clarity**                                                   |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Appearance**                                                        |                             |                     |
-|                                                                       |                             |                     |
-| e.g. section headings, page breaks, details, figure/table numbers     |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Overall cohesion/flow of story**                                    |                             |                     |
-|                                                                       |                             |                     |
-| e.g., Transition sentences                                            |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Grammar/Spelling/Appropriateness of vocabulary/Punctuation**        |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
-| **Correct use of statistical language**                               |                             |                     |
-+-----------------------------------------------------------------------+-----------------------------+---------------------+
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| Writting/Project Component                                             | Moderate or Strong Evidence | Weak or no Evidence |
++========================================================================+=============================+=====================+
+| **Reproducibility**                                                    |                             |                     |
+|                                                                        |                             |                     |
+| .zip folder containing: README, data, documents, results, and scripts  |                             |                     |
+|                                                                        |                             |                     |
+| Good programming practices and code/analysis documentation             |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Revisions**                                                          |                             |                     |
+|                                                                        |                             |                     |
+| Copy or original drafts with track changes                             |                             |                     |
+|                                                                        |                             |                     |
+| Discussion of edits made along the way                                 |                             |                     |
+|                                                                        |                             |                     |
+| *Should easily be found in the `documents` subfolder of the .zip file* |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Title page**                                                         |                             |                     |
+|                                                                        |                             |                     |
+| Title, Author, Course, University Affiliation, Date                    |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Overall Clarity**                                                    |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Appearance**                                                         |                             |                     |
+|                                                                        |                             |                     |
+| e.g. section headings, page breaks, details, figure/table numbers      |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Overall cohesion/flow of story**                                     |                             |                     |
+|                                                                        |                             |                     |
+| e.g., Transition sentences                                             |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Grammar/Spelling/Appropriateness of vocabulary/Punctuation**         |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
+| **Correct use of statistical language**                                |                             |                     |
++------------------------------------------------------------------------+-----------------------------+---------------------+
 :::

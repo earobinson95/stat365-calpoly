@@ -480,7 +480,7 @@ Any deviation to these guidelines will be to your benefit.
 
 ::: column-page
 +------------------------------------------------------------------------+-----------------------------+---------------------+
-| Writting/Project Component                                             | Moderate or Strong Evidence | Weak or no Evidence |
+| Writing/Project Component                                             | Moderate or Strong Evidence | Weak or no Evidence |
 +========================================================================+=============================+=====================+
 | **Reproducibility**                                                    |                             |                     |
 |                                                                        |                             |                     |

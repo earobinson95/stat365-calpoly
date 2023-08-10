@@ -8,12 +8,19 @@
 **Mini Projects**
 
 + [One-number Story](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/one-number-story/one-number-story.html#peer-editing)
-+ Copy the Maser's
-+ Build your Resume
++ [Copy the Master's](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/copy-the-masters/copy-the-masters.html)
++ [Build your Resume](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/build-your-resume/build-your-resume.html)
 
 **Final Technical Report Project**
 
 + [Project instructions](https://earobinson95.github.io/stat365-calpoly/99-final-project/final-project-instructions.html)
+
+**Booster Conditions**
+
++ [NYT What's going on in this graph](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/nyt-whats-going-on-in-this-graph.html)
++ [Florence Nightingale: Data Viz Pioneer](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/florence-nighingale-data-viz-pioneer.html)
++ [Data Dashboard](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/data-dashboard.html)
++ [Make your own website](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/make-your-own-website.html)
 
 **Lecture Slides**
 
@@ -39,23 +46,23 @@
 
 *Week 5*
 
-+ Perception and Principles
-+ Simplification
++ [Perception and Principles](https://canvas.calpoly.edu/courses/98871/modules/items/2861444)
++ [Simplification](https://earobinson95.github.io/stat365-calpoly/05-data-viz-principles/051-perception-and-principles.html#/title-slide)
 
 *Week 6*
 
-+ Statistical Tendencies
-+ Writing reports
++ [Reporting Results](https://earobinson95.github.io/stat365-calpoly/06-statistical-tendencies/061-statistical-tendencies.html#/title-slide)
++ [Writing Reports](https://earobinson95.github.io/stat365-calpoly/06-statistical-tendencies/062-writing-reports.html#/title-slide)
 
 *Week 7*
 
-+ ADEPT
-+ Infographics and Dashboards
++ [ADEPT](https://earobinson95.github.io/stat365-calpoly/07-adept-and-dashboards/071-adept.html#/title-slide)
++ [Dashboards](https://earobinson95.github.io/stat365-calpoly/07-adept-and-dashboards/72-dashboards.html#/title-slide)
 
 *Week 8*
 
 + Visit from Career Center
-+ Finding Internships and Online Presence
++ [Finding Internships and Online Presence](https://earobinson95.github.io/stat365-calpoly/08-career-week/082-internships-and-online-presence.html#/title-slide)
 
 *Week 9*
 
@@ -63,4 +70,4 @@
 
 *Week 10*
 
-+ Project workdays
++ [Technical Report Tips](https://earobinson95.github.io/stat365-calpoly/10-final-project/101-final-technical-report.html#/title-slide)

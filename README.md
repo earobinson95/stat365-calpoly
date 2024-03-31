@@ -7,9 +7,9 @@
 
 **Mini Projects**
 
-+ [One-number Story](https://earobinson95.github.io/stat365-calpoly/2023/2024/97-mini-projects/one-number-story/one-number-story.html)
-+ [Stand-alone Graphic](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/stand-alone-graphic/stand-alone-graphic.html)
-+ [Build your Resume](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/build-your-resume/build-your-resume.html)
++ [One-number Story](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/01-one-number-story/one-number-story.html)
++ [*Data Narrative Visualization:*](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/02-stand-alone-graphic/stand-alone-graphic.html)
++ [Build your Resume](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/03-build-your-resume/build-your-resume.html)
 
 **Final Team Report**
 

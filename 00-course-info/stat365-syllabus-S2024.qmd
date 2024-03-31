@@ -1,6 +1,6 @@
 ---
 title: "Stat 365: Statistical Communication"
-subtitle: "Spring 2023"
+subtitle: "Spring 2024"
 # author: "Dr. Emily Robinson"
 # date: "January 9, 2023"
 format: 
@@ -31,17 +31,19 @@ editor:
 
 **Class Meeting Times:** Mondays/Wednesdays
 
--   Section 01: 1:10pm - 2:00pm
--   Section 02: 2:10pm - 3:00pm
+-   Section 01: 8:10pm - 9:00pm
+-   Section 02: 9:10pm - 10:00pm
 
-**Class Location:** 33-457 (Fisher)
+**Class Location:** 010 - 0227
 
-**Office Hours:** Thursdays at 2:30pm - 4:30pm, in-person (25-103)
+**Office Hours:** in-person (25-103)
+
+- Wednesdays at 1:10pm - 2:30pm
+- Thursdays at 9:10 - 10:30am
 
 ```{r}
 #| include: false
 library(tidyverse)
-library(lubridate)
 
 # Create a calendar for your syllabus ----
 # Source: http://svmiller.com/blog/2020/08/a-ggplot-calendar-for-your-semester/
@@ -50,22 +52,22 @@ library(lubridate)
 # Format: YYYYMMDD. In this example, 4 January 2022.
 
 # What are the full dates of the semester?
-semester_dates <- seq(ymd(20230402), ymd(20230617), by=1)
+semester_dates <- seq(ymd(20240401), ymd(20240608), by = 1)
 # Weekday(s) of class
 class_wdays <- c("Mon", "Wed")
 
 not_here_dates <- c(
-  ymd("20230529"),
-  ymd("20230531")
+  ymd("20240527"),
+  ymd("20240401")
   # Break
   # seq(ymd(20221017), ymd(20221018), by = 1)
   )
 
-exam_dates <- c(ymd("20230616"),
-                ymd("20230612")
+exam_dates <- c(ymd("20240610"),
+                ymd("20240612")
                 )
 # project_dates <- c(ymd(20221104), ymd(20221205), ymd(20221209))
-finals_week <- seq(ymd(20230611), ymd(20230617), by = 1)
+finals_week <- seq(ymd(20240610), ymd(20240615), by = 1)
 
 # Custom function for treating the first day of the month as the first week 
 # of the month up until the first Sunday 
@@ -75,7 +77,7 @@ wom <- function(date) {
     return((mday(date) + (first - 2)) %/% 7 + 1)
   }
 # Create a data frame of dates, assign to Cal
-Cal <- tibble(date = seq(ymd(20230401), ymd(20230620), by = 1))  %>%
+Cal <- tibble(date = seq(ymd(20240401), ymd(20240630), by = 1))  %>%
   mutate(mon = lubridate::month(date, label=T, abbr=F),
          wkdy = weekdays(date, abbreviate=T),
          wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"), # make sure Sunday comes first
@@ -85,14 +87,15 @@ Cal <- tibble(date = seq(ymd(20230401), ymd(20230620), by = 1))  %>%
          not_here = date %in% not_here_dates, # is it a day off?
          exam_wk = date %in% finals_week,
          day = lubridate::mday(date), 
-         week = wom(date))
+         week = wom(date)
+         )
 
 Cal <- Cal %>%
   mutate(category = case_when(
     # project ~ "Project",
     exams ~ "Final Slots",
     not_here ~ "No Class",
-    semester & wkdy %in% class_wdays & !not_here & !exam_wk | date == "2023-01-17" ~ "Class Day",
+    semester & wkdy %in% class_wdays & !not_here & !exam_wk | date == "2024-05-28" ~ "Class Day",
     semester ~ "Finals",
     TRUE ~ "NA"
   )) 
@@ -125,7 +128,6 @@ class_cal <- Cal %>%
                     #... but also suppress a label for a non-class semester day
                     breaks=c("Finals", "No Class", "Class Day", "Final Slots"))
 class_cal
-
 ```
 
 # Course description
@@ -142,7 +144,8 @@ on students' previous statistics coursework.
 second course in Statistical Methods (STAT 252, STAT 302, or STAT 313).
 
 **Requirements:** This course is required for Statistics majors but does not
-count toward the Statistics minor or any other degree program.
+count toward the Statistics minor or any other degree program. Please speak to your academic adviser
+if you need permission for credit.
 
 ## Course goals
 
@@ -160,98 +163,10 @@ By the end of this course, you will:
     scope of conclusions.
 -   Develop proficiency in writing and producing technical reports with adequate
     documentation to ensure reproducibility.
--   Learn how to use spreadsheets, Tableau, and R for data visualization and
+-   Learn how to use spreadsheets and R for data visualization and
     communication.
 -   Gain experience in integrating statistical analysis, data visualization, and
     technical writing in a reproducible manner.
-
-<!-- -   Develop effective written communication skills in statistics and data -->
-
-<!--     analysis. -->
-
-<!-- -   Synthesize output from statistical software relevant to answering the -->
-
-<!--     research questions -->
-
-<!-- -   Learn to use appropriate graphs and tables to communicate statistical ideas -->
-
-<!--     and results. -->
-
-<!-- -   Evaluate an audience's statistical background (introductory or advanced) and -->
-
-<!--     modify the style and content of a written report based on the purpose, -->
-
-<!--     audience, and context of a given communicative act. -->
-
-<!-- -   Use the following statistical concepts with lexical precision in written -->
-
-<!--     reports: parameter vs. statistic, variability, p-value, margin-of-error, -->
-
-<!--     interaction, scope of conclusions. -->
-
-<!-- -   Gain practice in writing technical reports. -->
-
-<!-- -   Integrate sufficient documentation to ensure reproducibility. -->
-
-<!-- -   Develop technical skills using spreadsheets, Tableau, and R, to visualize -->
-
-<!--     and communicate data. -->
-
-<!-- + Critique technical and media reports based on statistical studies and analyses. -->
-
-<!-- + Select the appropriate descriptive and inferential statistical methods (seen in previous classes), and analyze data using those methods. -->
-
-<!-- + Synthesize output from statistical software relevant to answering the research questions -->
-
-<!-- + Write reports that clearly convey statistical ideas and content; effectively incorporate appropriate -->
-
-<!-- information in tables and graphs within technical reports; and integrate sufficient documentation to -->
-
-<!-- ensure reproducibility. -->
-
-<!-- + Evaluate an audience's statistical background (introductory or advanced) and modify the style and -->
-
-<!-- content of a written report based on the purpose, audience, and context of a given communicative -->
-
-<!-- act (such as a consultation memo, executive summary, or technical report). -->
-
-<!-- + Use the following statistical concepts with lexical precision in written reports: parameter vs. -->
-
-<!-- statistic, variability, p-value, margin-of-error, interaction, scope of conclusions. -->
-
-<!-- + Learn appropriate methods for visualizing and communicating data, both numerical and categorical. -->
-
-<!-- + Develop technical skills using spreadsheets, Tableau, and R, to visualize and communicate data. -->
-
-<!-- + Apply course material to communications you find in the wild, and datasets that interest you. -->
-
-<!-- At the end of this class, students should be able to: -->
-
-<!-- + Use computational tools to prepare data for storytelling. This includes: -->
-
-<!--     + wrangling datasets using spreadsheets, -->
-
-<!--     + making data visualizations using DataWrapper, and -->
-
-<!--     + curating the final presentation of products. -->
-
-<!-- + Critically evaluate data stories in a field of interest. This includes: -->
-
-<!--     + describing and critiquing data visualizations and narratives including in a peer review setting, -->
-
-<!--     + evaluating structure, design, and writing choices of data stories, and -->
-
-<!--     + articulating their own data storytelling style. -->
-
-<!-- + Communicate insights from data clearly and precisely. This includes: -->
-
-<!--     + identifying a compelling story from a dataset, -->
-
-<!--     + telling the story effectively using appropriate visual and descriptive approaches, -->
-
-<!--     + knowing the audience and communicating at an accessible level that is still faithful to the data, -->
-
-<!-- and communicating via a variety of mediums including written, visual, and oral products. -->
 
 # Textbooks
 
@@ -288,46 +203,38 @@ our voices.
 You are guaranteed a grade of a B for this class if you meet the following
 conditions:
 
--   Submit assignments (readings, writing prompts, class activities, peer
-    reviews, and final report check-points) on time and meet the "satisfactory"
-    criteria with a maximum of 3 missed assignments.
+-   Submit assignments (readings, class activities, peer
+    reviews, and final group report check-points) on time and meet the "satisfactory" criteria with a maximum of 3 missed assignments.
 -   Complete all mini-projects on time and meet the "satisfactory" conditions on
     the rubrics.
--   Submit the final technical report on time and meet the "satisfactory"
+-   Submit the final group report on time and meet the "satisfactory"
     conditions on the rubric.
 
 Your grade will decrease by a third of a step (for example a B to a B-) for each
 B condition that you do not meet. Missing assignments will be scaled, so that if
 for example you miss six assignments, turn in two mini-projects late, or turn in
-your final technical report late your grade will decrease by two thirds of a
+your final group report late your grade will decrease by two thirds of a
 step (for example a B to a C+).
 
 A missing final technical report submission will result in a maximum grade of a
 D+ at the instructor's discretion.
 
 You can increase your letter grade by *up to* a third of a step (for example a B
-to B+) for meeting each of the following conditions (further instructions will
+to B+) for meeting each of the following conditions to satisfactory as defined on the rubrics (further instructions will
 be provided):
 
 -   Complete a weekly submission to the [NYT: What's going on in this
     graph](https://www.nytimes.com/column/whats-going-on-in-this-graph), missing
-    no more than three weeks throughout the quarter.
+    no more than one week throughout the quarter.
+-   Start a [Dear Data]() "pen pal" with a peer, including at least 3 thoughtful entries.
 -   Listen to the [99% Invisible podcast on Florence Nightingale: Data Viz
-    Pioneer](https://99percentinvisible.org/episode/florence-nightingale-data-viz-pioneer/).
-    Find the data set to recreate the rose diagram, compare with a stacked bar
-    plot, discuss the story, and argue why Florence needed the rose diagram.
--   Select a data set from
-    [TidyTuesday](https://github.com/rfordatascience/tidytuesday) or [Makeover
-    Monday](https://www.makeovermonday.co.uk/data/) and use guiding principles
-    to create an effective dashboard using Tableau or RShiny to highlight key
-    points.
--   Participate in [The Stats+Stories 300th Episode Data Visualization
-    Contest](https://statsandstories.net/contest).
+    Pioneer](https://99percentinvisible.org/episode/florence-nightingale-data-viz-pioneer/). Find the data set to recreate the rose diagram, compare with a stacked bar plot, discuss the story, and argue why Florence needed the rose diagram.
+-   [Copy the Masters]() by recreating a graphic from FiveThirtyEight using your favorite software.
 -   [Make your own
-    website](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/make-your-own-website.html)
-    using Quarto and GitHub to showcase your statistical projects.
--   Complete a technical report project that goes above and beyond the
-    requirements. Your job is to convince me in an additional one page document
+    website](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/make-your-own-website.html) using Quarto and GitHub pages to showcase your statistical projects.
+-   In addition to the mini-project for building your Resume, find an internship/program and write a [Tailored Cover Letter]().
+-   Complete a final group report project that goes above and beyond the
+    requirements. Your job is to convince me in an additional half page document
     why you think your contribution goes the extra mile.
 -   I encourage you to suggest your own "boosting" condition via the suggestion
     "box" form on Canvas.
@@ -347,28 +254,19 @@ participate in class discussions and activities. Your peer review participation
 and engagement in class will be evaluated throughout the quarter.
 <!-- Additionally, you will be required to take readiness quizzes to assess your understanding of the material. -->
 
-2.  **Writing prompts and activities:**
+2.  **In-class activities:**
 
-Throughout the course, you will be given writing prompts and activities to help
-you develop your technical writing skills. These will include assignments such
-as summarizing statistical findings, interpreting graphs and tables, and writing
-up executive memos. These assignments will be designed to help you practice
-communicating complex statistical concepts and analyses clearly and effectively.
+Most classes will involve activities to help you develop your technical writing and communication skills. These will include assignments such as summarizing statistical findings, redesigning graphs and tables, and story-boarding your data analysis. These assignments will be designed to help you practice communicating complex statistical concepts and analyses clearly and effectively.
 
 3.  **Mini-projects:**
 
 There will be three mini-projects throughout the quarter, each designed to help
-you develop and apply your statistical communication skills. The mini-projects
-will include:
+you develop and apply your statistical communication skills. Additionally, the first two mini-projects will build into your final group report. Mini-projects are to be completed *individually.* The mini-projects will include:
 
 -   *One Number Story:* In this assignment, you will choose a single number that
-    summarizes a key finding from the provided data set and craft a compelling
-    story around it, using appropriate statistical evidence to support your
-    claims.
+    summarizes a key finding from the data set your group selected for your final report and craft a compelling story around it, using appropriate statistical evidence to support your claims.
 
--   *Copy the Masters:* For this assignment, you will reproduce graphics from
-    FiveThirtyEight. You will use good data visualization principles and
-    practicies.
+-   *Stand Alone Graphic:* For this assignment, you will xxxx
 
 -   *Build your resume:* In this assignment, you will create a resume using
     Overleaf to highlight your education, statistical communication and
@@ -378,33 +276,33 @@ will include:
 Detailed rubrics will be provided for each mini-project to help guide your work
 and ensure that you meet the required standards.
 
-4.  **Technical report project:**
+4.  **Group final report:**
 
-The [technical report
-project](https://earobinson95.github.io/stat365-calpoly/99-final-project/final-project-instructions.html)
-is the culminating assignment of the course, where you will have the opportunity
-to apply all the skills and knowledge you have acquired throughout the quarter.
-This will be completed individually. You will be required to choose a research
-question, collect and analyze data using appropriate statistical methods, and
-produce a technical report that effectively communicates your findings. You will
+The group final report is the culminating assignment of the course, where you will have the opportunity to apply all the skills and knowledge you have acquired throughout the quarter.
+This will be completed in *groups of three to four individuals*. You will be required to choose a data set from [TidyTuesday](https://github.com/rfordatascience/tidytuesday) and investigate a research question related to the data. You will analyze the data using appropriate statistical methods and
+produce a technical report that effectively communicates your findings in written, graphical, and table format. You will
 be provided with guidelines and resources to support your work, and you will
-receive feedback and guidance throughout the project. The technical report
-project will be evaluated based on its clarity, thoroughness, and adherence to
-standard statistical practices.
+receive feedback and guidance throughout the project. The group report will be evaluated based on its clarity, thoroughness, and adherence to standard statistical practices.
+
+A portion of the rubric will be dedicated to effective and equitable collaboration efforts.
 
 ## Late work
 
 I understand that unexpected events may arise during the quarter that may
 prevent you from submitting your assignments on time. To accommodate for this,
-you will be given four 24-hour late submission "tokens" to use throughout the
-quarter. To use a token, you must (1) send me an email and (2) fill out the
-deadline extension form [here](https://forms.gle/3uVhdWCN4DN373XE7). The
-extension request must be submitted **before** the assignment due date.
+you will be given three 24-hour late submission "Grace Days" to use on In-class Activities and Mini-projects throughout the quarter. To use a "Grace Day", you must (1) send me an email and (2) comment on the Canvas submission.
 
-These tokens **cannot** be used on your final technical report submission.
+These "Grace Days" **cannot** be used on your final group report submission.
 
-Your remaining tokens will be tracked in a Canvas assignment as four points,
-with each token worth one point.
+Your remaining "Grace Days" will be tracked in a Canvas assignment as three points, with each "Grace Day" worth one point.
+
+## Live Revisions
+
+In-class Activities and Mini-projects are subject to revisions if "satisfactory" is not met. If you do not receive, satisfactory, you are expected to revise your submission based on my feedback. For In-class activities, please stop by my office hours to talk me through your changes and why it now meets satisfactory requirements. For mini-projects, please schedule a 10-minute meeting with me via a provided Calendly link on Canvas (this will be set up for specific weeks after mini-project due dates).
+
+Booster Conditions will be given "Best By" dates for deadlines. If you turn the assignment in by the "Best By" date, you will receive feedback and an opportunity to revise before the end of the quarter. Booster conditions may still be accepted past the "Best By" date, but will not be graded until finals week leaving no opportunity for revisions if the instructor determines "satisfactory" quality is not met.
+
+*Disclaimer: I've never done Live Revisions, but wanted to try it!"*
 
 # Class Schedule
 
@@ -415,105 +313,88 @@ with each token worth one point.
 #| fig-width: 8
 #| fig-height: 3.5
 #| fig-pos: 'h'
+#| fig-cap: "Note: Tuesday, May 28th follows a Monday Schedule."
 class_cal
 ```
 
 This schedule is **very** tentative and subject to change.
 
-+-------------------------+-------------------------+-------------------------+
-| Week                    | Topics                  | Readings                |
-+=========================+=========================+=========================+
-| 1: 4/3, 4/5             | Writing about Data      | CwD (ch. 1, ch. 10.3),  |
-|                         |                         | How to Lie with Stats   |
-|                         | Designing a Study       | (ch. 10)                |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 2: 4/10, 4/12           | Data Journalism         | CwD (ch. 2), Numbers in |
-|                         |                         | the Newsroom (ch. 1, 2) |
-|                         | Spreadsheets,           |                         |
-|                         | summaries, and pivot    |                         |
-|                         | tables                  |                         |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 3: 4/17, 4/19           | Descriptive Statistics  | CwD (ch. 3.1 - 3.3)     |
-|                         |                         |                         |
-|                         | Tables                  |                         |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 4: 4/24, 4/26           | Intro to viz            | Storytelling with Data  |
-|                         |                         | Podcast Episodes #27:   |
-|                         | Color                   | what is data            |
-|                         |                         | visualization and #67:  |
-|                         |                         | beginner mistakes in    |
-|                         |                         | data viz                |
-|                         |                         |                         |
-|                         |                         | Communicating Data with |
-|                         |                         | Tableau ch. 2           |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 5: 5/1, 5/3             | Perception + Principles | Storytelling with Data  |
-|                         |                         | Episode #8: The many    |
-|                         | Simplification          | myths of data           |
-|                         |                         | visualization           |
-|                         |                         |                         |
-|                         |                         | (Optional) Show me the  |
-|                         |                         | numbers (ch. 5)         |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 6: 5/8, 5/10            | Statistical Tendencies  | CwD ch. 7.1 - 7.5       |
-|                         |                         |                         |
-|                         | Writing reports         | (Optional) CwD ch.      |
-|                         |                         | 8.1 - 8.7               |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 7: 5/15, 5/17           | ADEPT with Professor    | Twenty-five Analogies   |
-|                         | Smith                   | for Explaining          |
-|                         |                         | Statistical Concepts    |
-|                         | Infographics &          | (Behar, Grima, and      |
-|                         | Dashboards              | Margo-Almagro)          |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 8: 5/22, 5/24           | Visit from Career       |                         |
-|                         | Center                  |                         |
-|                         |                         |                         |
-|                         | Finding Internships +   |                         |
-|                         | Online Presence         |                         |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 9: 5/29, 5/30           | **No Class -** watch    |                         |
-|                         | Canvas for asynchronous |                         |
-|                         | material                |                         |
-|                         |                         |                         |
-|                         | Memorial Day,           |                         |
-|                         | Instructor traveling    |                         |
-|                         | for an academic         |                         |
-|                         | conference              |                         |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| 10: 6/5, 6/7            | Project Workdays        |                         |
-+-------------------------+-------------------------+-------------------------+
-|                         |                         |                         |
-+-------------------------+-------------------------+-------------------------+
-| Finals                  | **Friday, June 16th     |                         |
-|                         | at** **1:10 - 4pm:**    |                         |
-| *Reserve these times    | Section 01 *(if you     |                         |
-| for potential final     | come to class 1:10 -    |                         |
-| grade meetings.*        | 2pm)*                   |                         |
-|                         |                         |                         |
-|                         | **Monday, June 12th at  |                         |
-|                         | 1:10 - 4pm:** Section   |                         |
-|                         | 02 *(if you come to     |                         |
-|                         | class 2:10 - 3pm)*      |                         |
-+-------------------------+-------------------------+-------------------------+
++-------------------------+-------------------------+-------------------------+------------------+
+| Week                    | Topics                  | Readings                | Main Deliverables|
++=========================+=========================+=========================+==================+
+| 1: 4/3                  | Writing about Data      | CwD (ch. 1, ch. 10.3),  |                  |
+|                         |                         | How to Lie with Stats   |                  |
+|                         |                         | (ch. 10)                |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 2: 4/8, 4/10            | Final Project +         | CwD (ch. 3.1 - 3.3)     | Initial Data     |
+|                         | Reproducibility         |                         | Proposals        |
+|                         |                         |                         |                  |
+|                         | Data Descriptions       |                         |                  |
+|                         |                         |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 3: 4/15, 4/17           | Data Journalism         | CwD (ch. 2), Numbers in | One Number Story |
+|                         |                         | the Newsroom (ch. 1, 2) |                  |
+|                         | Spreadsheets, Summaries,|                         |                  |
+|                         | and Pivot Tables        |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 4: 4/22, 4/24           | Peer Review One-Number  |                         |                  |
+|                         | stories                 |                         |                  |
+|                         |                         |                         |                  |
+|                         | Table Design            |                         |                  |
+|                         |                         |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 5: 4/29, 5/1            | Intro/History of Viz    | Storytelling with Data  | Stand Alone      |
+|                         |                         | Podcast Episodes #27:   | Graphic          |
+|                         |                         | what is data            |                  |
+|                         | Accessibility, Colors,  | visualization and #67:  |                  |
+|                         | and Perception          | beginner mistakes in    |                  |
+|                         |                         | data viz                |                  |
+|                         |                         |                         |                  |
+|                         |                         | Storytelling with Data  |                  |
+|                         |                         | Episode #8: The many    |                  |
+|                         |                         | myths of data           |                  |
+|                         |                         | visualization           |                  |
+|                         |                         |                         |                  |
+|                         |                         | (Optional) Show me the  |                  |
+|                         |                         | numbers (ch. 5)         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 5: 5/6, 5/8             | Data Viz Makeovers      |                         |                  |
+|                         |                         |                         |                  |
+|                         | How to Read a Research  | CwD ch. 7.1 - 7.5       |                  |
+|                         | Paper                   | CwD ch. 8.1 - 8.7       |                  |
+|                         |                         |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 6: 5/13, 5/15           | Storyboarding           | CwD ch. xxxx            | Group Storyboard |
+|                         |                         |                         |                  |
+|                         |                         |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 8: 5/20, 5/22           | Visit from Career       |                         | Build Your Resume|
+|                         | Center                  |                         |                  |
+|                         |                         |                         |                  |
+|                         | Finding Internships +   |                         |                  |
+|                         | Online Presence         |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 9: 5/28, 5/29           | Understanding the       |                         | Final Report     |
+|                         | Publication Process     |                         | Draft            |
+|                         |                         |                         |                  |
+|                         | Project Workdays        |                         |                  |
+|                         |                         |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| 10: 6/3, 6/5            | Project Revisions       |                         |                  |
+|                         |                         |                         |                  |
+|                         | **No Class Wednesday**  |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
+| Finals                  | **Mon., June 10th       |                         | Final Report     |
+|                         | at** **7:10 - 10am:**   |                         | Revisions        |
+| *Reserve these times    | Section 01 *(if you     |                         |                  |
+| for potential final     | come to class 8:10 -    |                         |                  |
+| grade meetings.*        | 9am)*                   |                         |                  |
+|                         |                         |                         |                  |
+|                         | **Wed., June 12th at    |                         |                  |
+|                         | 7:10 - 10am:** Section  |                         |                  |
+|                         | 02 *(if you come to     |                         |                  |
+|                         | class 9:10 - 10am)*     |                         |                  |
++-------------------------+-------------------------+-------------------------+------------------+
 
 # Course Expectations
 

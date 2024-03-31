@@ -1,0 +1,109 @@
+---
+title: "Stand Alone Graphic"
+subtitle: "Mini-project"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+::: callout-note
+I recommend completing this mini-project in Quarto. Please include your code!
+:::
+
+## Deliverables
+
++-----------------------+-------------------------------------------------------------------------------+
+| # Component           | # Due Date                                                                    |
+|                       |                                                                               |
+| First Draft           | Bring to class on Monday, 5/6                                                 |
++-----------------------+-------------------------------------------------------------------------------+
+| Peer Review: Redesign | In groups during class on Monday 5/6                                          |
++-----------------------+-------------------------------------------------------------------------------+
+| Final Submission      | Thursday, 5/9 at 11:59pm                                                      |
++-----------------------+-------------------------------------------------------------------------------+
+| Live Revisions        | Tuesday, 5/14 -- [sign up](https://calendly.com/calpoly-emily-robinson/15min) |
++-----------------------+-------------------------------------------------------------------------------+
+
+## Instructions {#first-draft}
+
+For this assignment, you will create 1 effective visualization from your group project data that stand alone to tells a story. Each person in a project should make their own unique visualization. Your first step is to do a quick, sketchy version of your graphic.
+
+-   Bring this to class with you on Monday, 5/6 for peer review.
+-   Prepare a 2 minute oral presentation (orientation and explanation) of your visualization.
+
+Consider the following tips for preparing to present your visualization,
+
+-   Explain the motivation for the visualization.
+    -   What is the question you are answering, and why is it important?
+    -   What context does the audience need to understand the visual? (W’s?)
+-   Take a moment to give people their bearings.
+    -   What aspects of the visual should you explain to provide necessary orientation?
+    -   Walk through guides (axes, color legend, etc.)
+-   Hone in on one or two interesting data points and tell the story behind them.
+    -   Explain how the visual aspects of the viz reflect that story (this reinforces how they should interpret the viz).
+-   Explain the overall trends or takeaways.
+    -   What are the implications for them? Why does it matter?
+    -   What comparison are you wanting to highlight?
+-   Speak slowly
+    -   It takes people some time to wrap their heads around a new viz.
+-   Practice with a friend. Practice by yourself. Refine the viz if necessary!
+
+## Peer Review: Redesign {#redesign}
+
+The goal is to make your graphic stand alone as much as possible. You should follow the guidelines discussed in class and see examples on the [Storytelling with Data Makeover](https://www.storytellingwithdata.com/blog?category=Makeovers) page to highlight your key takeaway.
+
+When redesigning your graphic, you should consider good graphing principles and accessibility, such as including alt text. This can be included in the .qmd file with `#| fig-alt =` code chunks.
+
+In small groups of 3-4 people (outside your project group),
+
+-   you’ll present your visualization (2 minutes)
+-   discuss as a group ways of improving the visualization to make it more effective (8 minutes)
+    -   comment on the effective features of the graphic first
+    -   offer concrete suggestions about the visualization
+        -   different glyph/geometric objects
+        -   different colors
+        -   consider faceting, position
+    -   offer ideas and questions that you have about the visual and data
+
+Each of the individuals will take a turn to present. Once your group is done, use this time to update your graphic based on that feedback.
+
+## Final Submission Rubric
+
+To meet the "satisfactory" requirements for the contract, this project must:
+
+-   be turned in on time (or within the agreed upon time by 24-hour "Grace Days"),
+
+-   include all components described above
+
+-   Meet quality guidelines laid out in the following rubric (all 2s and above for each element and demonstration of additional considerations)
+
+::: callout-warning
+Please include ALL code used to complete the stand-alone graphic.
+:::
+
+::: column-page
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Element                                   | 3 - strong evidence                                                                                                                                                                                                                                                                                         | 2 - moderate evidence                                                                                                                                                                               | 1 - weak evidence                                                                                                                                                                                           | 0 - no evidence                                                                                                                                                         |
++===========================================+=============================================================================================================================================================================================================================================================================================================+=====================================================================================================================================================================================================+=============================================================================================================================================================================================================+=========================================================================================================================================================================+
+| Data Management                           | The data used in the visualization is properly sourced, formatted, and any necessary transformations or calculations are clearly documented in the code.                                                                                                                                                    | Data sources are mentioned, but there may be gaps in documenting transformations or calculations. Code organization is generally clear but could benefit from more detailed comments in some areas. | Data sources are not well-documented, and there is little to no explanation of transformations or calculations. The code is disorganized and challenging to follow without additional context.              | No documentation or mention of data sources, transformations, or calculations in the code.                                                                              |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Graphical form (nuts and bolts)           | The visual representation matches the data type appropriately (e.g., bar chart for categorical data, line chart for time series, etc.), and basic customizations such as axes, labels, title, legend, scales, and units are correctly chosen and implemented.                                               | The chosen graphical form aligns with the data type but may have minor inconsistencies or inaccuracies in visual elements. Some aspects like labeling or scaling could be improved for clarity.     | The graphical form does not align well with the data type or is confusing to interpret. Essential visual elements are missing or incorrectly implemented, impacting the understanding of the visualization. | No appropriate graphical form is used, or the visualization lacks essential visual elements.                                                                            |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Graph design                              | The design of the visualization enhances the effective communication of the data. This includes considerations such as color choices, axis labeling, adherence to GESTALT principles for clarity, and other design elements that improve understanding.                                                     | Design choices generally support data communication but may have some inconsistencies or less effective use of color, layout, or Gestalt principles.                                                | Design choices detract from data communication, such as using inappropriate colors, cluttered layout, or violating Gestalt principles, leading to confusion or misinterpretation.                           | No deliberate design choices are evident, or design elements actively hinder data understanding.                                                                        |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Highlight key takeaway within the graphic | The visualization is customized to emphasize the main message or key takeaway derived from the data. Advanced techniques like annotations, trend lines, or comparative elements are appropriately used to reinforce the main insights.                                                                      | The main takeaway is apparent but may not be highlighted as effectively as possible. Some key elements for understanding the main message could be clearer or more prominent.                       | The main takeaway is unclear or difficult to discern from the visualization alone. Lack of emphasis on key data points or insights reduces the impact of the visualization.                                 | The visualization fails to highlight any key takeaway or message, leaving the audience without a clear understanding of the data's significance.                        |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Figure caption                            | The figure caption is clear, concise, and accurately summarizes the main points of the graph. It should also include any key insights or takeaways that the audience should grasp from the visualization.                                                                                                   | The figure caption summarizes the main points but may lack conciseness or overlook some key insights present in the visualization.                                                                  | The figure caption is vague or incomplete, failing to adequately summarize the main points or provide meaningful insights from the visualization.                                                           | No figure caption is provided or does not relate to the content of the visualization.                                                                                   |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Accessibility                             | The visualization demonstrates a thoughtful consideration of accessibility standards. This includes appropriate color choices for readability and colorblindness, double encoding for clarity, and providing alt text for any non-text elements in the visualization to ensure accessibility for all users. | Some accessibility considerations are evident, but improvements can be made, such as refining color choices for better contrast or providing alt text for some elements.                            | Limited accessibility considerations are apparent, with significant issues such as poor color contrast, lack of alt text, or reliance on visual elements that may exclude certain audiences.                | The visualization lacks any consideration for accessibility, potentially excluding users with disabilities or impairments from accessing and understanding the content. |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+:::

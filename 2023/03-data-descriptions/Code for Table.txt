@@ -1,0 +1,20 @@
+library(knitr)
+library(kableExtra)
+library(dplyr)
+table <- matrix(c(1,0,0,1,1,0,0,0,
+                  2,0,0,0,0,1,1,0,
+                  3,1,0,0,0,0,1,0,
+                  4,1,0,0,0,1,0,2,
+                  5,0,1,0,1,0,0,0,
+                  6,0,1,1,0,0,0,0,
+                  7,0,0,0,2,0,0,0), ncol = 8, byrow = T)
+words <- c("barked", "cat", "dog", "loudly", "meowed", "the", "tonight")
+table <- cbind(words, table)
+colnames(table) <- c("","Word Number","barked", "cat", "dog", "loudly", "meowed", "the", "tonight")
+rownames(table) <- rep("Target",7)
+table <- as.table(table)
+table %>% 
+kable(caption = "Simple Co-Occurrence Example",booktabs = T) %>% add_header_above(header = c(" " = 3, "Context" = 7), bold = T) %>%
+  column_spec(column = 1, bold = T) %>%
+  collapse_rows(columns=1) %>%
+  kable_styling(latex_options="scale_down")

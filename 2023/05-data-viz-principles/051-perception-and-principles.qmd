@@ -1,0 +1,567 @@
+---
+title: "Data Viz Principles and Practices"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+## Monday, May 1st
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...[^2]
+
+[^2]: Material for today's lecture from Amelia McNamara and Silas Bergan
+
+-   Gestalt Principles
+-   Perception of Data Viz
+-   Case Study
+-   Redesign the Graph
+
+## The gestalt effect
+
+-   *gestalt* = form or pattern
+
+-   **Gestalt philosophy:** "The whole is other than the sum parts" -Kurt Koffka
+
+-   **Gestalt principals:** Predictable ways by which we organize sensory information.
+
+```{r}
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/gestalt.jpg")
+```
+
+## Law of proximity
+
+We interpret objects that are close to each other as a group
+
+```{r}
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/law-of-proximity.png")
+```
+
+## Law of similarity
+
+We interpret objects that are visually similar to each other as a group
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/law-of-similarity.png")
+```
+
+## Law of closure
+
+When parts of a picture are missing, we fill in the visual gap
+
+```{r}
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/law-of-closure.png")
+```
+
+## Law of symmetry
+
+We perceive objects as being symmetrical, arranged around a center point
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/law-of-symmetry.jpg")
+```
+
+## Law of common fate
+
+We group objects that we percieve to be moving along the same path
+
+```{r}
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/law-of-common-fate.png")
+```
+
+## Law of continuity
+
+We tend to group objects along the smoothest path
+
+```{r}
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/law-of-continuity.jpg")
+```
+
+## Gestalt Hierarchy
+
+| Effect     | Graphs      |
+|------------|-------------|
+| Enclosure  | Facets      |
+| Connection | Lines       |
+| Proximity  | White space |
+| Similarity  | Color/shape |
+
+# Perception
+
+## Some things are processed slower[^3]
+
+[^3]: via Jordan Crouser
+
+```{r}
+#| fig-align: center
+#| out-width: 63%
+knitr::include_graphics("images/whereswaldobeach-color.jpg")
+```
+
+## Other's are incredibly fast[^4]
+
+[^4]: via Jordan Crouser
+
+```{r}
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/whereswaldobeach-bw.JPG")
+```
+
+## Fast = "pre-attentive processing"
+
+-   Things that happen in \<200ms of visual stimulation
+-   Performed in parallel across the entire visual field
+
+# Get ready
+
+## 
+
+```{r}
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/color-preattentive.gif")
+```
+
+## `r fontawesome::fa("brain")` What did you see?
+
+## "An understanding of what is processed pre-attentively is probably the most important contribution that visual science can make to the data visualization" (Ware, 2004, p. 19)
+
+## Pre-attentive features[^5]
+
+[^5]: <https://www.csc2.ncsu.edu/faculty/healey/PP/>
+
+::: columns
+::: {.column width="33%"}
+Color (hue)
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_hue.gif")
+```
+
+Orientation
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_orient.gif")
+```
+:::
+
+::: {.column width="33%"}
+Intensity
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_lum.gif")
+```
+
+Clustering
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_den.gif")
+```
+:::
+
+::: {.column width="33%"}
+Size
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_size.gif")
+```
+
+Length
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_len.gif")
+```
+:::
+:::
+
+and more!
+
+## Pre-attentive processing facilitates:
+
+-   Target detection (Presence or absence)
+-   Boundary detection / grouping
+-   Region tracking
+-   Counting and estimation
+
+## Attentive Counting^[via Jordan Crouser]
+
+<br>
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/attentive-counting.jpg")
+```
+
+## Pre-attentive Counting^[via Jordan Crouser]
+
+<br>
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/preattentive-counting.jpg")
+```
+
+# Graphical Perception
+
+## Cleveland and McGill, 1984
+
+:::: columns
+::: column
+The following are the 10 elementary tasks in Figure 1, ordered from most to least accurate:
+
+1.  Position along a common scale
+2.  Positions along nonaligned scales
+3.  Length, direction, angle
+4.  Area
+5.  Volume, curvature
+6.  Shading, color saturation
+
+:::
+::: column
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cleveland-mcgill-1.JPG")
+```
+:::
+::::
+
+## 
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cleveland-mcgill-2.JPG")
+```
+
+## 
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cleveland-mcgill-3.JPG")
+```
+
+## Magnitude estimation^[via Amelia McNamara]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/magnitude-estimation-1.JPG")
+```
+
+## Magnitude estimation^[via Amelia McNamara]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/magnitude-estimation-2.JPG")
+```
+
+## Magnitude estimation^[via Amelia McNamara]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/magnitude-estimation-3.JPG")
+```
+
+## "Apparent" magnitude^[via Jordan Crouser at <http://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/>]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/perceived-magnitude.JPG")
+```
+
+## Implications for Practice
+
+1.  Know how we perceive groups
+
+2.  Know that we perceive some groups before others
+
+3.  Design to facilitate and emphasize the **most important comparisons**
+
+## Case Study on Gestalt Principles^[via Silas Bergan]
+
+##
+
+```{r}
+#| fig-align: center
+#| out-width: 90%
+knitr::include_graphics("images/swimmer.png")
+```
+
+##
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/swimmer-2.jpg")
+```
+
+##
+
+:::: {.columns}
+::: {.column width=70%}
+```{r}
+#| warning: false
+#| message: false
+library(tidyverse)
+swimming <- read_csv("swimming-data.csv")
+swimming |> 
+  knitr::kable()
+```
+:::
+
+::: {.column width=30%}
+   4 body locations  
+   
+x 2 swim locations
+
+x 3 time points 
+
+= 24 body temperature averages
+
+:::
+::::
+
+## Questions
+
+:::: columns
+::: column
+**Client Question**
+
+Does the body temperature recovery as recorded at the four body points depend on water temperature?
+
+:::
+::: column
+**Consultant Questions**
+
+What are the elemental groupings? (What belongs together?)
+
+How do we design for effective emphasis?
+
+:::
+::::
+
+## What *are* the elemental groupings?
+
+Does the body temperature recovery as recorded at the four body points depend on water temperature?
+
+```{r}
+swimming |> 
+  DT::datatable()
+```
+
+## What *are* the elemental groupings?
+
+Does the **body temperature recovery** as recorded at the four body points depend on water temperature?
+
+```{r}
+swimming |> 
+  DT::datatable()
+```
+
+## What *are* the elemental groupings?
+
+:::: {.columns width=70%}
+::: {.column
+```{r}
+swimming |> 
+  DT::datatable()
+```
+:::
+::: {.column width=30%}
+
+*Most elemental*
+
+1. Single time average
+2. Time Triplets
+3. Swim locations (aka water temp)
+4. Body locations
+
+*Least elemental*
+:::
+::::
+
+## 
+
+Does the body temperature recovery as recorded at the four body points depend on water temperature?
+
+::: panel-tabset
+### Graph 1
+
+```{r}
+#| fig-align: center
+swimming |> 
+  ggplot(aes(x = time, 
+             y = avg_temp,
+             fill = body_loc)
+         ) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  facet_wrap(~ swim_loc) +
+  theme_bw() +
+  labs(x = "Time",
+       y = "",
+       subtitle = "Average Body Temperature (F)",
+       fill = "Body Location") +
+  scale_fill_brewer(palette = "Set2")
+```
+
+### 2
+
+```{r}
+#| fig-align: center
+swimming |> 
+  mutate(time = fct_relevel(time, c("pre", "post1", "post2"))) |> 
+  ggplot(aes(x = time, 
+             y = avg_temp,
+             fill = swim_loc)
+         ) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  facet_wrap(~ body_loc) +
+  theme_bw() +
+  labs(x = "Time",
+       y = "",
+       subtitle = "Average Body Temperature (F)",
+       fill = "Swim Location") +
+  scale_fill_brewer(palette = "Set2")
+```
+
+### 3
+
+```{r}
+#| fig-align: center
+swimming |> 
+  mutate(time = fct_relevel(time, c("pre", "post1", "post2"))) |> 
+  ggplot(aes(x = swim_loc, 
+             y = avg_temp,
+             fill = time)
+         ) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  facet_wrap(~ body_loc) +
+  theme_bw() +
+  labs(x = "Swim Location",
+       y = "",
+       subtitle = "Average Body Temperature (F)",
+       fill = "Time") +
+  scale_fill_brewer(palette = "Set2")
+```
+
+### 4
+```{r}
+#| fig-align: center
+swimming |> 
+  mutate(time = fct_relevel(time, c("pre", "post1", "post2"))) |> 
+  ggplot(aes(x = time, 
+             y = avg_temp,
+             color = swim_loc,
+             shape = swim_loc)
+         ) +
+  # geom_line() +
+  geom_point(size = 3) +
+  facet_wrap(~ body_loc) +
+  theme_bw() +
+  labs(x = "Time",
+       y = "",
+       subtitle = "Average Body Temperature (F)",
+       color = "Swim Location",
+       shape = "Swim Location") +
+  scale_color_brewer(palette = "Set2")
+```
+### 5
+```{r}
+#| fig-align: center
+swimming |> 
+  mutate(time = fct_relevel(time, c("pre", "post1", "post2"))) |> 
+  ggplot(aes(x = time, 
+             y = avg_temp,
+             color = swim_loc,
+             shape = swim_loc)
+         ) +
+  geom_line(aes(group = interaction(swim_loc)), size = 0.8) +
+  geom_point(size = 3) +
+  facet_wrap(~ body_loc) +
+  theme_bw() +
+  labs(x = "Time",
+       y = "",
+       subtitle = "Average Body Temperature (F)",
+       color = "Swim Location",
+       shape = "Swim Location") +
+  scale_color_brewer(palette = "Set2")
+```
+:::
+
+# Redesign the graph
+
+## ["New Census Data Show More Americans Are Tying the Knot, but Mostly It’s the College‐Educate"- Pew Reserach"](https://www.pewresearch.org/short-reads/2014/02/06/new-census-data-show-more-americans-are-tying-the-knot-but-mostly-its-the-college-educated/)
+
+:::: columns
+::: column
+The graph is meant to demonstrate that the 2011 to 2012 increase observed in total new
+marriages was driven primarily by an increase in those having a bachelor’s
+degree or more.
+:::
+::: column
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/marriage-rate-by-education.jpg")
+```
+:::
+::::
+
+## To do
+
+::: columns
+::: column
+`r fontawesome::fa("pencil")` **Data and Methods + Table**
+
+-   due Thursday, 5/4
+-   You will need to include your statistical methods.
+-   REPRODUCIBILITY! Document EVERYTHING!
+-   **Read CwD 3.4:** Tracking the Analysis
+:::
+
+::: column
+`r fontawesome::fa("chart-simple")` **Practice in Tableau**
+
++ Submit URLs: due Monday, 5/1 at 11:59pm
+:::
+:::

@@ -1,0 +1,117 @@
+---
+title: "Internships and Online Presence"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Wednesday, May 24th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+-   Finding internships & experiences
+-   Online Presence
+-   Build your Resume
+
+## Where to find internships & experiences
+
++ [Mustang Jobs](https://careerservices.calpoly.edu/explore-services/mustangjobs)
++ [Student Opportunity Blog](https://calpolystats.blogspot.com/)
++ [American Statistical Association JobWeb](https://www.amstat.org/your-career/asa-jobweb)
+  + [Join the ASA](https://www.amstat.org/membership/become-a-member/membership-options?hkey=0301def8-92e1-4bf2-9aff-02959b3e61f5) for $25
++ [Mathematical Sciences REUs (Research Experience for Undergrads)](https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=5044)
++ Summer Institute in Biostatistics (SIBS) Programs
++ FROST Summer Research
+
+## When to look for internships
+
++ I encourage you to start looking as early as October for the following summer. 
++ Many REU/SIBS deadlines are in January/February.
++ FROST applications happen at the end of Winter/early Spring Quarter.
+
+Keep asking professors! Show them you are interested. If you bring them an idea, I am guessing most would be open to supervising.
+
+## Reference Letter Writers
+
++ Ask professors you feel know you well (or previous employers). 
++ Give them at least 2 weeks heads up.
++ Provide them:
+  + Resume
+  + Link to job posting
+  + Any additional relevant information
+
+## Social Media
+:::: columns
+::: column
++ LinkedIn
++ Twitter
++ [Mastodon](https://mastodon.social/explore)
+:::
+::: column
+![](images/mastadon.JPG)
+:::
+::::
+
+## Online Presence
+
+[GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
+
++ A "hacky" way to publish your projects online `xxx.github.io`.
+
+[Personal Website](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/make-your-own-website.html)
+
+## Personal Projects: Where to find data!
+
+:::: columns
+::: column
++ [TidyTuesdays](https://github.com/rfordatascience/tidytuesday)
++ [Makeover Mondays](https://www.makeovermonday.co.uk/data/)
++ [Kaggle](https://www.kaggle.com/)
+
+Create data visualizations, fit a statistical model, make predictions, tell a story with a dashboard!
+:::
+::: column
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> | Week 20 | Tornados <br><br>code: <a href="https://t.co/VC4y9GFHkC">https://t.co/VC4y9GFHkC</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/ggplot?src=hash&amp;ref_src=twsrc%5Etfw">#ggplot</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://t.co/iHeyVjqND8">pic.twitter.com/iHeyVjqND8</a></p>&mdash; Ryan Hart (@ryanahart) <a href="https://twitter.com/ryanahart/status/1659868614579609606?ref_src=twsrc%5Etfw">May 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+:::
+::::
+
+# [Build Your Resume](https://earobinson95.github.io/stat365-calpoly/97-mini-projects/build-your-resume/build-your-resume.html)
+
+## To do
+
+**No class next week** -- I will be out of town; email me with questions!
+
+:::: columns
+::: column
+`r fontawesome::fa("chart-bar")` **Copy the Masters: Final Draft**
+
+-   due Thursday, 5/25 at 11:59pm
+
+`r fontawesome::fa("paperclip")` **Full Draft: Technical Report**
+
+-   Revised Data/Methods + Results/Discussion + Intro + Conclusion
+-   due Thursday, 6/1 at 11:59pm
+:::
+
+::: column
+`r fontawesome::fa("handshake")` **Build Your Resume**
+
+-   Draft for peer review (optional) due Friday, 6/2 at 11:59pm
+-   Peer review feedback (optional) 
+    - opens Saturday, 6/3 at 8am
+    - feedback due Monday, 6/5 at 11:59pm
+-   Final Submission due Thursday, 6/8 at 11:59pm
+:::
+::::

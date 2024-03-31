@@ -1,0 +1,109 @@
+---
+title: "Persnickety Percentages"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  pdf:
+    self-contained: true
+editor: source
+---
+
+::: callout-note
+Even well-educated people can get tripped up when writing about percentages.  Some words/terms on this topic that require careful use include:
+
++ Proportion, percentage, probability, odds, relative frequency
++ Count, frequency, tally
++ Percentage change, percentage difference, percentage points
++ Rate
+:::
+
+An article that appeared in the journal Lancet in May of 2021 (Datoo, et al.) described a study that **investigated a potential vaccine that might protect children against malaria**. Researchers recruited children between the ages of 5 and 17 months in Burkina Faso, a country in western Africa, as participants. The **children were randomly assigned into one of three groups: one group received a large dose of the potential vaccine, another group received a small dose, and a third group received a placebo.** Researchers observed the children for the next 18 months, keeping track of **whether or not the child developed malaria.** Researchers hoped, of course, that children who received a vaccine would be less likely to develop malaria than children who received a placebo.
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 65%
+knitr::include_graphics("images/pivot-table-counts.jpg")
+```
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 65%
+# knitr::include_graphics("images/pivot-table-proportions.jpg")
+```
+
+1. Write a sentence that interprets and compares the percentage of "success" -- defined as "Did not develop Malaria".
+
+\vspace{2.5cm}
+
+2. Calculate the *difference* in the success rates between the two groups, using the `Placebo` group as the baseline; then write a sentence interpreting this value.
+
+\vspace{2.5cm}
+
+
+3. Explain what’s wrong with this sentence: *"The difference in success rates between these two groups was about 45.4%."*
+
+\vspace{2.5cm}
+
+4. Describe two things that are lacking in this sentence: *"The difference in the success rates between the two groups was about 45.4 percentage points."*
+
+\vspace{2.5cm}
+
+::: callout-note
+The **relative risk** between two groups is the ratio of their success proportions.
+
+$$\frac{p_{success|A}}{p_{success|B}}$$
+
+:::
+
+5. Calculate the *ratio* of the success rates between the two groups, using the `Placebo` group as the baseline; then write a sentence interpreting this value.
+
+\vspace{2.5cm}
+
+::: callout-note
+The **percentage difference** in success proportions between two groups, with group B as the baseline, is calculated as: 
+
+$$\frac{(p_{success|A} – p_{success|B})}{p_{success|B}} × 100%.$$
+
+or equivalently: $\text{percentage difference} = (\text{relative risk} - 1) \times 100$
+
+:::
+
+6. Calculate the *percentage difference* in the success rates between the two groups, using the `Placebo` group as the baseline.  Also show how to calculate this from the ratio in Question 5. Then write a sentence that interprets this value.
+
+\vspace{2.5cm}
+
+7. Is it correct to say that the success rate with the placebo group was 58% less than the success rate with the high dose group?  Explain why or why not. If not, calculate the correct value to replace 58% in this statement.
+
+\vspace{2.5cm}
+
+::: callout-note
+The **odds of success** are calculated as
+
+$$\frac{\text{\# of successes}}{\text{\# of failures}}.$$
+
+Similarly, the **odds against** an event are calculated as $$\frac{\text{\# of failures}}{\text{\# of successes}}.$$
+
+
+If the odds of success for an event are 1:3, does this mean that about 1/3 of all events would result in success?  What if the odds of success were 1:2 or 1:1 or 2:1?  About what proportion of events would result in success if the odds of success are 1:3?
+:::
+
+8. Is it correct to say that the odds of success in the high dose group are about 0.7397?  Explain.  
+
+\vspace{2.5cm}
+
+9. Calculate the odds of successfully not developing malaria for each group. Then calculate the odds ratio, using the `Placebo` group as the baseline. Then write a sentence interpreting the odds ratio.
+
+\vspace{2.5cm}
+
+10.  Explain what’s wrong with the following sentence and then revise the sentence in two different ways to correct the error: *"Successfully not developing malaria was about 7 times more likely with the high dose than with the placebo."*
+
+\vspace{2.5cm}
+
+11. Calculate the odds of developing malaria for each group. Then calculate the odds ratio, using the `High Dose` group as the baseline.  How does this odds ratio compare to the previous one?
+
+\vspace{2.5cm}
+
+::: callout-note
+Odds ratio is invariant to which outcome is labeled a success.
+:::

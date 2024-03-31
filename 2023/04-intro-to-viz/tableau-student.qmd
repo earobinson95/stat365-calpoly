@@ -1,0 +1,27 @@
+---
+title: "Tableau Student"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  pdf:
+    self-contained: true
+editor: source
+---
+
+We will be doing a little bit of exploring in Tableau over the next couple of weeks. There are two ways you can access Tableau (1) through the cloud or (2) downloading Tableau Desktop.
+
+## Tableau Cloud
+
+At some point before next class, you should receive an email to sign up for Tableau Cloud. Create an account following the instructions in your email.
+
+## Tableau Desktop
+
+1.	Download the latest version of [Tableau Desktop](https://www.tableau.com/tft/activation)
+2.	Click on the link above and select “Download Tableau Desktop". On the form, enter your school email address (xxx.calpoly.edu) for Business E-mail and enter the name of your school (Cal Poly).
+3.	Activate with your product key:  `TCYQ-31F6-E070-049F-2D0A`
+4.	Already have a copy of Tableau Desktop installed? Update your license in the application: Help menu → Manage Product Keys
+
+## Resources
+
+Visit the [Student Resource Page](https://community.tableau.com/s/students) to get started.
+
+You can continue using Tableau after the class is over by individually requesting your own one-year license through [Tableau for Students](http://tableau.com/academic/students).

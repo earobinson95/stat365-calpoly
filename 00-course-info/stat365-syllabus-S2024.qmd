@@ -263,12 +263,12 @@ Most classes will involve activities to help you develop your technical writing 
 There will be three mini-projects throughout the quarter, each designed to help
 you develop and apply your statistical communication skills. Additionally, the first two mini-projects will build into your final group report. Mini-projects are to be completed *individually.* The mini-projects will include:
 
--   *One Number Story:* In this assignment, you will choose a single number that
+-   [*One Number Story:*](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/01-one-number-story/one-number-story.html) In this assignment, you will choose a single number that
     summarizes a key finding from the data set your group selected for your final report and craft a compelling story around it, using appropriate statistical evidence to support your claims.
 
--   *Stand Alone Graphic:* For this assignment, you will xxxx
+-   [*Data Narrative Visualization:*](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/02-stand-alone-graphic/stand-alone-graphic.html) For this assignment, you will create a visually compelling and informative visualization that tells a story based on the data set your group selected for the final report. Your task is to design a graphic that stands on its own, effectively communicating key insights and trends from the data.
 
--   *Build your resume:* In this assignment, you will create a resume using
+-   [*Build your resume:*](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/03-build-your-resume/build-your-resume.html) In this assignment, you will create a resume using
     Overleaf to highlight your education, statistical communication and
     technical skills, statistics and data science projects, and other relevant
     experiences.
@@ -320,7 +320,7 @@ class_cal
 This schedule is **very** tentative and subject to change.
 
 +-------------------------+-------------------------+-------------------------+------------------+
-| Week                    | Topics                  | Readings                | Main Deliverables|
+| Week                    | Topics                  | Readings (tentative)    | Main Deliverables|
 +=========================+=========================+=========================+==================+
 | 1: 4/3                  | Writing about Data      | CwD (ch. 1, ch. 10.3),  |                  |
 |                         |                         | How to Lie with Stats   |                  |

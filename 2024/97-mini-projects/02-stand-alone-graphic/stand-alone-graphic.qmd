@@ -1,5 +1,5 @@
 ---
-title: "Stand Alone Graphic"
+title: "Data Narrative Visualization"
 subtitle: "Mini-project"
 format: 
   html:

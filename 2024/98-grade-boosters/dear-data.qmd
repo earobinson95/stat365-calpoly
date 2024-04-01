@@ -1,0 +1,81 @@
+---
+title: "Dear Data"
+subtitle: "Mini-project"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+In this booster condition, you will create a hand-drawn visualization about data from your own life. This assignment is inspired by Giorgia Lupi and Stefanie Posavec’s book, Dear Data, so you may want to look to their work for ideas.
+
+In the selection of the text I’ve posted to Canvas (COMING SOON!), they suggest:
+
+-   see the world as a data collector
+-   begin with a question
+-   gather the data
+-   spend time with data
+-   organize and categorize
+-   find the main story
+-   visual inspiration to build your personal vocabulary
+-   sketch and experiment with first ideas
+-   draw the final picture
+-   draw the legend
+
+I don’t care what you pick as your question, as long as it interests you. Some ideas from Dear Data include:
+
+-   clocks
+-   thank you
+-   mirrors
+-   complaints
+-   phone addiction
+-   to-do lists
+-   emotions
+-   people
+-   schedules
+-   compliments
+-   drinks
+-   doors
+-   positive thoughts
+-   envy
+-   urban wildlife
+-   negative thoughts
+-   music
+-   laughter
+-   books
+
+I would like you to collect data for a week, so you will need to plan ahead. I’d prefer you to visualize something that is not automatically tracked by your phone, but I won’t be too picky.
+
+## Submission
+
+For this assignment, your Canvas submission should contain:
+
+1.  a finished visualization, complete with handwritten legend
+2.  an accompanying description of the visualization, including
+
+-   the question you decided to answer
+-   the first few ideas you came up with when brainstorming
+-   why you chose your final visualization method
+-   a description of the variables you visualized, and the visual mappings (e.g., “I chose to map the number of steps I took in a day to color, with red meaning very few steps (less than 1,000), orange meaning a middling number (1,001-5,000), yellow meaning I did alright but didn’t hit my goal (5,001-9,999) and green meaning I hit my goal or surpassed it (10,000+).”)
+
+3.  Who your "pen pal" was and what you learned from exchanging visualizations of your week with them.
+
+## Grading Rubric
+
+| Component                          | Meets satisfactory Requirements                                                                                                                                                                                                                                                                                                                                     | Does not meet satisfactory requriements                                                                                                                                                               |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data Collection and Exploration    | Collected data for a week based on a chosen question or theme. Demonstrated thoughtful consideration and exploration of different ideas related to the chosen question.                                                                                                                                                                                             | The student's data collection lacks depth or relevance to the chosen question. There is limited exploration or creativity in brainstorming ideas for the visualization. The data is incomplete.       |
+| Visualization Design and Execution | You created a clear and visually engaging hand-drawn visualization that effectively communicates the main story or insights derived from the collected data. The legend is well-designed and enhances understanding of the visualization.                                                                                                                           | The visualization is unclear, cluttered, or does not effectively convey the data or main story. The legend is missing or poorly designed, making it difficult to interpret the visualization.         |
+| Reflection                         | You provided a detailed description of the chosen question, initial brainstorming ideas, and rationale for the final visualization method. You accurately describe the variables visualized, the chosen visual mappings, and how they contribute to understanding the data. You reflected on your "pen pals" visualization and what you learned from this activity. | The reflection lacks depth or coherence in explaining the chosen question, brainstorming process, or visualization method. The description of variables and visual mappings is unclear or inaccurate. |
+
+## Acknowledgements
+
+I would like to acknowledge [Amelia McNamara](https://ameliamn.github.io/STAT336/dear_data.html) for the original activity.

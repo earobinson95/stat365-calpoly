@@ -19,19 +19,7 @@ execute:
 I recommend completing this mini-project in Quarto or Rmarkdown. Please include your code!
 :::
 
-## Deliverables
-
-+--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
-| Component                            | Brief Description                                                       | Due Date                    |
-+======================================+=========================================================================+=============================+
-| [Picking a Graphic](#pick-a-graphic) | choice of graphic, and "pseudo-code" of how you think it will be doable | Thursday, May 11 at 11:59pm |
-+--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
-| [First Draft](#first-draft)          | first draft of graphic, around 6 lines of graphics code                 | Thursday, May 18 at 11:59pm |
-+--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
-| [Final Draft](#final-draft)          | final draft of graphic, as many lines of code as it takes!              | Thursday, May 25 at 11:59pm |
-+--------------------------------------+-------------------------------------------------------------------------+-----------------------------+
-
-For this assignment, we'll be reproducing graphics from [FiveThirtyEight](https://fivethirtyeight.com/) I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.
+For this booster condition, you'll be reproducing graphics from [FiveThirtyEight](https://fivethirtyeight.com/) I chose FiveThirtyEight for a couple of reasons. First, I think they make very clear data graphics. And then perhaps more importantly, they make their data public, so it will be easier for us to reproduce their work.
 
 ## Picking a Graphic {#pick-a-graphic}
 
@@ -71,16 +59,17 @@ All of these may require a bit of data wrangling before you can get to the graph
 
 You can't choose either of the first graphic from [Comic Books Are Still Made By Men, For Men And About Men](https://fivethirtyeight.com/features/women-in-comic-books/) because I will be using it as an example.
 
-::: callout
-## Canvas Submission
+::: callout-warning
+You might want to check in with Dr. Robinson at this point. Be prepared with:
 
--   Include a screenshot image of the original selected graphic.
--   Include a URL link to your selected graphic.
--   Include a quick snapshot and reference for the data set (e.g. `head(data)`).
+-   a screenshot image of the original selected graphic.
+-   a URL link to your selected graphic.
+-   a quick snapshot and reference for the data set (e.g. `head(data)`).
     -   This will require you to figure out how you will access the data (`fivethirtyeight`, `fivethirtyeightdata` or download from [FiveThirtyEight Data](https://data.fivethirtyeight.com/)).
     -   You do not need to have done your data management yet, but if any is necessary, it should be included in your "game plan" below.
--   Include some sort of "pseudo-code" (game plan) for recreating the graphic.
+-   some sort of "pseudo-code" (game plan) for recreating the graphic.
     -   You can do this in multiple different ways: a list of steps, a sketch using [excalidraw.com](https://excalidraw.com/), or outlined code. Just convince me you have a plan of attack for recreating the graph.
+    
 :::
 
 ## First Draft {#first-draft}
@@ -89,9 +78,14 @@ Your next step is to do the quick, sketchy version of your graphic in code. Here
 
 ```{r}
 #| echo: true
+#| eval: false
+install.packages('fivethirtyeightdata', repos = 'https://fivethirtyeightdata.github.io/drat/', type = 'source')
+```
+
+```{r}
+#| echo: true
 library(tidyverse)
 library(ggthemes)
-# install.packages('fivethirtyeightdata', repos = 'https://fivethirtyeightdata.github.io/drat/', type = 'source')
 library(fivethirtyeightdata)
 library(fivethirtyeight)
 data(comic_characters)
@@ -114,7 +108,7 @@ comic_characters |>
   labs(title = "New Comic Book Characters Introduced Per Year")
 ```
 
-For the first draft, I want you to upload a `.html` file knitted from a `.qmd` (or `.Rmd`) file. It doesn't have to have many lines of code in it (in fact, I think a good draft usually only takes 6 or so lines!), but it should include a version of your visualization that is at least part of the way to reproducing the original graphic. In particular, it should be the right "form" of graph (if the original is a barchart, it should be a barchart, not a scatterplot!). It's okay if there are more categories than the original, or if the axes are off, etc.
+This draft does not have to have many lines of code in it (in fact, I think a good draft usually only takes 6 or so lines!), but it should include a version of your visualization that is at least part of the way to reproducing the original graphic. In particular, it should be the right "form" of graph (if the original is a barchart, it should be a barchart, not a scatterplot!). It's okay if there are more categories than the original, or if the axes are off, etc.
 
 Here's another example, of an original graphic from FiveThirtyEight and what I would consider a draft of the graphic.
 
@@ -139,18 +133,18 @@ knitr::include_graphics("538-chess-transfers.JPG")
 
 There's a lot missing in the draft - it doesn't have the right colors, the names still aren't right, and the order is off! But it's the correct "form" of graphic.
 
-::: callout
-## Canvas Submission
+::: callout-warning
+You might want to check in with Dr. Robinson at this point. Be prepared with:
 
--   Include a screenshot image of the original selected graphic.
--   Include a URL link to your selected graphic.
--   Include your code for creating your first draft (data management & ggplot2).
--   Include the image of the first draft of your recreated graphic.
+-   a screenshot image of the original selected graphic.
+-   a URL link to your selected graphic.
+-   your code for creating your first draft (data management & ggplot2).
+-   the image of the first draft of your recreated graphic.
 :::
 
-## Final Draft {#final-draft}
+## Final Submission {#final-draft}
 
-The last piece is to get your graphic to look as similar to the original as possible.
+The last piece is to get your graphic to look as similar to the original as possible. You might find an online color picker, annotations in ggplot, etc. useful. Remember this is a booster condition and you may need to expand your skill set to complete the customization (but don't spend 5 hours getting just the right length of arrow or text font!).
 
 In addition to your final draft, you should include two short paragraphs:
 
@@ -159,7 +153,7 @@ In addition to your final draft, you should include two short paragraphs:
 
 (Optional) Include alt text for your graphic. This can be included into .Rmd `fig.alt =` or .qmd `#| fig-alt:` code chunks (see slides from Week 5 for guidelines).
 
-## Final Submission Rubric
+## Grading Rubric
 
 To meet the "satisfactory" requirements for the contract, this project must:
 

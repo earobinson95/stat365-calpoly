@@ -11,9 +11,9 @@ format:
 editor: source
 ---
 
-::: callout-warning
-As of May 5th, we will be using our discord server to conduct a "Pseudo, NYT What's Going on in This Graph" due to the end of the NYT activity for this academic year.
-:::
+<!-- ::: callout-warning -->
+<!-- As of May 5th, we will be using our discord server to conduct a "Pseudo, NYT What's Going on in This Graph" due to the end of the NYT activity for this academic year. See Canvas for the link to join. -->
+<!-- ::: -->
 
 ## Prompt
 
@@ -45,8 +45,6 @@ Your reflection should be well formulated and written. Let your creativity show!
   + Below the response box, there is an option to click on “Email me when my comment is published.” This sends the link to your response which you will submit weekly to Canvas by Tuesdays at 11:59pm ^[I will do my best to provide timely feedback to your submissions.].
   
 + After you have posted, read what others have said, then respond to someone else by posting a comment. Use the “Reply” button to address that student directly.
-
-+ Keep a weekly log/journal of your reflection. This is a compilation of all your submissions which you will submit to Canvas at the end of the quarter. You might want to include screenshots of the graphs, links to the articles, etc. in this log.
 
 On Friday mornings, the NYT will reveal more information about the graph, including a free link to the article that includes this graph, at the bottom of this post. I encourage you to post additional comments based on the article, possibly using statistical terms defined in the [Stat Nuggets](https://docs.google.com/document/d/1X9ECSnq1T12Fw402vmo4Lgz3w-cXNSJw/edit).
 

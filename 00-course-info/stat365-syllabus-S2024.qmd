@@ -171,7 +171,7 @@ By the end of this course, you will:
 # Textbooks
 
 I have reserved eBooks for most of the textbooks and readings through the Cal
-Poly Library [course reserves](https://reserves.calstate.edu/slo/).
+Poly Library [course reserves](https://reserves.calstate.edu/slo/course/7248728950002920).
 
 The main textbooks used in this course are:
 
@@ -364,7 +364,7 @@ This schedule is **very** tentative and subject to change.
 |                         | Paper                   | CwD ch. 8.1 - 8.7       |                  |
 |                         |                         |                         |                  |
 +-------------------------+-------------------------+-------------------------+------------------+
-| 6: 5/13, 5/15           | Storyboarding           | CwD ch. xxxx            | Group Storyboard |
+| 6: 5/13, 5/15           | Storyboarding           | CwD ch. 6               | Group Storyboard |
 |                         |                         |                         |                  |
 |                         |                         |                         |                  |
 +-------------------------+-------------------------+-------------------------+------------------+

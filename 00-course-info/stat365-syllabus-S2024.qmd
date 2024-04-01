@@ -228,13 +228,13 @@ on the rubrics (further instructions will be provided):
 -   Complete a weekly submission to the [NYT: What's going on in this
     graph](https://www.nytimes.com/column/whats-going-on-in-this-graph), missing
     no more than one week throughout the quarter.
--   Start a [Dear Data]() "pen pal" with a peer, including at least 3 thoughtful
-    entries.
+-   Start a [Dear Data](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/dear-data.html) "pen pal" with a peer, including at least 1 thoughtful
+    entry (I encourage you to do more!)
 -   Listen to the [99% Invisible podcast on Florence Nightingale: Data Viz
     Pioneer](https://99percentinvisible.org/episode/florence-nightingale-data-viz-pioneer/).
     Find the data set to recreate the rose diagram, compare with a stacked bar
     plot, discuss the story, and argue why Florence needed the rose diagram.
--   [Copy the Masters]() by recreating a graphic from FiveThirtyEight using your
+-   [Copy the Masters](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/copy-the-masters.html) by recreating a graphic from FiveThirtyEight using your
     favorite software.
 -   [Make your own
     website](https://earobinson95.github.io/stat365-calpoly/98-grade-boosters/make-your-own-website.html)
@@ -365,81 +365,72 @@ class_cal
 
 This schedule is **very** tentative and subject to change.
 
-+------------------+------------------+-----------------+
-| Week             | Topics           | Working         |
-|                  |                  | Deliverables    |
-+==================+==================+=================+
-| 1: 4/3           | Writing about    |                 |
-|                  | Data             |                 |
-+------------------+------------------+-----------------+
-| 2: 4/8, 4/10     | Final Project +  | Initial Data    |
-|                  | Reproducibility  | Proposals       |
-|                  |                  |                 |
-|                  | Data             |                 |
-|                  | Descriptions     |                 |
-+------------------+------------------+-----------------+
-| 3: 4/15, 4/17    | Data Journalism  | One Number      |
-|                  |                  | Story           |
-|                  | Spreadsheets,    |                 |
-|                  | Summaries, and   |                 |
-|                  | Pivot Tables     |                 |
-+------------------+------------------+-----------------+
-| 4: 4/22, 4/24    | Peer Review      |                 |
-|                  | One-Number       |                 |
-|                  | stories          |                 |
-|                  |                  |                 |
-|                  | Table Design     |                 |
-+------------------+------------------+-----------------+
-| 5: 4/29, 5/1     | Intro/History of | Stand Alone     |
-|                  | Viz              | Graphic         |
-|                  |                  |                 |
-|                  | Accessibility,   |                 |
-|                  | Colors, and      |                 |
-|                  | Perception       |                 |
-+------------------+------------------+-----------------+
-| 5: 5/6, 5/8      | Data Viz         |                 |
-|                  | Makeovers        |                 |
-|                  |                  |                 |
-|                  | How to Read a    |                 |
-|                  | Research Paper   |                 |
-+------------------+------------------+-----------------+
-| 6: 5/13, 5/15    | Storyboarding    | Group           |
-|                  |                  | Storyboard      |
-+------------------+------------------+-----------------+
-| 8: 5/20, 5/22    | Visit from       | Build Your      |
-|                  | Career Center    | Resume          |
-|                  |                  |                 |
-|                  | Finding          |                 |
-|                  | Internships +    |                 |
-|                  | Online Presence  |                 |
-+------------------+------------------+-----------------+
-| 9: 5/28, 5/29    | Understanding    | Final Report    |
-|                  | the Publication  | Draft           |
-|                  | Process          |                 |
-|                  |                  |                 |
-|                  | Project Workdays |                 |
-+------------------+------------------+-----------------+
-| 10: 6/3, 6/5     | Project          |                 |
-|                  | Revisions        |                 |
-|                  |                  |                 |
-|                  | **No Class       |                 |
-|                  | Wednesday**      |                 |
-+------------------+------------------+-----------------+
-| Finals           | **Mon., June     | Final Report    |
-|                  | 10th at**        | Revisions       |
-| *Reserve these   | **7:10 - 10am:** |                 |
-| times for        | Section 01 *(if  |                 |
-| potential final  | you come to      |                 |
-| grade meetings.* | class 8:10 -     |                 |
-|                  | 9am)*            |                 |
-|                  |                  |                 |
-|                  | **Wed., June     |                 |
-|                  | 12th at 7:10 -   |                 |
-|                  | 10am:** Section  |                 |
-|                  | 02 *(if you come |                 |
-|                  | to class 9:10 -  |                 |
-|                  | 10am)*           |                 |
-+------------------+------------------+-----------------+
++--------------------+--------------------+------------------+
+| Week               | Topics             | Working          |
+|                    |                    | Deliverables     |
++====================+====================+==================+
+| 1: 4/3             | Writing about Data |                  |
++--------------------+--------------------+------------------+
+| 2: 4/8, 4/10       | Final Project +    | Initial Data     |
+|                    | Reproducibility    | Proposals        |
+|                    |                    |                  |
+|                    | Data Descriptions  |                  |
++--------------------+--------------------+------------------+
+| 3: 4/15, 4/17      | Data Journalism    | One Number Story |
+|                    |                    |                  |
+|                    | Spreadsheets,      |                  |
+|                    | Summaries, and     |                  |
+|                    | Pivot Tables       |                  |
++--------------------+--------------------+------------------+
+| 4: 4/22, 4/24      | Peer Review        |                  |
+|                    | One-Number stories |                  |
+|                    |                    |                  |
+|                    | Table Design       |                  |
++--------------------+--------------------+------------------+
+| 5: 4/29, 5/1       | Intro/History of   | Stand Alone      |
+|                    | Viz                | Graphic          |
+|                    |                    |                  |
+|                    | Accessibility,     |                  |
+|                    | Colors, and        |                  |
+|                    | Perception         |                  |
++--------------------+--------------------+------------------+
+| 5: 5/6, 5/8        | Data Viz Makeovers |                  |
+|                    |                    |                  |
+|                    | How to Read a      |                  |
+|                    | Research Paper     |                  |
++--------------------+--------------------+------------------+
+| 6: 5/13, 5/15      | Storyboarding      | Group Storyboard |
++--------------------+--------------------+------------------+
+| 8: 5/20, 5/22      | Visit from Career  | Build Your       |
+|                    | Center             | Resume           |
+|                    |                    |                  |
+|                    | Finding            |                  |
+|                    | Internships +      |                  |
+|                    | Online Presence    |                  |
++--------------------+--------------------+------------------+
+| 9: 5/28, 5/29      | Understanding the  | Final Report     |
+|                    | Publication        | Draft            |
+|                    | Process            |                  |
+|                    |                    |                  |
+|                    | Project Workdays   |                  |
++--------------------+--------------------+------------------+
+| 10: 6/3, 6/5       | Project Revisions  |                  |
+|                    |                    |                  |
+|                    | **No Class         |                  |
+|                    | Wednesday**        |                  |
++--------------------+--------------------+------------------+
+| Finals             | **Mon., June 10th  | Final Report     |
+|                    | at** **7:10 -      | Revisions        |
+| *Reserve these     | 10am:** Section 01 |                  |
+| times for          | *(if you come to   |                  |
+| potential final    | class 8:10 - 9am)* |                  |
+| grade meetings.*   |                    |                  |
+|                    | **Wed., June 12th  |                  |
+|                    | at 7:10 - 10am:**  |                  |
+|                    | Section 02 *(if    |                  |
+|                    | you come to class  |                  |
+|                    | 9:10 - 10am)*      |                  |
++--------------------+--------------------+------------------+
 
 # Course Expectations
 

@@ -1,11 +1,9 @@
 ---
-title: "Technical Report Project"
+title: "Group Report"
 subtitle: "Stat 365: Statistical Communciation"
 format: 
   html:
     toc: true
-    number-sections: true
-    number-offset: 1
     self-contained: true
     theme:
       light: flatly
@@ -14,36 +12,37 @@ editor: source
 ---
 
 ::: callout-note
-You can choose to use whichever document editors (Word, Google Docs, RMarkdown, Quarto) and statistical software programs (R, SAS, Python, JMP, Minitab) you are most comfortable using as long as they can appropriately carry out your analysis. However, you must submit all check-point draft documents and your final report as .pdf file extensions so I can provide written feedback within Canvas via my iPad.
+You can choose to use whichever document editors (Word, Google Docs, Quarto) and statistical software programs (R, SAS, Python, JMP, Minitab) you are most comfortable using as long as they can appropriately carry out your analysis. However, you must submit all documents as .pdf file extensions so I can provide written feedback within Canvas via my iPad.
 
-If you have the background and skills, I do encourage you to use a scripting language (R, SAS, Python), and good graphing tools (ggplot2, Tableau, Datawrapper).
-
-There are packages in R that provide templates for scientific articles that you might want to look into: `rticles`, `papaja`, `distill`. However, I think these might be Rmarkdown based and not Quarto based.
+If you have the background and skills, I do encourage you to use a scripting language (R, SAS, Python), and good graphing tools (ggplot2, Tableau, Datawrapper). I will expect more than the default graphics produced by JMP.
 :::
+
+::: callout-tip
+## Collaboration Tools
+
+Part of this experience will be learning to communicate and write with others. You may find the following tools useful for setting up your collaboration.
+
++ GitHub
++ Posit Cloud -- *I think if you get a student subscription for $5/month I can add you to my instructor workspace and you may have collaborative editting privlages (like Google docs for R!). We will need to test this out though*
++ Google Docs
++ OneDrive
+:::
+
 
 # Important Dates {.unnumbered}
 
 *Due dates may be subject to change, but only to your benefit*
 
-+----------------------------------------------+-------------------------------+
-| Component                                    | Due Date                      |
-+==============================================+===============================+
-| Initial Proposal                             | Monday, April 10 at 12pm      |
-+----------------------------------------------+-------------------------------+
-| Formal Protocol                              | Thursday, April 13 at 11:59pm |
-+----------------------------------------------+-------------------------------+
-| Peer Review of Formal Protocol               | Tuesday, April 18 at 11:59pm  |
-+----------------------------------------------+-------------------------------+
-| Data Collection                              | Thursday, April 27 at 12pm    |
-+----------------------------------------------+-------------------------------+
-| Draft: Data and Methods + Table              | Thursday, May 4 at 12pm       |
-+----------------------------------------------+-------------------------------+
-| Draft: Results and Discussion + Graphic      | Thursday, May 18 at 12pm      |
-+----------------------------------------------+-------------------------------+
-| Draft Submission + Introduction & Conclusion | Thursday, June 1 at 12pm      |
-+----------------------------------------------+-------------------------------+
-| Final Submission                             | Wednesday, June 14 at 5pm     |
-+----------------------------------------------+-------------------------------+
+| Component                                       | Due Date                      |
+|-------------------------------------------------|-------------------------------|
+| Group Formation                                 | Friday, April 5 at 11:59pm    |
+| [Data Proposal](#data-proposal) (in groups)     | Thursday, April 11 at 11:59pm |
+| [One number story](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/01-one-number-story/one-number-story.html) (individually)             | Thursday, April 25 at 11:59pm |
+| [Data Narrative Visualization](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/02-stand-alone-graphic/stand-alone-graphic.html) (individually) | Thursday, May 9 at 11:59pm    |
+| Group Storyboard (in groups)                    | Thursday, May 23 at 11:59pm   |
+| Draft Report (in groups)                        | Thursday, May 30 at 11:59pm   |
+| Final Report (in groups)                        | Wednesday, June 12 at 11:59pm |
+| Collaboration Reflection (individually)         | Wednesday, June 12 at 11:59pm |
 
 # Reproducibe Workflow {.unnumbered}
 
@@ -65,453 +64,53 @@ and the following sub-folders
 
 -   If you are using a non-scripted language (JMP, Minitab, etc.) please make sure to include a document which describes the steps you took in analyzing the data.
 
-In your final submission, you will turn in a .zip file of your project folder in order for me to evaluate your organization and workflow.
+In your final submission, you will turn in a `.zip` file of your project folder in order for me to evaluate your organization and workflow.
 
-# Study Proposal {.unnumbered}
+## CP 1: Data Proposal {#data-proposal -}
 
-<!-- Notes for next time (be more clear) -->
+You will be working in groups of three to four to produce a technical written report investigating and telling a story about a data set selected from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday) repository. Throughout the course, you will work with this data set to complete individual mini-projects (One Number Story and Data Narrative Visualization) before coming together to storyboard and write your final group report.
 
-<!-- - Motivation/Background -->
+For the first group project check point:
 
-<!-- - Clearly state: observation, explanatory variable, response variable (and units/levels) -->
+1. Select a **data set** from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday) repository that interests all group members.
+  + Include the link to the data repo.
+  + Save this data for you to use throughout the quarter.
+2. Include a well-written **data description** (recall the 5 Ws!)
+  + Where did the data come from (not just TidyTuesday)?
+    + When were the data collected?
+    + Where were the data collected?
+    + How were the data collected?
+  + Who/What are the observations/subjects in the data?
+  + What information was measured/collected on the observations in the data set?
+    + Don't just list these out, make it flow.
+3. Include a list of 3 **research questions** you could investigate with your data set along with proposed statistical methods. 
+  + Be clear by indicating the variables you would use.
+4. Answer the following questions as part of your **group contract.**
+  + How will you communicate? Email? Text? Discord? Meet in person or via Zoom?
+  + How often will you be expected to check for updates from your group members?
+  + Will there be a group leader, or will this task be rotated in some way? How will you ensure that all project deadlines are met?
+  + Discuss a timeline for completion. Each of you have busy lives, so discuss schedules in order to try and avoid overwhelming someone with work during a period of time, or to plan ahead if someone is going to be gone at some point.
+  + How will all group members work collaboratively on this project through the course of the project? Will you share ideas using Google Docs? Will you create a GitHub repository? Some other way? Please explain.
+  + Who will be assigned to submit the different components of the group project into Canvas?
+  + What will be your group’s policy, if any, on covering for one another if need be (for example, say someone is sick, or has a family emergency)?
+  + What policy will you have in place to resolve any intragroup conflict that may arise (for example, if a group member neglects to carry out their delegated duties to post their results on time, or if a group member is not receiving or responding to group updates as often as expected in item 2 above)?
+Here are a few options for consideration: warning to the offender, reduction of points, zero credit for the repeat offender, etc.
+You may use the instructor as a higher court of appeals – but you will be first expected to document that you implemented your initial conflict resolution plans per your contract and to update the instructor on the outcomes of your own attempts to resolve the conflict.
 
-<!-- - Sample size (inclusion/exclusion criteria, how will you obtain your sample) -->
+Note, some of this will likely end up in your One-number Story and your Introduction in the final group report. Do yourself a favor and be thorough now.
 
-<!-- - Materials -->
+## CP 2: Group Storyboard {-}
 
-<!-- - Detailed methods (how will you randomize?) -->
+## CP 3: Draft Report {-}
 
-<!-- - Propose statistical analysis -->
+#### 1. Introduction
 
-For your technical report assignment, you will be required to propose a research project that can be easily executed within 1-2 days. Your project should be:
+#### 2. Data and Methods
 
--   an experiment with
--   a quantitative response variable (other ideas for response variables are also welcome),
--   and a categorical explanatory variable that compares two or more groups.
+#### 3. Results and Discussion
 
-You should aim to collect approximately 50 observations.
+#### 4. Conclusion
 
-To ensure you have a well-developed proposal, review [Cal Poly's Guidelines for Protocol Development](https://research.calpoly.edu/HS-guidelines#_Guidelines_for_Protocol) and this [article](https://www.aje.com/arc/how-to-write-an-easily-reproducible-protocol/) on how to write an easily reproducible protocol.
+#### References {-}
 
-::: callout-note
-Some parts (e.g., Human subjects) may be less relevant to you and that's fine! I would focus less on criteria for approval, and more on providing enough details that someone else could carry out the study you have designed (4(a), (c), (d)).
-:::
-
-::: {.callout-tip collapse="true"}
-## Considerations for the research protocol
-
--   Put the methodology in context
-    -   Research question and objectives
--   Research Design
-    -   The choice of the design should be explained in relation to the study objectives (treatments, response, observations, etc.)
--   Materials and tools
-    -   If you will be using subjects/participants, the following questions should be answered: -- What are the criteria for inclusion or selection? -- What are the criteria for exclusion?
--   A chronology of steps
-    -   Think like a detailed recipe.
-    -   Provide information and justification about sample size.
--   Notes, recipes, tips, and tricks
-:::
-
-**Deliverables**:
-
--   Submit a brief **initial proposal** (research question, explanatory and response variables, and a very brief explanation of the data collection process -- sample size, materials, etc.) for feedback from myself by **Monday, 4/12 at 12pm**
--   and a **formal study protocol** (as if to a Human Subjects Review board) by **Thursday, 4/15 at 11:59pm**.
-
-Your formal study protocol will be peer-reviewed by a fellow student who will (ideally) conduct a pilot study, gathering about 5 observations. If materials or time constraint, do not conduct the pilot study, but instead ask questions as if you were to conduct the pilot study.
-
-::: callout-note
-Any written document you submit to me should be well written (grammar, spelling, complete sentences, etc.).
-:::
-
-### Peer review formal study protocol {.unnumbered}
-
-For the technical report project, the peer review process will begin on **Friday, 4/14 at 8am**. You will be able to access the assigned protocol by clicking on a link under *"Assigned Peer Reviews"* on the right-hand side of the assignment. You will then fill out a rubric (*"Show Rubric"*) and add comments to provide constructive feedback to your peer.
-
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-| Criteria                                                                                              | Evidence | Weak Evidence | No Evidence |
-+=======================================================================================================+==========+===============+=============+
-| **Details**                                                                                           |          |               |             |
-|                                                                                                       |          |               |             |
-| How well did the protocol answer questions you had about collecting the data?                         |          |               |             |
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-| **Instructions**                                                                                      |          |               |             |
-|                                                                                                       |          |               |             |
-| Were the instructions concise and easy to follow?                                                     |          |               |             |
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-| **Context**                                                                                           |          |               |             |
-|                                                                                                       |          |               |             |
-| Did the protocol start with a description of the "context"/why the data were being collected?         |          |               |             |
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-| **Definitions**                                                                                       |          |               |             |
-|                                                                                                       |          |               |             |
-| Were all necessary definitions and descriptions (e.g., of equipment) clearly provided?                |          |               |             |
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-| **Step-by-step**                                                                                      |          |               |             |
-|                                                                                                       |          |               |             |
-| Were step-by-step instructions provided?                                                              |          |               |             |
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-| **Other advice**                                                                                      |          |               |             |
-|                                                                                                       |          |               |             |
-| Please describe any other questions or advice you have for the project before data collection begins! |          |               |             |
-+-------------------------------------------------------------------------------------------------------+----------+---------------+-------------+
-
-Please email me right away if you have any problems with this process.
-
-# Data Collection {.unnumbered}
-
-Collecting high-quality data is crucial for the success of your technical report project. After receiving peer-reviewed feedback, you should conduct your study and collect data meeting the specified sample size and following the protocol outlined in your study proposal. Keep in mind any suggestions or comments from the peer review process.
-
-Store your data in a tidy format in a `.csv` or `.xlsx` file, and save it within your `data` folder as your original data file in accordance with reproducibility guidelines.
-
-# Final Technical Report {.unnumbered}
-
-The final technical report is the ultimate goal of your research project. In this assignment, you will produce a scientific journal-style article, which will demonstrate your research findings and conclusions. You will be supported with guidelines and resources to facilitate the writing process. Throughout the quarter, you will receive feedback and guidance to ensure that you produce a high-quality report.
-
-I have outlined the different sections and components that are expected in the final technical report below.
-
-## Abstract / Executive Summary
-
-::: callout-warning
-While the abstract is the first thing a reader sees, this will be the last piece we write.
-:::
-
-The Abstract/Executive Summary is a brief, non-technical summary of your research project, and should be around 150-250 words in length. Its purpose is to provide an overview of your project and its significance to the reader.
-
-To create a compelling and accurate abstract, you should consider the following guidelines:
-
--   Write a stand-alone summary of the project that can be understood without reading the full report.
--   Be clear and concise, avoiding technical language and jargon.
--   Discuss the project's objectives, purpose, background, and why it is important.
--   Describe the data and methods used in the project, including who, what, when, where, how, and the sample size.
--   Highlight the key findings and results of the project.
--   Conclude with recommendations or conclusions that relate to the project's objectives.
--   Avoid introducing any new information that is not discussed in the main report.
-
-## Introduction
-
-The introduction section is where you will hook your reader and draw them into your research project.
-
-This section should:
-
--   Begin with an attention-grabbing opening statement to engage the reader.
--   Provide background information on the topic and describe any existing theories, research or literature that are relevant to the study.
--   State the research question and explain how the study aims to answer it.
--   Highlight the significance of the study by identifying the potential benefits and contributions to the field
--   Provide an overview of the structure of the report, outlining the major sections and their content (tell the reader what you are going to tell them).
-
-## Data and Methods
-
-In the Data and Methods section of your technical report, you will describe the design of your study and the methods used to collect and analyze the data.
-
-Here are some key components to include:
-
--   A concise overview of your research question and hypothesis
--   Details on the sample size and selection process, including any inclusion/exclusion criteria
--   A description of the data collection methods used, including measurement tools and techniques
--   A description of the variables used and their definitions.
--   An explanation of any data manipulations made before analysis, including any constructed variables.
--   An explanation of how the data were analyzed, including any statistical tests used to determine significance
--   A discussion of any potential flaws or limitations in the study design, including any data that was excluded or removed
--   (Optional) The use of tables or diagrams to help illustrate your experimental design.
-
-Remember to keep supporting or background data not critical to the flow of the main report in appendices and to reference data from other sources so readers can locate it.
-
-::: {.callout-tip collapse="true"}
-### Tip: Remember to focus on the When, Where, How, Who, What:
-
--   When and where did the study take place?
-    -   Was there randomness or more of a convenience sample?
--   Who are the subjects under study? ("subjects" don't have to be people)
-    -   Any inclusion/exclusion criteria?
--   What procedures were used to select subjects and collect measurements?
--   Exactly how were the outcomes measured, describe any measurement devices, units of measure
--   Describe the treatments
-    -   Include copies of any surveys/questions
-    -   Include photographic evidence?
--   Describe the randomization
--   What are the outcomes and covariates?
--   What are the potential flaws/limitations?
--   Were any observations removed? (If so, why?)
-:::
-
-::: callout-note
-Remember to be thorough yet concise!
-:::
-
-### Table of Summary Statistics {.unnumbered}
-
-Your Data and Methods section should include a descriptive statistics table to summarize your data. For quantitative response variables, this will typically involve comparing means, medians, and other summary statistics such as standard deviations and five number summaries. For categorical response variables, you will compare proportions, being cautious to interpret proportions and percentages appropriately, especially differences. To do this effectively, I recommend creating a table that presents your results in a clear and concise format.
-
-Here are some key considerations to keep in mind:
-
--   Use headings and captions to clearly label the table and help the reader understand the content.
--   Keep the table simple and easy to read, avoiding unnecessary detail or clutter.
--   Be sure to provide appropriate units of measure and any relevant notes or explanations.
--   Consider highlighting key results or differences to draw the reader's attention.
-
-Review the lecture slides and podcasts from the *Chicago Guide to Writing About Numbers* (Chapters 6 and 7) for additional guidance and *Show Me the Numbers* by Stephen Few as a supplemental resource
-
-## Results and Discussion
-
-The Results and Discussion section of your technical report is where you will present your findings and explain what they mean in the context of your research question and hypothesis. Keep in mind that you should assume a reasonably educated audience, but avoid technical jargon and use formal language in the active voice ("by Zombies" test). This section should engage the reader's interest and be succinct, so it's important to focus on the flow and readability of your report.
-
-While separating the results and discussion sections is a common practice, you can choose to integrate them together. It's also possible to separate the exploration data analysis from the inferential analysis, but make sure not to be too repetitive. In this section, you should provide a clear and concise overview of your findings and explain their significance in the context of the research question. Make sure to refer back to your hypothesis and discuss whether your findings support or refute it. Finally, be sure to highlight any limitations or potential sources of error in your study.
-
-### Results
-
-The results section is where you present your findings and interpretation of the data you have collected. This section should be well-organized and easy to follow, with clear graphs and tables that effectively illustrate your analysis.
-
-Here are some key components of the results section:
-
--   Begin with an introduction that provides some context to your output. Then, provide an analysis of your data and mention which package(s) you used. Avoid including every data analysis result, but be sure to make all methods clear.
--   Include high-quality graphs and tables to effectively summarize your results.
--   Interpret your findings using GEE or ADEPT strategies. Summarize your results both technically and in a way that a non-statistician can understand.
--   Discuss what you observe and summarize your findings, including any overall patterns and any exceptions, as well as the strengths and limitations of your data collection and analysis methods.
--   Provide a graph and summary statistics of your response variable across groups. Use a histogram or dot plot for quantitative data (means and SDs), and a bar graph for categorical data (conditional proportions of successes). Create effective, high-quality visuals with value ordering, color use, and correct units of measurement (not too many significant digits).
--   Test for statistical significance by comparing your groups and provide confidence intervals. Ensure that your analysis matches your graphs (e.g., compared two groups on a quantitative response, look at a two-sample t-test). Avoid shocking the reader with surprising analysis results based on what you pointed out in the graphs.
-
-Summarize your statistical significance and the size of the "effect," focusing mainly on the facts. The discussion section will have more interpretation.
-
-### Discussion
-
-The discussion section is where you interpret your findings and summarize what you learned from the analysis about your overall research question. In this section, you can also discuss the strengths and limitations of your study and provide directions for future research.
-
-Here are the key components of the discussion section:
-
--   Interpret your findings and summarize what you learned from the analysis about your overall research question.
-    -   Did the data behave as you expected?
-    -   Is the result statistically significant? How large is the effect? Would you consider it practically significant? How are you deciding? (Do you need to bring in any subject-matter knowledge here?)
-    -   Use examples or analogies to help clarify your points and make your discussion more accessible to a broader audience.
--   Strengths (don't restate but interpret) of data collection and analysis methods
-    -   Can you draw cause-and-effect conclusions?
-    -   To what population are you willing to generalize?
-    -   How does your study contribute to the existing knowledge base and the larger context?
--   Critically assess any limitations or potential biases and how they impacted the interpretation of your findings.
-    -   Note any deficiencies or unexplained data.
-    -   Any issues with the analysis methods used?
-    -   Any other potential sources of error or biases?
--   Suggest directions for future research and identify areas that require further investigation.
-
-## Conclusion
-
-The conclusion section is the final chance to leave a lasting impression on your readers and drive home the significance of your research. Here are some tips for crafting a strong conclusion:
-
--   Recap the main points of your study, including any important findings or trends (tell them what you told them)
--   Discuss the scope of your conclusions, and **justify your reasoning**. Can you generalize your results to a larger population? Can you infer causality? Explain why or why not.
--   Consider the practical significance of your results, and explain how you are measuring this. Are the results meaningful in a real-world context?
--   Return to the big picture, and address the research question. Have you answered it? Can you make any recommendations based on your findings?
--   Finally, offer suggestions for future research that could build on your study and address any lingering questions or uncertainties.
-
-## References
-
-The reference section is an essential part of your academic work and should be included following APA citation style. It should contain a list of all the sources you have used, including textbooks, research papers, and statistical software or packages. By including a reference section, you provide your readers with the opportunity to access and verify the information you have used.
-
-## Appendix
-
-An appendix is a supplementary section that provides additional information to support your research.
-
-Your appendix should include:
-
--   The appendix may include the original research protocol.
--   Additional relevant documentation that provides further insight into your research methodology and analysis.
--   A raw data file, which contains the original data collected during your research.
-
-# Final Submission {.unnumbered}
-
-Your submission should include
-
-1.  Final report (see draft rubric below) as .pdf file
-2.  The .zip folder of your project folder demonstrating your reproducible workflow
-    -   Documents sub folder contains a version of your report showing track changes in individual pieces -- clearly labeled
-    -   Documents sub folder contains a brief discussion of changes made to original pieces of report along the way -- clearly labeled
-
-**Formatting:** Your final report should use
-
--   12 point font
--   1 inch margins
--   Reasonable font choice
--   Double spaced pdf file
--   If you have references, use APA citations
-
-**Contents:** Your final report should have the sections and related contents as described above.
-
-**Revisions:** You should also be submitting your discussion of the changes you made and any annotated previous versions within the document subfolder of the .zip file
-
-# Editing Checklist {.unnumbered}
-
--   Title page lists the title, authors, affiliation, date.
--   Active voice ("by Zombies" test); professional tone; no personal opinions
--   Concise (vs. use of unnecessary words)
--   Gender-neutral wording
--   Acronyms and Abbreviations defined the first time used
--   Subject/verb agreement
--   Correct spelling (don't rely only on spell checker)
--   Correct use of punctuation and grammar
--   Figures and Tables numbered and in correct location (include captions, figure alt. text, and in text references to these additional aids).
--   Supporting documentation in appendices
--   Figures, tables, and appendices referred to accurately.
--   Bulleted and numbered lists have parallel construction and consistent punctuation.
--   Use brief, descriptive (left-justified, bold, title capitalization) headings to help readers navigate easily through the document. Heading levels follow sequentially. If you create one subhead, you must have at least two. For example, don't create heading 1.1.1 without a heading 1.1.2. If information for only one subhead exists, it should all appear under the main heading, 1.1.
--   Follows basic rules for
-    -   Commas
-    -   Colons
-    -   Semicolons
-    -   Hyphens
-    -   Acronyms
-    -   Numbers (writing the word vs. the numeral)
-    -   Equations (using symbols)
-    -   Units of measure
-
-# Final Report Rubric {.unnumbered}
-
-To meet the requirements for the contract, this project must:
-
--   be turned in on time,
-
--   include all components described above
-
--   Meet quality guidelines laid out in the following rubric. In order to meet "satisfactory" for your contracted grade:
-
-    -   A must receive all 3's (or above) on the main components, and demonstration of all additional writing/project components
-
-    -   A- must receive all 3s (or above) on the main components with at most one 2, and demonstration of all additional writing/project components.
-
-    -   B+ must receive all 3s (or above) on the main components with at most three 2s, and demonstration of all additional writing/project components.
-
-    -   B must receive all 2s (or above), and demonstration of all additional writing/project components.
-
-    -   B- must receive all 2s (or above) with a most one 1, and demonstration of all additional writing/project components.
-
-    -   C+ must receive all 2s (or above) with a most three 1s, and missing demonstration for at most 4 additional writing/project components.
-
-    -   C must receive all 1s (or above), and missing demonstration for at most 4 additional writing/project components.
-
-    -   C- must receive all 1s (or above) with at most one 0, and missing demonstration for at most 4 additional writing/project components.
-
-    -   D+ is the *maximum* grade you might obtain from no final submission. In this case grade evaluation will be determined by your previously submitted drafts and other course work.
-
-This means that if you are aiming for an A, complete three booster activities, miss no more than 3 assignments, meet "satisfactory" on your mini-projects, but receive all 2s on your final technical report, you will get a B in the course. Similarly, if you complete one booster activity, miss no more than 3 assignments, meet "satisfactory" on your mini-projects, and receive all 3's on your final technical report, you will get a B+ in the course.
-
-Any deviation to these guidelines will be to your benefit.
-
-<br>
-
-*The table below outlines the main components of your technical report:*
-
-::: column-page
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| Main Component                                                                                   | 4 - above and beyond evidence | 3 - strong evidence             | 2 - moderate evidence | 1 - weak evidence | 0 - no evidence |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               | (a 3 is considered full credit) |                       |                   |                 |
-+==================================================================================================+===============================+=================================+=======================+===================+=================+
-| **Abstract/Executive summary *(\~120 words, limit 250 words)***                                  |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Plain language, Overview, Engaging                                                               |                               |                                 |                       |                   |                 |
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Introduction**                                                                                 |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Clarify objectives / research question, but not too much detail                                  |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Tell me the structure of the paper                                                               |                               |                                 |                       |                   |                 |
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Data and Methods**                                                                             |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Ws                                                                                               |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Study design details                                                                             |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Study design issues (e.g., missing data)                                                         |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Analytic sample, representativeness (inclusion/exclusion criteria)                               |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Variables/Units/Getting to know your data                                                        |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Outliers                                                                                         |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Name of statistical methods (and reference)                                                      |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Critique of statistical methods/validity                                                         |                               |                                 |                       |                   |                 |
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Results**                                                                                      |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Include graphical summaries of your data and statistical analyses                                |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Quality/Effectiveness of visuals/tables                                                          |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| e.g., units of measurement, not too many significant digits, value ordering, use of color        |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Titles/Axis labels/Annotations/Legends/Captions/Alt Text/Scaling                                 |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Figures and Tables in line with text                                                             |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Introductory sentences of tables, charts, comparisons (refer to them as Figure 1, Table 1, etc.) |                               |                                 |                       |                   |                 |
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Discussion**                                                                                   |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Summaries of major findings                                                                      |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Effective comparisons                                                                            |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Direction, magnitude, significance                                                               |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Generalizations, Examples, and Exceptions                                                        |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Interpretation of numeric evidence                                                               |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Connections to research questions                                                                |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Reflection on strengths, limitations                                                             |                               |                                 |                       |                   |                 |
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-| **Conclusion**                                                                                   |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| *Briefly* restate the RQ and what you did/found.                                                 |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Scope of conclusions                                                                             |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Substantive significance                                                                         |                               |                                 |                       |                   |                 |
-|                                                                                                  |                               |                                 |                       |                   |                 |
-| Recommend appropriate action?/Directions for future research                                     |                               |                                 |                       |                   |                 |
-+--------------------------------------------------------------------------------------------------+-------------------------------+---------------------------------+-----------------------+-------------------+-----------------+
-:::
-
-<br>
-
-*In addition to the main components of the technical report, you must demonstrate competency (moderate or strong evidence) of the following written and project parts:*
-
-::: column-page
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| Writing/Project Component                                             | Moderate or Strong Evidence | Weak or no Evidence |
-+========================================================================+=============================+=====================+
-| **Reproducibility**                                                    |                             |                     |
-|                                                                        |                             |                     |
-| .zip folder containing: README, data, documents, results, and scripts  |                             |                     |
-|                                                                        |                             |                     |
-| Good programming practices and code/analysis documentation             |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Revisions**                                                          |                             |                     |
-|                                                                        |                             |                     |
-| Copy or original drafts with track changes                             |                             |                     |
-|                                                                        |                             |                     |
-| Discussion of edits made along the way                                 |                             |                     |
-|                                                                        |                             |                     |
-| *Should easily be found in the `documents` subfolder of the .zip file* |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Title page**                                                         |                             |                     |
-|                                                                        |                             |                     |
-| Title, Author, Course, University Affiliation, Date                    |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Overall Clarity**                                                    |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Appearance**                                                         |                             |                     |
-|                                                                        |                             |                     |
-| e.g. section headings, page breaks, details, figure/table numbers      |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Overall cohesion/flow of story**                                     |                             |                     |
-|                                                                        |                             |                     |
-| e.g., Transition sentences                                             |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Grammar/Spelling/Appropriateness of vocabulary/Punctuation**         |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-| **Correct use of statistical language**                                |                             |                     |
-+------------------------------------------------------------------------+-----------------------------+---------------------+
-:::
+#### Appendix {-}

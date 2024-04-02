@@ -17,7 +17,7 @@ execute:
 
 In this booster condition, you will create a hand-drawn visualization about data from your own life. This assignment is inspired by Giorgia Lupi and Stefanie Posavec’s book, Dear Data, so you may want to look to their work for ideas.
 
-In the selection of the text I’ve posted to Canvas (COMING SOON!), they suggest:
+In the selection of the text I’ve posted to Canvas *(Dr. Robinson has the book in her office if you want to stop by and look through it)*, they suggest:
 
 -   see the world as a data collector
 -   begin with a question

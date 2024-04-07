@@ -1,0 +1,162 @@
+---
+title: "Posing Research Questions"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+embed-resources: true
+execute:
+  echo: false
+---
+
+## Monday, April 8th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+-   Meet your Group!
+-   Posing Questions
+-   Introduce final group report project
+-   Importance of reproducibility
+-   Explore [TidyTuesday](https://github.com/rfordatascience/tidytuesday) Data Repo
+
+## `r fontawesome::fa("brain")` Meet your Group!
+
++ Introduce yourselves!
++ Exchange contact information.
++ Share the show you are currently binge watching or the book you are reading
+
+## Observational Units and Variables
+
+For each of the following questions, identify the relevant observational units and variables.
+
+::: callout-note
+Also classify each variable as numerical or categorical (also binary?). For studies with more than one variable, also identify the explanatory and response variables.
+:::
+
+-   What is the average amount of a transaction at the Subway restaurant on campus?
+-   Are Reese's Pieces candies equally likely to be orange, brown, or yellow?
+-   Can the price at which a grandfather clock sells at auction be predicted from its age, number of bidders, and country of manufacture?
+
+## Scope of Inference
+
+::: panel-tabset
+### Experiment vs Observation
+
+```{r}
+#| fig-align: center
+#| out-width: 70%
+#| echo: false
+knitr::include_graphics("https://imgs.xkcd.com/comics/correlation_2x.png")
+```
+
+### Generalization to a Population
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+#| echo: false
+knitr::include_graphics("https://imgs.xkcd.com/comics/selection_bias.png")
+```
+:::
+
+## Words with Friends
+
+My friend Jeff likes to play Words with Friends against his computer.  He keeps track of many variables for each game that he plays, and he records the results in a spreadsheet.  The following image shows the first ten rows (from a total of 1,306 rows) in his spreadsheet:
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/words-with-friends.png")
+```
+
+## Words with Friends
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/words-with-friends.png")
+```
+
+1. What are the observational units?  Do these appear in rows or columns of the data set?  How many observational units are in the spreadsheet?
+
+2. How many variables are shown here?  Do these appear in rows or columns of the spreadsheet?  How many are categorical, and how many are numerical?
+
+## Words with Friends
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/words-with-friends.png")
+```
+
+3. Pose some statistical questions that could be investigated with these data, involving:
+
+:::: columns
+::: column
++ one categorical variable
++ one numerical variable
++ two categorical variables
+:::
+::: column
++ one categorical and one numerical variable
++ two numerical variables
+:::
+::::
+
+## Words with Friends
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/words-with-friends.png")
+```
+
+4. Pose a statistical question about these data for which comparative boxplots would be an appropriate graph. 
+
+## Words with Friends
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/words-with-friends.png")
+```
+
+5. Pose a statistical question about these data for which calculating multiple proportions would be appropriate.
+
+## Words with Friends
+
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("images/words-with-friends.png")
+```
+
+6. Pose a statistical question about these data for which one-way ANOVA would be appropriate but a two-sample t-test would not be appropriate.
+
+## [Final group report project](https://earobinson95.github.io/stat365-calpoly/2024/99-final-project/final-project-instructions.html)
+
+## Reproduciblility!
+
+Reproducibility in scientific research is important in order for other researchers to be able to replicate your study results. This includes:
+
+-   A detailed Research Protocol
+-   Organized and clear documentation of the study
+    -   Data storage
+    -   Analyses
+    -   Results
+    -   Documents
+
+## To do
+
+`r fontawesome::fa("comments")` **Data Proposal**
+
++ Begin Brainstorming data sets + questions!
++ Due Thursday 4/11 at 11:59pm

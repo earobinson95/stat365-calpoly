@@ -70,6 +70,10 @@ In your final submission, you will turn in a `.zip` file of your project folder 
 
 You will be working in groups of three to four to produce a technical written report investigating and telling a story about a data set selected from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday) repository. Throughout the course, you will work with this data set to complete individual mini-projects (One Number Story and Data Narrative Visualization) before coming together to storyboard and write your final group report.
 
+::: callout-warning
+I will be using the [Childcare Costs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-05-09/readme.md) data set as an example throughout the quarter. Therefore, you may not select this data set.
+:::
+
 For the first group project check point:
 
 1. Select a **data set** from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday) repository that interests all group members.

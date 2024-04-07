@@ -1,0 +1,154 @@
+---
+title: "Data Descriptions"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+embed-resources: true
+execute:
+  echo: false
+---
+
+## Wednesday, April 10th
+
+-   Use active voice!
+-   Describe your data
+-   Align statistical analysis methods
+-   Work on data proposals
+
+## `r fontawesome::fa("spell-check")` (by zombies) test for `r fontawesome::fa("ban")` passive voice!
+
+::: callout-caution
+Your final report should be written in first person active voice.
+:::
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("https://communicatehealth.com/wp-content/uploads/whhl/doodle_102915.png")
+```
+
+## `r fontawesome::fa("brain")` Try it! (by zombies)
+
+**Passive:** The form was processed and returned (by zombies).
+
+**Active:** We completed your request and mailed the form to you.
+
+<br>
+
+-   Twenty-seven shots were taken from the three point line.
+
+<!-- **Passive:** Twenty-seven shots were taken from the three point line (by zombies). -->
+
+<!-- **Active:** Players took 27 shots from the three point line. -->
+
+<br>
+
+-   Researchers had their questions answered in a special session with Bill Nye the Science Guy.
+
+<!-- **Passive:** Researchers had their questions answered (by zombies) in a special session with Bill Nye the Science Guy. -->
+
+<!-- **Active** Bill Nye the science guy answered the researchers' questions in a special session. -->
+
+<br>
+
+-   I recruited 43 full-time Cal Poly students to participate in my study.
+
+## Describing your Data
+
+### When, Where, How, Who, What (The Ws!)
+
+<br>
+
+|           |                                                                                  |
+|-----------|----------------------------------------------------------------------------------|
+| **When**  | did the data collection take place?                                              |
+| **Where** | did the data collection take place?                                              |
+| **Who**   | were the subjects / observations under study?                                    |
+| **How**   | was the sample obtained? (inclusion/exclusion criteria)                          |
+| **How**   | were the data collected?                                                         |
+| **What**  | specialized equipment was used (don't list pencils, rulers, paper, excel, etc.!) |
+
+## `r fontawesome::fa("brain")` Critique my writing!
+### Consider the [Childcare Data Set](https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-05-09/readme.md)...
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+childcare_costs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
+counties <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/counties.csv')
+```
+
+```{r}
+# code to create ca_childcare
+ca_childcare <- counties |> 
+  filter(state_abbreviation == "CA") |> 
+  left_join(childcare_costs,
+            by = "county_fips_code"
+            )
+
+ca_childcare |> 
+  select(county_name, state_abbreviation, study_year, funr_20to64, fme_2018, mcsa:mfcc_preschool) |> 
+  head() |> 
+  knitr::kable()
+```
+
+## `r fontawesome::fa("computer")` Let's use some tools to help us improve the draft!^[Image sources: https://s3.amazonaws.com/libapps/accounts/47607/images/grammarly.png;  https://topaiblog.com/wp-content/uploads/2023/02/Chat-GPT-Discover-AI-use-cases-AI-Demo.jpg]
+
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/47607/images/grammarly.png")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("https://topaiblog.com/wp-content/uploads/2023/02/Chat-GPT-Discover-AI-use-cases-AI-Demo.jpg")
+```
+:::
+::::
+
+## Describing Variables
+
+-   Use context!
+-   Don't forget units of measurement
+    -   Rates have units!
+-   Usually provide summary statistics
+    -   Pay attention to significant digits
+    -   Don't forget sample sizes
+
+## Statistical analysis methods {style="text-align: center;"}
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 60%
+knitr::include_graphics("images/statistical-analysis-words.png")
+```
+
+## Things to consider when explaining your statistical analysis methods
+
+**How** the data were analysed (including the software used, and the statistical methods used).
+
+-   Statistical analysis used and any specifications.
+-   Include the software and version used to analyze the data. Make sure to include any packages and their versions!
+-   Define your significance level.
+-   Address any posthoc tests or adjustments for multiple comparisons.
+
+*For each question you pose, give a quick blurb about the appropriate analysis. Keep it simple; remember the goal is communication, not fancy stats!*
+
+## To do
+
+`r fontawesome::fa("comments")` Data Proposal
+
++ Due Thursday 4/11 at 11:59pm
+  

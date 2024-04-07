@@ -151,4 +151,10 @@ knitr::include_graphics("images/statistical-analysis-words.png")
 `r fontawesome::fa("comments")` Data Proposal
 
 + Due Thursday 4/11 at 11:59pm
+
+`r fontawesome::fa("play")` Week 3 Readings + Videos
+
+  + What is Journalism (Ameila McNamara) ~9 mins
+  + What is Journalism (Ameila McNamara) ~10 mins
+  + Numbers in the Newsroom (Sarah Cohen) Ch. 2
   

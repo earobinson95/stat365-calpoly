@@ -1,0 +1,124 @@
+---
+title: "Data Journalism"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+## Monday, April 15th
+
+Today we will...[^1]
+
+[^1]: Material for today's lecture is from [Amelia McNamara](https://www.amelia.mn/STAT336/index.html) and [Brianna Haggeseth](https://www.macalester.edu/mscs/facultystaff/brianna-heggeseth/)
+
+-   Crafting Sentences
+-   Brainstorm One-number summaries
+-   Writing with Numbers
+-   One Number Story Mini-Project
+
+## Crafting Sentences
+
++ Access Communicating with Data (Chp 9) from the [library course reserves](https://reserves.calstate.edu/slo/course/7248728950002920)
++ Choose 1 section in Chapter 9 to read (9.1, 9.2, 9.3, or 9.4)
+  + Each student in the group should read a different section
+  + Once you've read the section, share with your group the main points of that section.
+
+## Revise
++ Open Writing Sentences about Data - Section 1
+  + Each group is assigned a sentence to revise together
+  + Write your revisions
+    + if your table is in the front of the room, write on Revision 1
+    + if in back, write on Revision 2
+    
+## Read
++ Now each of you read section 9.5
+
+## Revise
+Go back to Writing Sentences about Data for your section
+
++ Read the original text
+  + Identify the "blogger style" in the text below
++ In the Front or Back of Room sections, add comments and highlight text or phrases in red that you would remove if you wanted a more formal writing style.
+
+## Brainstorm
+
+In your project groups: 
+
++ come up with as many ideas of one number summaries (e.g., mean, median, max, min, count, percent, ratio, etc.) that might address one of your broad research questions.
+
+**Childcare Cost Example**
+
++ Average median weekly cost of childcare for infants.
++ Average of the ratio between the weekly cost of childcare for infants in a center and an at-home facility.
+
+## Writing with Numbers^[adapted from Numbers in the Newsroom by Sarah Cohen]
+
+1. Keep the number of digits in a paragraph below 8
+
++ Before: The Office of Redundancy’s budget rose 48 percent in 2013, from $700.3 million to $1.03 billion.
++ Revision: Over the past year, the Office of Redundancy’s budget grew by nearly half, to $1 billion.
+
+## Writing with Numbers^[adapted from Numbers in the Newsroom by Sarah Cohen]
+
+2. Round a lot
+ 
++ Only use precision when it matters. For example, never round when it comes to death counts; every body matters.
+
+## Writing with Numbers^[adapted from Numbers in the Newsroom by Sarah Cohen]
+
+3. Think in ratios
+
++ We can’t think clearly about very big or very small numbers. Make the numbers you deal with understandable by contextualizing them.
+  + Example: A widely quoted estimate of fixing the Year 2000 computer bug was \$50 billion for U.S. companies. How big is \$50 billion? At the time, it was smaller than Bill Gates’ net worth. It was the cost of two hurricanes. It was the income of people living in the Portland, Ore., area.
+
+## Writing with Numbers^[adapted from Numbers in the Newsroom by Sarah Cohen]
+
+4. Use devices from everyday life
+ 
++ Most people have some arithmetic that they perform instinctively (e.g. discounts in retail, tipping at a restaurant, 2 to 1 odds). Convert your writing into the commonly used scales. Keep in mind that a percent change (implies multiplicative change) is very different from a percentage point difference (implies additive change). Both are correct:
+  + Population growth has slowed by about 1.3 percentage points since its peak in 1950, to 0.7 percent. (Simple difference between 2 percent and 0.7 percent, expressed in percentage points.)
+  + Population growth in the U.S. slowed by almost two-thirds from its peak in 1950, to 0.7 percent in 2013. (Percent difference between 2 percent and 0.7 percent)
+
+## [One Number Story Mini-Project](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/01-one-number-story/one-number-story.html)
+
++ Each person calculates 1 number from their project data
+  + Within the project group, each student should choose a different numerical summary
+  
+Each person writes a TRUE story about the data that focuses on that 1 number.
+
+## One Number Story - Structure
+
++ 250-500 words
++ include a title/headline and byline
++ focus on 1 number but you can include other numbers to contextualize your numerical summary (“as compared to what”)
++ apply the principles of crafting sentences
++ apply the principles of data journalism (writing with numbers)
+
+## To do
+
+`r fontawesome::fa("computer")` **Install word/excel**
+
+- For class Wednesday
+- Visit [Cal Poly's Software Hub](https://tech.calpoly.edu/services/software-downloads)
+- (Optional) Access via Cal Poly Virtual Computer Labs
+
+`r fontawesome::fa("computer")` **Save your TidyTuesday (sub) Data Set to a .xlsx file**
+
+- For class Wednesday
+- `library(read_xl)` -> `write_xlsx()`
+
+`r fontawesome::fa("book")` **One Number Story Mini-Project**
+
+- Rough draft due Monday, 4/22
+- You'll give/get peer feedback in class that day

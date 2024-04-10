@@ -1,0 +1,102 @@
+---
+title: "Spreadsheets, Summaries, and Pivot Tables"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Wednesday, April 17th
+
+Today we will...
+
++ Excel Operations
++ Persnickety Percentages
++ Statistical Terminology -- "Average"
+
+## .xlsx
+
+[Download `malaria_data.xlsx`](data/malaria_data.xlsx)
+
+An article that appeared in the journal Lancet in May of 2021 (Datoo, et al.) described a study that **investigated a potential vaccine that might protect children against malaria**. Researchers
+recruited children between the ages of 5 and 17 months in Burkina Faso, a country in western Africa, as participants. The **children were randomly assigned into one of three groups: one group received a large dose of the potential vaccine, another group received a small dose, and a third group received a placebo.** Researchers observed the children for the next 18 months, keeping track of **whether or not the child developed malaria.** Researchers hoped, of course, that children who received a vaccine would be less likely to develop malaria than children who received a placebo.
+
+## Excel Operations
+
++ Freeze panes,
++ Filter and sort observations,
++ Pivot tables, and
++ Summaries, etc.
+
+If you think you can do it, Google it!
+
+Excel has a programming language called VBA (Visual Basic Analysis) -- most people write macros in this.
+
+## Persnickety Percentages
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 65%
+knitr::include_graphics("images/pivot-table-counts.jpg")
+```
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 65%
+knitr::include_graphics("images/pivot-table-proportions.jpg")
+```
+
+## Interpretting Proportions
+
+::: panel-tabset
+### Diff in prop
+
+The **difference in success proportions** between two groups, multiplied by 100, should be expressed as a difference in percentage points.
+
+$$p_{success|A} – p_{success|B}$$
+
+### Percentage Diff
+The **percentage difference** in success proportions between two groups, with group B as the baseline, is calculated as: 
+$$\frac{(p_{success|A} – p_{success|B})}{p_{success|B}} × 100%.$$
+
+or equivalently: $\text{percentage difference} = (\text{relative risk} - 1) \times 100$
+
+### Relative Risk
+
+The **relative risk** between two groups is the ratio of their success proportions.
+
+$$\frac{p_{success|A}}{p_{success|B}}$$
+
+### Odds Ratio
+
+The **odds of success** are calculated as: 
+$$\frac{\text{# of successes}}{\text{# of failures}}.$$
+
+The **odds against** an event are calculated as
+ $$\frac{\text{# of failures}}{\text{# of successes}}.$$
+
+Odds ratio is *invariant* to which outcome is labeled a "success".
+
+:::
+
+## `r fontawesome::fa("brain")` Statistical Terminology - "Average" 
+### Means, Medians, and Modes
+
++ What does the term "average mean in everyday language?
++ When might it be appropriate to use one of the measures for center over the others?
+
+
+## To do
+
+`r fontawesome::fa("book")` **One Number Story Mini-Project**
+
+- Rough draft due Monday, 4/22
+- You'll give/get peer feedback in class that day

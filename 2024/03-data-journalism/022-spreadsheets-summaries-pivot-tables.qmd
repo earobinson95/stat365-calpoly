@@ -40,6 +40,8 @@ Excel has a programming language called VBA (Visual Basic Analysis) -- most peop
 
 ## Persnickety Percentages
 
+Answer one set of questions as a group: <https://padlet.com/e95robinson/persnickety_percentages>.
+
 ```{r}
 #| echo: false
 #| fig-align: center

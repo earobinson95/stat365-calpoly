@@ -22,10 +22,19 @@ Today we will...[^1]
 
 [^1]: Material for today's lecture is from [Amelia McNamara](https://www.amelia.mn/STAT336/index.html) and [Brianna Haggeseth](https://www.macalester.edu/mscs/facultystaff/brianna-heggeseth/)
 
+-   Data Proposal Feedback
 -   Crafting Sentences
 -   Brainstorm One-number summaries
 -   Writing with Numbers
 -   One Number Story Mini-Project
+
+## Data Proposal Feedback
+
++ Avoid using explicit variable or data set names in the data description.
++ Use strong verbs -- focus more on the data and study and less on "we decided to xxx".
++ Include references to data and other sources talked about.
++ Describe *how* key variables were measured.
++ Don't assume common knowledge of your reader (e.g., specific sports rules or a particular show).
 
 ## Crafting Sentences
 

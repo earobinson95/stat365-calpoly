@@ -1,0 +1,62 @@
+---
+title: "Written Communication Review"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default] #, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+## Monday, April 22nd
+
+Today we will...[^1]
+
+[^1]: Material for today's lecture is from [Brianna Haggeseth](https://www.macalester.edu/mscs/facultystaff/brianna-heggeseth/)
+
+-   Grab coffee + doughnut holes
+-   Reflect with your group
+-   Peer Feedback (Find a partner (or group of 3) *OUTSIDE* your project group)
+
+## Reflect
+
+In your group,
+
++ reflect on how it felt to write this One Number Story
++ how do you feel about the rough draft you have today
+
+## Peer Feedback
+
+Guidelines posted to Canvas (also have printed copies)
+
+Stand up and find someone else in the class that is not in your project group
+
++ Introduce yourself (if needed)
++ Share your One Number Story printed copy or Google Doc with them (with editing access)
+
+## Peer Feedback
+
+1. Read first
+2. Give feedback (prompts/action items in the Peer Feedback document)
+3. Discuss (focus on lifting each other up while discussing ideas for improvement)
+
+## Rest of Class
+
++ Move back to Project groups
++ EDA/Data Wrangling
+
+## To do
+
+`r fontawesome::fa("book")` **One Number Story Mini-Project**
+
+- Work on improving your story
+- Canvas Submission due Thursday, 4/25
+

@@ -3,7 +3,7 @@ title: "Table Design"
 subtitle: "Stat 365: Statistical Communication"
 format: 
   revealjs:
-    theme: [default, ../slide_custom.scss]
+    theme: [default, ../../slide_custom.scss]
     auto-stretch: false
     # chalkboard: true
 editor: source
@@ -12,7 +12,7 @@ execute:
   echo: true
 ---
 
-## Wednesday, April 19th^[Material from today's lecture from Storytelling with Data and Show Me the Numbers ch 8.]
+## Wednesday, April 24th^[Material from today's lecture from Storytelling with Data and Show Me the Numbers ch 8.]
 
 ```{r}
 #| include: false
@@ -63,9 +63,10 @@ knitr::include_graphics("images/table-anatomy.JPG")
 -   Organize material in a meaningful way
 -   Tables should never flow across a page break
 
-## Table Example: Mandela
+## Table Example: Childcare Costs
 
 ```{r}
+#| eval: false
 #| echo: false
 library(tidyverse)
 library(kableExtra)
@@ -76,6 +77,7 @@ mandela_data <- read_csv(here::here("03-data-descriptions", "data", "mandela_res
 ### Poor
 
 ```{r}
+#| eval: false
 #| echo: false
 mandela_data |> 
   mutate(anchor_q = case_when(anchor_q == "12 years"  ~ "Prompt 1",
@@ -98,6 +100,7 @@ mandela_data |>
 
 
 ```{r}
+#| eval: false
 #| echo: false
 mandela_data |> 
   mutate(anchor_q = case_when(anchor_q == "12 years"  ~ "12 Years",
@@ -232,25 +235,14 @@ knitr::include_graphics("images/table-bidirectional.JPG")
 
 ## To do
 
-::: columns
-::: column
-`r fontawesome::fa("flask")` **Collect Data**
+<!-- -   **Read CwD 3.4:** Tracking the Analysis -->
 
--   Aim to have your data collected by, Monday 4/24
--   As soon as you have your data collected, start working on your analysis using statistical methods learned in previous courses.
--   REPRODUCIBILITY! Document EVERYTHING!
--   **Read CwD 3.4:** Tracking the Analysis
-:::
-
-::: column
 `r fontawesome::fa("hashtag")` **One-number Story**
 
--   Draft: due Thursday, 4/20 at 11:59pm
--   Peer Review: due Sunday, 4/23 at 11:59pm
--   Final submission: due Thursday, 4/27 at 11:59pm
+- Work on improving your story
+- Canvas Submission due Thursday, 4/25
 
-`r fontawesome::fa("headphones")` **Listen to Storytelling with Data Podcasts (Data Viz)** for next week
+`r fontawesome::fa("headphones")` **Listen to Storytelling with Data Podcasts (Data Viz)** 
 
-`r fontawesome::fa("book-open")` **Read Communicating Data with Tableau** for next week
-:::
-:::
+- For class next week
+

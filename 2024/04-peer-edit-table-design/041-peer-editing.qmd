@@ -51,7 +51,7 @@ Stand up and find someone else in the class that is not in your project group
 ## Rest of Class
 
 + Move back to Project groups
-+ EDA/Data Wrangling
++ EDA
 
 ## To do
 

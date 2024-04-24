@@ -105,7 +105,7 @@ ca_childcare |>
   filter(age == "infant") |> 
   arrange(facility_type) |> 
   select(study_year, facility_type, avg_weekly_cost, sd_weekly_cost) |> 
-  knitr::kable(caption = "Table X. Descriptive Statistics on Sample")  |> 
+  knitr::kable(caption = "Table X. Descriptive Statistics on ca_childcare")  |> 
   kable_classic(full_width = F)
 ```
 
@@ -133,14 +133,20 @@ ca_childcare |>
             ) |> 
   filter(age == "infant") |> 
   arrange(facility_type) |> 
+  mutate(facility_type = case_when(facility_type == "mc" ~ "Center-based",
+                                   facility_type == "mfcc" ~ "Family-based")
+         ) |> 
   select(facility_type, study_year, avg_weekly_cost, sd_weekly_cost) |> 
-  kbl(caption = "Table X. 58 counties...Means and Standard Deviations of the Guesses for Mandela's Age of Death for each Numerical Anchoring of Participants to a Younger or Older Age",
+  knitr::kable(caption = "Table X. Means and Standard Deviations of the Median Weekly Cost for Infant Childcare across the 58 counties in California",
                col.names = c("Facility", "Year", "Mean ($)", "Std. Dev."),
                digits = 1
                ) |> 
-  kable_minimal(full_width = F) |> 
-  footnote(general = "Data was collected from xxxxx.")
+  # kable_classic(full_width = F) |> 
+  kable_minimal(full_width = F) |>
+  footnote(general = "Data source: National Database of Childcare Prices (NDCP)")
 ```
+
+### Improvements
 -   Labels clearly identify the concepts in each row
 -   Ordering of rows makes comparison of center vs family care easy
 -   The variable can be defined in the data and methods section or a note to the table

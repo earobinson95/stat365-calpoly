@@ -3,13 +3,14 @@ title: "Stat 365: Statistical Communication"
 subtitle: "Spring 2024"
 # author: "Dr. Emily Robinson"
 # date: "January 9, 2023"
-format: 
-  html:
-    self-contained: true
-    toc: true
-    theme:
-      light: flatly
-      dark: darkly
+# format: 
+#   html:
+#     self-contained: true
+#     toc: true
+#     theme:
+#       light: flatly
+#       dark: darkly
+format: pdf
 dev: png
 geometry: margin=1in
 fontfamily: mathpazo

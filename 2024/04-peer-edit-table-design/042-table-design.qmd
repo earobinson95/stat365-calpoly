@@ -9,7 +9,7 @@ format:
 editor: source
 self-contained: true
 execute:
-  echo: true
+  echo: false
 ---
 
 ## Wednesday, April 24th^[Material from today's lecture from Storytelling with Data and Show Me the Numbers ch 8.]
@@ -42,7 +42,7 @@ Use a table when...[^1]
 ```{r}
 #| echo: false
 #| fig-align: center
-#| out-width: 60%
+#| out-width: 75%
 knitr::include_graphics("images/table-anatomy.JPG")
 ```
 
@@ -66,63 +66,86 @@ knitr::include_graphics("images/table-anatomy.JPG")
 ## Table Example: Childcare Costs
 
 ```{r}
-#| eval: false
-#| echo: false
+#| label: setup
+
 library(tidyverse)
 library(kableExtra)
-mandela_data <- read_csv(here::here("03-data-descriptions", "data", "mandela_results.csv"))
+
+childcare_costs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
+counties <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/counties.csv')
+```
+
+```{r}
+# code to create ca_childcare
+ca_childcare <- counties |> 
+  filter(state_abbreviation == "CA") |> 
+  left_join(childcare_costs,
+            by = "county_fips_code"
+            )
 ```
 
 ::: panel-tabset
 ### Poor
 
 ```{r}
-#| eval: false
 #| echo: false
-mandela_data |> 
-  mutate(anchor_q = case_when(anchor_q == "12 years"  ~ "Prompt 1",
-                              anchor_q == "120 years" ~ "Prompt 2")
-         ) |> 
-  rename(Group = anchor_q) |> 
-  group_by(Group) |> 
-  summarize(Mean = mean(guess_yrs),
-            SD   = sd(guess_yrs)
-  ) |> 
+ca_childcare |> 
+  filter(study_year %in% c(2008, 2018)) |> 
+  rename(mc_sa = mcsa,
+         mfcc_sa = mfccsa) |> 
+  pivot_longer(c(mc_sa:mfcc_preschool),
+               names_to = c("facility_type", "age"),
+               values_to = "weekly_cost",
+               names_sep = "_"
+               ) |> 
+  group_by(study_year, facility_type, age) |> 
+  summarize(avg_weekly_cost = mean(weekly_cost),
+            sd_weekly_cost = sd(weekly_cost)
+            ) |> 
+  filter(age == "infant") |> 
+  arrange(facility_type) |> 
+  select(study_year, facility_type, avg_weekly_cost, sd_weekly_cost) |> 
   knitr::kable(caption = "Table X. Descriptive Statistics on Sample")  |> 
   kable_classic(full_width = F)
 ```
 
 -   Short, cryptic acronyms
--   References to prompt numbers not available to your reader
+-   References to mc, mfcc, not available to your reader
 -   Excessive digits
+-   If we want to compare center vs family care we have to jump rows.
 
 ### Better
 
-
 ```{r}
-#| eval: false
 #| echo: false
-mandela_data |> 
-  mutate(anchor_q = case_when(anchor_q == "12 years"  ~ "12 Years",
-                              anchor_q == "120 years" ~ "120 Years")
-         ) |> 
-  group_by(anchor_q) |> 
-  summarize(Mean = mean(guess_yrs),
-            SD   = sd(guess_yrs),
-            N    = n()
-  ) |> 
-  kbl(caption = "Table X. Means and Standard Deviations of the Guesses for Mandela's Age of Death for each Numerical Anchoring of Participants to a Younger or Older Age",
-               col.names = c("Numerical Anchor", "Mean (Years)", "Standard Deviation", "N"),
+ca_childcare |> 
+  filter(study_year %in% c(2008, 2018)) |> 
+  rename(mc_sa = mcsa,
+         mfcc_sa = mfccsa) |> 
+  pivot_longer(c(mc_sa:mfcc_preschool),
+               names_to = c("facility_type", "age"),
+               values_to = "weekly_cost",
+               names_sep = "_"
+               ) |> 
+  group_by(study_year, facility_type, age) |> 
+  summarize(avg_weekly_cost = mean(weekly_cost),
+            sd_weekly_cost = sd(weekly_cost)
+            ) |> 
+  filter(age == "infant") |> 
+  arrange(facility_type) |> 
+  select(facility_type, study_year, avg_weekly_cost, sd_weekly_cost) |> 
+  kbl(caption = "Table X. 58 counties...Means and Standard Deviations of the Guesses for Mandela's Age of Death for each Numerical Anchoring of Participants to a Younger or Older Age",
+               col.names = c("Facility", "Year", "Mean ($)", "Std. Dev."),
                digits = 1
                ) |> 
   kable_minimal(full_width = F) |> 
-  footnote(general = "Data was collected from the Spring 2023 Stat 365 class at Cal Poly.")
+  footnote(general = "Data was collected from xxxxx.")
 ```
-
 -   Labels clearly identify the concepts in each row
+-   Ordering of rows makes comparison of center vs family care easy
 -   The variable can be defined in the data and methods section or a note to the table
--   For a non-scientific article, replace technical labels with everyday synonyms 
-<!-- + If I could in Canvas, I would take out all of the lines except for maybe one across the top, one under the column headers, and one at the bottom of the table. -->
+-   For a non-scientific article, replace technical labels with everyday synonyms
+
 :::
 
 ## Table Design
@@ -231,7 +254,7 @@ knitr::include_graphics("images/table-bidirectional.JPG")
 
 # Practice in table design
 
-# Can you sketch out a table of summary statistics for your data?
+# Can you sketch out a table of summary statistics you might include in your final group report for your data?
 
 ## To do
 

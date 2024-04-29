@@ -120,7 +120,7 @@ knitr::include_graphics("images/jigsaw-groups.png")
   + 2 -- John Snow (**cholera**)
   + 3 -- Charles Joseph **Minard**
   + 4 -- Statistical Atlas (**Walker**)
-  + 5 -- W.E.B. Du Boi (**city + rural**)
+  + 5 -- W.E.B. Du Bois (**city + rural**)
 + Find your second group (suit + back color)
 + *(~15 minutes)* Give a 2-3 minute spiel about what you learned
 

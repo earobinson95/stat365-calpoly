@@ -1,6 +1,6 @@
 ---
 title: "Dear Data"
-subtitle: "Mini-project"
+subtitle: "Grade Booster Activity"
 format: 
   html:
     toc: true

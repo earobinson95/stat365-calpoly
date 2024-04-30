@@ -1,0 +1,35 @@
+---
+title: "Tailor Your Cover Letter"
+subtitle: "Grade Booster Activity"
+format: 
+  html:
+    toc: true
+    self-contained: true
+    theme:
+      light: flatly
+      dark: darkly
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+In this booster condition, you will find an internship and tailor a cover letter for application to a professional state.
+
+1.  Identify and research a position.
+
+2.  Tailor a cover letter following the guidelines provided by career services [Cover Letter Guide & Examples](https://content-calpoly-edu.s3.amazonaws.com/careerservices/1/images/new_exploreservices/new_resourcetoolkit/Cover%20Letter%20Guide.pdf).
+
+## Final Submission Rubric
+
+| **Component**                                  | **Meets Satisfactory**                                                                                    | **Does Not Meet Satisfactory**                                                             |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Header: name, contact information              | Includes name, contact information, and matches resume header                                             | Missing or incomplete header                                                               |
+| Address recruiter                              | Addresses the recruiter/employer by name if possible                                                      | Generic greeting or not addressed to a specific individual                                 |
+| First paragraph: "Why Them?"                   | Clearly states the position applying for and source of job listing                                        | Vague or irrelevant introduction, does not demonstrate research of the company             |
+| Middle paragraph: "Why You?"                   | Provides concrete examples demonstrating skills and experiences relevant to the position                  | Lacks relevant examples or does not effectively relate experiences to the job requirements |
+| Closing paragraph: "Next Steps"                | Reiterates interest in the position, thanks the employer for their time, and provides contact information | Generic closing, lacks indication of next steps or contact information                     |
+| Salutation: sign name + professional statement | Includes a professional sign-off with name and statement of intent                                        | Missing sign-off or lacks professionalism                                                  |
+| Grammar                                        | Proper grammar, punctuation, and sentence structure                                                       | Numerous grammatical errors, spelling mistakes, or unclear sentences                       |
+| Appearance                                     | Well-formatted, easy to read, and follows standard business letter format                                 | Poor formatting, difficult to read, or does not follow standard format                     |

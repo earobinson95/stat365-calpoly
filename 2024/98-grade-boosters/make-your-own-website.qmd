@@ -45,4 +45,4 @@ To satisfy, you should modify your site beyond the default template files, addin
 See an additional resource at this [blog post](https://ucsb-meds.github.io/creating-quarto-websites/)
 :::
 
-## Rubric coming soon...
+## Rubric posted to Canvas.

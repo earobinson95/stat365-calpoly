@@ -1197,3 +1197,7 @@ This line has colour deep orange yellow which maps to Development Stage = toddle
 `r fontawesome::fa("hashtag")` **One-number Story**
 
 + Watch for a Canvas announcement
+
+`r fontawesome::fa("book")` **Read CwD 7.1 - 7.5**
+
++ for class next Wednesday

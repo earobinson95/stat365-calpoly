@@ -365,16 +365,6 @@ ca_childcare |>
 
 ## What *are* the elemental groupings?
 
-:::: {.columns width=70%}
-::: {.column
-```{r}
-ca_childcare |> 
-  rename(weekly_cost = median_weekly_childcare_cost) |> 
-  DT::datatable(filter = "none")
-```
-:::
-::: {.column width=30%}
-
 *Most elemental*
 
 1. Weekly costs
@@ -383,8 +373,6 @@ ca_childcare |>
 4. County
 
 *Least elemental*
-:::
-::::
 
 ## 
 
@@ -474,12 +462,17 @@ ca_childcare |>
 # Design Principles
 
 1. Expressiveness
+
   + Encode all the facts. Encode only the facts.
+  
 2. Consistency
+
   + Use consistent axes when comparing charts.
   + A note on legends: order items according to appearance.
   + Avoid visually similar encodings for independent variables.
+  
 3. Importance ordering
+
   + Order groups by size from the largest to the smallest
   + Simplify, simplify, simplify!
   

@@ -1,0 +1,1199 @@
+---
+title: "Data Viz Design Principles"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+## Wednesday, May 1st
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
++ Slow Reveal
++ Visual & Graphical Perception
+<!-- + Case Study -->
++ Simplification
++ Color
++ Design for accessibility
+
+## [Slow Reveal](https://slowrevealgraphs.com/#:~:text=What%20IS%20a%20Slow%20Reveal,beyond)
+
++ [Top of the World](https://docs.google.com/presentation/d/1ssYUiQ8md8BfOU-mXhwKFCxurOpiLT4LzdkOzTzYOrI/edit#slide=id.p)
++ [Goal!](https://docs.google.com/presentation/d/1KaVSOoi33nvGU9FRibyWjOUXn1qIRNVN-mZxgkQ63eg/edit#slide=id.g287fdfd5733_0_83)
++ [The Clean Version](https://docs.google.com/presentation/d/1_TWJ5aG_moIfBRm_S4alBPButJJEwGbTO5yVlepIROI/edit#slide=id.p)
+
+"What do you notice? What do you wonder?"
+
+"What new information did you just learn?"
+
+"What do you think this graph is about? Why?"
+
+"What would you mark along the axes?"
+
+# Visual Perception
+
+## The gestalt effect
+
+-   *gestalt* = form or pattern
+
+-   **Gestalt philosophy:** "The whole is other than the sum parts" -Kurt Koffka
+
+-   **Gestalt principals:** Predictable ways by which we organize sensory information.
+
+```{r}
+#| fig-align: center
+#| out-width: 80%
+knitr::include_graphics("images/gestalt.jpg")
+```
+
+<!-- ## Law of proximity -->
+
+<!-- We interpret objects that are close to each other as a group -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/law-of-proximity.png") -->
+<!-- ``` -->
+
+<!-- ## Law of similarity -->
+
+<!-- We interpret objects that are visually similar to each other as a group -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 50% -->
+<!-- knitr::include_graphics("images/law-of-similarity.png") -->
+<!-- ``` -->
+
+<!-- ## Law of closure -->
+
+<!-- When parts of a picture are missing, we fill in the visual gap -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/law-of-closure.png") -->
+<!-- ``` -->
+
+<!-- ## Law of symmetry -->
+
+<!-- We perceive objects as being symmetrical, arranged around a center point -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 50% -->
+<!-- knitr::include_graphics("images/law-of-symmetry.jpg") -->
+<!-- ``` -->
+
+<!-- ## Law of common fate -->
+
+<!-- We group objects that we percieve to be moving along the same path -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 60% -->
+<!-- knitr::include_graphics("images/law-of-common-fate.png") -->
+<!-- ``` -->
+
+<!-- ## Law of continuity -->
+
+<!-- We tend to group objects along the smoothest path -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/law-of-continuity.jpg") -->
+<!-- ``` -->
+
+## Gestalt Hierarchy
+
+| Effect     | Graphs      |
+|------------|-------------|
+| Enclosure  | Facets      |
+| Connection | Lines       |
+| Proximity  | White space |
+| Similarity  | Color/shape |
+
+## Some things are processed slower[^3]
+
+[^3]: via Jordan Crouser
+
+```{r}
+#| fig-align: center
+#| out-width: 63%
+knitr::include_graphics("images/whereswaldobeach-color.jpg")
+```
+
+## Other's are incredibly fast[^4]
+
+[^4]: via Jordan Crouser
+
+```{r}
+#| fig-align: center
+#| out-width: 63%
+knitr::include_graphics("images/whereswaldobeach-bw.JPG")
+```
+
+## Fast = "pre-attentive processing"
+
+-   Things that happen in \<200ms of visual stimulation
+-   Performed in parallel across the entire visual field
+
+"An understanding of what is processed pre-attentively is probably the most important contribution that visual science can make to the data visualization" (Ware, 2004, p. 19)
+
+## Pre-attentive features[^5]
+
+[^5]: <https://www.csc2.ncsu.edu/faculty/healey/PP/>
+
+::: columns
+::: {.column width="33%"}
+Color (hue)
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_hue.gif")
+```
+
+Orientation
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_orient.gif")
+```
+:::
+
+::: {.column width="33%"}
+Intensity
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_lum.gif")
+```
+
+Clustering
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_den.gif")
+```
+:::
+
+::: {.column width="33%"}
+Size
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_size.gif")
+```
+
+Length
+
+```{r}
+#| fig-align: center
+knitr::include_graphics("https://www.csc2.ncsu.edu/faculty/healey/PP/figs/tg_len.gif")
+```
+:::
+:::
+
+and more!
+
+## Pre-attentive processing facilitates:
+
+-   Target detection (Presence or absence)
+-   Boundary detection / grouping
+-   Region tracking
+-   Counting and estimation
+
+# Graphical Perception
+
+## Cleveland and McGill, 1984
+
+:::: columns
+::: column
+The following are the 10 elementary tasks in Figure 1, ordered from most to least accurate:
+
+1.  Position along a common scale
+2.  Positions along nonaligned scales
+3.  Length, direction, angle
+4.  Area
+5.  Volume, curvature
+6.  Shading, color saturation
+
+:::
+::: column
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cleveland-mcgill-1.JPG")
+```
+:::
+::::
+
+## 
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cleveland-mcgill-2.JPG")
+```
+
+## 
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cleveland-mcgill-3.JPG")
+```
+
+<!-- ## Magnitude estimation^[via Amelia McNamara] -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 75% -->
+<!-- knitr::include_graphics("images/magnitude-estimation-1.JPG") -->
+<!-- ``` -->
+
+<!-- ## Magnitude estimation^[via Amelia McNamara] -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 75% -->
+<!-- knitr::include_graphics("images/magnitude-estimation-2.JPG") -->
+<!-- ``` -->
+
+<!-- ## Magnitude estimation^[via Amelia McNamara] -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 75% -->
+<!-- knitr::include_graphics("images/magnitude-estimation-3.JPG") -->
+<!-- ``` -->
+
+## "Apparent" magnitude^[via Jordan Crouser at <http://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/>]
+
+```{r}
+#| fig-align: center
+#| out-width: 75%
+knitr::include_graphics("images/perceived-magnitude.JPG")
+```
+
+## Implications for Practice
+
+1.  Know how we perceive groups
+
+2.  Know that we perceive some groups before others
+
+3.  Design to facilitate and emphasize the **most important comparisons**
+
+# Case Study on Gestalt Principles
+
+```{r}
+childcare_costs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
+counties <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/counties.csv')
+
+# join + clean data
+
+ca_childcare <- full_join(counties,
+                 childcare_costs,
+                 ) |> 
+  filter(state_abbreviation == "CA",
+         county_name %in% c("San Luis Obispo County", 
+                            "Orange County", 
+                            "San Francisco County")
+         ) |> 
+  pivot_longer(cols = starts_with("mfcc_"),
+               names_to = "development_stage",
+               values_to = "median_weekly_childcare_cost") |>
+  filter(development_stage %in% c("mfcc_infant", "mfcc_toddler")) |> 
+  mutate(across(.cols = c(county_name, state_abbreviation, development_stage), 
+                .fns = ~ as.factor(.x)
+                ),
+         development_stage = as.factor(str_remove(development_stage, pattern = "mfcc_"))
+         ) |> 
+  select(county_name, study_year, development_stage, median_weekly_childcare_cost)
+```
+
+## Questions
+
+:::: columns
+::: column
+**Client Question**
+
+Do historical trends of full-time weekly median price charged for family child vary based on development stage in the three given California counties?
+
+:::
+::: column
+**Consultant Questions**
+
+What are the elemental groupings? (What belongs together?)
+
+How do we design for effective emphasis?
+
+:::
+::::
+
+## Childcare Data
+
+```{r}
+ca_childcare |> 
+  rename(weekly_cost = median_weekly_childcare_cost) |> 
+  DT::datatable(filter = "none")
+```
+
+## What *are* the elemental groupings?
+
+Do historical trends of full-time weekly median price charged for family child vary based on development stage in the three given California counties?
+
+```{r}
+ca_childcare |> 
+  rename(weekly_cost = median_weekly_childcare_cost) |> 
+  DT::datatable(filter = "none")
+```
+
+## What *are* the elemental groupings?
+
+:::: {.columns width=70%}
+::: {.column
+```{r}
+ca_childcare |> 
+  rename(weekly_cost = median_weekly_childcare_cost) |> 
+  DT::datatable(filter = "none")
+```
+:::
+::: {.column width=30%}
+
+*Most elemental*
+
+1. Weekly costs
+2. Years
+3. Development stage (infant vs toddler)
+4. County
+
+*Least elemental*
+:::
+::::
+
+## 
+
+Do historical trends of full-time weekly median price charged for family child vary based on development stage in the three given California counties?
+
+::: panel-tabset
+## G1
+
+```{r}
+ca_childcare |> 
+  ggplot(aes(x = study_year,
+             y = median_weekly_childcare_cost,
+             fill = county_name)
+         ) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  facet_wrap(~ development_stage) +
+  scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  scale_fill_brewer(palette = "Accent") +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Weekly Median Childcare Cost ($)",
+       fill = "County")
+```
+
+## G2
+
+```{r}
+ca_childcare |> 
+  ggplot(aes(x = county_name,
+             y = median_weekly_childcare_cost,
+             fill = as.factor(study_year))
+  ) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  facet_wrap(~ development_stage) +
+  # scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  # scale_fill_brewer(palette = "Accent") +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Weekly Median Childcare Cost ($)",
+       fill = "County")
+```
+
+## G3
+```{r}
+ca_childcare |> 
+  ggplot(aes(x = study_year,
+             y = median_weekly_childcare_cost,
+             color = development_stage,
+             shape = development_stage)
+  ) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~ county_name) +
+  scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  scale_color_manual(values = c("steelblue", "orange3")) +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Weekly Median Childcare Cost ($)",
+       color = "Development \nStage",
+       shape = "Development \nStage")
+```
+
+## G4
+
+```{r}
+ca_childcare |> 
+  ggplot(aes(x = study_year,
+             y = median_weekly_childcare_cost,
+             color = development_stage,
+             shape = development_stage)
+  ) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~ county_name, ncol = 1) +
+  scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  scale_color_manual(values = c("steelblue", "orange3")) +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Weekly Median Childcare Cost ($)",
+       color = "Development \nStage",
+       shape = "Development \nStage")
+```
+:::
+
+# Design Principles
+
+1. Expressiveness
+  + Encode all the facts. Encode only the facts.
+2. Consistency
+  + Use consistent axes when comparing charts.
+  + A note on legends: order items according to appearance.
+  + Avoid visually similar encodings for independent variables.
+3. Importance ordering
+  + Order groups by size from the largest to the smallest
+  + Simplify, simplify, simplify!
+  
+<!-- ## Principle 1: expressiveness^[via Jordan Crouser] -->
+
+<!-- Encode all the facts. -->
+
+<!-- Encode only the facts. -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 70% -->
+<!-- knitr::include_graphics("images/expressiveness.jpg") -->
+<!-- ``` -->
+
+<!-- ## Principle 2: consistency^[via Jordan Crouser] -->
+
+<!-- Use consistent axes when comparing charts. -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 70% -->
+<!-- knitr::include_graphics("images/consistency-1.jpg") -->
+<!-- ``` -->
+
+<!-- ## Principle 2: consistency^[via Jordan Crouser] -->
+
+<!-- A note on legends: order items according to appearance. -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 70% -->
+<!-- knitr::include_graphics("images/consistency-2.jpg") -->
+<!-- ``` -->
+
+<!-- ## Principle 2: consistency^[via Jordan Crouser] -->
+
+<!-- Visual variation should reflect and enhance the underlying variation in the data. -->
+
+<!-- Avoid visually similar encodings for independent variables. -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 70% -->
+<!-- knitr::include_graphics("images/consistency-3.jpg") -->
+<!-- ``` -->
+
+<!-- ## Principle 3: importance ordering^[Heer J, Bostock M (2010) Crowdsourcing graphical perception: using mechanical turk to assess visualization design. Proceedings of the 28th international conference on Human factors in computing systems.] -->
+
+<!-- Avoid unnecessary containment and repetition. -->
+
+<!-- Navigational aids shouldn’t compete with data. -->
+
+<!-- Avoid: heavy axes, error bars. -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 50% -->
+<!-- knitr::include_graphics("images/importance-ordering-1.jpg") -->
+<!-- ``` -->
+
+<!-- ## Principle 3: importance ordering^[<https://datajournalism.com/read/longreads/the-unspoken-rules-of-visualisation-and-when-to-break-them>] -->
+
+<!-- - use a reasonable number of slices, aggregating minor categories if necessary -->
+<!-- - order the slices by size from the largest to the smallest -->
+<!-- - place the ’Other’ slice at the end of the sequence, regardless of the order scheme -->
+<!-- - position the first and largest slice against the upper vertical radius, and arrange the other slices in a clockwise fashion -->
+<!-- - vary colors only if the colors are encoding data. -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 60% -->
+<!-- knitr::include_graphics("images/importance-ordering-2.jpg") -->
+<!-- ``` -->
+
+<!-- ## Principle 3: importance ordering^[via Jordan Crouser] -->
+
+<!-- Simplify, simplify, simplify! -->
+
+<!-- ```{r} -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 70% -->
+<!-- knitr::include_graphics("images/importance-ordering-3.jpg") -->
+<!-- ``` -->
+
+## Tufte and the data-ink ratio
+
+^[<https://www.darkhorseanalytics.com/blog/data-looks-better-naked/>]
+
+```{r}
+#| fig-align: center
+#| out-width: 40%
+knitr::include_graphics("images/remove-to-improve.jpg")
+```
+
+# “[Color](https://ed.ted.com/lessons/how-do-we-see-color-colm-kelleher#watch) used poorly is worse than no color at all” - Edward Tufte
+
+<!-- ## Some (all?) of the visual attributes we have to play with^[Jacques Bertin, Semiology of Graphics. 1967] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 55% -->
+<!-- knitr::include_graphics("images/visual-attributes.JPG") -->
+<!-- ``` -->
+
+<!-- ## [What is color? - Colm Kelleher](https://ed.ted.com/lessons/how-do-we-see-color-colm-kelleher#watch) -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/what-is-color.JPG") -->
+<!-- ``` -->
+
+<!-- ::: youtube-video-container -->
+<!-- <iframe width="100%" height="75%" src="https://www.youtube.com/embed/UZ5UGnU7oOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<!-- ::: -->
+
+<!-- ## Color spaces^[<https://en.wikipedia.org/wiki/Color_space>] -->
+
+<!-- + A color space is mathematical model for describing color. Some common spaces include RGB, HSB, HSL, CMYK -->
+
+<!-- + RGB (red, green, blue) is the most commonly used -->
+
+<!-- :::: columns -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 65% -->
+<!-- #| fig-cap: "RGB is additive, based on light" -->
+<!-- knitr::include_graphics("images/color-spaces-1.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 65% -->
+<!-- #| fig-cap: "CMYK is subtractive, based on ink" -->
+<!-- knitr::include_graphics("images/color-spaces-2.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+## Color
+
+::: panel-tabset
+### Hue^[<https://en.wikipedia.org/wiki/Hue>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/hue.JPG")
+```
+
+### Saturation^[<https://en.wikipedia.org/wiki/Colorfulness#Saturation>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 30%
+knitr::include_graphics("images/saturation-1.JPG")
+```
+
+### Lightness^[<https://en.wikipedia.org/wiki/Lightness>]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 30%
+knitr::include_graphics("images/lightness.JPG")
+```
+
+:::
+
+<!-- ## Examples^[<https://en.wikipedia.org/wiki/HSL_and_HSV>] -->
+
+<!-- :::: columns -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- #| fig-cap: "Hue, Saturation, Light" -->
+<!-- knitr::include_graphics("images/example-hsl.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- #| fig-cap: "Hue, Saturation, Value" -->
+<!-- knitr::include_graphics("images/example-hsv.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- ## Cones^[<https://en.wikipedia.org/wiki/HSL_and_HSV>] -->
+
+<!-- :::: columns -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- #| fig-cap: "HSL Cone" -->
+<!-- knitr::include_graphics("images/hsl-cone.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- #| fig-cap: "HSV Cone" -->
+<!-- knitr::include_graphics("images/hsv-cone.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- # Color Palettes -->
+
+## [Best Practices for Color Encodings](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8017653)
+
+:::: columns
+::: column
+1. The order of colors is intuitive, natural, & easy to remember.
+2. Colors should be sufficiently separable.
+3. Differences between colors should be uniform and linear.
+4. The progression of colors should be smooth.
+5. Colors should be equally visually important.
+6. Colors should be robust for color-blind individuals.
+7. Colors should be robust to contrast effects.
+:::
+
+::: column
+8. Colors should be robust to shadows.
+9. Colors should be sensitive to the background.
+10. Color should remain within device gamuts.
+11. Colors should be aesthetically pleasing.
+12. Colors should map intuitively to data.
+13. Colors should use different maps for different variables.
+14. Colors should naturally divide values into low, medium, and high categories.
+15. [**Avoid the rainbow**](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10128890)
+16. Encodings should highlight prominent values.
+:::
+::::
+
+## Brand Palettes^[<https://ucm.calpoly.edu/colors> and <https://usbrandcolors.com/google-colors/#:~:text=The%20official%20Google%20colors%20are,to%20visit%20the%20company%20website.>]
+
++ Brand colors are often saturated, to attract attention.
++ Data-visualization colors tend to be less "shouty".
+
+:::: columns
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/cp-color-palette.JPG")
+```
+:::
+::: column
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/google-color-palette.JPG")
+```
+:::
+::::
+
+<!-- ## Color Orgnaization^[Color organization principles, Dennis Puhalla] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 40% -->
+<!-- knitr::include_graphics("images/color-palettes-distance.JPG") -->
+<!-- ``` -->
+
+<!-- ## Adobe Color^[<https://color.adobe.com/create/color-wheel/>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/adobe-color.JPG") -->
+<!-- ``` -->
+
+<!-- ## Color Brewer^[<http://colorbrewer2.org/>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/color-brewer.JPG") -->
+<!-- ``` -->
+
+## Color Brewer Scales
+
+:::: {.columns}
+::: {.column width=33%}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/brewer-qualitative.JPG")
+```
+:::
+::: {.column width=33%}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/brewer-sequential.JPG")
+```
+:::
+::: {.column width=33%}
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/brewer-diverging.JPG")
+```
+:::
+::::
+
+<!-- ## Example^[via Jordan Crouser] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/example-palettes-bar.JPG") -->
+<!-- ``` -->
+
+<!-- ## Example^[via Jordan Crouser] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/example-palettes-pie.JPG") -->
+<!-- ``` -->
+
+<!-- ## `r fontawesome::fa("brain")` Brainstorm! -->
+
+<!-- + What types of color palettes should we use for categorical variables?  -->
+<!-- + What if they are ordinal?  -->
+<!-- + What about for numeric variables? -->
+
+
+<!-- ## Colorblindness^[<https://enchroma.com/pages/test?gclid=CjwKCAjwl6OiBhA2EiwAuUwWZVGjQSMON4C4fW_4jtK1sOuh6KPPNydAvHzoVJ8EUrUstaCR7Rr9NxoCe80QAvD_BwE>] -->
+
+<!-- :::: columns -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/colorblindness-1.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/colorblindness-2.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- ## ^[<https://twitter.com/pinakographos/status/864497069523959808>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/colorblindness-saturation-2.JPG") -->
+<!-- ``` -->
+
+<!-- ## Colorbrewer palettes can help here, too!^[via Jordan Crouser, via M. Krzywinski] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 55% -->
+<!-- knitr::include_graphics("images/colorblindness-brewr.JPG") -->
+<!-- ``` -->
+
+## Color Accessibility: CV Simulator
+
+:::: columns
+::: column
+```{r}
+#| eval: false
+ca_childcare |> 
+  filter(study_year %in% c(2008, 2018),
+         county_name %in% c("San Luis Obispo County")
+         ) |> 
+  ggplot(aes(x = development_stage,
+             y = median_weekly_childcare_cost,
+             fill = as.factor(study_year))
+  ) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  # facet_wrap(~ development_stage) +
+  # scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  # scale_fill_manual(values = c("#003831", "#B38F4F")) +
+  theme_bw() +
+  labs(x = "Development Stage",
+       y = "Weekly Median Childcare Cost ($)",
+       fill = "County")
+```
+
+```{r}
+knitr::include_graphics("images/cv-simulator-1.jpg")
+```
+:::
+::: column
+```{r}
+knitr::include_graphics("images/cv-simulator-2.jpg")
+```
+:::
+::::
+
+
+
+## Even better? Double encode!^[Franconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual data communication: What works. Psychological Science in the public interest, 22(3), 110-161.]
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 40%
+knitr::include_graphics("images/double-encode.JPG")
+```
+
+<!-- # Color is Contextual -->
+
+<!-- ## Color is contextual^[via Jordan Crouser] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/contextual-1.JPG") -->
+<!-- ``` -->
+
+<!-- ## Color is contextual^[via Jordan Crouser] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/contextual-2.JPG") -->
+<!-- ``` -->
+
+<!-- ## The Dress^[<https://en.wikipedia.org/wiki/The_dress>] -->
+
+<!-- :::: {.columns} -->
+<!-- ::: {.column width=25%} -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/dress-orig.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: {.column width=75%} -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/dress-explained.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- ## Just noticible difference^[<http://gramaz.io/d3-jnd/>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/color-jnd.JPG") -->
+<!-- ``` -->
+
+<!-- ## Which central square is darker?^[via Jordan Crouser] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/color-difference.JPG") -->
+<!-- ``` -->
+
+<!-- ## Differences are relative^[via Jordan Crouser] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/color-relative.JPG") -->
+<!-- ``` -->
+
+<!-- # Color is cultural -->
+
+<!-- ## Color is cultural^[Charles Osgood. “The Cross-Cultural Generality of Visual-Verbal Synesthetic Tendencies.” Behavioral Science; Baltimore, Md.5.2 (Apr 1, 1960): 146.] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/color-cultural.JPG") -->
+<!-- ``` -->
+
+<!-- ## [The Psychology of Color Infographic](https://visual.ly/community/Infographics/other/psychology-color)^[<https://visual.ly/community/Infographics/other/psychology-color>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/color-infographic.JPG") -->
+<!-- ``` -->
+
+<!-- ## ^[<http://www.huffingtonpost.com/smartertravel/what-colors-mean-in-other_b_9078674.html>] -->
+
+<!-- :::: columns -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/color-cultural-red.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: column -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/color-cultural-yellow.JPG") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- ## ^[<https://www.theguardian.com/australia-news/datablog/ng-interactive/2020/may/05/coronavirus-map-australia-numbers-how-many-new-cases-today-maps-deaths-death-toll-covid-19-stats-statistics-graph-heatmap-by-postcode>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 80% -->
+<!-- knitr::include_graphics("images/covid-map-red.png") -->
+<!-- ``` -->
+
+## So what?^[Storytelling with Data pg. 117]
+
++ Use color sparingly
++ Use color consistently
++ Design with color deficiencies in mind
++ Be thoughtful of tone that color conveys
++ Brand colors? Maybe pick one or maybe two
++ See [Design for Accessibility](https://community.storytellingwithdata.com/challenges/mar-2024-design-for-accessibility)
+
+<!-- ## Gray is a good color!^[<https://towardsdatascience.com/8-rules-for-optimal-use-of-color-in-data-visualization-b283ae1fc1e2>] -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| fig-align: center -->
+<!-- #| out-width: 100% -->
+<!-- knitr::include_graphics("images/gray-good.png") -->
+<!-- ``` -->
+
+## Data Context
+
+::: panel-tabset
+### Title
+
++ Keep it concise, clear, and descriptive.
++ Use active voice and avoid jargon.
++ Highlight the main message or point of the graphic.
++ Consider using a subtitle to provide additional context or information.
++ You may consider including your legend in the title.
+
+### Footnote
+
++ Include all necessary information, such as data source.
++ Place the footnote at the bottom of the graphic or immediately after the graphic.
++ Avoid using footnotes to provide additional analysis or interpretation.
+
+### Caption
+
++ Describe what has been plotted.
++ Orient the reader.
++ Point out important features of the plot and implications.
++ It is okay for captions to repeat information found in the text.
+
+### Alt Text
+
++ Provide a brief but informative description of the graphic's content for users who cannot see it.
++ Use plain language and avoid abbreviations or symbols that may be unfamiliar to some users.
++ Describe the key variables, trends, and patterns shown in the graphic.
++ Test the alternative text with screen reader software to ensure it accurately conveys the content of the graphic.
+
+::: 
+
+## Alt Text in `R`
+
+.Rmd `fig.alt = `
+
+.qmd `#| fig-alt:`
+
+```{r}
+#| fig-cap: "The figure shows an overall increasing trend in weekly median childcare costs from 2008 to 2018 across Orange County, San Fransisco County, and San Luis Obispo County. Further, the weekly median childcare cost is consistently higher for infants than for toddlers."
+#| fig-alt: "The chart is comprised of 3 panels containing sub-charts, arranged horizontally. The panels represent different values of county name. Each sub-chart has x-axis Year with labels 2008, 2010, 2012, 2014, 2016 and 2018. Each sub-chart has y-axis Weekly Median Childcare Cost ($) with labels 150, 200, 250 and 300. There is a legend indicating colour is used to show Development Stage, with 2 levels: infant shown as brilliant blue colour and toddler show as deep orange yellow colour. There is a legend indicating shape is used to show Development Stage, with 2 levels: infant shown as solid circle shape and  toddler shown as solid triangle shape. Each sub-chart has 2 layers. Panel 1 represents data for countyname = Orange County. Layer 1 of panel 1 is a set of 22 points of which about 100% can be seen. Layer 2 of panel 1 is a set of 2 lines. Line 1 connects 11 points. This line has colour brilliant blue which maps to Development Stage = infant. Line 2 connects 11 points. This line has colour deep orange yellow which maps to Development Stage = toddler. Panel 2 represents data for county_name = San Francisco County. Layer 1 of panel 2 is a set of 22 points of which about 100% can be seen. Layer 2 of panel 2 is a set of 2 lines. Line 1 connects 11 points. This line has colour brilliant blue which maps to Development Stage = infant. Line 2 connects 11 points. This line has colour deep orange yellow which maps to Development Stage = toddler. Panel 3 represents data for county_name = San Luis Obispo County. Layer 1 of panel 3 is a set of 22 points of which about 100% can be seen. Layer 2 of panel 3 is a set of 2 lines. Line 1 connects 11 points. This line has colour brilliant blue which maps to Development Stage = infant. Line 2 connects 11 points. This line has colour deep orange yellow which maps to Development Stage = toddler."
+#| out-width: "75%"
+
+my_plot <- ca_childcare |> 
+  ggplot(aes(x = study_year,
+             y = median_weekly_childcare_cost,
+             color = development_stage,
+             shape = development_stage)
+  ) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~ county_name) +
+  scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  scale_color_manual(values = c("steelblue", "orange3")) +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Weekly Median Childcare Cost ($)",
+       color = "Development \nStage",
+       shape = "Development \nStage")
+
+my_plot
+
+# BrailleR::VI(my_plot)
+```
+
+
+## `BrailleR::VI(my_plot)`
+
+```
+This is an untitled chart with no subtitle or caption.
+The chart is comprised of 3 panels containing sub-charts, arranged horizontally.
+The panels represent different values of county_name.
+Each sub-chart has x-axis 'Year' with labels 2008, 2010, 2012, 2014, 2016 and 2018.
+Each sub-chart has y-axis 'Weekly Median Childcare Cost ($)' with labels 150, 200, 250 and 300.
+There is a legend indicating colour is used to show Development 
+Stage, with 2 levels:
+infant shown as brilliant blue colour and 
+toddler shown as deep orange yellow colour.
+There is a legend indicating shape is used to show Development 
+Stage, with 2 levels:
+infant shown as solid circle shape and 
+toddler shown as solid triangle shape.
+Each sub-chart has 2 layers.
+Panel 1 represents data for county_name = Orange County.
+Layer 1 of panel 1 is a set of 22 points of which about 100% can be seen.
+Layer 2 of panel 1 is a set of 2 lines.
+Line 1 connects 11 points.
+This line has colour brilliant blue which maps to Development Stage = infant.
+Line 2 connects 11 points.
+This line has colour deep orange yellow which maps to Development Stage = toddler.
+Panel 2 represents data for county_name = San Francisco County.
+Layer 1 of panel 2 is a set of 22 points of which about 100% can be seen.
+Layer 2 of panel 2 is a set of 2 lines.
+Line 1 connects 11 points.
+This line has colour brilliant blue which maps to Development Stage = infant.
+Line 2 connects 11 points.
+This line has colour deep orange yellow which maps to Development Stage = toddler.
+Panel 3 represents data for county_name = San Luis Obispo County.
+Layer 1 of panel 3 is a set of 22 points of which about 100% can be seen.
+Layer 2 of panel 3 is a set of 2 lines.
+Line 1 connects 11 points.
+This line has colour brilliant blue which maps to Development Stage = infant.
+Line 2 connects 11 points.
+This line has colour deep orange yellow which maps to Development Stage = toddler.
+```
+
+<!-- ## `r fontawesome::fa("brain")` Bad Graphics Day! -->
+
+<!-- Apply what we know about graphical perception to the visualizations. -->
+
+<!-- (Can complete in pairs) -->
+
+<!-- 1. Visit <http://viz.wtf/> and pick your favorite "bad graphic". -->
+<!-- 2. Upload a copy to the [Google slide deck](https://docs.google.com/presentation/d/1SJrci-UHCZL8pqSpTOLIsH30MGLUcUefsqmTJpsf4w0/edit?usp=sharing). -->
+<!-- 3. Add a short description or bullet point list of how the graph violates perceptual and design principles. -->
+<!-- 4. Both of you should copy the URL for your slide and upload it to the Canvas assignment. -->
+
+<!-- What's wrong with this picture? -->
+
+<!-- Let’s critique some visualizations using these principles -->
+<!-- Try to think about the following questions: -->
+<!-- • What is the first thing you notice about the visualization? -->
+<!-- • What is the point the visualization is trying to make? -->
+<!-- • Who is the intended audience? -->
+<!-- • What is the visualization doing well? -->
+<!-- • What problems do you see with the visualization design? -->
+<!-- • Why do you think the designer made those choices? -->
+
+## To do
+
+`r fontawesome::fa("flask")` **Data Narrative Visualization**
+
++ Bring virtual draft to class for peer feedback on *Monday, May 6th*
+
+`r fontawesome::fa("hashtag")` **One-number Story**
+
++ Watch for a Canvas announcement

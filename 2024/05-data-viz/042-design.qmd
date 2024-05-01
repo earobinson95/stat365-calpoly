@@ -1198,6 +1198,10 @@ This line has colour deep orange yellow which maps to Development Stage = toddle
 
 + Watch for a Canvas announcement
 
-`r fontawesome::fa("book")` **Read CwD 7.1 - 7.5**
+`r fontawesome::fa("book")` **Read Dengue Paper**
+
++ for class next Wednesday
+
+`r fontawesome::fa("book")` **(Recommended) Read CwD 7.1 - 7.5**
 
 + for class next Wednesday

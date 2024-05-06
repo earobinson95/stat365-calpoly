@@ -1,0 +1,211 @@
+---
+title: "Data Viz Makeovers"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default] #, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+## Monday, May 6th
+
+Today we will...[^1]
+
+[^1]: Material for today's lecture is from [Brianna Haggeseth](https://www.macalester.edu/mscs/facultystaff/brianna-heggeseth/)
+
+-   Effective Visuals
+-   Presenting Visuals
+-   Let's discuss!
+
+## Effective visuals
+
++ Be ethical and honest
++ Be accessible (alternative text, double encoding)
++ Consider geometry choice (easy or hard to perceive?)
++ Consider color choices (color blind friendly? cultural associations?)
++ Facilitate comparison (GESTALT)
+  + e.g. position through order on axis or faceting, calculate and present the difference or ratio
++ Use contrasts to draw attention
+
+## Effective Visuals
+
++ [Storytelling with Data: Makeovers](https://www.storytellingwithdata.com/blog?category=Makeovers)
++ [Post Blog: Effective visuals for Credible Data Driven Decision Making](https://posit.co/blog/effective-visualizations-for-credible-data-driven-decision-making/) 
+  
+## When presenting your visualization,
+
++ Explain the motivation for the visualization.
+  + What is the question you are answering, and why is it important?
+  + What context does the audience need to understand the visual? (W’s?)
+  
+## When presenting your visualization,
+
++ Take a moment to give people their bearings.
+  + What aspects of the visual should you explain to provide necessary orientation?
+  + Walk through guides (axes, color legend, etc.)
+
+## When presenting your visualization,
+
++ Hone in on one or two interesting data points and tell the story behind them.
+  + Explain how the visual aspects of the viz reflect that story (this reinforces how they should interpret the viz).
+
+## When presenting your visualization,
+
++ Explain the overall trends or takeaways.
+  + What are the implications for them? Why does it matter?
+  + What comparison are you wanting to highlight?
+  
+## When presenting your visualization,
+
++ Speak slowly
+  + It takes people some time to wrap their heads around a new viz.
+
+## Childcare Data Viz Original
+
+```{r}
+childcare_costs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
+counties <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/counties.csv')
+
+# join + clean data
+
+ca_childcare <- full_join(counties,
+                 childcare_costs,
+                 ) |> 
+  filter(state_abbreviation == "CA",
+         county_name %in% c("San Luis Obispo County", 
+                            "Orange County", 
+                            "San Francisco County")
+         ) |> 
+  pivot_longer(cols = starts_with("mfcc_"),
+               names_to = "development_stage",
+               values_to = "median_weekly_childcare_cost") |>
+  filter(development_stage %in% c("mfcc_infant", "mfcc_toddler")) |> 
+  mutate(across(.cols = c(county_name, state_abbreviation, development_stage), 
+                .fns = ~ as.factor(.x)
+                ),
+         development_stage = as.factor(str_remove(development_stage, pattern = "mfcc_"))
+         ) |> 
+  select(county_name, study_year, development_stage, median_weekly_childcare_cost)
+```
+
+```{r}
+#| fig-cap: "The figure shows an overall increasing trend in weekly median childcare costs from 2008 to 2018 across Orange County, San Fransisco County, and San Luis Obispo County. Further, the weekly median childcare cost is consistently higher for infants than for toddlers."
+#| fig-alt: "The chart is comprised of 3 panels containing sub-charts, arranged horizontally. The panels represent different values of county name. Each sub-chart has x-axis Year with labels 2008, 2010, 2012, 2014, 2016 and 2018. Each sub-chart has y-axis Weekly Median Childcare Cost ($) with labels 150, 200, 250 and 300. There is a legend indicating colour is used to show Development Stage, with 2 levels: infant shown as brilliant blue colour and toddler show as deep orange yellow colour. There is a legend indicating shape is used to show Development Stage, with 2 levels: infant shown as solid circle shape and  toddler shown as solid triangle shape. Each sub-chart has 2 layers. Panel 1 represents data for countyname = Orange County. Layer 1 of panel 1 is a set of 22 points of which about 100% can be seen. Layer 2 of panel 1 is a set of 2 lines. Line 1 connects 11 points. This line has colour brilliant blue which maps to Development Stage = infant. Line 2 connects 11 points. This line has colour deep orange yellow which maps to Development Stage = toddler. Panel 2 represents data for county_name = San Francisco County. Layer 1 of panel 2 is a set of 22 points of which about 100% can be seen. Layer 2 of panel 2 is a set of 2 lines. Line 1 connects 11 points. This line has colour brilliant blue which maps to Development Stage = infant. Line 2 connects 11 points. This line has colour deep orange yellow which maps to Development Stage = toddler. Panel 3 represents data for county_name = San Luis Obispo County. Layer 1 of panel 3 is a set of 22 points of which about 100% can be seen. Layer 2 of panel 3 is a set of 2 lines. Line 1 connects 11 points. This line has colour brilliant blue which maps to Development Stage = infant. Line 2 connects 11 points. This line has colour deep orange yellow which maps to Development Stage = toddler."
+#| out-width: "75%"
+
+my_plot <- ca_childcare |> 
+  ggplot(aes(x = study_year,
+             y = median_weekly_childcare_cost,
+             color = development_stage,
+             shape = development_stage)
+  ) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~ county_name) +
+  scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  scale_color_manual(values = c("steelblue", "orange3")) +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Weekly Median Childcare Cost ($)",
+       color = "Development \nStage",
+       shape = "Development \nStage")
+
+my_plot
+
+# BrailleR::VI(my_plot)
+```
+
+## Childcare Data Viz Makeover {.scrollable}
+
+Main message: Compare childcare costs between infants and toddlers in California.
+
+```{r}
+library(tidyverse)
+
+childcare_costs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/childcare_costs.csv')
+counties <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-09/counties.csv')
+
+# join + clean data
+
+ca_childcare <- full_join(counties,
+                 childcare_costs,
+                 ) |> 
+  filter(state_abbreviation == "CA"
+         ) |> 
+  pivot_longer(cols = starts_with("mfcc_"),
+               names_to = "development_stage",
+               values_to = "median_weekly_childcare_cost") |>
+  filter(development_stage %in% c("mfcc_infant", "mfcc_toddler")) |> 
+  mutate(across(.cols = c(county_name, state_abbreviation, development_stage), 
+                .fns = ~ as.factor(.x)
+                ),
+         development_stage = as.factor(str_remove(development_stage, pattern = "mfcc_"))
+         ) |> 
+  select(county_name, study_year, development_stage, median_weekly_childcare_cost)
+```
+
+```{r}
+#| code-fold: true
+#| echo: true
+#| fig-width: 8
+#| fig-height: 5
+#| out-width: 100%
+#| fig-cap: "This figure illustrates the difference in weekly childcare costs between infants and toddlers, based on median values for each of California's 52 counties from 2008 to 2018. Across all counties and years, infant childcare costs were consistently higher, as indicated by the orange dotted line, which represents equal costs for both stages of development. A linear regression (solid blue line) was applied to the difference in costs, with standard errors represented by the shaded region. The linear regression line demonstrates a growing gap in costs between the two developmental stages over time."
+ca_childcare |>
+  pivot_wider(id_cols = c("county_name", "study_year"),
+              names_from = "development_stage",
+              values_from = "median_weekly_childcare_cost") |> 
+  mutate(difference = infant - toddler) |> 
+  ggplot(aes(x = study_year,
+             y = difference)
+  ) +
+  geom_point(alpha = 0.1) +
+  geom_smooth(method = "lm", color = "steelblue") +
+  geom_hline(yintercept = 0, linetype = "longdash", color = "orange3") +
+  # geom_line() +
+  scale_x_continuous(breaks = seq(2008, 2018, 2)) +
+  scale_y_continuous(limits = c(0, 40), breaks = seq(0, 40, 5), labels = scales::dollar) +
+  # scale_color_manual(values = c("steelblue", "orange3")) +
+  theme_bw() +
+  labs(x = "",
+       y = "",
+       title = "Family-based childcare for infants is increasingly breaking the bank in California!",
+       subtitle = "The difference in weekly median childcare costs for infants compared to toddler counterparts",
+       caption = "Data Source: National Database of Childcare Prices"
+       )
+```
+
+## In your project groups,
+
++ present your visualization (2 minutes)
++ discuss as a group ways of improving the visualization to make it more effective (8 minutes)
+  + comment on the effective features of the graphic first
+  + offer concrete suggestions about the visualization
+  + different geometries (points, lines, bars, etc.)
+  + different colors, consider faceting, position, etc.
+  + show variability for quantitative measures
+
+## To do
+
+`r fontawesome::fa("book")` **One Number Story Mini-Project**
+
+- Work toward live revisions
+
+`r fontawesome::fa("chart-simple")` **Data Narrative Visualization**
+
+- Make improvements as discussed in class.
+- Final submission due Thursday, 5/9 at 11:59pm
+
+`r fontawesome::fa("book")` **Read Dengue Paper**
+
+- for class this Wednesday
+

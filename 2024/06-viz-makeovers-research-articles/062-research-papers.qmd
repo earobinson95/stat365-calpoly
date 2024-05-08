@@ -132,10 +132,11 @@ A short summary of the paper and its key results, and their connections to broad
 
 ## In-class Activity
 
-+ *(15-20 minutes)* In small groups, work through Activity 2 + Scan/submit for intellectual engagement credit by Monday at 8am
++ *(15-20 minutes)* In small groups, work through Activity 2 
++ Scan/submit for intellectual engagement credit by Sunday at 11:59pm
 + We will review at end of class (if time) or on Monday
 
-## To do
+## To do {.scrollable}
 
 `r fontawesome::fa("book")` **One Number Story Mini-Project**
 
@@ -145,6 +146,10 @@ A short summary of the paper and its key results, and their connections to broad
 
 - Make improvements as discussed in class.
 - Final submission due Thursday, 5/9 at 11:59pm
+
+`r fontawesome::fa("chart-simple")` **Dengue Paper In-class Activity**
+
+- Due Sunday at 11:59pm (Scan + Submit)
 
 `r fontawesome::fa("book")` **CwD Ch. 6: Organizing the Story**
 

@@ -1,0 +1,152 @@
+---
+title: "How to Read a Research Paper"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default] #, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+## Wednesday, May 8th
+
+Today we will...[^1]
+
+[^1]: Material for today's lecture is from [Ciaran Evans](https://ciaran-evans.github.io/) and [Nicole Dalzell](https://nicolemdalzell.weebly.com/)
+
+- Introduce/Review the Paper + Reading Guide
+- Components of a Research Paper
+- Reading the Paper: In-class Activity
+
+## Announcements
+
++ Pseudo NYT What's going on in this graph (Discord)
++ Clarification about live revisions
+  + You should edit based on my written feedback first
+  + Either (1) visit office hours, may be a line or (2) schedule 10 minutes via Calendly
+
+## Dengue Paper
+
++ Published: PLOS, Neglected Tropical Diseases
++ Title: Sensitivity and Specificity of a Novel Classifier for the Early Diagnosis of Dengue
++ Year: 2015
++ Paper: <https://doi.org/10.1371/journal.pntd.0003638>
+
+## Dengue Paper
+
+::: callout-tip
+### Topic
+Diagnosing dengue fever in pediatric patients in Vietnam
+:::
+
+**Why this topic is important:** Dengue fever is a mosquito-borne viral disease which affects hundreds of millions of people each year.
+
++ Early diagnosis (< 72 hours) is important for best outcomes
++ However, gold-standard laboratory tests take time and resources that are not always available
+
+## Dengue Paper
+
+::: callout-tip
+### Topic
+Diagnosing dengue fever in pediatric patients in Vietnam
+:::
+
+**Research question:** Can we predict dengue fever using easily measurable patient traits?
+
+## Dengue Paper
+
++ Data collected on 5729 patients in Vietnam, aged 1 - 15
++ Variables recorded include:
+  + Dengue status
+  + Patient age
+  + White blood cell count
+  + Platelet count
+  + +Other clinical measurements…
+  
+##
+
+**Background** Dengue is the commonest arboviral disease of humans. An early and accurate diagnosis of dengue can support clinical management, surveillance and disease control and is central to achieving the World Health Organisation target of a 50% reduction in dengue case mortality by 2020.
+
+**Methods** 5729 children with fever of <72hrs duration were enrolled into this multicenter prospective study in southern Vietnam between 2010-2012. A composite of gold standard diagnostic tests identified 1692 dengue cases. Using statistical methods, a novel Early Dengue Classifier (EDC) was developed that used patient age, white blood cell count and platelet count to discriminate dengue cases from non-dengue cases.
+
+## Discussion
+
+1. Read the Background and Methods in the summary at the beginning of the paper (“Sensitivity and Specificity of a Novel Classifier for the Early Diagnosis of Dengue”, Tuan et al. 2015)
+
+2. Answer the following questions:
+
++ What data are involved in this research study? 
++ What are the research questions / research goals? 
++ What statistical methods do you think would be appropriate to address those research questions / research goals? Explain your reasoning. 
+
+# Reading the Paper
+
+## Components of a research paper
+### Abstract
+
+A short overview of the full paper, giving highlights of the motivation and background, the research question, the data, and the results
+
++ Abstracts are very useful!! 
++ We write them when we submit grants and conference proposals to give an overview of our work.
++ Folks read them to get an idea of what the research is about and whether they want to keep reading the rest of the paper. 
++ Typically bound by a word limit (example: 250 words). 
+
+## Components of a research paper
+### Introduction
+
+A broad overview of the research question the authors want to study, motivation for studying this question, and the authors’ approach to answering their question. More detail is provided in the introduction than in the abstract, and more time is spent on motivation and related literature. 
+
++ Unlike the abstract, this is not bound by a word limit.
++ The authors have more time to share their motivation for why they are doing this research and how it builds on research that others have done previously. 
+
+## Components of a research paper
+### Methods
+
+The data and analysis techniques used to answer the research question. This typically describes the what the data looks like, how and where it was collected, and any statistical tools (e.g. visualizations, regression, hypothesis testing) that were used when analyzing the data. 
+
++ **Note:** The paper we are reading is applied.
++ If you are reading a methods paper (meaning a paper that describes a new statistical method) the methods section is different. 
+
+## Components of a research paper
+### Results
+
+A summary of the analysis results, such as figures showing regression fits, and tables of regression coefficients and p-values. 
+
+## Components of a research paper
+### Discussion
+
+A discussion of the analysis results, in context of the original research question. In this section, explanations for why particular results were observed may be proposed.
+
+## Components of a research paper
+### Conclusion
+
+A short summary of the paper and its key results, and their connections to broader scientific questions. The conclusion is often the reverse of the introduction: it starts with the specific question addressed by this paper, then discusses the implications of this research for science in general.
+
+## In-class Activity
+
++ *(15-20 minutes)* In small groups, work through Activity 2 + Scan/submit for intellectual engagement credit by Monday at 8am
++ We will review at end of class (if time) or on Monday
+
+## To do
+
+`r fontawesome::fa("book")` **One Number Story Mini-Project**
+
+- Work toward live revisions
+
+`r fontawesome::fa("chart-simple")` **Data Narrative Visualization**
+
+- Make improvements as discussed in class.
+- Final submission due Thursday, 5/9 at 11:59pm
+
+`r fontawesome::fa("book")` **CwD Ch. 6: Organizing the Story**
+
+- For class next week
+

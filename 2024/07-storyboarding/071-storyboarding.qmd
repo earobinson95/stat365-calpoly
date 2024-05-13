@@ -21,9 +21,98 @@ library(tidyverse)
 
 Today we will...
 
++ Shout-outs to NYT Headliners + Dear Data-ers
 + Report Structure and Audience
 + Special Formatting
 + Storyboard!
+
+## NYT Reveals: Your 15 minutes of fame! {.scrollable}
+
+[Hotter Summers](https://www.nytimes.com/2024/05/02/learning/whats-going-on-in-this-graph-may-8-2024.html)
+
++ “Got AC? Summer’s Coming and Only Getting Hotter” by Deven
+
++ “Changing Climates: How the World Is Losing Its Cool” by Aaron 
+
++ “Can We Beat The Heat? How Summers Are Getting Hotter And Hotter” by Kaatje
+
+[Global Electricity Sources](https://www.nytimes.com/2024/03/28/learning/whats-going-on-in-this-graph-april-10-2024.html)
+
++ “The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix” by Isabelle
++ “Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance” by Emma
++ “Fueling the Future: Cleaning Up Our Energy” by Jackson
++ “Powering Progress: The Rise of Renewable Energy” by Curtis
+
+[Shrinkflation](https://www.nytimes.com/2024/04/10/learning/whats-going-on-in-this-graph-april-17-2024.html)
+
++ “How Hidden Changes in Product Size Impact Your Wallet” by Kylie
++ “Size Matters: Unpacking Grocery Store Price Hikes” by Isabelle
++ ”Secret Shrinkage: Tracking Hidden Risings in Grocery Bills” by Hailey
++ “Shrink-flation: Less Product for Your Dollar” by Alexander
+
+[Young Adult Children Reaching Out to Parents](https://www.nytimes.com/2024/04/24/learning/whats-going-on-in-this-graph-may-1-2024.html)
+
++ “Family Connections in the Digital Age” by Alea
++ “Staying in Touch: Why Do Young Women Seem to Do It More Frequently?” by Miles
++ “Staying Connected: Young Women Lead in Family Communication” by Hailey
++ “Screen Age: How Electronics Have Impacted Parental Communication” by Aaron.
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/permission-to-share/Alex_Tran.png")
+```
+
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/permission-to-share/William_Smithers.png")
+```
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/permission-to-share/Alvaro_Ramos.png")
+```
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/Alexandra_Sullivan.png")
+```
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/Megan_Kerner.png")
+```
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/permission-to-share/Nicole_Yee.png")
+```
+
+## Dear Data Artists! {.scrollable}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("../98-grade-boosters/dear-data-examples/Franchesca_Garcia.png")
+```
 
 ## Report Structure
 

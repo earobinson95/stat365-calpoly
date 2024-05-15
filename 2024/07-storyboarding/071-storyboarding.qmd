@@ -300,6 +300,8 @@ We will continue class storyboarding during class on Wednesday.
 
 ## Wednesday, May 15th
 
+`r fontawesome::fa("flask")` Useful research tools to know
+
 `r fontawesome::fa("book")` **One Number Story Mini-Project**
 
 - Work toward live revisions by the end of this week
@@ -314,3 +316,57 @@ Looking ahead to next week -- Career week!
   - Read [Does your resume pass the six second test?](https://www.wsj.com/articles/does-your-resume-pass-the-six-second-test-b63f4c02)
   - Submit questions to Canvas for Career Services by Tuesday 5/21 at noon. 
   - Please arrive respectfully on time.
+  
+# Useful research tools to know
+
+## [Google Scholar](https://scholar.google.com/)
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/google-scholar.png")
+```
+
+## [Connected Papers](https://www.connectedpapers.com/)
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/connected-papers.png")
+```
+
+## [Elicit](https://elicit.com/?redirected=true)
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/elicit.png")
+```
+
+## [Zotero](https://www.zotero.org/)
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/zotero.png")
+```
+
+## Bibtex Files -- `references.bib`
+
+Use Visual editor in Quarto > insert > citations.
+
++ In-text citation will be added where your cursor is.
++ Full APA reference will be added to your .bib file
+
+```
+@article{waterman1989dengue,
+  title={Dengue fever},
+  author={Waterman, Stephen H and Gubler, Duane J},
+  journal={Clinics in dermatology},
+  volume={7},
+  number={1},
+  pages={117--122},
+  year={1989},
+  publisher={Elsevier}
+}
+```

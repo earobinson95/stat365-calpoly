@@ -1,0 +1,308 @@
+---
+title: "Internships and Online Presence"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: false
+---
+
+## Monday, May 20th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+- Housekeeping
+  - Feedback/Revisions for Data Viz Narratives
+  - Office Hours this week
+  - Final Report Template
+-   Research & Job Opportunities in Statistics^[Content from Dr. Rehnberg and Professor Schroth-Glanz]
+-   Online Presence
+-   Build your Resume
+
+## Data Viz Narratives: Feedback & Revision Process
+
++ When working with a quantitative response -- show variability! Raw data points, box plots, density plots, histograms, error bars, etc.
+  
++ Accessibility -- color choices, double encode, `#| fig-alt: "alt text here."`
+
++ Put the key take-away in the title!
+  + e.g., Instead of "How does childcare cost differ between infants and toddlers", state "Childcare costs for infants is breaking the bank!"
+  
+*Pay attention to the details! I am fairly picky about table and plot design, keep this in mind for your final report.*
+
+# Research at Cal Poly
+
+:::: columns
+::: column
+
++ [Office of Undergraduate Research](https://studentresearch.calpoly.edu/undergraduate-research-opportunities)
++ [Frost Fund](https://cosam.calpoly.edu/prospective-students/frost-fund)
+  + 2017 William & Linda Frost gifted a CSU-record $110 million to BCSM including student scholarships and research stipends
++ Frost Scholars
++ Frost Summer Research Students
+
+:::
+::: column
+```{r}
+#| out-width: 70%
+knitr::include_graphics("images/frost.png")
+```
+:::
+::::
+
+## Frost Scholar
+
++ Scholarship to support undergrads in conducting original research that is capable of publication and/or presentation
+  + Currently $10,000/yr for 10 hours/week (except during finals)
+  + Typically 2 year period starting with the student’s third year (though exceptions possible) and transfer students eligible
+  + Guaranteed summer research with $4500 (current) Frost Summer Undergraduate Research Award
+  + Dr. Schaffner will send out an email about the application late Fall or early Winter
++ Reach out to Faculty you are interested in working with!
++ Take time to figure out what faculty interests are
++ Submit application jointly with faculty mentor by February
+
+## Frost Summer Undergraduate Research Program (SURP)
+
++ Professional development program for undergrads to learn and develop research skills through intensive, summer research experience and hands-on engagement
+  + Currently $4,500 for 8 weeks full-time summer research (~40 hours/week)
+  + Frost Coordinator and/or Dr. Schaffner will send out an email about the application late Winter or early Spring
+  + *Deadline for submission is usually during Winter quarter*
++ A variety of projects will be put forth by a handful of faculty
+  + Reach out to the faculty members with interesting projects
+  + You will then be asked to rate your project options in your application
+  
+## Why Join Frost? ... Why not?? Immense value! {.scrollable}
+
+:::: columns
+::: column
+
++ Hands on experience with REAL projects not seen in class
++ Opportunities to present your findings at research conferences across the world (potentially partially funded by Frost)
+  + You will be required to present your work at the Frost Symposium in Fall quarter and at the BCSM Student Research conference in Spring quarter
++ Friendships developed from the joint experience with other Frost SURP students and lots of extracurricular activities
++ This experience can help you find out what interests you and what you want to do in your professional careers.
++ There are so many more...
+
+::: 
+::: column
+
+```{r}
+#| fig-cap: "Frost 2023 SURP students getting ready to deploy equipment for data collection"
+knitr::include_graphics("images/frost-water.png")
+```
+
+```{r}
+#| fig-cap: "2022 BCSM Student Research Conference"
+knitr::include_graphics("images/frost-posters.png")
+```
+
+:::
+::::
+
+# REUs (Research Experiences for Undergraduates) + SIBS (Summer Institute in Biostatistics and Data Science)
+
+## What is an REU?
+
++ A summer research program for undergraduate students funded by the National Science Foundation (NSF).
++ An REU consists of ~10 undergrads working on a research project at a host institution.
+  + Each student is typically assigned to a research group and works closely with faculty and other students.
++ Students receive stipends and (often) assistance with housing and travel.
++ REUs typically last about 8-12 weeks during the summer.
+  + In addition to research, REUs typically include fun activities.
+
+## What is SIBS?
+
++ A summer research program for undergraduate students funded by the National Institutes of Health (NIH).
++ These programs are often larger than REUs (more students).
+SIBS programs combine classroom learning, career development, and participation in a research project.
+  + These research topics focus on **biostatistics**!
+  + They will also include fun activities and outings!
++ Students receive stipends and (often) assistance with housing and travel.
++ SIBS programs typically last about 6-7 weeks during the summer.
+
+## Finding and Applying to REUs + SIBS Programs
+
++ Use the NSF REU [website](https://www.nsf.gov/crssprgm/reu/reu_search.jsp).
+  + Go to Mathematical Sciences and look for statistics-related projects.
+  + Can search by keyword: “statistics”, “data science”, etc.
++ Use the SIBS [website](https://www.nhlbi.nih.gov/grants-and-training/summer-institute-biostatistics).
++ You apply to each REU or SIBS program separately.
+  + You will find information about eligibility and applications on each site’s website.
+  + Start looking late Fall and early Winter!
++ NOTE: Students supported with NSF or NIH funds must be US citizens or permanent residents.
+  + Some programs do have other funding available!
+
+## Why do an REUs or SIBS Program?
+
+:::: columns
+::: column
+You want to…
+
++ get research experience to see if you like it.
++ see what statistics looks like outside of the classroom.
++ connect with statistics nerds from around the country/world.
++ get experience presenting your research at conferences.
++ try living outside of CA.
+:::
+::: column
+
+```{r}
+#| out-width: 40%
+#| fig-cap: "Dr. Rehnberg presenting REU work at JMM 2016."
+knitr::include_graphics("images/zoe-reu.jpg")
+```
+
+
+```{r}
+#| out-width: 40%
+#| fig-cap: "Dr. Rehnberg at Carowinds amusement park during NCSU SIBS 2013."
+knitr::include_graphics("images/zoe-sibs.png")
+```
+
+:::
+::::
+
+# Internships
+
+## What does it look like to have an internship?
+
+There is a lot of variability in internship experiences…😄🥱🤩🙄😐
+
++ Summer? School year? Part time? Full time?
++ Move? Remote?
++ Paid? Unpaid? – most in statistics should be paid!
++ Goals – Project specific? Entering data?
++ Is there a formal company internship program? Other interns? All statistics?
++ Who is your supervisor? How often do you meet with them? Are you on a team?
++ But all will give you a little more “real world” experience and insight into what you like or don’t like!
+
+## Finding internships... statistics specific
+
+:::: columns
+::: column
++ [American Statistical Association JobWeb](https://www.amstat.org/your-career/asa-jobweb) (Join the ASA for $25)
+  + These can often have a higher education requirement (MS or PhD)
++ [Student Opportunity Blog](https://calpolystats.blogspot.com/)
+
+:::
+::: column
+
+```{r}
+#| out-width: 90%
+knitr::include_graphics("images/statistician-internships.png")
+```
+
+:::
+::::
+
+## Finding internships... company specific {.scrollable}
+
++ Most companies have job/career pages of their own. 
++ Become a Google master!
+  + Search “top companies for…” and make a list!
+    + <https://www.greatplacetowork.com/best-workplaces/bay-area/2022>
+    + <https://www.nationalinternday.com/2023-top-internship-programs>
++ You might not realize a specific job title would be a good fit. Read more into any that capture your attention!
+
+```{r}
+#| out-width: 60%
+#| fig-align: center
+knitr::include_graphics("images/general-mills.png")
+```
+
+```{r}
+#| out-width: 60%
+#| fig-align: center
+knitr::include_graphics("images/thrivent.png")
+```
+
+## Finding internships... general job search
+
++ [Cal Poly Career Services](https://careerservices.calpoly.edu/)
+  + MustangJOBS powered by Handshake
+  + [Job Fairs](https://careerservices.calpoly.edu/explore-services/your-events)
++ Linked In, Indeed, etc. … you have to be dedicated to online networking!
+
+## Applying to internships {.scrollable}
+
++ Look early (October - February) and continuously!
++ Boost your online presence and showcase your work on…
+  + GitHub + [GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
+    + A "hacky" way to publish your projects online `xxx.github.io`.
+  + [Personal Websites](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/make-your-own-website.html) (Plug for Booster Condition!)
++ Have personal projects to talk about during interviews…
+  + Data sets can be found on [TidyTuesdays](https://github.com/rfordatascience/tidytuesday), [MakeoverMondays](https://www.makeovermonday.co.uk/data/), [Kaggle](https://www.kaggle.com/), etc.
+  + Make a visualization, conduct an analysis, etc. and post about it on [BlueSky?] #RIPtwitter
++ Keep your resume simple and clean (will chat more Wednesday!)
+  + Many big companies first run resumes through a software – make it easy for the computer to read (one column, clear bullets, etc.).
+  + [Career Services Drop-in Resume Review](https://careerservices.calpoly.edu/explore-services/career-counseling)
+
+## Why do an internship?
+
+:::: columns
+::: column
+
++ It will often lead to continuous part-time work, a returning summer internship, or even a full time job offer for after graduation.
++ You get to test out what a typical “9 to 5” feels like. Many companies now have flexible hours and/or remote work.
++ You will likely get paid….well.
++ Networking!!!
++ You might end up living and working among student interns from various institutions and majors!
+
+:::
+::: column
+```{r}
+#| fig-cap: "Dr. Robinson on a factory tour for John Deere while interning for the company."
+knitr::include_graphics("images/emily-jd-tractor.png")
+```
+
+```{r}
+#| fig-cap: "Dr. Robinson on a slow pitch softball league with other interns for the same company."
+knitr::include_graphics("images/emily-jd-softball.png")
+```
+:::
+::::
+
+## Reference Letter Writers
+
++ Ask professors you feel know you well (or previous employers). 
++ Give them at least 2 weeks heads up.
++ Provide them:
+  + Resume
+  + Link to job posting
+  + Any additional relevant information
+
+# [Build Your Resume](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/03-build-your-resume/build-your-resume.html)
+
+## To do {.scrollable}
+
+`r fontawesome::fa("book")` **CP 2: Storyboarding**
+
+- Group submission by TONIGHT, May 20th at 11:59pm
+
+`r fontawesome::fa("handshake")` Wednesday, May 22nd: **Career Services visit**
+
+  - Read [Does your resume pass the six second test?](https://www.wsj.com/articles/does-your-resume-pass-the-six-second-test-b63f4c02)
+  - Submit questions to Canvas for Career Services by Tuesday 5/21 at noon. 
+  - Please arrive respectfully on time.
+  
+`r fontawesome::fa("handshake")` **Build Your Resume**
+
+-   Draft for peer review (optional) due Sunday, 5/26 at 11:59pm
+-   Peer review feedback (optional) 
+    - opens Monday, 5/27 at 8am
+    - feedback due Tuesday, 5/28 at 11:59pm
+-   Final Submission due Thursday, 5/30 at 11:59pm
+
+`r fontawesome::fa("chart-bar")` **Data Narrative Visualization**
+
+-   Work toward live revisions by 5/31

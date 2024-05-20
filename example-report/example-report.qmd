@@ -1,0 +1,123 @@
+---
+title: "Title of Report"
+date: last-modified
+date-format: "MMMM D, YYYY"
+author: 
+    - name: First Author
+      affil-id: 1
+    - name: Second Author
+      affil-id: 1
+    - name: Third Author
+      affil-id: 1
+    - name: Fourth Author
+      affil-id: 1
+affiliations:
+    - id: 1
+      name: Department of Statistics, Cal Poly - SLO
+abstract: "Your abstract goes here (max ~250 words)."
+format: 
+  pdf:
+    number-sections: true
+    template-partials: 
+      - title.tex
+    include-in-header:
+      text: |
+        \usepackage[noblocks]{authblk}
+        \renewcommand*{\Authsep}{, }
+        \renewcommand*{\Authand}{, }
+        \renewcommand*{\Authands}{, }
+        \renewcommand\Affilfont{\small}
+execute: 
+  warning: false
+  message: false
+  echo: false
+bibliography: references.bib
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+#| label: data-cleaning
+# this is where you might put some data cleaning steps
+```
+
+```{r}
+#| label: data-analysis
+# you might choose to run your analysis here or in a separate script. Save your output for later.
+```
+
+## Introduction {#intro}
+
+According to @tuan2015, it is said to xxx. Supported by this we found xyz [@wiwanitkit2010dengue].
+
+## Data and Methods
+
+### Data Collection
+
+### Statistical Analysis
+
+## Results {#results}
+
+You could use in line code to provide results such as: Information about `r nrow(penguins)` penguins were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+
+As shown in @fig-penguin-plot, we can see abc. See <https://quarto.org/docs/authoring/cross-references.html> for more about cross referencing plots.
+
+Note! To cross reference a figure, the label must start with fig-xxx.
+
+```{r}
+#| label: fig-penguin-plot
+#| fig-cap: "Your figure caption."
+#| fig-alt: "Your figure alternative text."
+#| fig-align: center
+#| fig-pos: "H"
+
+palmerpenguins::penguins |> 
+  ggplot(aes(x = bill_length_mm,
+             y = bill_depth_mm,
+             color = species,
+             shape = species
+             )
+         ) +
+  geom_point(alpha = 0.8) +
+  scale_x_continuous(limits = c(30,60), breaks = seq(20,60,10)) +
+  scale_y_continuous(limits = c(10,25), breaks = seq(10,25,5)) +
+  scale_color_brewer(palette = "Dark2") +
+  theme_bw() +
+  labs(title = "Plot title goes here",
+       x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
+       color = "Species",
+       shape = "Species"
+       )
+```
+Supported by @tbl-penguin-summary, we can see abc. See <https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf> for more about styling tables.
+
+Note! To cross reference a table, the label must start with tbl-xxx.
+
+```{r}
+#| label: tbl-penguin-summary
+#| tbl-cap: "Put caption here."
+#| tbl-pos: "H"
+
+palmerpenguins::penguins |> 
+  group_by(species) |> 
+  summarize(avg_bill_length = mean(bill_length_mm, na.rm = T),
+            sd_bill_length = sd(bill_length_mm, na.rm = T)
+            ) |> 
+  kableExtra::kbl(digits = 1,
+                  col.names = c("Species", 
+                                "Average Bill Length (mm)",
+                                "Standard Deviation of Bill Length (mm)"),
+                  booktabs = TRUE
+                  )
+```
+
+## Discussion {#discussion}
+ 
+## Conclusion {#conclusion}
+
+## References {.unnumbered}

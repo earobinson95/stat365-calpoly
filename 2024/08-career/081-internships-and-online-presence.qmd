@@ -25,6 +25,7 @@ Today we will...
   - Feedback/Revisions for Data Viz Narratives
   - Office Hours this week
   - Final Report Template
+- Stat 150 Prompts: Note to Self
 -   Research & Job Opportunities in Statistics^[Content from Dr. Rehnberg and Professor Schroth-Glanz]
 -   Online Presence
 -   Build your Resume
@@ -39,6 +40,21 @@ Today we will...
   + e.g., Instead of "How does childcare cost differ between infants and toddlers", state "Childcare costs for infants is breaking the bank!"
   
 *Pay attention to the details! I am fairly picky about table and plot design, keep this in mind for your final report.*
+
+## Office Hours this Week
+
++ Today (Monday), 5/20, at 11:10 - 12pm
++ Tomorrow (Tuesday), 5/21, at 2:10pm - 4pm
++ No office hours Wednesday and Thursday -- I will be out of town visiting family.
+
+## Stat 150 Prompt: Note to Self
+
+Write (and/or draw) a note to your future self (to be opened in Spring quarter of your second year), addressing among other questions,
+
++ Why did you choose Cal Poly?
++ Why did you choose Statistics?
++ What are your goals and hopes for your time at Cal Poly?
++ Anything else...
 
 # Research at Cal Poly
 

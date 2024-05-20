@@ -301,7 +301,7 @@ knitr::include_graphics("images/emily-jd-softball.png")
 -   Peer review feedback (optional) 
     - opens Monday, 5/27 at 8am
     - feedback due Tuesday, 5/28 at 11:59pm
--   Final Submission due Thursday, 5/30 at 11:59pm
+-   Final Submission due Sunday, 6/2 at 11:59pm
 
 `r fontawesome::fa("chart-bar")` **Data Narrative Visualization**
 

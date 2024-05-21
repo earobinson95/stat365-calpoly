@@ -20,16 +20,20 @@ execute:
 +------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 | Component                          | Brief Description                                                                                                                                                                                                                                      | Due Date                                                                                       |
 +====================================+========================================================================================================================================================================================================================================================+================================================================================================+
-| Draft for peer review *(optional)* | It is optional to participate in the peer review of this mini-project. This means it is not counted as an "assignment". In order to participate, you must meet the deadline listed; Canvas will automatically assign a peer reviewer at 8am on Friday. | Sunday, May 26th at 11:59pm                                                                  |
+| Draft for peer review *(optional)* | It is optional to participate in the peer review of this mini-project. This means it is not counted as an "assignment". In order to participate, you must meet the deadline listed; Canvas will automatically assign a peer reviewer at 8am on Friday. | Sunday, May 26th at 11:59pm                                                                    |
 +------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 | Peer review *(optional)*           | Follow the rubric to give your peer feedback about their appearance, professionalism, structure, and bullet point crafting.                                                                                                                            | Tuesday, May 28th at 11:59pm                                                                   |
 +------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
-| Final Submission                   | Keep in mind live revisions will happen during finals week, so it may be to your benefit to participate in the peer review process. Should you have questions, please ask!                                                                             | Sunday, June 2nd                                                                             |
+| Final Submission                   | Keep in mind live revisions will happen during finals week, so it may be to your benefit to participate in the peer review process. Should you have questions, please ask!                                                                             | Sunday, June 2nd                                                                               |
 +------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 | Live Revisions                     |                                                                                                                                                                                                                                                        | Monday, 6/10 & Wednesday, 6/12 -- [sign up](https://calendly.com/calpoly-emily-robinson/15min) |
 +------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 
 For this assignment, we'll be crafting our resumes to a professional state.
+
+::: callout-note
+While I encourage you to use overleaf/latex, this is not a requirement. It is more my goal that you have a working resume you can upkeep!
+:::
 
 ## Overleaf Template & Appearance
 
@@ -68,8 +72,8 @@ Career services provides additional resources for assisting in crafting your res
 
 See two examples or resumes I have helped edit:
 
--   [Mark Robinson](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/build-your-resume/Example-Resume-1.pdf)
--   [Kory Heier](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/build-your-resume/Example-Resume-2.pdf)
+-   [Mark Robinson](https://earobinson95.github.io/stat365-calpoly/2023/97-mini-projects/build-your-resume/Example-Resume-1.pdf)
+-   [Kory Heier](https://earobinson95.github.io/stat365-calpoly/2023/97-mini-projects/build-your-resume/Example-Resume-2.pdf)
 
 You do not have to take these verbatim as some aspects might not quite align with career services recommendations, but I think they are both decent examples.
 

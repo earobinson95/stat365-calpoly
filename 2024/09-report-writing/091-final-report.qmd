@@ -1,0 +1,166 @@
+---
+title: "Final Group Report"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Tuesday, May 28th
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+-  Tips for Final Report
+-  Questions
+-  Work time + Live Revisions
+
+. . .
+
+On Wednesday we will...
+
+-  Work time + Live Revisions
+
+. . .
+
+On Monday we will...
+
+-  Brief feedback discussion
+-  Work on final report revisions
+-  Coffee + Donut holes
+
+# Tips for Final Report
+
+## Use Context!
+
+Can you replace words such as "group", "factor", "treatment" with context about your data?
+
+Units!
+
+Try to avoid the "rote" definitions. This is a report, not a homework assignment.
+
+  + e.g., *"We are 95% confident the difference between A and B is between -0.8 and 1.2"* could be *"We are 95% confident A is between 0.8 less and 1.2 more than B."*.
+
+## Results
+
++ Tell me in context what it means first (and support with stats)
+
+*e.g., "According to the ANOVA, there was a discernible difference in mean volume of juice between the three juice flavors (F = 5.67; df = 2, 46' p = 0.0012)."*
+
++ Any time you have a p-value, it should be accompanied with a test statistic (t or F) and the associated degrees of freedom (they are a group!)
+
++ Can you replace or remove "significant"? Try discernible
+
++ Tell me where and how much the difference is (even if it is observed)
+
++ Report some sort of measure of spread (sd, range, IQR) along with a measure of center (mean, median).
+
+## Tables and Figures
+
++ Label (Table 1, Figure 1) and include a caption -- tell the reader what to see.
++ Refer and discuss in the text -- *"Figure 1 shows..."*
+
+**Good Design**
+
++ Watch number of decimal places
++ Right align numbers (and their headers)
++ Bars are reserved for counts/frequencies -- try something different for averages
++ Colors? Ordering? Labels?
+
+## Discussion
+
++ Causation comes from random assignment, not statistical significance
+
++ Avoid *"To make my results more significant"* or *"To find better significance"* -- instead try *"To ensure reproducibility of results."*
+
+## Writing
+
++ Most of the time, use past tense
+
++ Watch excessive passive voice (especially in data/methods)
+
++ Match "I", "We", "Researchers"
+
++ Data and Methods -- tell me what you DID
+
++ Results and Discussion -- show and tell me what you FOUND
+
+## Appearance
+
++ Section numbers start at 1 or I for the Intro
+
++ Subsections should be 1.1, 1.2, etc.
+
++ No section numbers for Abstract, References, Appendix
+  + Appendix has A, B, C
+  
++ Make section headers stand out -- bold, italics, alignment
+
+## References
+
++ Should have the long APA citation in the reference section (alphabetical order)
+
+R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing,
+  Vienna, Austria. URL <https://www.R-project.org/>.
+
++ And in-text citation
+
+<!-- ## Final Submission -->
+
+<!-- **Revisions** -->
+
+<!-- + In word -- track changes (but I want the final submitted in a nice clean pdf version!) -->
+<!-- + Or make note of changes you made -->
+
+<!-- . . . -->
+
+<!-- **Reproducibility** -->
+
+<!-- + Should follow the folder structure -- know how to create a `.zip` folder. -->
+<!-- + Your *Revisions* can be in the `document` sub folder -- clearly label! -->
+
+<!-- . . . -->
+
+<!-- **You should upload to canvas:** -->
+
+<!-- + Final Technical report `pdf` -->
+<!-- + `.zip` folder containing revisions -->
+
+# Booster Conditions
+
+Keep in mind the grading method for the final technical report and carefully consider where to spend your time this week.
+
+<!-- ## Website -->
+
+<!-- + Give a bio of yourself! -->
+<!-- + Links to GitHub? LinkedIn? Email? -->
+<!-- + Set up a structure for projects -->
+
+<!-- The goal is for you to take this with you and continue to build off of it. I just want to make sure you have the nuts and bolts in place. -->
+
+## To do
+
+`r fontawesome::fa("paperclip")` **Draft Group Report**
+
+-   due Thursday, 5/30 at 11:59pm
+
+`r fontawesome::fa("chart-line")` **Data Viz Narrative -- Revisions**
+
+-   work toward live revisions by Friday 5/31
+
+`r fontawesome::fa("handshake")` **Build Your Resume**
+
+-   Final Submission due Sunday, 6/2 at 11:59pm
+
+**No final exam!** *I will have office hours that week BEFORE your final reports are due.*
+

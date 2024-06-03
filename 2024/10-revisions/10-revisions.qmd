@@ -114,7 +114,7 @@ Thanks for a great quarter! `r praise::praise()`
 
 Keep in mind the grading method for the final technical report and carefully consider where to spend your time this week.
 
-## To do
+## To do {.scrollable}
 
 *I am out of town for an academic conference on the East Coast the rest of the week. You can reach me via email. Thank you for your patience!*
 
@@ -126,6 +126,10 @@ Keep in mind the grading method for the final technical report and carefully con
 `r fontawesome::fa("paperclip")` **Final Group Report**
 
 -   due Wednesday, 6/12 at 11:59pm
+
+`r fontawesome::fa("person")` **Collaboration Reflection**
+
+-   due Thursday, 6/13 at 11:59pm
 
 `r fontawesome::fa("handshake")` **Build Your Resume**
 

@@ -1,0 +1,134 @@
+---
+title: "Revisions: Final Group Report"
+subtitle: "Stat 365: Statistical Communication"
+format: 
+  revealjs:
+    theme: [default, ../../slide_custom.scss]
+    auto-stretch: false
+    # chalkboard: true
+editor: source
+self-contained: true
+execute:
+  echo: true
+---
+
+## Monday, June 3rd
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+Today we will...
+
+-  Discuss Revisions
+-  Feedback on Reports
+-  Looking ahead
+-  Work time + Live Revisions
+
+Thanks for a great quarter! `r praise::praise()`
+
+*Tip: use* `praise::praise()` *(output shown above) in R to boost your confidence!*
+
+## Revisions
+
+- Keep track of changes made between the draft and the final submission (i.e., respond to the reviewer)
+
+# Feedback on Drafts
+
+## Citations for Software
+
++ Use the citation() function to properly cite any software used in your analysis.
++ Example: In console -- `citation("ggplot2")
+
+## No Code or Output Screenshots
+
++ Do not include code or screenshots of the output in the report.
++ Instead, describe the analysis and present the results in a clear and concise manner (tables, in text, etc.).
+  + Example: "The results from the ANOVA indicate xxx (t = #; df = #; p = #)
++ Small p-values are reported as p < 0.0001, not p = 2e-16.
+
+## Scope of Inference
+
++ Define the scope of inference clearly (causation + generalization, think STAT 301)
++ Example: "The findings of this study can be generalized to adult residents of California, but may not apply to other regions."
+
+## Methods/Results in Past Tense
+
++ Write the methods and results in the past tense.
++ Example: "We collected data from 100 participants" and "The results showed a significant increase in..."
+
+## Use Context
+
++ Always provide context: mention the variables, response, and the specific scenario being analyzed.
++ Avoid vague use of words and buzz words -- CwD ch. 9 (define "this", use specific names for statistical analyses, etc.)
++ Example: "We used a simple linear regression analysis to examine the relationship between hours studied and test scores among college students."
+
+## Avoid Cold Calling Plots
+
++ Integrate your plots and tables smoothly into the narrative without abruptly introducing them.
+
+## Image Quality
+
++ Avoid fuzzy images by using ggsave() to save your plots.
++ Example: `ggsave("plot.png", plot = last_plot(), dpi = 300)`
+
+## Informative Captions
+
++ Clearly state the question the figure addresses and the answer.
++ Example: "Figure 1 shows the relationship between temperature and ice cream sales. As indicated, there is a positive correlation between the two variables."
+
+## Guide the Reader
+
++ Clearly explain what the reader should see in the figures.
++ Example: "As shown in Figure 2, xxx."
+
+## Tell a Story
+
++ Focus on telling a coherent story about the findings.
++ Do not detail every step; instead, share the final analysis and results. I don't need to know what was discussed in the board room.
+  + Example: "After analyzing the survey responses, we found that customer satisfaction is strongly influenced by response time and service quality."
+
+## Conclusion
+
++ Briefly restate the research question at the beginning of the conclusion
++ Example: "This study aimed to determine whether increased physical activity improves mental health outcomes."
+
+## Appropriate Sectioning
+
++ Ensure that content with "data method vibes" or "result vibes" is placed in the appropriate sections.
++ Methods should include data collection and analysis techniques.
++ Results should present the findings.
+
+## Number the Sections
+
++ Ensure all sections are numbered for easy reference.
+
+## Final Submission
+
+- Final pdf (this is what I will grade)!
+- Revisions (response to reviewer, you can put this in your `documents` folder)
+- Reproducibility: zip folder / shared Google drive folder / GitHub (make sure I have access!)
+
+# Booster Conditions
+
+Keep in mind the grading method for the final technical report and carefully consider where to spend your time this week.
+
+## To do
+
+*I am out of town for an academic conference on the East Coast the rest of the week. You can reach me via email. Thank you for your patience!*
+
+`r fontawesome::fa("calendar")` **Finals week**
+
+- Office hours Monday (6/10) & Wednesday (6/12) 8am - 10am (final slots)
+- In my office (25-103)
+
+`r fontawesome::fa("paperclip")` **Final Group Report**
+
+-   due Wednesday, 6/12 at 11:59pm
+
+`r fontawesome::fa("handshake")` **Build Your Resume**
+
+-   work toward live revisions by Thursday, 6/13
+-   Can visit finals week office hours
+-   I will monitor this, and can make other arrangements for slots if needed.

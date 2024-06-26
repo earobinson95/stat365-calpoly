@@ -1,0 +1,107 @@
+---
+title: "Career Services Questions"
+subtitle: "Full questions"
+format: pdf
+---
+
+### Theme 1: Skills and Experience
+1. In the context of Statistics, what are key soft and hard skills that I should highlight that are not considered cliche or "buzzwords"?
+2. Aside from internships and participating in research, what are some other things you can do that not only gives you something to put on your resume, but allows you to gain some meaningful professional experience?
+3. How common is it for students to have an internship in their second year?
+4. Should we include part-time jobs/unrelated jobs that have nothing to do with our major and/or prospective job?
+5. How much coursework should be included on a resume?
+6. Is it good to have extracurriculars on your resume when applying for internships/jobs? Do employers actually care about community involvement like academic clubs or volunteer work?
+7. Should I be putting relevant coursework on my resume?
+8. Where can students go to get personalized help building both a resume and cover letter?
+9. How can students compensate for a GPA <3.6 in other parts of their application?
+
+### Theme 2: Resume Content and Structure
+10. What is the single most influential factor in creating a good resume? Is it the style, the actual order of your content, or a combination of the two?
+11. If I don’t have a lot of resume-worthy accomplishments, what should I add to make it fuller?
+12. What specific features/mistakes should I avoid putting in my resume and/or cover letter?
+13. What do you look at first when handed a resume and what section/s should stand out the most?
+14. Does the order of your resume sections make a difference when the recruiter is looking it over?
+15. What is the general recommended order for resume sections? (e.g., Education, Work Experience, On Campus Involvements, Technical Skills)
+16. What are the necessary components of a sufficient resume? In other words, what is not necessary to put on it that many people still tend to include?
+17. How thorough should a cover letter be?
+18. How do I decide what to include or leave off of my resume?
+
+### Theme 3: Making Resumes Stand Out
+19. How do I make my resume stand out when you are applying to a position where everyone likely has similar experience listed?
+20. What is the most attention-grabbing part of a resume that will help us (as Statistics majors) stand out from other resumes?
+21. In today's competitive job market, what are some innovative or unconventional strategies that candidates can use to make their resumes and cover letters stand out to potential employers?
+22. What are your thoughts on using ChatGPT/AI to create rough drafts of cover letters?
+23. How can we make our resumes and cover letters stand out when applying for competitive positions?
+
+### Theme 4: Cover Letters
+24. What are the advantages of a cover letter?
+25. How much of our cover letter should be conveying our skills/experience versus simply introducing ourselves to the employer?
+26. How can I best tailor my resume to specific companies, for example, what main points should I focus on and what could be removed depending on the company I'm applying for?
+27. How much should I be changing my cover letter for each job I apply to? Should I make a completely new one tailored to each type of job to make myself seem like a better fit, or should I use a similar one for each job I apply to that represents me best?
+28. For a cover letter, how can I present my projects and skills in a way that appears neither overly desperate nor excessively self-centered?
+29. What key points are important to include when talking about prior experience or personal projects?
+30. What message are you trying to convey with a cover letter?
+31. How would you organize a cover letter to where it doesn't feel like it is just restating information provided in the actual resume?
+32. I often struggle to write cover letters because I feel like I am mostly repeating information that is already in my resume. In what ways can I make my cover letter stand out from my resume as a separate document?
+33. What is the key to crafting a cover letter especially since each one is unique to its own individual company?
+34. How should a cover letter be formatted and how specific does it need to be applied to the internship Company of interest?
+35. Should I make a completely new cover letter tailored to each type of job to make myself seem like a better fit, or should I use a similar one for each job I apply to that represents me best?
+
+### Theme 5: Overcoming Limited Experience
+36. What if we don't have a lot of experience? How can we still make a good resume?
+37. How can someone with no professional experience have an effective resume?
+38. What is good ordering of sections for a resume if I don't have much experience?
+39. Should I be putting relevant coursework on my resume?
+40. How do you go about tailoring your Resume/Cover Letters for certain positions?
+41. What is the general recommended order for resume sections? (e.g., Education, Work Experience, On Campus Involvements, Technical Skills)
+
+### Theme 6: Tailoring Resumes and Cover Letters
+42. How can we best tailor our cover letter to each employer, while also avoiding any "burnout" in case we need to apply to many jobs/internships?
+43. Could you provide guidance on how to tailor my resume and cover letter to align with specific job descriptions, particularly in highlighting relevant skills and experiences effectively?
+44. What key points are important to include when talking about prior experience or personal projects?
+45. How thorough should a cover letter be?
+
+### Theme 7: Technical Details and Common Mistakes
+46. How important is it to include your GPA on your resume?
+47. Does the order of your resume sections make a difference when the recruiter is looking it over?
+48. What are common mistakes that people usually make when making their resumes and cover letters, and what can we do to avoid them?
+49. How thorough should a cover letter be?
+50. What specific features/mistakes should I avoid putting in my resume and/or cover letter?
+
+### Theme 8: Online Presence and Additional Tips
+51. How can we weave our online presence seamlessly into our resumes and cover letters, ensuring that they come across as not just a list of qualifications, but as a real person with passions, values, and a unique story to tell?
+52. I've seen some sources say that, sometimes, adding your LinkedIn to your resume can negatively affect your resume if the LinkedIn page is not looking as good as it could be. If I don't have a fully finished and polished LinkedIn, should I keep my LinkedIn in my resume?
+53. Should awards go with education or extracurricular activities? Should we even add extracurriculars?
+54. What is the most attention-grabbing part of a resume that will help us (as Statistics majors) stand out from other resumes?
+55. When crafting our resume what should we do if we lack internships, projects, and involvement in clubs?
+56. How many bullet points do we need per experience? How much do we write?
+57. To what degree can I boost myself in terms of skills and what you've done at a job?
+58. How can someone with no professional experience have an effective resume?
+59. How thorough should a cover letter be?
+60. How can we make our resumes and cover letters stand out when applying for competitive positions?
+61. What message are you trying to convey with a cover letter?
+62. How would you organize a cover letter to where it doesn't feel like it is just restating information provided in the actual resume?
+
+### Theme 9: High School Accomplishments
+63. I have several interesting experiences on my resume that are from my Junior / Senior year in high school. How should I go about including those without putting too much emphasis since they were from high school?
+64. What should and shouldn't you put on your resume from high school? What kind of high school achievements actually matter to employers?
+65. How long is it appropriate to include high school accomplishments and jobs?
+
+### Theme 10: Tailoring for Specific Employers
+66. How can I best tailor my resume to specific companies, for example what main points should I focus on and what could be removed depending on the company I'm applying for?
+67. How much should I be changing my cover letter for each job I apply to? Should I make a completely new one tailored to each type of job to make myself seem like a better fit, or should I use a similar one for each job I apply to that represents me best?
+68. What key points are important to include when talking about prior experience or personal projects?
+
+### Theme 11: Addressing Weak Points
+69. What if we don't have a lot of experience? How can we still make a good resume?
+70. How can students compensate for a GPA <3.6 in other parts of their application?
+71. How thorough should a cover letter be?
+
+### Theme 12: Formatting and Technicalities
+72. What is the single most influential factor in creating a good resume? Is it the style, the actual order of your content, or a combination of the two?
+73. What are the necessary components of a sufficient resume? In other words, what is not necessary to put on it that many people still tend to include?
+74. What is the general recommended order for resume sections? (e.g., Education, Work Experience, On Campus Involvements, Technical Skills)
+75. How should a cover letter be formatted and how specific does it need to be applied to the internship Company of interest?
+
+### Theme 13: Online Presence
+76. How can we weave our online presence seamlessly into our resumes and cover letters, ensuring that they come across as not just a list of qualifications, but as a real person with passions, values, and a unique

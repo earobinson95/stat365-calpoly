@@ -1,0 +1,54 @@
+---
+title: "Career Services Questions"
+subtitle: "Select questions"
+format: pdf
+---
+
+### Theme 1: Skills and Experience
+1. In the context of Statistics, what are key soft and hard skills that I should highlight, and how can I gain meaningful professional experience beyond internships and research?
+2. How common is it for students to have an internship in their second year, and should part-time or unrelated jobs be included on my resume?
+3. How important are extracurriculars, and should I include relevant coursework on my resume?
+4. How can students compensate for a GPA <3.6 in other parts of their application?
+
+### Theme 2: Resume Content and Structure
+1. What is the single most influential factor in creating a good resume, and what are common features/mistakes to avoid?
+2. How should I decide the order of resume sections, and what are the necessary components of a sufficient resume?
+3. What do recruiters look at first on a resume, and how should I structure it if I have limited accomplishments?
+
+### Theme 3: Making Resumes Stand Out
+1. How can I make my resume stand out, especially when applying for competitive positions or when everyone likely has similar experience?
+2. What are some innovative or unconventional strategies to make resumes and cover letters stand out?
+3. What are your thoughts on using ChatGPT/AI to create rough drafts of cover letters?
+
+### Theme 4: Cover Letters
+1. What are the advantages of a cover letter, and how should I tailor it to specific companies without appearing overly desperate or repetitive?
+2. How can I best convey my skills and experiences in a cover letter, and what key points should be included?
+3. How should a cover letter be formatted and personalized to each job application?
+
+### Theme 5: Overcoming Limited Experience
+1. How can someone with limited or no professional experience still create an effective resume and cover letter?
+2. What is good ordering of sections for a resume if I don't have much experience, and how should I highlight relevant coursework and projects?
+
+### Theme 6: Tailoring Resumes and Cover Letters
+1. How can I effectively tailor my resume and cover letter to align with specific job descriptions and avoid burnout when applying to many positions?
+2. What key points should be included when talking about prior experience or personal projects, and how should I decide what to include or leave off?
+
+### Theme 7: Technical Details and Common Mistakes
+1. How important is it to include your GPA on your resume, and what are common mistakes to avoid in resumes and cover letters?
+2. How can I ensure my cover letter is thorough without repeating information from my resume?
+
+### Theme 8: Online Presence and Additional Tips
+1. How can I integrate my online presence (e.g., LinkedIn) into my resume and cover letter, and should I include LinkedIn if my profile isn't polished?
+2. How can I present a cohesive professional story that highlights my qualifications, passions, and values?
+
+### Theme 9: High School Accomplishments
+1. How should I include high school experiences and accomplishments on my resume without overemphasizing them, and how long is it appropriate to keep them?
+
+### Theme 10: Tailoring for Specific Employers
+1. How can I best tailor my resume and cover letter for specific employers and job descriptions, and how much should I customize them for each application?
+
+### Theme 11: Addressing Weak Points
+1. What strategies can I use to address weak points like limited experience or a lower GPA on my resume and cover letter?
+
+### Theme 12: Formatting and Technicalities
+1. What are the best practices for formatting a resume and cover letter, and how should they be structured for optimal impact?

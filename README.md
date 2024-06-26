@@ -8,7 +8,7 @@
 **Mini Projects**
 
 + [One-number Story](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/01-one-number-story/one-number-story.html)
-+ [*Data Narrative Visualization:*](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/02-stand-alone-graphic/stand-alone-graphic.html)
++ [Data Narrative Visualization](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/02-stand-alone-graphic/stand-alone-graphic.html)
 + [Build your Resume](https://earobinson95.github.io/stat365-calpoly/2024/97-mini-projects/03-build-your-resume/build-your-resume.html)
 
 **Final Team Report**
@@ -18,18 +18,57 @@
 **Booster Conditions**
 
 + [NYT What's going on in this graph](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/nyt-whats-going-on-in-this-graph.html)
++ [Dear Data](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/dear-data.html)
 + [Florence Nightingale: Data Viz Pioneer](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/florence-nighingale-data-viz-pioneer.html)
++ [Copy the Masters](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/copy-the-masters.html)
 + [Make your own website](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/make-your-own-website.html)
++ [Tailor Your Cover Letter](https://earobinson95.github.io/stat365-calpoly/2024/98-grade-boosters/tailor-your-coverletter.html)
 
 **Lecture Slides**
 
 *Week 1* Writing About Data
 
-+ COMING SOON
++ [Writing About Data](https://earobinson95.github.io/stat365-calpoly/2024/01-writing-about-data/011-writing-about-data.html#/title-slide)
 
-*Week 2*
+*Week 2* Data Descriptions, Asking Questions, and Reproducibility
 
-+ COMING SOON
++ [Posing Questions](https://earobinson95.github.io/stat365-calpoly/2024/02-data-descriptions/021-posing-questions.html#/title-slide)
++ [Data Descriptions](https://earobinson95.github.io/stat365-calpoly/2024/02-data-descriptions/022-data-descriptions.html#/title-slide)
+
+*Week 3* Data Journalism
+
++ [Data Journalism](https://earobinson95.github.io/stat365-calpoly/2024/03-data-journalism/021-data-journalism.html#/title-slide)
++ [Spreadsheets, Summaries, and Pivot Tables](https://earobinson95.github.io/stat365-calpoly/2024/03-data-journalism/022-spreadsheets-summaries-pivot-tables.html#/title-slide)
+
+*Week 4* Peer Feedback + Table Design
+
++ [Peer Feedback](https://earobinson95.github.io/stat365-calpoly/2024/04-peer-edit-table-design/041-peer-editing.html#/title-slide)
++ [Table Design](https://earobinson95.github.io/stat365-calpoly/2024/04-peer-edit-table-design/042-table-design.html#/title-slide)
+
+*Week 5* Data Viz Principles and Practices
+
++ [Intro to Viz](https://earobinson95.github.io/stat365-calpoly/2024/05-data-viz/041-intro-to-viz.html#/title-slide)
++ [Data Viz Design Principles](https://earobinson95.github.io/stat365-calpoly/2024/05-data-viz/042-design.html#/title-slide)
+
+*Week 6* Data Viz Makeover + Reading Research
+
++ [Data Viz Makeovers](https://earobinson95.github.io/stat365-calpoly/2024/06-viz-makeovers-research-articles/061-data-viz-makeover-peer-review.html#/title-slide)
++ [How to Read a Research Paper](https://earobinson95.github.io/stat365-calpoly/2024/06-viz-makeovers-research-articles/062-research-papers.html#/title-slide)
+
+*Week 7* Storyboarding
+
++ [Storyboarding](https://earobinson95.github.io/stat365-calpoly/2024/07-storyboarding/071-storyboarding.html#/title-slide)
+
+*Week 8* Career Week
+
++ Visit from Career Services
++ [Internships and Online Presence](https://earobinson95.github.io/stat365-calpoly/2024/08-career/081-internships-and-online-presence.html#/title-slide)
+
+*Week 9/10* Report Writing + Revisions
+
++ [Final Group Report](https://earobinson95.github.io/stat365-calpoly/2024/09-report-writing/091-final-report.html#/title-slide)
++ [Revisions](https://earobinson95.github.io/stat365-calpoly/2024/10-revisions/10-revisions.html#/title-slide)
+
 
 ## Spring 2023
 
